@@ -67,7 +67,7 @@ export default function Pricing() {
                 <div className="relative -top-3">
                   <h3 className="font-bold">Wykonanie wkładek IGLI</h3>
                 </div>
-                <p>480 zł — 60min</p>
+                <p>480 zł — 60 minut</p>
               </li>
             </ul>
           </div>
