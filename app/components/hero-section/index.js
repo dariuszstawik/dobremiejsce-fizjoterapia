@@ -7,7 +7,7 @@ export default function HeroSection() {
             <div className="lg:mb-0 lg:max-w-xl lg:pr-5">
               <div className="mb-8 max-w-xl">
                 <h2 className="robot mb-6 max-w-lg font-sans text-4xl font-bold leading-hero text-gray-other sm:text-5xl lg:text-6xl lg:leading-hero">
-                  Fizjoterapia dzieci - płynąca z pasji i zaangażowania
+                  Fizjoterapia dzieci płynąca z pasji i zaangażowania
                 </h2>
                 <img
                   src="/decorated-underline.svg"
