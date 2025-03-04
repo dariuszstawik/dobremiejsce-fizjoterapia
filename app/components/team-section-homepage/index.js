@@ -1,0 +1,77 @@
+import Button from "../Button";
+import SectionTitle from "../section-title";
+
+export default function TeamSectionHomepage() {
+  return (
+    // className="mt-28 relative w-screen px-10 lg:px-32 py-20 pb-28 bg-primary after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-secondaryGreen after:opacity-90"
+    // style={{
+    //   backgroundImage: 'url("/glp_slider20.jpg")',
+    //   backgroundPosition: "center",
+    // }}
+
+    <section
+      className="relative w-screen py-8 mb-28  after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full  after:opacity-60"
+      // style={{
+      //   backgroundImage: 'url("/dobremiejsce009.jpg")',
+      //   backgroundPosition: "center",
+      // }}
+    >
+      <div className="container w-[80%] px-4 mx-auto relative z-20">
+        <SectionTitle title="Kim jesteśmy?" />
+        <div className="flex flex-nowrap gap-10 -mx-4">
+          <div className="w-full md:max-w-1/2 px-4 py-10 mb-10 bg-gray-100 rounded-xl">
+            <div className="h-full py-8 px-10 rounded-md text-center">
+              <img
+                className="mx-auto mb-6 rounded-full w-64"
+                src="/kamila-wlodarczyk.png"
+                alt=""
+              />
+              <h3 className="mb-2 text-2xl md:text-3xl leading-tight font-semibold">
+                Kamila Włodarczyk
+              </h3>
+              <span className="inline-block mb-6 text-lg font-medium text-orange">
+                Terapeutka NDT-Bobath | Specjalistka od wcześniaków
+              </span>
+              <p className="mb-8 text-coolGray-500 font-medium">
+                Na co dzień w Górnośląskim Centrum Zdrowia Dziecka w Katowicach
+                i Szpitalu Miejskim w Rudzie Śląskiej
+              </p>
+              <div className="mr-auto mt-6">
+                <Button
+                  className="mx-auto mt-6"
+                  title="dowiedz się więcej"
+                ></Button>
+              </div>
+            </div>
+          </div>
+          <div className="w-full md:max-w-1/2 px-4 py-10 mb-10 bg-gray-100  rounded-xl">
+            <div className="h-full py-8 px-10  rounded-md text-center">
+              <img
+                className="mx-auto mb-6 rounded-full w-64"
+                src="/martyna-cesarczyk.png"
+                alt=""
+              />
+              <h3 className="mb-2 text-2xl md:text-3xl leading-tight font-semibold">
+                Martyna Cesarczyk
+              </h3>
+              <span className="inline-block mb-6 text-lg font-medium text-orange">
+                Fizjoterapeutka pediatryczna | Specjalistka terapii SI
+              </span>
+              <p className="mb-8 text-coolGray-500 font-medium">
+                Doświadczenie w fizjoterapii pediatrycznej zdobywała m.in. w
+                Górnośląskim Centrum Zdrowia Dziecka w Katowicach i Centrum
+                Intensywnej Terapii Olinek w Warszawie
+              </p>
+              <div className="mr-auto mt-6">
+                <Button
+                  className="mx-auto mt-6"
+                  title="dowiedz się więcej"
+                ></Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -50,7 +50,7 @@ export default function PageTemplate({
             alt={alt || title}
           />
         </div>
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           {children}
           <Banner>{bannerBody}</Banner>
         </div>

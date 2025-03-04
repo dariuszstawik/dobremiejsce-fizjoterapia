@@ -1,6 +1,8 @@
 "use client";
 import { Slide } from "react-awesome-reveal";
 import Link from "next/link";
+import SectionTitle from "../section-title";
+import BlockTitle from "../block-title";
 
 export default function ParagraphWithImage({
   title,
@@ -21,9 +23,9 @@ export default function ParagraphWithImage({
         direction="left"
         delay={200}
         triggerOnce
-        className="flex justify-center items-start w-full lg:w-1/2"
+        className="flex justify-center items-start w-full h-stretch lg:w-1/2"
       >
-        <div>
+        <div className="w-full h-full">
           {/* {contentfulImg && (
             <img
               src={
@@ -40,7 +42,13 @@ export default function ParagraphWithImage({
               className="rounded"
             />
           )} */}
-          {img && <img src={img} alt={alt ? alt : ""} className="rounded" />}
+          {img && (
+            <img
+              src={img}
+              alt={alt ? alt : ""}
+              className="rounded h-full object-cover"
+            />
+          )}
 
           {/* {isOnAboutPage && (
             <div className="grid grid-cols-2 gap-10">
@@ -65,7 +73,8 @@ export default function ParagraphWithImage({
       </Slide>
       <div className="w-full lg:w-1/2 mx-6 pr-6 pt-8 lg:pt-0 lg:pr-0 lg:ml-16 lg:mr-16 flex flex-col gap-0">
         {/* <SectionTitle isWhite={hasBlueBackground}>{title}</SectionTitle> */}
-        <h2 className="mb-3 mt-2 text-3xl font-bold text-gray">{title}</h2>
+        {/* <h2 className="mb-3 mt-2 text-3xl font-bold text-gray">{title}</h2> */}
+        <BlockTitle isAlignedLeft subtitle="Dobre Miejsce" title={title} />
         {children}
         {/* {buttonTitle && buttonLink && (
           <Button className="mr-auto mt-6">

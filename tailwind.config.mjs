@@ -11,6 +11,7 @@ export default {
         // orange: "rgb(255, 65, 10)",
         orange: "#ff6e41",
         peach: "#fff6f2",
+        secondaryOrange: "#ffcea0ff",
         light: "rgb(255 206 160)",
         heavy: "rgb(25 26 21)",
       },

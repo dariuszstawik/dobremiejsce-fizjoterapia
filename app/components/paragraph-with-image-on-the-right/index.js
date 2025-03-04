@@ -1,6 +1,8 @@
 "use client";
 import { Slide } from "react-awesome-reveal";
 import Link from "next/link";
+import BlockTitle from "../block-title";
+import Button from "../Button";
 
 export default function ParagraphWithImageOnTheRight({
   title,
@@ -10,12 +12,16 @@ export default function ParagraphWithImageOnTheRight({
   buttonTitle,
   buttonLink,
   hasBlueBackground,
+  isLeft,
+  hasSmallerTitle,
+  subtitle,
+  hasSmallerImg,
 }) {
   return (
     <div
-      className={`w-full py-20 flex flex-col lg:flex-row-reverse ${
-        hasBlueBackground && "bg-darkBlue text-white"
-      }`}
+      className={`w-full py-10 flex flex-col ${
+        isLeft ? "lg:flex-row" : "lg:flex-row-reverse"
+      }  ${hasBlueBackground && "bg-darkBlue text-white"}`}
     >
       <Slide
         direction="left"
@@ -40,7 +46,15 @@ export default function ParagraphWithImageOnTheRight({
               className="rounded"
             />
           )} */}
-          {img && <img src={img} alt={alt ? alt : ""} className="rounded" />}
+          {img && (
+            <img
+              src={img}
+              alt={alt ? alt : ""}
+              className={`rounded ${hasSmallerImg && "max-h-[300px]"} ${
+                isLeft && "scale-x-[-1]"
+              }`}
+            />
+          )}
 
           {/* {isOnAboutPage && (
             <div className="grid grid-cols-2 gap-10">
@@ -65,13 +79,21 @@ export default function ParagraphWithImageOnTheRight({
       </Slide>
       <div className="w-full lg:w-1/2 mx-6 pr-6 pt-8 lg:pt-0 lg:pr-0 lg:ml-16 lg:mr-16 flex flex-col gap-0">
         {/* <SectionTitle isWhite={hasBlueBackground}>{title}</SectionTitle> */}
-        <h2 className="mb-3 mt-2 text-3xl font-bold text-gray">{title}</h2>
+        <BlockTitle
+          isAlignedLeft
+          subtitle={subtitle}
+          title={title}
+          hasSmallerTitle={hasSmallerTitle}
+        />
         {children}
-        {/* {buttonTitle && buttonLink && (
-          <Button className="mr-auto mt-6">
-            <Link href={buttonLink}>{buttonTitle}</Link>
-          </Button>
-        )} */}
+        {buttonTitle && buttonLink && (
+          <div className="mr-auto mt-6">
+            <Button className="mr-auto mt-6" title={buttonTitle}>
+              {/* <Link href={buttonLink}>{buttonTitle}</Link> */}
+              {/* {buttonTitle} */}
+            </Button>
+          </div>
+        )}
       </div>
     </div>
   );

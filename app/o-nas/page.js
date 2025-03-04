@@ -78,10 +78,7 @@ export default function ONas() {
             />
           </div>
 
-          <ParagraphWithImage
-            title="Kompleksowe podejście"
-            img="/dobremiejsce002.jpg"
-          >
+          <ParagraphWithImage title="Kompleksowe podejście" img="/hero-img.png">
             W Dobrym Miejscu oferujemy kompleksową opiekę terapeutyczną dla
             dzieci od pierwszych dni życia. Specjalizujemy się w rehabilitacji
             wcześniaków i niemowląt z zaburzeniami napięcia mięśniowego,
@@ -103,23 +100,51 @@ export default function ONas() {
 
           <div className="max-w-6xl mx-auto">
             <ParagraphWithImageOnTheRight
-              title="Dobre Miejsce w Katowicach zaprasza!"
-              img="/dobremiejsce002.jpg"
+              title="Rehabilitacja najmłodszych"
+              img="/hero-img-mobile.png"
+              alt="Dobre Miejsce w Katowicach zaprasza!"
+              buttonLink="https://dobremiejscefizjoterapiadzieci.booksy.com/"
+              buttonTitle="Umów wizytę"
+              isLeft
             >
-              Jeśli szukasz profesjonalnej opieki fizjoterapeutycznej dla
-              swojego dziecka, prowadzonej z pasją i zaangażowaniem, jesteś we
-              właściwym miejscu. W Dobrym Miejscu każde dziecko otrzymuje szansę
-              na harmonijny rozwój, a rodzice znajdują zrozumienie i wsparcie.
+              Wspieramy prawidłowy rozwój wcześniaków i niemowląt z zaburzeniami
+              napięcia mięśniowego
             </ParagraphWithImageOnTheRight>
-
-            {/* <div className="flex">
-              <a
-                href="#"
-                className="inline-flex justify-center items-center text-center h-18 py-8 px-10 font-semibold text-white hover:text-white focus:text-white bg-blue-500 hover:bg-blue-600 focus:bg-blue-600 rounded-full focus:ring-4 focus:ring-blue-200 transition duration-200"
-              >
-                Czytaj więcej
-              </a>
-            </div> */}
+          </div>
+          <div className="max-w-6xl mx-auto">
+            <ParagraphWithImageOnTheRight
+              title="Diagnostyka rozwoju"
+              img="/hero-img-mobile.png"
+              alt="Dobre Miejsce w Katowicach zaprasza!"
+              buttonLink="https://dobremiejscefizjoterapiadzieci.booksy.com/"
+              buttonTitle="Umów wizytę"
+            >
+              Wczesne wykrywanie trudności rozwojowych metodami Prechtla i HINE
+            </ParagraphWithImageOnTheRight>
+          </div>
+          <div className="max-w-6xl mx-auto">
+            <ParagraphWithImageOnTheRight
+              title="Rehabilitacja najmłodszych"
+              img="/hero-img-mobile.png"
+              alt="Dobre Miejsce w Katowicach zaprasza!"
+              buttonLink="https://dobremiejscefizjoterapiadzieci.booksy.com/"
+              buttonTitle="Umów wizytę"
+              isLeft
+            >
+              Wspieramy prawidłowy rozwój wcześniaków i niemowląt z zaburzeniami
+              napięcia mięśniowego
+            </ParagraphWithImageOnTheRight>
+          </div>
+          <div className="max-w-6xl mx-auto">
+            <ParagraphWithImageOnTheRight
+              title="Diagnostyka rozwoju"
+              img="/hero-img-mobile.png"
+              alt="Dobre Miejsce w Katowicach zaprasza!"
+              buttonLink="https://dobremiejscefizjoterapiadzieci.booksy.com/"
+              buttonTitle="Umów wizytę"
+            >
+              Wczesne wykrywanie trudności rozwojowych metodami Prechtla i HINE
+            </ParagraphWithImageOnTheRight>
           </div>
         </div>
       </section>

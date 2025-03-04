@@ -1,20 +1,13 @@
-import BlockTitle from "../block-title";
-
-export default function Features() {
+export default function FeaturesHomepage() {
   return (
-    <section className="mt-12">
-      {/* <div className="bgy1-blur absolute right-0 top-0 z-0 h-full w-full opacity-20 sm:hidden"></div> */}
+    <section className="mt-12 mb-24">
+      <div className="bgy1-blur absolute right-0 top-0 z-0 h-full w-full opacity-20 sm:hidden"></div>
       <div className="container mx-auto px-8 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
-        <div className="flex flex-col pb-16 text-gray lg:flex-row">
-          {/* <h2 className="robot font-r mb-6 mr-4 basis-2/5 text-4xl font-bold leading-hero lg:text-5xl">
+        {/* <div className="flex flex-col pb-16 text-gray lg:flex-row">
+          <h2 className="robot font-r mb-6 mr-4 basis-2/5 text-4xl font-bold leading-hero lg:text-5xl">
             Rehabilitacja w<br />
             ciepłej atmosferze
-          </h2> */}
-          <BlockTitle
-            title="Rehabilitacja w ciepłej atmosferze"
-            subtitle="Dobre Miejsce w Katowicach"
-            isAlignedLeft
-          />
+          </h2>
           <p className="basis-2/5 pr-6 mb-6 text-lg">
             Rehabilitacja w ciepłej atmosferze bez stresu i płaczu. Diagnozujemy
             i ustalamy plan terapii, ale to mały pacjent ma ostatnie zdanie.
@@ -29,9 +22,9 @@ export default function Features() {
               Umów wizytę
             </a>
           </div>
-        </div>
+        </div> */}
         <div className="flex flex-col gap-8 text-gray md:flex-row">
-          <div className="basis-1/3">
+          <div className="basis-1/4">
             <img
               src="/indywidualne-podejscie-mobile.svg"
               className="lg:hidden lg:w-auto"
@@ -43,15 +36,15 @@ export default function Features() {
               alt="Indywidualne podejście"
             />
             <h2 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
-              Indywidualne podejście
+              Bezpieczna przestrzeń
             </h2>
-            <p className="text-lg">
-              Szanujemy indywidualność każdego dziecka i dajemy jej wybrzmieć —
-              w naszym podejściu to terapeuta dopasowuje się do potrzeb pacjenta
-              i podąża za nimi.
+            <p className="text-base">
+              Terapia przez zabawę w przyjaznej atmosferze. Nasz gabinet to
+              miejsce, gdzie dzieci czują się swobodnie, a rodzice znajdują
+              wsparcie i zrozumienie.{" "}
             </p>
           </div>
-          <div className="basis-1/3">
+          <div className="basis-1/4">
             <img
               src="/skuteczna-terapia-mobile.svg"
               className="lg:hidden lg:w-auto"
@@ -63,15 +56,35 @@ export default function Features() {
               alt="Skuteczna terapia"
             />
             <h2 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
-              Skuteczna terapia
+              Dośiadczenie z najmłodszymi
             </h2>
-            <p className="text-lg">
-              Naszym celem jest, aby terapia była skuteczna, wszystkie dzieci,
-              również te z dużymi wyzwaniami rozwojowymi czuły się u nas
-              bezpiecznie, a ich Rodzice otrzymali niezbędne wsparcie.
+            <p className="text-base">
+              Specjalizujemy się w opiece nad wcześniakami i noworodkami. Nasze
+              doświadczenie z oddziału intensywnej terapii noworodkowej pozwala
+              nam pomagać nawet w najtrudniejszych przypadkach.{" "}
             </p>
           </div>
-          <div className="basis-1/3">
+          <div className="basis-1/4">
+            <img
+              src="/skuteczna-terapia-mobile.svg"
+              className="lg:hidden lg:w-auto"
+              alt="Skuteczna terapia mobile"
+            />
+            <img
+              src="/skuteczna-terapia.svg"
+              className="hidden lg:block lg:w-auto"
+              alt="Skuteczna terapia"
+            />
+            <h2 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
+              Wczesna diagnostyka
+            </h2>
+            <p className="text-base">
+              Wykrywamy i wspieramy rozwój maluszka od pierwszych dni życia.
+              Specjalistyczne metody diagnostyczne (HINE i Prechtla) pozwalają
+              nam działać szybko i skutecznie.
+            </p>
+          </div>
+          <div className="basis-1/4">
             <img
               src="/rodzina-mobile.svg"
               className="lg:hidden lg:w-auto"
@@ -83,18 +96,18 @@ export default function Features() {
               alt="Rodzina"
             />
             <h2 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
-              Rodzina jest dla nas ważna
+              Terapia z sercem
             </h2>
-            <p className="text-lg">
-              Każdy Rodzic, który jest zaniepokojony rozwojem swojego malucha,
-              bądź potrzebuje profilaktycznej wizyty lub wsparcia w kwestiach
-              czynności pielęgnacyjnych jest u nas miło widziany.
+            <p className="text-base">
+              Każde dziecko jest inne i zasługuje na indywidualne podejście.
+              Tworzymy spersonalizowane plany terapii, szanując tempo rozwoju
+              małego pacjenta.
             </p>
           </div>
         </div>
       </div>
-      {/* <div className="bgy2-blur absolute right-0 top-40 h-full w-full opacity-40 sm:hidden"></div>
-      <div className="bgy3-blur absolute bottom-0 left-0 hidden h-full w-full opacity-20 lg:block"></div> */}
+      <div className="bgy2-blur absolute right-0 top-40 h-full w-full opacity-40 sm:hidden"></div>
+      <div className="bgy3-blur absolute bottom-0 left-0 hidden h-full w-full opacity-20 lg:block"></div>
     </section>
   );
 }
