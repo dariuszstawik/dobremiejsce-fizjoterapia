@@ -1,13 +1,13 @@
 export default function HeroSection() {
   return (
     <>
-      <section className="relative grid items-center overflow-hidden pt-[200px] lg:grid-flow-col lg:grid-cols-2 lg:pb-10">
+      <section className="relative grid items-center overflow-hidden pt-[200px] lg:grid-flow-col lg:grid-cols-2">
         <div className="container z-10 mx-auto px-8 sm:max-w-xl md:max-w-full md:px-24 lg:col-start-1 lg:row-start-1 lg:mb-12 lg:max-w-screen-xl lg:px-8">
           <div className="flex flex-col items-center justify-end lg:flex-row">
             <div className="lg:mb-0 lg:max-w-xl lg:pr-5">
               <div className="mb-8 max-w-xl">
                 <h2 className="robot mb-6 max-w-lg font-sans text-4xl font-bold leading-hero text-gray-other sm:text-5xl lg:text-6xl lg:leading-hero">
-                  Fizjoterapia dzieci płynąca z pasji i zaangażowania
+                  Fizjoterapia dzieci płynąca z pasji i&nbsp;zaangażowania
                 </h2>
                 <img
                   src="/decorated-underline.svg"

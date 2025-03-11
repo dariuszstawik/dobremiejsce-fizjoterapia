@@ -10,7 +10,7 @@ export default function TeamSectionHomepage() {
     // }}
 
     <section
-      className="relative w-screen py-8 mb-28  after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full  after:opacity-60"
+      className="relative w-screen py-8  after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full  after:opacity-60"
       // style={{
       //   backgroundImage: 'url("/dobremiejsce009.jpg")',
       //   backgroundPosition: "center",
@@ -18,8 +18,8 @@ export default function TeamSectionHomepage() {
     >
       <div className="container w-[80%] px-4 mx-auto relative z-20">
         <SectionTitle title="Kim jesteśmy?" />
-        <div className="flex flex-nowrap gap-10 -mx-4">
-          <div className="w-full md:max-w-1/2 px-4 py-10 mb-10 bg-gray-100 rounded-xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 -mx-4">
+          <div className="w-full md:max-w-1/2 px-4 py-10 mb-10 bg-peach rounded-xl">
             <div className="h-full py-8 px-10 rounded-md text-center">
               <img
                 className="mx-auto mb-6 rounded-full w-64"
@@ -33,18 +33,20 @@ export default function TeamSectionHomepage() {
                 Terapeutka NDT-Bobath | Specjalistka od wcześniaków
               </span>
               <p className="mb-8 text-coolGray-500 font-medium">
-                Na co dzień w Górnośląskim Centrum Zdrowia Dziecka w Katowicach
-                i Szpitalu Miejskim w Rudzie Śląskiej
+                Na co dzień pracuje w Górnośląskim Centrum Zdrowia Dziecka w
+                Katowicach oraz Szpitalu Miejskim w Rudzie Śląskiej, na
+                oddziałach neonatologii i intensywnej terapii noworodka.
               </p>
               <div className="mr-auto mt-6">
                 <Button
                   className="mx-auto mt-6"
-                  title="dowiedz się więcej"
+                  title="więcej o Kamili"
+                  href="/kamila-wlodarczyk"
                 ></Button>
               </div>
             </div>
           </div>
-          <div className="w-full md:max-w-1/2 px-4 py-10 mb-10 bg-gray-100  rounded-xl">
+          <div className="w-full md:max-w-1/2 px-4 py-10 mb-10 bg-peach  rounded-xl">
             <div className="h-full py-8 px-10  rounded-md text-center">
               <img
                 className="mx-auto mb-6 rounded-full w-64"
@@ -60,12 +62,13 @@ export default function TeamSectionHomepage() {
               <p className="mb-8 text-coolGray-500 font-medium">
                 Doświadczenie w fizjoterapii pediatrycznej zdobywała m.in. w
                 Górnośląskim Centrum Zdrowia Dziecka w Katowicach i Centrum
-                Intensywnej Terapii Olinek w Warszawie
+                Intensywnej Terapii Olinek w Warszawie.
               </p>
               <div className="mr-auto mt-6">
                 <Button
                   className="mx-auto mt-6"
-                  title="dowiedz się więcej"
+                  title="więcej o Martynie"
+                  href="/martyna-cesarczyk"
                 ></Button>
               </div>
             </div>

@@ -12,6 +12,7 @@ export default function ParagraphWithImageOnTheRight({
   buttonTitle,
   buttonLink,
   hasBlueBackground,
+  hasBg,
   isLeft,
   hasSmallerTitle,
   subtitle,
@@ -20,11 +21,11 @@ export default function ParagraphWithImageOnTheRight({
   return (
     <div
       className={`w-full py-10 flex flex-col ${
-        isLeft ? "lg:flex-row" : "lg:flex-row-reverse"
-      }  ${hasBlueBackground && "bg-darkBlue text-white"}`}
+        isLeft ? "lg:flex-row gap-16" : "lg:flex-row-reverse"
+      }  ${hasBlueBackground && "bg-peach px-8 py-16 rounded-xl"}`}
     >
       <Slide
-        direction="left"
+        direction={isLeft ? "left" : "right"}
         delay={200}
         triggerOnce
         className="flex justify-center items-start w-full lg:w-1/2"
@@ -77,7 +78,7 @@ export default function ParagraphWithImageOnTheRight({
           )} */}
         </div>
       </Slide>
-      <div className="w-full lg:w-1/2 mx-6 pr-6 pt-8 lg:pt-0 lg:pr-0 lg:ml-16 lg:mr-16 flex flex-col gap-0">
+      <div className="w-full lg:w-1/2 mr-6 pr-6 pt-8 lg:pt-0 lg:pr-0 lg:mr-16 flex flex-col gap-0">
         {/* <SectionTitle isWhite={hasBlueBackground}>{title}</SectionTitle> */}
         <BlockTitle
           isAlignedLeft
@@ -88,7 +89,11 @@ export default function ParagraphWithImageOnTheRight({
         {children}
         {buttonTitle && buttonLink && (
           <div className="mr-auto mt-6">
-            <Button className="mr-auto mt-6" title={buttonTitle}>
+            <Button
+              className="mr-auto mt-6"
+              title={buttonTitle}
+              href={buttonLink}
+            >
               {/* <Link href={buttonLink}>{buttonTitle}</Link> */}
               {/* {buttonTitle} */}
             </Button>

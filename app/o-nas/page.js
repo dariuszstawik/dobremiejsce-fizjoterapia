@@ -5,6 +5,8 @@ import Features from "../components/features";
 import ListSection from "../components/list-section";
 import ParagraphWithImage from "../components/paragraph-with-image";
 import ParagraphWithImageOnTheRight from "../components/paragraph-with-image-on-the-right";
+import TeamSectionHomepage from "../components/team-section-homepage";
+import Button from "../components/Button";
 
 export default function ONas() {
   return (
@@ -78,7 +80,10 @@ export default function ONas() {
             />
           </div>
 
-          <ParagraphWithImage title="Kompleksowe podejście" img="/hero-img.png">
+          <ParagraphWithImage
+            title="Kompleksowe podejście"
+            img="/dobremiejsce002.jpg"
+          >
             W Dobrym Miejscu oferujemy kompleksową opiekę terapeutyczną dla
             dzieci od pierwszych dni życia. Specjalizujemy się w rehabilitacji
             wcześniaków i niemowląt z zaburzeniami napięcia mięśniowego,
@@ -99,7 +104,7 @@ export default function ONas() {
           <ListSection />
 
           <div className="max-w-6xl mx-auto">
-            <ParagraphWithImageOnTheRight
+            {/* <ParagraphWithImageOnTheRight
               title="Rehabilitacja najmłodszych"
               img="/hero-img-mobile.png"
               alt="Dobre Miejsce w Katowicach zaprasza!"
@@ -144,6 +149,56 @@ export default function ONas() {
               buttonTitle="Umów wizytę"
             >
               Wczesne wykrywanie trudności rozwojowych metodami Prechtla i HINE
+            </ParagraphWithImageOnTheRight> */}
+
+            {/* <TeamSectionHomepage /> */}
+
+            <ParagraphWithImage
+              title="Nasz zespół"
+              subtitle="Dobre Miejsce"
+              img="/dobremiejsce005.jpg"
+              alt="Dobre Miejsce w Katowicach zaprasza!"
+              // buttonLink="https://dobremiejscefizjoterapiadzieci.booksy.com/"
+              // buttonTitle="Umów wizytę"
+              isLeft
+            >
+              <>
+                <h2 className="mb-3 mt-6 text-2xl font-bold text-gray">
+                  Kamila Włodarczyk
+                </h2>
+                Certyfikowana terapeutka NDT-Bobath, specjalizująca się w
+                rehabilitacji wcześniaków i noworodków. Jej doświadczenie w
+                pracy na oddziale intensywnej terapii noworodka przekłada się na
+                wyjątkowe zrozumienie potrzeb najmłodszych pacjentów i ich
+                rodzin.
+                <div className="mr-auto mt-6 mb-10">
+                  <Button title="więcej" />
+                </div>
+                <h2 className="mb-3 mt-6  text-2xl font-bold text-gray">
+                  Martyna Cesarczyk
+                </h2>
+                Fizjoterapeutka pediatryczna z bogatym doświadczeniem w terapii
+                neurorozwojowej. Specjalizuje się w pracy z dziećmi z mózgowym
+                porażeniem dziecięcym i innymi schorzeniami neurologicznymi oraz
+                w korekcji wad postawy.
+                <div className="mr-auto mt-6 mb-10">
+                  <Button title="więcej" />
+                </div>
+              </>
+            </ParagraphWithImage>
+
+            <ParagraphWithImageOnTheRight
+              title="Dobre Miejsce w Katowicach zaprasza!"
+              img="/dobremiejsce009.jpg"
+              alt="Dobre Miejsce w Katowicach zaprasza!"
+              buttonLink="https://dobremiejscefizjoterapiadzieci.booksy.com/"
+              buttonTitle="Umów wizytę"
+              // isLeft
+            >
+              Jeśli szukasz profesjonalnej opieki fizjoterapeutycznej dla
+              swojego dziecka, prowadzonej z pasją i zaangażowaniem, jesteś we
+              właściwym miejscu. W Dobrym Miejscu każde dziecko otrzymuje szansę
+              na harmonijny rozwój, a rodzice znajdują zrozumienie i wsparcie.
             </ParagraphWithImageOnTheRight>
           </div>
         </div>

@@ -60,178 +60,203 @@ export default function Navbar() {
   };
 
   return (
-    <div
-      className={`text-base fixed top-0 left-0 w-screen flex justify-between items-center px-10 lg:pl-16 lg:pr-24 py-4 z-50 transition-all duration-300 ${
-        hasScrolled ? "bg-white h-24 shadow-sm" : "bg-transparent h-36"
+    <header
+      className={`pb-10 fixed top-0 left-0 z-50  w-full transition-all duration-300 ${
+        hasScrolled ? "bg-white h-32 shadow-sm" : "bg-transparent h-36"
       }`}
     >
-      <Link href="/">
-        <img
-          src="/logo.svg"
-          className={`${hasScrolled ? "h-[50%]" : "h-[100%]"}`}
-          alt="Dobre Miejsce Logo"
-          onClick={closeMobileMenu}
-        />
-      </Link>
-
-      <div className="flex justify-end items-center h-full gap-6">
-        <ul
-          className={
-            isMobileMenuActive
-              ? " list-none absolute z-40 w-screen top-full left-0 bg-white py-4 flex flex-col justify-center items-center gap-10 lg:static lg:flex-row lg:h-full"
-              : " list-none flex-col justify-center align-center items-center gap-16 lg:flex-row my-4 hidden lg:flex lg:justify-end lg:h-full"
-          }
+      <nav className="px-4 pt-6 lg:px-6 ">
+        {/* <div
+          className={`text-base flex justify-between items-center px-4 z-50 transition-all duration-300 mx-auto max-w-screen-xl flex-wrap ${
+            hasScrolled ? "bg-white h-24 shadow-sm" : "bg-transparent h-36"
+          }`}
+        > */}
+        <div
+          className={`mx-auto flex max-w-screen-xl flex-wrap items-center justify-between `}
         >
-          <li
-            onClick={closeMobileMenu}
-            className="hover:text-orange cursor-pointer"
-          >
-            <Link
-              href="/"
-              // className={`${isActive && "text-primaryBlue"}`}
-              onClick={handleRefresh}
-            >
-              Start
-            </Link>
-          </li>
+          <Link href="/" className="">
+            <img
+              src="/logo.svg"
+              className={` transition-all duration-300 ${
+                hasScrolled ? "h-20" : "h-[80%]"
+              }`}
+              alt="Dobre Miejsce Logo"
+              onClick={closeMobileMenu}
+            />
+          </Link>
 
-          <li
-            onClick={closeMobileMenu}
-            className="hover:text-orange cursor-pointer"
-          >
-            <Link
-              href="/o-nas"
-              // className={`${isActive && "text-primaryBlue"}`}
-              onClick={handleRefresh}
+          <div className="flex justify-end items-center h-full text-heavy">
+            <ul
+              className={
+                isMobileMenuActive
+                  ? " list-none absolute z-40 w-screen top-full left-0 bg-white py-4 flex flex-col justify-center items-center gap-10 lg:static lg:flex-row lg:h-full"
+                  : " list-none flex-col justify-center align-center items-center gap-16 lg:flex-row hidden lg:flex lg:justify-end lg:h-full lg:gap-10"
+              }
             >
-              o nas
-            </Link>
-          </li>
+              <li
+                onClick={closeMobileMenu}
+                className="hover:text-orange cursor-pointer"
+              >
+                <Link
+                  href="/"
+                  // className={`${isActive && "text-primaryBlue"}`}
+                  onClick={handleRefresh}
+                >
+                  Start
+                </Link>
+              </li>
 
-          <li
-            onClick={closeMobileMenu}
-            onMouseEnter={() => handleHover("oferta")}
-            onMouseLeave={() => handleHover("")}
-            className="relative h-full flex justify-center items-center"
-          >
-            <Link
-              href="/produkty"
-              // className={`${isActive && "text-primaryBlue"}`}
+              <li
+                onClick={closeMobileMenu}
+                className="hover:text-orange cursor-pointer"
+              >
+                <Link
+                  href="/o-nas"
+                  // className={`${isActive && "text-primaryBlue"}`}
+                  onClick={handleRefresh}
+                >
+                  O nas
+                </Link>
+              </li>
 
-              className="cursor-pointer hover:text-orange"
-              onClick={handleRefresh}
-            >
-              oferta
-            </Link>
-            {isHovered === "oferta" && (
-              <div
-                className={`
+              <li
+                onClick={closeMobileMenu}
+                onMouseEnter={() => handleHover("oferta")}
+                onMouseLeave={() => handleHover("")}
+                className="relative h-full flex justify-center items-center"
+              >
+                <Link
+                  href=""
+                  // className={`${isActive && "text-primaryBlue"}`}
+
+                  className="cursor-pointer hover:text-orange"
+                  onClick={handleRefresh}
+                >
+                  Oferta
+                </Link>
+                {isHovered === "oferta" && (
+                  <div
+                    className={`
                 absolute w-96 bg-white -left-10 top-full flex flex-col rounded
               `}
+                  >
+                    <ul className="flex flex-col gap-4 p-6">
+                      <Link href="/rehabilitacja-wczesniakow">
+                        <li className="flex gap-4 items-center hover:text-orange">
+                          rehabilitacja wcześniaków{" "}
+                        </li>
+                      </Link>
+
+                      <Link href="/rehabilitacja-noworodkow">
+                        <li className="flex gap-4 items-center hover:text-orange">
+                          rehabilitacja noworodków i niemowląt
+                        </li>
+                      </Link>
+
+                      <Link href="terapia-si-w-katowicach">
+                        <li className="flex gap-4 items-center hover:text-orange">
+                          terapia SI w Katowicach
+                        </li>
+                      </Link>
+
+                      <Link href="/terapia-wad-postawy-u-dzieci">
+                        <li className="flex gap-4 items-center hover:text-orange">
+                          terapia wad postawy u dzieci
+                        </li>
+                      </Link>
+
+                      <Link href="/wkladki-ortopedyczne-igli-junior">
+                        <li className="flex gap-4 items-center hover:text-orange">
+                          wkładki ortopedyczne IGLI Junior
+                        </li>
+                      </Link>
+
+                      <Link href="/diagnostyka-metoda-prechtla">
+                        <li className="flex gap-4 items-center hover:text-orange">
+                          diagnostyka metodą Prechtla
+                        </li>
+                      </Link>
+
+                      <Link href="/diagnostyka-hine">
+                        <li className="flex gap-4 items-center hover:text-orange">
+                          diagnostyka Hine
+                        </li>
+                      </Link>
+                    </ul>
+                  </div>
+                )}
+              </li>
+
+              {/* <li
+                onClick={closeMobileMenu}
+                className="hover:text-orange cursor-pointer"
               >
-                <ul className="flex flex-col gap-4 p-6">
-                  <Link href="/rehabilitacja-wczesniakow">
-                    <li className="flex gap-4 items-center hover:text-orange">
-                      rehabilitacja wcześniaków{" "}
-                    </li>
-                  </Link>
+                <Link
+                  href="kamila-wlodarczyk"
+                  // className={`${isActive && "text-primaryBlue"}`}
+                  onClick={handleRefresh}
+                >
+                  Kamila
+                </Link>
+              </li>
+              <li
+                onClick={closeMobileMenu}
+                className="hover:text-orange cursor-pointer"
+              >
+                <Link
+                  href="/martyna-cesarczyk"
+                  // className={`${isActive && "text-primaryBlue"}`}
+                  onClick={handleRefresh}
+                >
+                  Martyna
+                </Link>
+              </li> */}
+              <li
+                onClick={closeMobileMenu}
+                className="hover:text-orange cursor-pointer"
+              >
+                <Link
+                  href="/cennik"
+                  // className={`${isActive && "text-primaryBlue"}`}
+                  onClick={handleRefresh}
+                >
+                  Cennik
+                </Link>
+              </li>
+              <li
+                onClick={closeMobileMenu}
+                className="hover:text-orange cursor-pointer"
+              >
+                <Link
+                  href="/blog"
+                  // className={`${isActive && "text-primaryBlue"}`}
+                  onClick={handleRefresh}
+                >
+                  Blog
+                </Link>
+              </li>
+              <li
+                onClick={closeMobileMenu}
+                className="hover:text-orange cursor-pointer"
+              >
+                <Link
+                  href="/kontakt"
+                  // className={`${isActive && "text-primaryBlue"}`}
+                  onClick={handleRefresh}
+                >
+                  Kontakt
+                </Link>
+              </li>
+            </ul>
 
-                  <Link href="/rehabilitacja-noworodkow">
-                    <li className="flex gap-4 items-center hover:text-orange">
-                      rehabilitacja noworodków i niemowląt
-                    </li>
-                  </Link>
-
-                  <Link href="terapia SI w Katowicach">
-                    <li className="flex gap-4 items-center hover:text-orange">
-                      terapia SI w Katowicach
-                    </li>
-                  </Link>
-
-                  <Link href="/terapia-wad-postawy-u-dzieci">
-                    <li className="flex gap-4 items-center hover:text-orange">
-                      terapia wad postawy u dzieci
-                    </li>
-                  </Link>
-
-                  <Link href="/wkladki-ortopedyczne-igli-junior">
-                    <li className="flex gap-4 items-center hover:text-orange">
-                      wkładki ortopedyczne IGLI Junior
-                    </li>
-                  </Link>
-
-                  <Link href="/diagnostyka-metoda-prechtla">
-                    <li className="flex gap-4 items-center hover:text-orange">
-                      diagnostyka metodą Prechtla
-                    </li>
-                  </Link>
-
-                  <Link href="/diagnostyka-hine">
-                    <li className="flex gap-4 items-center hover:text-orange">
-                      diagnostyka Hine
-                    </li>
-                  </Link>
-                </ul>
-              </div>
-            )}
-          </li>
-
-          <li
-            onClick={closeMobileMenu}
-            className="hover:text-orange cursor-pointer"
-          >
-            <Link
-              href="kamila"
-              // className={`${isActive && "text-primaryBlue"}`}
-              onClick={handleRefresh}
-            >
-              Kamila
-            </Link>
-          </li>
-          <li
-            onClick={closeMobileMenu}
-            className="hover:text-orange cursor-pointer"
-          >
-            <Link
-              href="/martyna"
-              // className={`${isActive && "text-primaryBlue"}`}
-              onClick={handleRefresh}
-            >
-              Martyna
-            </Link>
-          </li>
-          <li
-            onClick={closeMobileMenu}
-            className="hover:text-orange cursor-pointer"
-          >
-            <Link
-              href="/cennik"
-              // className={`${isActive && "text-primaryBlue"}`}
-              onClick={handleRefresh}
-            >
-              cennik
-            </Link>
-          </li>
-          <li
-            onClick={closeMobileMenu}
-            className="hover:text-orange cursor-pointer"
-          >
-            <Link
-              href="/kontakt"
-              // className={`${isActive && "text-primaryBlue"}`}
-              onClick={handleRefresh}
-            >
-              kontakt
-            </Link>
-          </li>
-        </ul>
-
-        <Hamburger
-          hasCloseIcon={isMobileMenuActive ? true : false}
-          toggleMobileMenu={toggleMobileMenu}
-        />
-      </div>
-    </div>
+            <Hamburger
+              hasCloseIcon={isMobileMenuActive ? true : false}
+              toggleMobileMenu={toggleMobileMenu}
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
   );
 }
 

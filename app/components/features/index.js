@@ -1,11 +1,12 @@
 import BlockTitle from "../block-title";
+import Button from "../Button";
 
 export default function Features() {
   return (
     <section className="mt-12">
       {/* <div className="bgy1-blur absolute right-0 top-0 z-0 h-full w-full opacity-20 sm:hidden"></div> */}
       <div className="container mx-auto px-8 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
-        <div className="flex flex-col pb-16 text-gray lg:flex-row">
+        <div className="flex flex-col pb-16 text-gray lg:flex-row items-start box-content">
           {/* <h2 className="robot font-r mb-6 mr-4 basis-2/5 text-4xl font-bold leading-hero lg:text-5xl">
             Rehabilitacja w<br />
             ciepłej atmosferze
@@ -15,11 +16,11 @@ export default function Features() {
             subtitle="Dobre Miejsce w Katowicach"
             isAlignedLeft
           />
-          <p className="basis-2/5 pr-6 mb-6 text-lg">
+          <p className="basis-2/5 pr-6 text-lg">
             Rehabilitacja w ciepłej atmosferze bez stresu i płaczu. Diagnozujemy
             i ustalamy plan terapii, ale to mały pacjent ma ostatnie zdanie.
           </p>
-          <div className="mr-6 basis-1/5 justify-center lg:text-right">
+          <div className="mr-6 basis-1/5 justify-center lg:text-right mt-4">
             <a
               className="whitespace-nowrap rounded-full bg-orange px-5 py-4 text-white no-underline shadow-lg hover:bg-heavy hover:text-white"
               href="https://dobremiejscefizjoterapiadzieci.booksy.com/"
@@ -28,6 +29,7 @@ export default function Features() {
             >
               Umów wizytę
             </a>
+            {/* <Button title="Umów wizytę" /> */}
           </div>
         </div>
         <div className="flex flex-col gap-8 text-gray md:flex-row">

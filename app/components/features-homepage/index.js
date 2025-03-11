@@ -26,37 +26,17 @@ export default function FeaturesHomepage() {
         <div className="flex flex-col gap-8 text-gray md:flex-row">
           <div className="basis-1/4">
             <img
-              src="/indywidualne-podejscie-mobile.svg"
+              src="/doswiadczenie-z-najmlodszymi-mobile.svg"
               className="lg:hidden lg:w-auto"
-              alt="Indywidualne podejście mobile"
+              alt="Doświadczenie z najmłodszymi"
             />
             <img
-              src="/indywidualne-podejscie.svg"
+              src="/doswiadczenie-z-najmlodszymi.svg"
               className="hidden lg:block lg:w-auto"
-              alt="Indywidualne podejście"
+              alt="Doświadczenie z najmłodszymi"
             />
             <h2 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
-              Bezpieczna przestrzeń
-            </h2>
-            <p className="text-base">
-              Terapia przez zabawę w przyjaznej atmosferze. Nasz gabinet to
-              miejsce, gdzie dzieci czują się swobodnie, a rodzice znajdują
-              wsparcie i zrozumienie.{" "}
-            </p>
-          </div>
-          <div className="basis-1/4">
-            <img
-              src="/skuteczna-terapia-mobile.svg"
-              className="lg:hidden lg:w-auto"
-              alt="Skuteczna terapia mobile"
-            />
-            <img
-              src="/skuteczna-terapia.svg"
-              className="hidden lg:block lg:w-auto"
-              alt="Skuteczna terapia"
-            />
-            <h2 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
-              Dośiadczenie z najmłodszymi
+              Doświadczenie z najmłodszymi
             </h2>
             <p className="text-base">
               Specjalizujemy się w opiece nad wcześniakami i noworodkami. Nasze
@@ -66,14 +46,14 @@ export default function FeaturesHomepage() {
           </div>
           <div className="basis-1/4">
             <img
-              src="/skuteczna-terapia-mobile.svg"
+              src="/wczesna-diagnostyka-mobile.svg"
               className="lg:hidden lg:w-auto"
-              alt="Skuteczna terapia mobile"
+              alt="Wczesna diagnostyka"
             />
             <img
-              src="/skuteczna-terapia.svg"
+              src="/wczesna-diagnostyka.svg"
               className="hidden lg:block lg:w-auto"
-              alt="Skuteczna terapia"
+              alt="Wczesna diagnostyka"
             />
             <h2 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
               Wczesna diagnostyka
@@ -86,14 +66,14 @@ export default function FeaturesHomepage() {
           </div>
           <div className="basis-1/4">
             <img
-              src="/rodzina-mobile.svg"
+              src="/terapia-z-sercem-mobile.svg"
               className="lg:hidden lg:w-auto"
-              alt="Rodzina mobile"
+              alt="Terapia z sercem"
             />
             <img
-              src="/rodzina.svg"
+              src="/terapia-z-sercem.svg"
               className="hidden lg:block lg:w-auto"
-              alt="Rodzina"
+              alt="Terapia z sercem"
             />
             <h2 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
               Terapia z sercem
@@ -102,6 +82,26 @@ export default function FeaturesHomepage() {
               Każde dziecko jest inne i zasługuje na indywidualne podejście.
               Tworzymy spersonalizowane plany terapii, szanując tempo rozwoju
               małego pacjenta.
+            </p>
+          </div>
+          <div className="basis-1/4">
+            <img
+              src="/bezpieczna-przestrzen-mobile.svg"
+              className="lg:hidden lg:w-auto"
+              alt="Bezpieczna przestrzeń"
+            />
+            <img
+              src="/bezpieczna-przestrzen.svg"
+              className="hidden lg:block lg:w-auto"
+              alt="Bezpieczna przestrzeń"
+            />
+            <h2 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
+              Bezpieczna przestrzeń
+            </h2>
+            <p className="text-base">
+              Terapia przez zabawę w przyjaznej atmosferze. Nasz gabinet to
+              miejsce, gdzie dzieci czują się swobodnie, a rodzice znajdują
+              wsparcie i zrozumienie.{" "}
             </p>
           </div>
         </div>

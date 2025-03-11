@@ -21,6 +21,7 @@ body {
   font-weight: 400;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 .bgx-blur {
   background: radial-gradient(

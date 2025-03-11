@@ -18,6 +18,7 @@ import FeaturesHomepage from "./components/features-homepage";
 import ParagraphWithImageOnTheRight from "./components/paragraph-with-image-on-the-right";
 import Button from "./components/Button";
 import BlogCard from "./components/blog-card";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -43,11 +44,19 @@ export default function Home() {
             <>
               Wspieramy prawidłowy rozwój wcześniaków i niemowląt z zaburzeniami
               napięcia mięśniowego
-              <div className="mr-auto mt-6">
-                <Button className="mr-auto mt-6" title="dowiedz się więcej">
-                  {/* <Link href={buttonLink}>{buttonTitle}</Link> */}
-                  {/* {buttonTitle} */}
-                </Button>
+              <div className="flex flex-col gap-6 mr-auto mt-6">
+                <Button
+                  className="mr-auto mt-6"
+                  title="rehabilitacja wcześniaków"
+                  href="/rehabilitacja-wczesniakow"
+                />
+
+                <Button
+                  className="mr-auto mt-6"
+                  title="rehabilitacja niemowląt"
+                  href="/rehabilitacja-noworodkow"
+                  // hasSecondBg
+                />
               </div>
             </>
           </ParagraphWithImageOnTheRight>
@@ -61,12 +70,26 @@ export default function Home() {
             subtitle="oferta"
             img="/003blob.png"
             alt="Dobre Miejsce w Katowicach zaprasza!"
-            buttonLink="https://dobremiejscefizjoterapiadzieci.booksy.com/"
-            buttonTitle="dowiedz się więcej"
+            // buttonLink="https://dobremiejscefizjoterapiadzieci.booksy.com/"
+            // buttonTitle="dowiedz się więcej"
             // hasSmallerTitle
             // hasSmallerImg
           >
             Wczesne wykrywanie trudności rozwojowych metodami Prechtla i HINE
+            <div className="flex flex-col gap-6 mr-auto mt-6">
+              <Button
+                className="mr-auto mt-6"
+                title="diagnostyka Prechtla"
+                href="/diagnostyka-metoda-prechtla"
+              />
+
+              <Button
+                className="mr-auto mt-6"
+                title="diagnostyka Hine"
+                href="/diagnostyka-hine"
+                // hasSecondBg
+              />
+            </div>
           </ParagraphWithImageOnTheRight>
         </div>
         {/* </div> */}
@@ -78,7 +101,7 @@ export default function Home() {
             subtitle="oferta"
             img="/terapiasiblob.png"
             alt="Dobre Miejsce w Katowicach zaprasza!"
-            buttonLink="https://dobremiejscefizjoterapiadzieci.booksy.com/"
+            buttonLink="/terapia-si-w-katowicach"
             buttonTitle="dowiedz się więcej"
             isLeft
             // hasSmallerTitle
@@ -93,7 +116,7 @@ export default function Home() {
             subtitle="oferta"
             img="/wadypostawyblob.png"
             alt="Dobre Miejsce w Katowicach zaprasza!"
-            buttonLink="https://dobremiejscefizjoterapiadzieci.booksy.com/"
+            buttonLink="/terapia-wad-postawy-u-dzieci"
             buttonTitle="dowiedz się więcej"
             // hasSmallerTitle
           >
@@ -138,11 +161,18 @@ export default function Home() {
       {/* <BlockWith3Blobs /> */}
       <SectionTitle title="Dlaczego my?" />
       <FeaturesHomepage />
-      <BlogCard />
+      <div className="container my-32 mb-32 px-4 mx-auto max-w-[90%] ">
+        <SectionTitle title="Blog: pytania rodziców" />
+        <div className="w-full flex flex-wrap gap-16 justify-center items-center ">
+          <BlogCard title="Metoda Vojty vs. Bobath - która lepsza dla naszego dziecka?" />
+          <BlogCard title="Witamy na blogu!" />
+        </div>
+      </div>
+
       {/* <ListSection /> */}
       {/* <Pricing /> */}
       {/* <TeamSection /> */}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

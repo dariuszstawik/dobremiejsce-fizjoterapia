@@ -14,7 +14,7 @@
 export default function SectionTitle({ title, isWhite, isAlignedLeft }) {
   return (
     <div
-      className={`my-16 flex flex-col ${
+      className={`mt-24 mb-16 flex flex-col ${
         !isAlignedLeft && "justify-center items-center"
       } gap-2`}
     >
