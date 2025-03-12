@@ -20,7 +20,7 @@ export default function BlogCard({ title, content, slug, img }) {
       </div>
       <div className="w-1/2 flex flex-col justify-between items-start px-6 py-8  rounded-b sm:px-8">
         <div className="flex flex-col justify-start items-start">
-          <h5 className="mb-2 text-xl text-left font-bold leading-none sm:text-xl">
+          <h5 className="mb-2 text-lg text-left font-semibold leading-none md:text-xl">
             {title}
           </h5>
         </div>

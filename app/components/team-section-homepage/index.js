@@ -20,7 +20,7 @@ export default function TeamSectionHomepage() {
         <SectionTitle title="Kim jesteśmy?" />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 -mx-4">
           <div className="w-full md:max-w-1/2 px-4 py-10 mb-10 bg-peach rounded-xl">
-            <div className="h-full py-8 px-10 rounded-md text-center">
+            <div className="h-full py-8 px-4 lg:px-10 rounded-md text-center">
               <img
                 className="mx-auto mb-6 rounded-full w-64"
                 src="/kamila-wlodarczyk.png"

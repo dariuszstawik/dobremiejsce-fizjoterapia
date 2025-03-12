@@ -59,7 +59,10 @@ export default function Footer() {
                   <p className="leading-loose my-0">40-000 Katowice</p>
                   <div className="leading-loose my-0">
                     <Pin className="inline-block mr-2 text-secondaryOrange" />
-                    <a href="" className="underline">
+                    <a
+                      href="https://www.google.pl/maps/place/Dobre+Miejsce+-+Fizjoterapia+dzieci/@50.2433052,19.0117664,17z/data=!3m1!4b1!4m6!3m5!1s0x4716cf8e2b49bc2b:0x4c8eb5961bebe760!8m2!3d50.2433052!4d19.0143413!16s%2Fg%2F11st_59285?entry=ttu&g_ep=EgoyMDI1MDMwOC4wIKXMDSoASAFQAw%3D%3D"
+                      className="underline"
+                    >
                       zobacz na mapie
                     </a>
                   </div>
