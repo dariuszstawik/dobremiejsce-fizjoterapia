@@ -128,9 +128,12 @@ export default function Navbar() {
                 onMouseEnter={() => handleHover("oferta")}
                 onClick={() => {
                   handleClick("oferta");
-                  closeMobileMenu();
+                  // closeMobileMenu();
                 }}
-                onMouseLeave={() => handleHover("")}
+                onMouseLeave={() => {
+                  handleHover("");
+                  handleClick("");
+                }}
                 className="relative h-full flex justify-center items-center"
               >
                 {/* <Link
@@ -140,7 +143,7 @@ export default function Navbar() {
                 {handleRefresh}>  */}
                 Oferta
                 {/* </Link> */}
-                {isHovered === "oferta" && (
+                {(isHovered === "oferta" || isClicked === "oferta") && (
                   <div
                     className={`
                 absolute w-96 bg-white -left-10 top-full flex flex-col rounded
