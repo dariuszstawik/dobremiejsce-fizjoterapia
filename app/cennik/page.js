@@ -21,7 +21,7 @@ export default function Cennik() {
             // hasBlueBackground
             isLeft
           >
-            <div className="flex flex-col gap-2 mb-4 pl-8 ">
+            <div className="flex flex-col gap-2 mb-4">
               <div className="rounded-2xl p-8 pr-0 pb-2">
                 <ul
                   className="flex flex-col gap-4"
