@@ -18,6 +18,7 @@ export default function Navbar() {
 
   const [isMobileMenuActive, setIsMobileMenuActive] = useState("");
   const [isHovered, setIsHovered] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
 
   const pathname = usePathname();
@@ -47,6 +48,9 @@ export default function Navbar() {
     setIsHovered(item);
   };
 
+  const handleClick = (item) => {
+    setIsClicked(item);
+  };
   const toggleMobileMenu = () => {
     setIsMobileMenuActive(!isMobileMenuActive);
   };
@@ -120,20 +124,22 @@ export default function Navbar() {
               </li>
 
               <li
-                onClick={closeMobileMenu}
+                // onClick={closeMobileMenu}
                 onMouseEnter={() => handleHover("oferta")}
+                onClick={() => {
+                  handleClick("oferta");
+                  closeMobileMenu();
+                }}
                 onMouseLeave={() => handleHover("")}
                 className="relative h-full flex justify-center items-center"
               >
-                <Link
-                  href=""
-                  // className={`${isActive && "text-primaryBlue"}`}
-
-                  className="cursor-pointer hover:text-orange"
-                  onClick={handleRefresh}
-                >
-                  Oferta
-                </Link>
+                {/* <Link
+                  href="" */}
+                {/* className={`${isActive && "text-primaryBlue"}`}
+                className="cursor-pointer hover:text-orange" onClick=
+                {handleRefresh}>  */}
+                Oferta
+                {/* </Link> */}
                 {isHovered === "oferta" && (
                   <div
                     className={`
