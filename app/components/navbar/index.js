@@ -126,9 +126,13 @@ export default function Navbar() {
               <li
                 // onClick={closeMobileMenu}
                 onMouseEnter={() => handleHover("oferta")}
+                // onClick={() => {
+                //   handleClick("oferta");
+                //   closeMobileMenu();
+                // }}
                 onClick={() => {
-                  handleClick("oferta");
-                  // closeMobileMenu();
+                  // Logika toggle - jeśli jest "oferta", zmień na pusty string, w przeciwnym przypadku ustaw "oferta"
+                  setIsClicked(isClicked === "oferta" ? "" : "oferta");
                 }}
                 onMouseLeave={() => {
                   handleHover("");
