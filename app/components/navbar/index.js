@@ -125,11 +125,12 @@ export default function Navbar() {
 
               <li
                 // onClick={closeMobileMenu}
-                onMouseEnter={() => handleHover("oferta")}
-                // onClick={() => {
-                //   handleClick("oferta");
-                //   closeMobileMenu();
-                // }}
+                onMouseEnter={() => {
+                  // Reaguj na najechanie myszą tylko na desktopie
+                  if (window.innerWidth > 1024) {
+                    handleHover("oferta");
+                  }
+                }}
                 onClick={() => {
                   // Logika toggle - jeśli jest "oferta", zmień na pusty string, w przeciwnym przypadku ustaw "oferta"
                   setIsClicked(isClicked === "oferta" ? "" : "oferta");
