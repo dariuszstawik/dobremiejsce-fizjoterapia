@@ -32,7 +32,7 @@ export default function MartynaCesarczyk() {
                 {/* <span className="block text-3xl">Katowice</span> */}
               </h1>
               {/* </h3> */}
-              <div className="mb-6 text-2xl max-w-5xl ">
+              <div className="mb-6 text:lg md:text-xl lg:text-2xl max-w-5xl ">
                 <div className="flex items-center gap-4 mb-2">
                   <Mail className="text-orange" />{" "}
                   martyna.cesarczyk@dobremiejsce-fizjoterapia.pl

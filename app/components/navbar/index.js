@@ -140,7 +140,7 @@ export default function Navbar() {
                   // handleClick("");
                   // closeMobileMenu();
                 }}
-                className="relative h-full flex justify-center items-center"
+                className="relative h-full flex justify-center items-center cursor-pointer"
               >
                 {/* <Link
                   href="" */}
