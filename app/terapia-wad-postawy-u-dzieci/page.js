@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "../components/navbar";
 import PageTemplate from "../components/page-template";
 
@@ -142,10 +143,16 @@ export default function TerapiaWadPostawyUDzieci() {
                     </p>
                   </li>
                   <li className="mb-2 pl-4 lg:mb-2">
-                    <p className="relative -top-2">
-                      dobór indywidualnie dopasowanych wkładek ortopedycznych
-                      IGLI
-                    </p>
+                    <div className="relative -top-2">
+                      dobór indywidualnie dopasowanych{" "}
+                      <Link
+                        href="/wkladki-ortopedyczne-igli-junior"
+                        className="text-orange"
+                      >
+                        wkładk ortopedycznych IGLI Junior
+                      </Link>
+                      ,
+                    </div>
                   </li>
                   <li className="mb-2 pl-4 lg:mb-2">
                     <p className="relative -top-2">
