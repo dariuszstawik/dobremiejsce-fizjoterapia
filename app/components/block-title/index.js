@@ -16,7 +16,7 @@ export default function BlockTitle({
       </p>
       <h2
         className={`${
-          hasSmallerTitle ? "text-2xl" : "text-4xl"
+          hasSmallerTitle ? "text-xl md:text-2xl" : "text-2xl md:text-4xl"
         } font-bold text-gray ${isAlignedLeft ? "text-left" : "text-center"} ${
           isWhite && "text-white"
         } `}

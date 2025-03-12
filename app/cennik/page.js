@@ -9,7 +9,7 @@ export default function Cennik() {
       {/* <div className="mt-44">
         <Pricing />
       </div> */}
-      <section className=" py-10 mt-12 md:pt-32 container mx-auto px-8 sm:max-w-xl md:max-w-full md:px-24 lg:px-8 lg:w-screen">
+      <section className=" py-32 mt-12 md:pt-32 container mx-auto px-8 sm:max-w-xl md:max-w-full md:px-24 lg:px-8 lg:w-screen">
         <div className="w-[80%] mx-auto">
           <ParagraphWithImageOnTheRight
             title="Cennik"
