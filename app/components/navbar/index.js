@@ -136,7 +136,7 @@ export default function Navbar() {
                 }}
                 onMouseLeave={() => {
                   handleHover("");
-                  handleClick("");
+                  // handleClick("");
                   // closeMobileMenu();
                 }}
                 className="relative h-full flex justify-center items-center"

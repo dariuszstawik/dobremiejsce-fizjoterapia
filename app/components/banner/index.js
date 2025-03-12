@@ -13,7 +13,11 @@ export default function Banner({ children, icon }) {
         />
       </div>
 
-      <HandHeart size={148} absoluteStrokeWidth className="shrink-0" />
+      <HandHeart
+        size={148}
+        absoluteStrokeWidth
+        className="shrink-0 hidden md:block"
+      />
     </div>
   );
 }
