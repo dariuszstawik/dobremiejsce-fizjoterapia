@@ -19,7 +19,7 @@ export default function DiagnostykaMetodaPrechtla() {
       >
         {
           <>
-            <div className="max-w-5xl mx-auto">
+            <div className="max-w-4xl mx-auto">
               <h2 className="mb-3 mt-6 text-3xl font-bold text-gray">
                 Czym jest metoda Prechtla?
               </h2>

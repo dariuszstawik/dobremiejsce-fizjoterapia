@@ -23,7 +23,7 @@ export default function RehabilitacjaWczesniakow() {
       >
         {
           <>
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-4xl mx-auto">
               <h2 className="mb-3 mt-2 text-3xl font-bold text-gray">
                 Dlaczego rehabilitacja wcześniaków jest tak istotna?
               </h2>

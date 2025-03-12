@@ -33,7 +33,7 @@ export default function ONas() {
             <h1 className="mb-6 font-heading text-4xl md:text-5xl font-bold leading-tight max-w-5xl">
               Dobre Miejsce
               <br />
-              dla Twojego dziecka - o nas
+              dla Twojego dziecka -&nbsp;o&nbsp;nas
             </h1>
             {/* <a
               className="whitespace-nowrap rounded-full bg-orange px-5 py-4 text-white no-underline shadow-lg hover:bg-heavy hover:text-white"
@@ -172,7 +172,7 @@ export default function ONas() {
                 wyjątkowe zrozumienie potrzeb najmłodszych pacjentów i ich
                 rodzin.
                 <div className="mr-auto mt-6 mb-10">
-                  <Button title="więcej" />
+                  <Button title="więcej" href="/kamila-wlodarczyk" />
                 </div>
                 <h2 className="mb-3 mt-6  text-2xl font-bold text-gray">
                   Martyna Cesarczyk
@@ -182,7 +182,7 @@ export default function ONas() {
                 porażeniem dziecięcym i innymi schorzeniami neurologicznymi oraz
                 w korekcji wad postawy.
                 <div className="mr-auto mt-6 mb-10">
-                  <Button title="więcej" />
+                  <Button title="więcej" href="/martyna-cesarczyk" />
                 </div>
               </>
             </ParagraphWithImage>
