@@ -79,7 +79,6 @@ export default function ParagraphWithImageOnTheRight({
         </div>
       </Slide>
       <div className="w-full lg:w-1/2 mr-6 pr-6 pt-8 lg:pt-0 lg:pr-0 lg:mr-16 flex flex-col gap-0">
-        {/* <SectionTitle isWhite={hasBlueBackground}>{title}</SectionTitle> */}
         <BlockTitle
           isAlignedLeft
           subtitle={subtitle}

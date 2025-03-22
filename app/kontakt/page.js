@@ -18,15 +18,15 @@ export default function Kontakt() {
           isLeft
         >
           <div className="flex flex-col gap-2 mb-4">
-            <h2 className="mb-3 mt-6 text-2xl font-bold text-gray">Adres</h2>
+            <h3 className="mb-3 mt-6 text-2xl font-bold text-gray">Adres</h3>
             <div className="flex gap-2">
               <MapPin className="text-orange w-5" /> Katowice ul. Ceglana 66
             </div>
           </div>
           <div className="flex flex-col gap-2 mb-4">
-            <h2 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
+            <h3 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
               Kamila Włodarczyk
-            </h2>
+            </h3>
             <div className="flex gap-2">
               <Mail className="text-orange w-5" />
               kamila.wlodarczyk@dobremiejsce-fizjoterapia.pl
@@ -35,9 +35,9 @@ export default function Kontakt() {
               <Phone className="text-orange w-4" />
               539 937 132
             </div>
-            <h2 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
+            <h3 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
               Martyna Cesarczyk
-            </h2>
+            </h3>
 
             <div className="flex gap-2">
               <Mail className="text-orange w-5" />
@@ -48,9 +48,9 @@ export default function Kontakt() {
               577 611 464
             </div>
           </div>
-          <h2 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
+          <h3 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
             Media społecznościowe{" "}
-          </h2>
+          </h3>
           <div className="flex flex-col gap-4 mb-8">
             <div>
               <a
@@ -75,9 +75,9 @@ export default function Kontakt() {
           </div>
         </ParagraphWithImageOnTheRight>
         <div className="my-10">
-          <h2 className="mb-6 mt-6 text-2xl font-bold text-gray">
+          <h3 className="mb-6 mt-6 text-2xl font-bold text-gray">
             Jak nas znaleźć
-          </h2>
+          </h3>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2551.6038595672126!2d19.011766376424642!3d50.24330517155342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716cf8e2b49bc2b%3A0x4c8eb5961bebe760!2sDobre%20Miejsce%20-%20Fizjoterapia%20dzieci!5e0!3m2!1spl!2spl!4v1741305660611!5m2!1spl!2spl"
             width="100%"

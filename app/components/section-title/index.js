@@ -18,7 +18,7 @@ export default function SectionTitle({ title, isWhite, isAlignedLeft }) {
         !isAlignedLeft && "justify-center items-center"
       } gap-2`}
     >
-      <p className={`${isWhite ? "text-white" : "text-orange"} text-lg my-0`}>
+      {/* <p className={`${isWhite ? "text-white" : "text-orange"} text-lg my-0`}>
         Dobre Miejsce w Katowicach
       </p>
       <h2
@@ -28,12 +28,22 @@ export default function SectionTitle({ title, isWhite, isAlignedLeft }) {
       >
         {" "}
         {title}
+      </h2> */}
+
+      <h2
+        className={`text-4xl font-bold text-gray ${
+          isAlignedLeft ? "text-left" : "text-center"
+        } ${isWhite && "text-white"} `}
+      >
+        <span
+          className={`${
+            isWhite ? "text-white" : "text-orange"
+          } text-lg my-0 block font-normal`}
+        >
+          Dobre Miejsce w Katowicach
+        </span>{" "}
+        {title}
       </h2>
-      {/* <div
-        className={`mt-4 w-28 h-1 rounded-sm ${
-          isWhite ? "bg-orange" : "bg-orange"
-        }`}
-      /> */}
     </div>
   );
 }

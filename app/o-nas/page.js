@@ -1,11 +1,10 @@
-import { HandHeart } from "lucide-react";
 import Navbar from "../components/navbar";
 import BlockWith3Blobs from "../components/block-with-3-blobs";
 import Features from "../components/features";
 import ListSection from "../components/list-section";
 import ParagraphWithImage from "../components/paragraph-with-image";
 import ParagraphWithImageOnTheRight from "../components/paragraph-with-image-on-the-right";
-import TeamSectionHomepage from "../components/team-section-homepage";
+
 import Button from "../components/Button";
 
 export default function ONas() {
@@ -163,9 +162,9 @@ export default function ONas() {
               isLeft
             >
               <>
-                <h2 className="mb-3 mt-6 text-2xl font-bold text-gray">
+                <h3 className="mb-3 mt-6 text-2xl font-bold text-gray">
                   Kamila Włodarczyk
-                </h2>
+                </h3>
                 Certyfikowana terapeutka NDT-Bobath, specjalizująca się w
                 rehabilitacji wcześniaków i noworodków. Jej doświadczenie w
                 pracy na oddziale intensywnej terapii noworodka przekłada się na
@@ -174,9 +173,9 @@ export default function ONas() {
                 <div className="mr-auto mt-6 mb-10">
                   <Button title="więcej" href="/kamila-wlodarczyk" />
                 </div>
-                <h2 className="mb-3 mt-6  text-2xl font-bold text-gray">
+                <h3 className="mb-3 mt-6  text-2xl font-bold text-gray">
                   Martyna Cesarczyk
-                </h2>
+                </h3>
                 Fizjoterapeutka pediatryczna z bogatym doświadczeniem w terapii
                 neurorozwojowej. Specjalizuje się w pracy z dziećmi z mózgowym
                 porażeniem dziecięcym i innymi schorzeniami neurologicznymi oraz

@@ -6,10 +6,10 @@ export default function FeaturesHomepage() {
       <div className="bgy1-blur absolute right-0 top-0 z-0 h-full w-full opacity-20 sm:hidden"></div>
       <div className="container mx-auto px-8 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
         {/* <div className="flex flex-col pb-16 text-gray lg:flex-row">
-          <h2 className="robot font-r mb-6 mr-4 basis-2/5 text-4xl font-bold leading-hero lg:text-5xl">
+          <h3 className="robot font-r mb-6 mr-4 basis-2/5 text-4xl font-bold leading-hero lg:text-5xl">
             Rehabilitacja w<br />
             ciepłej atmosferze
-          </h2>
+          </h3>
           <p className="basis-2/5 pr-6 mb-6 text-lg">
             Rehabilitacja w ciepłej atmosferze bez stresu i płaczu. Diagnozujemy
             i ustalamy plan terapii, ale to mały pacjent ma ostatnie zdanie.
@@ -38,9 +38,9 @@ export default function FeaturesHomepage() {
                 className="hidden lg:block lg:w-auto"
                 alt="Doświadczenie z najmłodszymi"
               />
-              <h2 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
+              <h3 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
                 Doświadczenie z najmłodszymi
-              </h2>
+              </h3>
               <p className="text-base">
                 Specjalizujemy się w opiece nad wcześniakami i noworodkami.
                 Nasze doświadczenie z oddziału intensywnej terapii noworodkowej
@@ -58,9 +58,9 @@ export default function FeaturesHomepage() {
                 className="hidden lg:block lg:w-auto"
                 alt="Wczesna diagnostyka"
               />
-              <h2 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
+              <h3 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
                 Wczesna diagnostyka
-              </h2>
+              </h3>
               <p className="text-base">
                 Wykrywamy i wspieramy rozwój maluszka od pierwszych dni życia.
                 Specjalistyczne metody diagnostyczne (HINE i Prechtla) pozwalają
@@ -78,9 +78,9 @@ export default function FeaturesHomepage() {
                 className="hidden lg:block lg:w-auto"
                 alt="Terapia z sercem"
               />
-              <h2 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
+              <h3 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
                 Terapia z sercem
-              </h2>
+              </h3>
               <p className="text-base">
                 Każde dziecko jest inne i zasługuje na indywidualne podejście.
                 Tworzymy spersonalizowane plany terapii, szanując tempo rozwoju
@@ -98,9 +98,9 @@ export default function FeaturesHomepage() {
                 className="hidden lg:block lg:w-auto"
                 alt="Bezpieczna przestrzeń"
               />
-              <h2 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
+              <h3 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
                 Bezpieczna przestrzeń
-              </h2>
+              </h3>
               <p className="text-base">
                 Terapia przez zabawę w przyjaznej atmosferze. Nasz gabinet to
                 miejsce, gdzie dzieci czują się swobodnie, a rodzice znajdują

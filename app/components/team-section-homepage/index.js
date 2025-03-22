@@ -4,19 +4,7 @@ import SectionTitle from "../section-title";
 
 export default function TeamSectionHomepage() {
   return (
-    // className="mt-28 relative w-screen px-10 lg:px-32 py-20 pb-28 bg-primary after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-secondaryGreen after:opacity-90"
-    // style={{
-    //   backgroundImage: 'url("/glp_slider20.jpg")',
-    //   backgroundPosition: "center",
-    // }}
-
-    <section
-      className="relative w-screen py-8  after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full  after:opacity-60"
-      // style={{
-      //   backgroundImage: 'url("/dobremiejsce009.jpg")',
-      //   backgroundPosition: "center",
-      // }}
-    >
+    <section className="relative w-screen py-8  after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full  after:opacity-60">
       <div className="container w-[80%] px-4 mx-auto relative z-20">
         <SectionTitle title="Kim jesteśmy?" />
         <Fade direction="bottom" delay="30" triggerOnce>
