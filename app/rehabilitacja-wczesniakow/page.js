@@ -2,6 +2,15 @@ import { HandHeart } from "lucide-react";
 import Navbar from "../components/navbar";
 import PageTemplate from "../components/page-template";
 
+export const metadata = {
+  title: "Rehabilitacja wczesniaków Katowice | Dobre Miejsce",
+  description: "Rehabilitacja wczesniaków w Katowicach",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+
 export default function RehabilitacjaWczesniakow() {
   return (
     <>

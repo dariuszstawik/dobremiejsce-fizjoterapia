@@ -1,6 +1,14 @@
 import Navbar from "../components/navbar";
 import PageTemplate from "../components/page-template";
 
+export const metadata = {
+  title: "Terapia SI w Katowicach | Dobre Miejsce",
+  description: "Terapia integracji sensorycznej SI w Katowicach",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 export default function TerapiaSIWKatowicach() {
   return (
     <>

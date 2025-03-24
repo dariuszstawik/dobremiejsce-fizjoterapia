@@ -1,6 +1,15 @@
 import Navbar from "../components/navbar";
 import PageTemplate from "../components/page-template";
 
+export const metadata = {
+  title: "Diagnostyka metodą Prechtla | Dobre Miejsce",
+  description: "Diagnostyka rozwoju dziecka metodą Prechtla w Katowicach",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+
 export default function DiagnostykaMetodaPrechtla() {
   return (
     <>

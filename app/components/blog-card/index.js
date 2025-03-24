@@ -2,7 +2,7 @@ import Link from "next/link";
 import Arrow from "../arrow";
 import { Fade } from "react-awesome-reveal";
 
-export default function BlogCard({ title, content, slug, img }) {
+export default function BlogCard({ title, content, slug, img, href }) {
   return (
     <Fade direction="bottom" delay="30" triggerOnce>
       <div className="max-w-xl mx-auto transition duration-300 transform bg-peach border rounded shadow-sm hover:-translate-y-1 hover:shadow md:text-center flex">
@@ -15,8 +15,9 @@ export default function BlogCard({ title, content, slug, img }) {
           alt={img?.fields?.description ? img.fields.description : ""}
         /> */}
           <img
-            src="dobremiejsce008.jpg"
-            className="object-cover h-48 rounded-br-[100px] lg:h-48 xl:h-56"
+            // src="dobremiejsce008.jpg"
+            src={img}
+            className="object-cover h-48 rounded-br-[100px] lg:h-48 xl:h-56 w-full"
           />
           {/* <div className=" h-6 bg-orange" /> */}
         </div>
@@ -28,7 +29,7 @@ export default function BlogCard({ title, content, slug, img }) {
           </div>
           <button className="relative font-medium text-orange before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-green-800 before:transition hover:before:scale-100">
             {" "}
-            <Link href="">
+            <Link href={href || ""}>
               dowiedz się więcej
               <Arrow />
             </Link>

@@ -2,6 +2,15 @@ import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
 import Navbar from "../components/navbar";
 import ParagraphWithImageOnTheRight from "../components/paragraph-with-image-on-the-right";
 
+export const metadata = {
+  title: "Kontakt | Dobre Miejsce",
+  description: "Dobre Miejsce fizjoterapia dzieci",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+
 export default function Kontakt() {
   return (
     <>

@@ -1,6 +1,15 @@
 import Navbar from "../components/navbar";
 import PageTemplate from "../components/page-template";
 
+export const metadata = {
+  title: "Diagnostyka Hine | Dobre Miejsce",
+  description: "Diagnostyka rozwoju dziecka metodą Hine w Katowicach",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+
 export default function DiagnostykaHINE() {
   return (
     <>

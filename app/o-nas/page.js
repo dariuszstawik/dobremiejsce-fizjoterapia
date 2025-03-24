@@ -7,6 +7,15 @@ import ParagraphWithImageOnTheRight from "../components/paragraph-with-image-on-
 
 import Button from "../components/Button";
 
+export const metadata = {
+  title: "O nas | Dobre Miejsce",
+  description: "O nas: Dobre Miejsce fizjoterapia dzieci",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+
 export default function ONas() {
   return (
     <>

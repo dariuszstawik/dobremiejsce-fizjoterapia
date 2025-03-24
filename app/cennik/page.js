@@ -2,6 +2,15 @@ import Navbar from "../components/navbar";
 import ParagraphWithImageOnTheRight from "../components/paragraph-with-image-on-the-right";
 import Pricing from "../components/pricing-section";
 
+export const metadata = {
+  title: "Cennik | Dobre Miejsce",
+  description: "Cennik usług fizjoterapii dzieci w Katowicach",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+
 export default function Cennik() {
   return (
     <>

@@ -164,8 +164,12 @@ export default function Home() {
       <div className="container my-32 mb-32 px-4 mx-auto max-w-[90%] ">
         <SectionTitle title="Blog: pytania rodziców" />
         <div className="w-full flex flex-wrap gap-16 justify-center items-center ">
-          <BlogCard title="Metoda Vojty vs. Bobath - która lepsza dla naszego dziecka?" />
-          <BlogCard title="Witamy na blogu!" />
+          <BlogCard
+            title="Zaburzenia napięcia mięśniowego u niemowlaków - jak je rozpoznać i co robić?"
+            href="/blog/zaburzenia-napiecia-miesniowego-u-niemowlakow"
+            img="/dobremiejsce002.jpg"
+          />
+          <BlogCard title="Witamy na blogu!" img="/dobremiejsce008.jpg" />
         </div>
       </div>
 

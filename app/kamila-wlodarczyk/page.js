@@ -1,6 +1,17 @@
 import { Mail, PhoneCall } from "lucide-react";
 import Navbar from "../components/navbar";
 
+export const metadata = {
+  title:
+    "Kamila Włodarczyk - fizjoterapeuta dzieci w Katowicach | Dobre Miejsce",
+  description:
+    "Kamila Włodarczyk - fizjoterapeuta dzieci w Katowicach - profil zawodowy, kwalifikacje, dane kontaktowe",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+
 export default function KamilaWlodarczyk() {
   return (
     <>

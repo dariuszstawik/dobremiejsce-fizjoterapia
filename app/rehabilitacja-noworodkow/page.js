@@ -1,6 +1,17 @@
 import Navbar from "../components/navbar";
 import PageTemplate from "../components/page-template";
 
+export const metadata = {
+  title:
+    "Rehabilitacja noworodków i niemowląt z zaburzeniami napięcia mięśniowego | Dobre Miejsce",
+  description:
+    "Rehabilitacja noworodków i niemowląt z zaburzeniami napięcia mięśniowego w Katowicach",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+
 export default function RehabilitacjaNoworodkow() {
   return (
     <>

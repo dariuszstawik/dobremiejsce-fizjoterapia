@@ -2,6 +2,15 @@ import Link from "next/link";
 import Navbar from "../components/navbar";
 import PageTemplate from "../components/page-template";
 
+export const metadata = {
+  title: "Terapia wad postawy u dzieci | Dobre Miejsce",
+  description:
+    "Terapia wad postawy u dzieci w Katowicach - korekcja wad postawy u dzieci",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 export default function TerapiaWadPostawyUDzieci() {
   return (
     <>
