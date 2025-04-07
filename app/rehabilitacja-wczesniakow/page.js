@@ -125,22 +125,22 @@ export default function RehabilitacjaWczesniakow() {
                 >
                   <li className="my-3 pl-4 lg:my-3">
                     <p className="relative -top-2">
-                      wspiera prawidłowy rozwój psychoruchowy
+                      uczymy rodziców, jak bezpiecznie pielęgnować i dziecko,{" "}
                     </p>
                   </li>
                   <li className="mb-3 pl-4 lg:mb-3">
                     <p className="relative -top-2">
-                      pomaga w osiąganiu kolejnych kamieni milowych
+                      pokazujemy ćwiczenia, które można wykonywać w domu,
                     </p>
                   </li>
                   <li className="mb-3 pl-4 lg:mb-3">
                     <p className="relative -top-2">
-                      zapobiega potencjalnym trudnościom rozwojowym
+                      odpowiadamy na wszystkie pytania i rozwiewamy wątpliwości,
                     </p>
                   </li>
                   <li className="mb-3 pl-4 lg:mb-3">
                     <p className="relative -top-2">
-                      wzmacnia naturalne mechanizmy adaptacyjne dziecka
+                      wspieramy emocjonalnie w trudnych momentach.
                     </p>
                   </li>
                 </ul>

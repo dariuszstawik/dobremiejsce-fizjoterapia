@@ -23,7 +23,7 @@ export default function RehabilitacjaNoworodkow() {
             mięśniowego
           </>
         }
-        lead="Czy zauważyłeś/aś, że Twoje dziecko preferuje jedną stronę ciała, ma trudności z utrzymaniem główki lub jego ruchy wydają się zbyt wiotkie albo napięte? Zaburzenia napięcia mięśniowego u najmłodszych to problem, który wymaga profesjonalnej uwagi - im wcześniej rozpoczniemy terapię, tym lepsze efekty możemy osiągnąć."
+        lead="Czy zauważyłeś/aś, że Twoje dziecko preferuje jedną stronę ciała, ma trudności z utrzymaniem główki lub jego ruchy wydają się zbyt wiotkie lub sztywne? Zaburzenia napięcia mięśniowego u najmłodszych to problem, który wymaga profesjonalnej uwagi - im wcześniej rozpoczniemy terapię, tym lepsze efekty możemy osiągnąć."
         img="/dobremiejsce004.jpg"
         alt="Rehabilitacja noworodków i niemowląt w Katowicach"
         bannerBody="Nie czekaj, aż problemy się pogłębią. Umów się na konsultację, podczas której ocenimy stan Twojego maluszka i zaproponujemy najlepszy plan terapii. W Dobrym Miejscu każde dziecko otrzymuje szansę na harmonijny rozwój w przyjaznej, pełnej ciepła atmosferze."
@@ -178,11 +178,6 @@ export default function RehabilitacjaNoworodkow() {
                   <li className="mb-2 pl-4 lg:mb-2">
                     <p className="relative -top-2">asymetrie ułożeniowe</p>
                   </li>
-                  <li className="mb-2 pl-4 lg:mb-2">
-                    <p className="relative -top-2">
-                      przetrwałe asymetrie niemowlęce
-                    </p>
-                  </li>
                 </ul>
               </div>
 
@@ -198,7 +193,7 @@ export default function RehabilitacjaNoworodkow() {
                 >
                   <li className="my-2 pl-4 lg:my-2">
                     <p className="relative -top-2">
-                      wykorzystujemy elementy metody NDT-Bobath
+                      wykorzystujemy metodę NDT-Bobath
                     </p>
                   </li>
                   <li className="mb-2 pl-4 lg:mb-2">

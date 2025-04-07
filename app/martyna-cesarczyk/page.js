@@ -122,6 +122,7 @@ export default function MartynaCesarczyk() {
                   "ZOGA Niemowląt moduł I i II 2024",
                   "Osteopatia Pediatryczna w Zaburzeniach Układu Pokarmowego 2024",
                   "HINE (HAMMERSMITH INFANT NEUROLOGICAL EXAMINATION) 2024",
+                  "GTS - Stopa Dziecka - diagnostyka i terapia 2025",
                 ].map((item, index) => (
                   <li key={index} className="ml-10 pl-4">
                     <p className="relative -top-2">{item}</p>

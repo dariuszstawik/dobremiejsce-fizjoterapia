@@ -20,7 +20,8 @@ export default function TeamSectionHomepage() {
                   Kamila Włodarczyk
                 </h3>
                 <span className="inline-block mb-6 text-lg font-medium text-orange">
-                  Terapeutka NDT-Bobath | Specjalistka od wcześniaków
+                  {/* Terapeutka NDT-Bobath | Specjalistka od wcześniaków */}W
+                  naszym zespole specjalizuje się w terapii wcześniaków
                 </span>
                 <p className="mb-8 text-coolGray-500 font-medium">
                   Na co dzień pracuje w Górnośląskim Centrum Zdrowia Dziecka w
@@ -47,7 +48,9 @@ export default function TeamSectionHomepage() {
                   Martyna Cesarczyk
                 </h3>
                 <span className="inline-block mb-6 text-lg font-medium text-orange">
-                  Fizjoterapeutka pediatryczna | Specjalistka terapii SI
+                  {/* Fizjoterapeutka pediatryczna | Specjalistka terapii SI */}
+                  W naszym zespole specjalizuje się w terapii dzieci z mózgowym
+                  porażeniem dziecięcym
                 </span>
                 <p className="mb-8 text-coolGray-500 font-medium">
                   Doświadczenie w fizjoterapii pediatrycznej zdobywała m.in. w
