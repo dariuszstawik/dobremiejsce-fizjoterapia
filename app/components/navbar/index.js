@@ -124,6 +124,32 @@ export default function Navbar() {
               </li>
 
               <li
+                onClick={closeMobileMenu}
+                className="hover:text-orange cursor-pointer"
+              >
+                <Link
+                  href="/kamila-wlodarczyk"
+                  // className={`${isActive && "text-primaryBlue"}`}
+                  onClick={handleRefresh}
+                >
+                  Kamila
+                </Link>
+              </li>
+
+              <li
+                onClick={closeMobileMenu}
+                className="hover:text-orange cursor-pointer"
+              >
+                <Link
+                  href="/martyna-cesarczyk"
+                  // className={`${isActive && "text-primaryBlue"}`}
+                  onClick={handleRefresh}
+                >
+                  Martyna
+                </Link>
+              </li>
+
+              <li
                 // onClick={closeMobileMenu}
                 onMouseEnter={() => {
                   // Reaguj na najechanie myszą tylko na desktopie
