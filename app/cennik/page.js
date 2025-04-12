@@ -15,9 +15,6 @@ export default function Cennik() {
   return (
     <>
       <Navbar />
-      {/* <div className="mt-44">
-        <Pricing />
-      </div> */}
       <section className=" py-32 mt-12 md:pt-32 container mx-auto px-8 sm:max-w-xl md:max-w-full md:px-24 lg:px-8 lg:w-screen">
         <div className="w-[80%] mx-auto">
           <ParagraphWithImageOnTheRight
@@ -27,7 +24,6 @@ export default function Cennik() {
             alt="Dobre Miejsce"
             buttonLink="https://dobremiejscefizjoterapiadzieci.booksy.com/"
             buttonTitle="Umów wizytę w serwisie Booksy"
-            // hasBlueBackground
             isLeft
           >
             <div className="flex flex-col gap-2 mb-4">
@@ -50,15 +46,6 @@ export default function Cennik() {
                       <p>160 zł — 45 minut</p>
                     </div>
                   </li>
-                  {/* <li className="mb-0 pl-4">
-                <div className="relative -top-3">
-                  <h3 className="font-bold">
-                    Nauka pielęgnacji noworodka i niemowlęcia Handling NDT
-                    Bobath
-                  </h3>
-                </div>
-                <p>180 zł — 60 minut</p>
-              </li> */}
                   <li className="mb-0 pl-4">
                     <div className="relative -top-3">
                       <h3 className="font-bold">Diagnoza SI</h3>

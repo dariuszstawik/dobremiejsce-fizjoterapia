@@ -16,7 +16,7 @@ import Footer from "./components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Dobre Miejsce - fizjoterapia dzieci",
+  title: "Dobre Miejsce - fizjoterapia dzieci Katowice",
   description:
     "Przyjazna przestrzeń w Katowicach, która powstała, by wspierać prawidłowy rozwój noworodków, niemowląt i większych dzieci",
   robots: {
