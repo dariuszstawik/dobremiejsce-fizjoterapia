@@ -131,6 +131,7 @@ export default function Home() {
             title="Zaburzenia napięcia mięśniowego u niemowlaków - jak je rozpoznać i co robić?"
             href="/blog/zaburzenia-napiecia-miesniowego-u-niemowlakow"
             img="/dobremiejsce002.jpg"
+            alt="zaburzenia napięcia mięśniowego u niemowlaków"
           />
           <BlogCard title="Witamy na blogu!" img="/dobremiejsce008.jpg" />
         </div>

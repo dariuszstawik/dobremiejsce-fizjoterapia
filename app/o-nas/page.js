@@ -6,6 +6,7 @@ import ParagraphWithImage from "../components/paragraph-with-image";
 import ParagraphWithImageOnTheRight from "../components/paragraph-with-image-on-the-right";
 
 import Button from "../components/Button";
+import Link from "next/link";
 
 export const metadata = {
   title: "O nas | Dobre Miejsce",
@@ -62,13 +63,20 @@ export default function ONas() {
             img="/dobremiejsce002.jpg"
           >
             W Dobrym Miejscu oferujemy kompleksową opiekę terapeutyczną dla
-            dzieci od pierwszych dni życia. Specjalizujemy się w rehabilitacji
-            wcześniaków i niemowląt z zaburzeniami napięcia mięśniowego,
-            wykorzystując nasze bogate doświadczenie z oddziałów intensywnej
-            terapii noworodka. Zapewniamy profesjonalną diagnostykę rozwoju
-            metodami HINE i Prechtla, pozwalającą wcześnie wykryć potencjalne
-            trudności. Pomagamy dzieciom z zaburzeniami integracji sensorycznej
-            lepiej rozumieć i przetwarzać bodźce z otoczenia, a także wspieramy
+            dzieci od pierwszych dni życia. Specjalizujemy się w
+            <Link
+              href="/rehabilitacja-wczesniakow"
+              // className="inline-flex items-center whitespace-nowrap"
+              style={{ display: "inline" }}
+            >
+              rehabilitacji wcześniaków
+            </Link>{" "}
+            i niemowląt z zaburzeniami napięcia mięśniowego, wykorzystując nasze
+            bogate doświadczenie z oddziałów intensywnej terapii noworodka.
+            Zapewniamy profesjonalną diagnostykę rozwoju metodami HINE i
+            Prechtla, pozwalającą wcześnie wykryć potencjalne trudności.
+            Pomagamy dzieciom z zaburzeniami integracji sensorycznej lepiej
+            rozumieć i przetwarzać bodźce z otoczenia, a także wspieramy
             prawidłowy rozwój postawy ciała poprzez terapię wad postawy i dobór
             wkładek ortopedycznych IGLI Junior. Nasza terapia zawsze uwzględnia
             indywidualne potrzeby małego pacjenta i jest prowadzona w

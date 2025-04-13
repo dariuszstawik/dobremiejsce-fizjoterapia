@@ -14,7 +14,7 @@ export default function TeamSectionHomepage() {
                 <img
                   className="mx-auto mb-6 rounded-full w-64"
                   src="/kamila-wlodarczyk.png"
-                  alt=""
+                  alt="Kamila Włodarczyk"
                 />
                 <h3 className="mb-2 text-2xl md:text-3xl leading-tight font-semibold">
                   Kamila Włodarczyk
@@ -42,7 +42,7 @@ export default function TeamSectionHomepage() {
                 <img
                   className="mx-auto mb-6 rounded-full w-64"
                   src="/martyna-cesarczyk.png"
-                  alt=""
+                  alt="Msrtyna Cesarczyk"
                 />
                 <h3 className="mb-2 text-2xl md:text-3xl leading-tight font-semibold">
                   Martyna Cesarczyk

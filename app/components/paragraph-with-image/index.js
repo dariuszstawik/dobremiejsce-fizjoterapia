@@ -45,7 +45,7 @@ export default function ParagraphWithImage({
           {img && (
             <img
               src={img}
-              alt={alt ? alt : ""}
+              alt={alt ? alt : title}
               className="rounded h-full object-cover"
             />
           )}

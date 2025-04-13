@@ -2,7 +2,7 @@ import Link from "next/link";
 import Arrow from "../arrow";
 import { Fade } from "react-awesome-reveal";
 
-export default function BlogCard({ title, content, slug, img, href }) {
+export default function BlogCard({ title, content, slug, img, href, alt }) {
   return (
     <Fade direction="bottom" delay="30" triggerOnce>
       <div className="max-w-xl mx-auto transition duration-300 transform bg-peach border rounded shadow-sm hover:-translate-y-1 hover:shadow md:text-center flex">
@@ -17,6 +17,7 @@ export default function BlogCard({ title, content, slug, img, href }) {
           <img
             // src="dobremiejsce008.jpg"
             src={img}
+            alt={alt || title}
             className="object-cover h-48 rounded-br-[100px] lg:h-48 xl:h-56 w-full"
           />
           {/* <div className=" h-6 bg-orange" /> */}
