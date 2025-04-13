@@ -24,14 +24,9 @@ export default function BlockTitle({
           } text-lg my-0 block font-normal`}
         >
           {subtitle}
-        </span>
+        </span>{" "}
         {title}
       </h2>
-      {/* <div
-        className={`mt-4 w-28 h-1 rounded-sm ${
-          isWhite ? "bg-orange" : "bg-orange"
-        }`}
-      /> */}
     </div>
   );
 }

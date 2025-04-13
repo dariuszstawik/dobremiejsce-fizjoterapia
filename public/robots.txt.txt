@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /
+
+# Sitemap declaration
+Sitemap: https://dobremiejsce.pl/sitemap.xml
