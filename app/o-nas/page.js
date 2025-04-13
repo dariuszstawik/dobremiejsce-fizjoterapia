@@ -62,25 +62,50 @@ export default function ONas() {
             title="Kompleksowe podejście"
             img="/dobremiejsce002.jpg"
           >
-            W Dobrym Miejscu oferujemy kompleksową opiekę terapeutyczną dla
-            dzieci od pierwszych dni życia. Specjalizujemy się w
-            <Link
-              href="/rehabilitacja-wczesniakow"
-              // className="inline-flex items-center whitespace-nowrap"
-              style={{ display: "inline" }}
-            >
-              rehabilitacji wcześniaków
-            </Link>{" "}
-            i niemowląt z zaburzeniami napięcia mięśniowego, wykorzystując nasze
-            bogate doświadczenie z oddziałów intensywnej terapii noworodka.
-            Zapewniamy profesjonalną diagnostykę rozwoju metodami HINE i
-            Prechtla, pozwalającą wcześnie wykryć potencjalne trudności.
-            Pomagamy dzieciom z zaburzeniami integracji sensorycznej lepiej
-            rozumieć i przetwarzać bodźce z otoczenia, a także wspieramy
-            prawidłowy rozwój postawy ciała poprzez terapię wad postawy i dobór
-            wkładek ortopedycznych IGLI Junior. Nasza terapia zawsze uwzględnia
-            indywidualne potrzeby małego pacjenta i jest prowadzona w
-            przyjaznej, pełnej ciepła atmosferze.
+            <p>
+              W Dobrym Miejscu oferujemy kompleksową opiekę terapeutyczną dla
+              dzieci od pierwszych dni życia. Specjalizujemy się w{" "}
+              <Link href="/rehabilitacja-wczesniakow" className="text-orange">
+                rehabilitacji wcześniaków
+              </Link>{" "}
+              i{" "}
+              <Link href="/rehabilitacja-noworodkow" className="text-orange">
+                niemowląt z zaburzeniami napięcia mięśniowego
+              </Link>
+              , wykorzystując nasze bogate doświadczenie z oddziałów intensywnej
+              terapii noworodka. Zapewniamy profesjonalną diagnostykę rozwoju
+              metodami{" "}
+              <Link href="/diagnostyka-hine" className="text-orange">
+                HINE
+              </Link>
+              , i{" "}
+              <Link href="diagnostyka-metoda-prechtla" className="text-orange">
+                {" "}
+                Prechtla
+              </Link>
+              , pozwalającą wcześnie wykryć potencjalne trudności. Pomagamy
+              dzieciom z{" "}
+              <Link href="/terapia-si-w-katowicach" className="text-orange">
+                zaburzeniami integracji sensorycznej
+              </Link>{" "}
+              lepiej rozumieć i przetwarzać bodźce z otoczenia, a także
+              wspieramy prawidłowy rozwój postawy ciała poprzez{" "}
+              <Link
+                href="/terapia-wad-postawy-u-dzieci"
+                className="text-orange"
+              >
+                terapię wad postawy
+              </Link>{" "}
+              i{" "}
+              <Link
+                href="/wkladki-ortopedyczne-igli-junior"
+                className="text-orange"
+              >
+                dobór wkładek ortopedycznych IGLI Junior.
+              </Link>{" "}
+              Nasza terapia zawsze uwzględnia indywidualne potrzeby małego
+              pacjenta i jest prowadzona w przyjaznej, pełnej ciepła atmosferze.
+            </p>
           </ParagraphWithImage>
 
           <BlockWith3Blobs />
