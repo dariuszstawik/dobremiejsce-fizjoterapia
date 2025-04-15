@@ -54,9 +54,11 @@ export default function Footer() {
                   <h3 className="mb-4 mt-12 text-xl font-bold text-gray">
                     Adres
                   </h3>
-                  <p className="leading-loose my-0">Dobre Miejsce</p>
+                  <p className="leading-loose my-0">
+                    Dobre Miejsce Fizjoterapia dzieci
+                  </p>
                   <p className="leading-loose my-0">ul. Ceglana 66</p>
-                  <p className="leading-loose my-0">40-000 Katowice</p>
+                  <p className="leading-loose my-0">40-514 Katowice</p>
                   <div className="leading-loose my-0">
                     <Pin className="inline-block mr-2 text-secondaryOrange" />
                     <a
