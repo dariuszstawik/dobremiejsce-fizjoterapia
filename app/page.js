@@ -133,7 +133,12 @@ export default function Home() {
             img="/dobremiejsce002.jpg"
             alt="zaburzenia napięcia mięśniowego u niemowlaków"
           />
-          <BlogCard title="Witamy na blogu!" img="/dobremiejsce008.jpg" />
+          <BlogCard
+            title="Witamy na blogu!"
+            img="/dobremiejsce008.jpg"
+            href="/blog/witamy-na-blogu"
+            alt="witamy"
+          />
         </div>
       </div>
     </>

@@ -18,7 +18,12 @@ export default function Blog() {
             href="/blog/zaburzenia-napiecia-miesniowego-u-niemowlakow"
             img="/dobremiejsce002.jpg"
           />
-          <BlogCard title="Witamy na blogu!" img="/dobremiejsce008.jpg" />
+          <BlogCard
+            title="Witamy na blogu!"
+            img="/dobremiejsce008.jpg"
+            href="/blog/witamy-na-blogu"
+            alt="witamy"
+          />
         </div>
       </section>
     </>
