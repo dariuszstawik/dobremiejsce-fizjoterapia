@@ -25,6 +25,7 @@ export default function Cennik() {
             buttonLink="https://dobremiejscefizjoterapiadzieci.booksy.com/"
             buttonTitle="Umów wizytę w serwisie Booksy"
             isLeft
+            imgFill
           >
             <div className="flex flex-col gap-2 mb-4">
               <div className="rounded-2xl p-8 pr-0 pb-2">

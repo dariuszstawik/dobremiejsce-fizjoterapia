@@ -29,7 +29,8 @@ export default function Kontakt() {
           <div className="flex flex-col gap-2 mb-4">
             <h3 className="mb-3 mt-6 text-2xl font-bold text-gray">Adres</h3>
             <div className="flex gap-2">
-              <MapPin className="text-orange w-5" /> Katowice ul. Ceglana 66
+              <MapPin className="text-orange w-5" /> 40-514 Katowice ul. Ceglana
+              66
             </div>
           </div>
           <div className="flex flex-col gap-2 mb-4">
@@ -38,11 +39,13 @@ export default function Kontakt() {
             </h3>
             <div className="flex gap-2">
               <Mail className="text-orange w-5" />
-              kamila.wlodarczyk@dobremiejsce-fizjoterapia.pl
+              <a href="mailto:kamila.wlodarczyk@dobremiejsce-fizjoterapia.pl">
+                kamila.wlodarczyk@dobremiejsce-fizjoterapia.pl
+              </a>
             </div>
             <div className="flex gap-2">
               <Phone className="text-orange w-4" />
-              539 937 132
+              <a href="tel:+48 539 937 132">539 937 132</a>
             </div>
             <h3 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
               Martyna Cesarczyk
@@ -50,11 +53,14 @@ export default function Kontakt() {
 
             <div className="flex gap-2">
               <Mail className="text-orange w-5" />
-              martyna.cesarczyk@dobremiejsce-fizjoterapia.pl
+              <a href="mailto:martyna-cesarczyk@dobremiejsce-fizjoterapia.pl">
+                {" "}
+                martyna.cesarczyk@dobremiejsce-fizjoterapia.pl
+              </a>
             </div>
             <div className="flex gap-2">
               <Phone className="text-orange w-4" />
-              577 611 464
+              <a href="+48 577 611 464">577 611 464</a>
             </div>
           </div>
           <h3 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">

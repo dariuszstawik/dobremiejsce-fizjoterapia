@@ -73,8 +73,12 @@ export default function Footer() {
                   <h3 className="mb-4 mt-12 text-xl font-bold text-gray">
                     Kontakt
                   </h3>
-                  <p className="leading-loose my-0">Kamila: 539 937 132</p>
-                  <p className="leading-loose my-0">Martyna: 577 611 464</p>
+                  <p className="leading-loose my-0">
+                    Kamila: <a href="tel:+48 539 937 132">539 937 132</a>
+                  </p>
+                  <p className="leading-loose my-0">
+                    Martyna: <a href="tel:+48 577 611 464">577 611 464</a>
+                  </p>
                   <div className="flex  gap-3 mt-6 text-secondaryOrange">
                     <a
                       href="https://www.facebook.com/fizjoterapiadzieci.dobremiejsce/"

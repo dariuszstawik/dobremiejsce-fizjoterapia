@@ -5,7 +5,7 @@ export default function Features() {
   return (
     <section className="mt-12">
       {/* <div className="bgy1-blur absolute right-0 top-0 z-0 h-full w-full opacity-20 sm:hidden"></div> */}
-      <div className="container mx-auto px-8 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
+      <div className="container mx-auto px-8 sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-8">
         <div className="flex flex-col pb-16 text-gray lg:flex-row items-start box-content">
           {/* <h3 className="robot font-r mb-6 mr-4 basis-2/5 text-4xl font-bold leading-hero lg:text-5xl">
             Rehabilitacja w<br />
@@ -47,7 +47,7 @@ export default function Features() {
             <h3 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
               Indywidualne podejście
             </h3>
-            <p className="text-lg">
+            <p className="">
               Szanujemy indywidualność każdego dziecka i dajemy jej wybrzmieć —
               w naszym podejściu to terapeuta dopasowuje się do potrzeb pacjenta
               i podąża za nimi.
@@ -67,7 +67,7 @@ export default function Features() {
             <h3 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
               Skuteczna terapia
             </h3>
-            <p className="text-lg">
+            <p className="">
               Naszym celem jest, aby terapia była skuteczna, wszystkie dzieci,
               również te z dużymi wyzwaniami rozwojowymi czuły się u nas
               bezpiecznie, a ich Rodzice otrzymali niezbędne wsparcie.
@@ -87,7 +87,7 @@ export default function Features() {
             <h3 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
               Rodzina jest dla nas ważna
             </h3>
-            <p className="text-lg">
+            <p className="">
               Każdy Rodzic, który jest zaniepokojony rozwojem swojego malucha,
               bądź potrzebuje profilaktycznej wizyty lub wsparcia w kwestiach
               czynności pielęgnacyjnych jest u nas miło widziany.

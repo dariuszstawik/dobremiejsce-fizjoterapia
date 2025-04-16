@@ -2,7 +2,7 @@ import BlockTitle from "../block-title";
 
 export default function ListSection() {
   return (
-    <section className="mx-auto px-4 py-4 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20">
+    <section className="mx-auto px-4 py-4 sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-8 lg:py-20">
       {/* <h2 className="mb-12 text-5xl font-semibold text-heavy lg:mb-20"> */}
       <BlockTitle
         isAlignedLeft
