@@ -17,7 +17,7 @@ export default function WkladkiIgliJunior() {
       <PageTemplate
         title={<>Wkładki ortopedyczne IGLI Junior</>}
         lead="Zdrowe stopy to podstawa prawidłowego rozwoju postawy Twojego dziecka. Wkładki ortopedyczne IGLI Junior to innowacyjne rozwiązanie, które wspiera naturalne kształtowanie się stóp i pomaga korygować ich wady."
-        img="/igli.jpeg"
+        img="/igli-junior-2.webp"
         alt="Wkładki ortopedyczne IGLI Junior"
         bannerBody="Zapraszamy na konsultację, podczas której ocenimy, czy wkładki IGLI Junior będą odpowiednim rozwiązaniem dla Twojego dziecka."
       >

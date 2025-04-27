@@ -20,7 +20,7 @@ export default function Kontakt() {
         <ParagraphWithImageOnTheRight
           title="Kontakt"
           subtitle="Dobre Miejsce fizjoterapia dzieci"
-          img="/kontakt.png"
+          img="/kontakt-new.png"
           alt="Dobre Miejsce"
           buttonLink="https://dobremiejscefizjoterapiadzieci.booksy.com/"
           buttonTitle="Umów wizytę w serwisie Booksy"

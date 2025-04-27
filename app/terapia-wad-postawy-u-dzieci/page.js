@@ -18,7 +18,7 @@ export default function TerapiaWadPostawyUDzieci() {
       <PageTemplate
         title={<>Terapia wad postawy u dzieci</>}
         lead="Czy zauważyłeś/aś, że Twoje dziecko często się garbi, ma asymetryczne ramiona lub skarży się na bóle pleców? Te sygnały mogą wskazywać na wady postawy, które - wcześnie wykryte i leczone - można skutecznie skorygować."
-        img="/wadypostawy.jpeg"
+        img="/dm7.jpg"
         alt="Terapia wad postawy w Katowicach"
         bannerBody="Nie czekaj, aż wady postawy się pogłębią. Umów się na wizytę diagnostyczną, podczas której ocenimy postawę Twojego dziecka i zaproponujemy odpowiedni plan terapii. W Dobrym Miejscu łączymy profesjonalizm z przyjazną atmosferą, dzięki czemu dzieci chętnie uczestniczą w zajęciach."
       >

@@ -24,7 +24,7 @@ export default function RehabilitacjaNoworodkow() {
           </>
         }
         lead="Czy zauważyłeś/aś, że Twoje dziecko preferuje jedną stronę ciała, ma trudności z utrzymaniem główki lub jego ruchy wydają się zbyt wiotkie lub sztywne? Zaburzenia napięcia mięśniowego u najmłodszych to problem, który wymaga profesjonalnej uwagi - im wcześniej rozpoczniemy terapię, tym lepsze efekty możemy osiągnąć."
-        img="/dobremiejsce004.jpg"
+        img="/dm8.jpg"
         alt="Rehabilitacja noworodków i niemowląt w Katowicach"
         bannerBody="Nie czekaj, aż problemy się pogłębią. Umów się na konsultację, podczas której ocenimy stan Twojego maluszka i zaproponujemy najlepszy plan terapii. W Dobrym Miejscu każde dziecko otrzymuje szansę na harmonijny rozwój w przyjaznej, pełnej ciepła atmosferze."
       >

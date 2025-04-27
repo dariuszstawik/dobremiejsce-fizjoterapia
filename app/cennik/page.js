@@ -20,7 +20,7 @@ export default function Cennik() {
           <ParagraphWithImageOnTheRight
             title="Cennik"
             subtitle="Dobre Miejsce w Katowicach"
-            img="/blob-image-right.webp"
+            img="/i004blob-horizontal.png"
             alt="Dobre Miejsce"
             buttonLink="https://dobremiejscefizjoterapiadzieci.booksy.com/"
             buttonTitle="Umów wizytę w serwisie Booksy"

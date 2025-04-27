@@ -22,7 +22,7 @@ export default function DiagnostykaMetodaPrechtla() {
           </>
         }
         lead="Czy wiesz, że już w pierwszych miesiącach życia możemy ocenić, czy rozwój Twojego maluszka przebiega prawidłowo? Diagnostyka metodą Prechtla to delikatne i precyzyjne narzędzie, które pomaga nam w tym zadaniu."
-        img="/dobremiejsce008.jpg"
+        img="/dm4-1.jpg"
         alt="Diagnostyka metodą Prechtla w Katowicach"
         bannerBody="Nie czekaj - zadbaj o rozwój swojego maluszka już dziś. Umów się na badanie metodą Prechtla i zyskaj pewność, że rozwój Twojego dziecka jest pod najlepszą opieką."
       >
