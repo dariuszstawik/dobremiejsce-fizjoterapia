@@ -58,10 +58,7 @@ export default function ONas() {
             />
           </div>
 
-          <ParagraphWithImage
-            title="Kompleksowe podejście"
-            img="/dobremiejsce002.jpg"
-          >
+          <ParagraphWithImage title="Kompleksowe podejście" img="/dm8.jpg">
             <p>
               W Dobrym Miejscu oferujemy kompleksową opiekę terapeutyczną dla
               dzieci od pierwszych dni życia. Specjalizujemy się w{" "}
