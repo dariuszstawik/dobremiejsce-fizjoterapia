@@ -9,6 +9,7 @@ export default function PageTemplate({
   bannerBody,
   children,
   isBlog,
+  imgBottom,
 }) {
   return (
     <section className=" py-32 mt-12 md:py-40 container mx-auto px-8 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
@@ -68,7 +69,8 @@ mb-6 text-xl"
             priority
             style={{
               objectFit: "cover",
-              objectPosition: "bottom",
+              // objectPosition: "bottom",
+              objectPosition: imgBottom ? "bottom" : "center",
             }}
           />
         </div>
