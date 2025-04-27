@@ -5,8 +5,8 @@ export const metadata = {
   title: "Diagnostyka Hine | Dobre Miejsce",
   description: "Diagnostyka rozwoju dziecka metodą Hine w Katowicach",
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 };
 
@@ -19,7 +19,8 @@ export default function DiagnostykaHINE() {
           <>Diagnostyka HINE - wczesne wsparcie w rozwoju Twojego dziecka</>
         }
         lead="Zastanawiasz się, czy rozwój Twojego maluszka przebiega prawidłowo? Test HINE (Hammersmith Infant Neurological Examination) to precyzyjne narzędzie diagnostyczne, które pomaga nam ocenić rozwój psychomotoryczny niemowląt i wcześnie wykryć ewentualne trudności."
-        img="/dobremiejsce008.jpg"
+        // img="/dobremiejsce008.jpg"
+        img="/dm4-1.jpg"
         alt="Diagnostyka HINE w Katowicach"
         bannerBody="Nie czekaj - wczesna diagnostyka to klucz do skutecznej terapii. Umów się na badanie HINE i zyskaj pewność, że rozwój Twojego dziecka jest pod najlepszą kontrolą. W Dobrym Miejscu każde badanie przeprowadzamy z najwyższą starannością, w przyjaznej atmosferze i z pełnym wsparciem dla rodziców."
       >

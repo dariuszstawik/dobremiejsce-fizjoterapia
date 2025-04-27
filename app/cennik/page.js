@@ -6,8 +6,8 @@ export const metadata = {
   title: "Cennik | Dobre Miejsce",
   description: "Cennik usług fizjoterapii dzieci w Katowicach",
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 };
 

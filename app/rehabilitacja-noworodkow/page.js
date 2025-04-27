@@ -7,8 +7,8 @@ export const metadata = {
   description:
     "Rehabilitacja noworodków i niemowląt z zaburzeniami napięcia mięśniowego w Katowicach",
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 };
 

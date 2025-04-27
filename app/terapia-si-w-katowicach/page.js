@@ -5,8 +5,8 @@ export const metadata = {
   title: "Terapia SI w Katowicach | Dobre Miejsce",
   description: "Terapia integracji sensorycznej SI w Katowicach",
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 };
 export default function TerapiaSIWKatowicach() {

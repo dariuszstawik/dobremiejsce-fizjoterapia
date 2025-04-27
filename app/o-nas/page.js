@@ -12,8 +12,8 @@ export const metadata = {
   title: "O nas | Dobre Miejsce",
   description: "O nas: Dobre Miejsce fizjoterapia dzieci",
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 };
 

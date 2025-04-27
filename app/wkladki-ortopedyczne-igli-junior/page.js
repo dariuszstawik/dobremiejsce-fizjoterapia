@@ -6,8 +6,8 @@ export const metadata = {
   description:
     "Wkładki ortopedyczne IGLI Junior to innowacyjne rozwiązanie, które wspiera naturalne kształtowanie się stóp i pomaga korygować ich wady.",
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 };
 export default function WkladkiIgliJunior() {

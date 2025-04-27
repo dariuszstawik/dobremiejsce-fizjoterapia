@@ -6,8 +6,8 @@ export const metadata = {
   title: "Rehabilitacja wczesniaków Katowice | Dobre Miejsce",
   description: "Rehabilitacja wczesniaków w Katowicach",
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 };
 

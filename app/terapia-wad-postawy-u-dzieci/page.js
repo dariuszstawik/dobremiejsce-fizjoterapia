@@ -7,8 +7,8 @@ export const metadata = {
   description:
     "Terapia wad postawy u dzieci w Katowicach - korekcja wad postawy u dzieci",
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 };
 export default function TerapiaWadPostawyUDzieci() {
@@ -219,38 +219,6 @@ export default function TerapiaWadPostawyUDzieci() {
                 zauważasz niepokojących objawów. Wczesne wykrycie problemów z
                 postawą pozwala na szybką interwencję i lepsze efekty terapii.
               </div>
-
-              {/* <h2 className="mb-8 mt-6 text-3xl font-bold text-gray">
-                Nasze podejście opiera się na delikatnej i uważnej terapii,
-                która:
-              </h2>
-              <div className="text-md lg:text-lg mb-6">
-                <ul
-                  className="m-0 list-outside gap-32 p-0 pl-12"
-                  style={{ listStyleImage: 'url("/checkmark-sm.png")' }}
-                >
-                  <li className="my-3 pl-4 lg:my-3">
-                    <p className="relative -top-2">
-                      wspiera prawidłowy rozwój psychoruchowy
-                    </p>
-                  </li>
-                  <li className="mb-3 pl-4 lg:mb-3">
-                    <p className="relative -top-2">
-                      pomaga w osiąganiu kolejnych kamieni milowych
-                    </p>
-                  </li>
-                  <li className="mb-3 pl-4 lg:mb-3">
-                    <p className="relative -top-2">
-                      zapobiega potencjalnym trudnościom rozwojowym
-                    </p>
-                  </li>
-                  <li className="mb-3 pl-4 lg:mb-3">
-                    <p className="relative -top-2">
-                      wzmacnia naturalne mechanizmy adaptacyjne dziecka
-                    </p>
-                  </li>
-                </ul>
-              </div> */}
             </div>
           </>
         }

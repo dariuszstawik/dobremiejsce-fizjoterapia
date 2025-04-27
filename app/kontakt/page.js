@@ -6,8 +6,8 @@ export const metadata = {
   title: "Kontakt | Dobre Miejsce",
   description: "Dobre Miejsce fizjoterapia dzieci",
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 };
 

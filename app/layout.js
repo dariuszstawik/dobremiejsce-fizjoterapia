@@ -20,8 +20,8 @@ export const metadata = {
   description:
     "Przyjazna przestrzeń w Katowicach, która powstała, by wspierać prawidłowy rozwój noworodków, niemowląt i większych dzieci",
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 };
 

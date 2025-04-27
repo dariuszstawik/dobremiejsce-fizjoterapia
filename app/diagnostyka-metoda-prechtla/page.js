@@ -5,8 +5,8 @@ export const metadata = {
   title: "Diagnostyka metodą Prechtla | Dobre Miejsce",
   description: "Diagnostyka rozwoju dziecka metodą Prechtla w Katowicach",
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 };
 
@@ -22,7 +22,7 @@ export default function DiagnostykaMetodaPrechtla() {
           </>
         }
         lead="Czy wiesz, że już w pierwszych miesiącach życia możemy ocenić, czy rozwój Twojego maluszka przebiega prawidłowo? Diagnostyka metodą Prechtla to delikatne i precyzyjne narzędzie, które pomaga nam w tym zadaniu."
-        img="/dm4-1.jpg"
+        img="/baby-hero.jpg"
         alt="Diagnostyka metodą Prechtla w Katowicach"
         bannerBody="Nie czekaj - zadbaj o rozwój swojego maluszka już dziś. Umów się na badanie metodą Prechtla i zyskaj pewność, że rozwój Twojego dziecka jest pod najlepszą opieką."
       >
