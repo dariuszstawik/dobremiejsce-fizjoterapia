@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "../components/navbar";
 import PageTemplate from "../components/page-template";
 
@@ -189,12 +190,15 @@ export default function TerapiaSIWKatowicach() {
               </h2>
 
               <div className="text-md lg:text-lg mb-6">
-                Terapią integracji sensorycznej w Dobrym Miejscu zajmuje się
-                Martyna Cesarczyk - fizjoterapeutka z bogatym doświadczeniem w
-                pracy z dziećmi. Jako absolwentka studiów podyplomowych z
-                zakresu terapii neurorozwojowej oraz licznych szkoleń
-                specjalistycznych, nieustannie poszerza swoją wiedzę, by
-                zapewnić małym pacjentom najwyższą jakość terapii SI.{" "}
+                Terapią integracji sensorycznej w Dobrym Miejscu zajmuje się{" "}
+                <Link href="/martyna-cesarczyk" className="text-orange">
+                  Martyna Cesarczyk
+                </Link>{" "}
+                - fizjoterapeutka z bogatym doświadczeniem w pracy z dziećmi.
+                Jako absolwentka studiów podyplomowych z zakresu terapii
+                neurorozwojowej oraz licznych szkoleń specjalistycznych,
+                nieustannie poszerza swoją wiedzę, by zapewnić małym pacjentom
+                najwyższą jakość terapii SI.{" "}
               </div>
 
               {/* <h2 className="mb-8 mt-6 text-3xl font-bold text-gray">

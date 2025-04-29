@@ -1,5 +1,6 @@
 import { Mail, PhoneCall } from "lucide-react";
 import Navbar from "../components/navbar";
+import Link from "next/link";
 
 export const metadata = {
   title:
@@ -102,8 +103,19 @@ export default function MartynaCesarczyk() {
                 W dziedzinie fizjoterapii pediatrycznej najbardziej pasjonuje
                 mnie praca z dziećmi z mózgowym porażeniem dziecięcym i innymi
                 chorobami centralnego układu nerwowego. Mam doświadczenie w
-                pracy z niemowlętami i dziećmi z wadami postawy ciała. Prowadzę
-                również diagnozę i terapię integracji sensorycznej.
+                pracy z niemowlętami i dziećmi z{" "}
+                <Link
+                  href="/terapia-wad-postawy-u-dzieci"
+                  className="text-orange"
+                >
+                  wadami postawy ciała
+                </Link>
+                . Prowadzę również{" "}
+                <Link href="/terapia-si-w-katowicach" className="text-orange">
+                  {" "}
+                  diagnozę i terapię integracji sensorycznej
+                </Link>
+                .
               </p>
               <p className="font-semibold mb-6">Kwalifikacje:</p>
               <ul

@@ -1,6 +1,7 @@
 import { HandHeart } from "lucide-react";
 import Navbar from "../components/navbar";
 import PageTemplate from "../components/page-template";
+import Link from "next/link";
 
 export const metadata = {
   title: "Rehabilitacja wczesniaków Katowice | Dobre Miejsce",
@@ -42,11 +43,15 @@ export default function RehabilitacjaWczesniakow() {
                 uwagi. Ich układy - nerwowy, mięśniowy i kostny - nie miały
                 wystarczająco dużo czasu, by w pełni dojrzeć w brzuchu mamy. To
                 sprawia, że mogą potrzebować dodatkowego wsparcia w swoim
-                rozwoju. Nasza specjalistka, Kamila Włodarczyk, na co dzień
-                pracuje w Górnośląskim Centrum Zdrowia Dziecka w Katowicach oraz
-                Szpitalu Miejskim w Rudzie Śląskiej, gdzie opiekuje się
-                najmniejszymi pacjentami. To bezcenne doświadczenie przekłada
-                się na głębokie zrozumienie potrzeb wcześniaków i ich rodzin.
+                rozwoju. Nasza specjalistka,{" "}
+                <Link href="/kamila-wlodarczyk" className="text-orange">
+                  Kamila Włodarczyk
+                </Link>
+                , na co dzień pracuje w Górnośląskim Centrum Zdrowia Dziecka w
+                Katowicach oraz Szpitalu Miejskim w Rudzie Śląskiej, gdzie
+                opiekuje się najmniejszymi pacjentami. To bezcenne doświadczenie
+                przekłada się na głębokie zrozumienie potrzeb wcześniaków i ich
+                rodzin.
               </p>
 
               <h2 className="mb-3 mt-6 text-3xl font-bold text-gray">
