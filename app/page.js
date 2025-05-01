@@ -125,6 +125,17 @@ export default function Home() {
       <TeamSectionHomepage />
       <SectionTitle title="Dlaczego my?" />
       <FeaturesHomepage />
+      <SectionTitle title="Opinie klientów" />
+      {/* <!-- Elfsight Google Reviews | Untitled Google Reviews --> */}
+      <script
+        src="https://static.elfsight.com/platform/platform.js"
+        async
+      ></script>
+      <div
+        className="elfsight-app-09f8947f-4893-4371-af58-0d0a25bb0561"
+        data-elfsight-app-lazy
+      ></div>
+      {/* <SectionTitle title="Dlaczego my?" /> */}
       <div className="container my-32 mb-32 px-4 mx-auto max-w-[90%] ">
         <SectionTitle title="Blog: pytania rodziców" />
         <div className="w-full flex flex-wrap gap-16 justify-center items-center ">
