@@ -14,7 +14,7 @@ export default function WitamyNaBlogu() {
       >
         {
           <>
-            <div className="max-w-4xl mx-auto">
+            <article className="max-w-4xl mx-auto">
               <h2 className="mb-3 mt-10 text-3xl font-bold text-gray">
                 Dlaczego powstał ten blog?
               </h2>
@@ -124,7 +124,7 @@ export default function WitamyNaBlogu() {
                   Miejsca{" "}
                 </p>
               </div>
-            </div>
+            </article>
           </>
         }
       </PageTemplate>

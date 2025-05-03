@@ -2,22 +2,83 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  word-wrap: break-word;
+  color: #333;
+  font-family: var(--font-inter);
+  font-weight: 400;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.bgx-blur {
+  background: radial-gradient(circle at left bottom, #ff6e41 0, transparent 80%);
+  pointer-events: none;
+}
+
+.bgy1-blur {
+  background: radial-gradient(circle at right top, #ff6e41 0, transparent 40%);
+  pointer-events: none;
+}
+
+.bgy2-blur {
+  background: radial-gradient(circle at right center, #ff6e41 0, transparent 40%);
+  pointer-events: none;
+}
+
+.bgy3-blur {
+  background: radial-gradient(circle at left bottom, #ff6e41 0, transparent 40%);
+  pointer-events: none;
+}
+
+@layer base {
+  article p {
+    @apply text-base lg:text-lg mb-2;
+  }
+
+  article > h2 {
+    @apply mb-3 mt-10 text-3xl font-bold text-gray-800;
+  }
+
+  article h3 {
+    @apply mb-2 mt-4 text-xl font-bold text-gray-800;
+  }
+
+  article ul {
+    @apply mt-4 list-outside p-0 pl-12;
+    list-style-image: url("/checkmark-sm.png");
+  }
+
+  article ol {
+    @apply mt-4 list-outside p-0 pl-12 list-decimal;
+  }
+
+  article li {
+    @apply my-2 pl-4 lg:my-2;
+  }
+
+  article ul li p {
+    @apply relative -top-1;
+  }
+
+  article a {
+    @apply text-orange;
   }
 }
+
+
+/* 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 body {
   word-wrap: break-word;
   color: #333;
-  /* font-family: var(--font-inter); */
+  font-family: var(--font-inter);
   font-weight: 400;
   margin: 0;
   box-sizing: border-box;
@@ -54,3 +115,30 @@ body {
   );
   pointer-events: none;
 }
+
+@layer base {
+article p {
+@apply text-md lg:text-lg mb-6 mb-2
+}
+
+article h2 {
+  @apply mb-3 mt-10 text-3xl font-bold text-gray
+}
+
+article ul {
+  @apply mt-4 list-outside gap-32 p-0 pl-12
+}
+
+article ul {
+  list-style-image: 'url("/checkmark-sm.png")'
+}
+
+article li {
+  @apply my-2 pl-4 lg:my-2
+}
+
+article a {
+  @apply text-orange
+}
+}
+ */

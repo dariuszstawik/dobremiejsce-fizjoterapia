@@ -74,10 +74,10 @@ mb-6 text-xl"
             }}
           />
         </div>
-        <div className="max-w-4xl mx-auto">
+        <article className="max-w-4xl mx-auto">
           {children}
           {!isBlog && <Banner>{bannerBody}</Banner>}
-        </div>
+        </article>
       </div>
     </section>
   );
