@@ -44,7 +44,7 @@ export default async function Page({ params }) {
         isBlog
         title={blogPost.fields.title}
         lead={blogPost.fields.lead}
-        img={`https://${
+        img={`https:${
           blogPost.fields.image ? blogPost.fields.image.fields.file.url : ""
         }`} //blogPost.fields.image ? blogPost.fields.image.fields.file.url : ""}
         // alt={
