@@ -18,8 +18,8 @@ export default function DiagnostykaMetodaPrechtla() {
       <PageTemplate
         title={
           <>
-            Diagnostyka metodą Prechtla - wczesne wsparcie w rozwoju Twojego
-            dziecka
+            Diagnostyka metodą Prechtla w&nbsp;Katowicach - wczesne wsparcie
+            w&nbsp;rozwoju Twojego dziecka
           </>
         }
         lead="Czy wiesz, że już w pierwszych miesiącach życia możemy ocenić, czy rozwój Twojego maluszka przebiega prawidłowo? Diagnostyka metodą Prechtla to delikatne i precyzyjne narzędzie, które pomaga nam w tym zadaniu."

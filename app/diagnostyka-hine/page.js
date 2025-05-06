@@ -17,7 +17,10 @@ export default function DiagnostykaHINE() {
       <Navbar />
       <PageTemplate
         title={
-          <>Diagnostyka HINE - wczesne wsparcie w rozwoju Twojego dziecka</>
+          <>
+            Diagnostyka HINE w&nbsp;Katowicach - wczesne wsparcie w&nbsp;rozwoju
+            Twojego dziecka
+          </>
         }
         lead="Zastanawiasz się, czy rozwój Twojego maluszka przebiega prawidłowo? Test HINE (Hammersmith Infant Neurological Examination) to precyzyjne narzędzie diagnostyczne, które pomaga nam ocenić rozwój psychomotoryczny niemowląt i wcześnie wykryć ewentualne trudności."
         // img="/dobremiejsce008.jpg"

@@ -2,6 +2,12 @@ import BlogCard from "../components/blog-card";
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/section-title";
 
+export const metadata = {
+  title: "Blog Dobre Miejsce – pytania rodziców, porady specjalistów",
+  description:
+    "Fizjoterapeuci dzieci z Katowic odpowiadają na pytania rodziców: wcześniaki, napięcie mięśniowe, SI, wady postawy. Porady i wiedza.",
+};
+
 export default function Blog() {
   return (
     <>
