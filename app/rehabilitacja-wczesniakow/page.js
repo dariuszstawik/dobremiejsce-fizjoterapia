@@ -5,7 +5,8 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Rehabilitacja wczesniaków Katowice | Dobre Miejsce",
-  description: "Rehabilitacja wczesniaków w Katowicach",
+  description:
+    "Specjalistyczna rehabilitacja wcześniaków w Katowicach. Indywidualna terapia wspierająca rozwój dziecka od pierwszych dni życia.",
   robots: {
     index: true,
     follow: true,

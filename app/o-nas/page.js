@@ -10,7 +10,8 @@ import Link from "next/link";
 
 export const metadata = {
   title: "O nas | Dobre Miejsce",
-  description: "O nas: Dobre Miejsce fizjoterapia dzieci",
+  description:
+    "Dobre Miejsce to wyjątkowa przestrzeń stworzona z myślą o najmłodszych pacjentach i ich rodzinach. Powstaliśmy z przekonania, że każde dziecko zasługuje na najlepszą możliwą opiekę terapeutyczną, prowadzoną w przyjaznej, pełnej ciepła atmosferze.",
   robots: {
     index: true,
     follow: true,

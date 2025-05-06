@@ -2,8 +2,9 @@ import Navbar from "../components/navbar";
 import PageTemplate from "../components/page-template";
 
 export const metadata = {
-  title: "Diagnostyka metodą Prechtla | Dobre Miejsce",
-  description: "Diagnostyka rozwoju dziecka metodą Prechtla w Katowicach",
+  title: "Diagnostyka metodą Prechtla Katowice| Dobre Miejsce",
+  description:
+    "Specjalistyczna diagnostyka rozwoju niemowląt metodą Prechtla w Katowicach. Wczesne wykrywanie zaburzeń rozwojowych u wcześniaków i noworodków.",
   robots: {
     index: true,
     follow: true,
@@ -24,7 +25,7 @@ export default function DiagnostykaMetodaPrechtla() {
         lead="Czy wiesz, że już w pierwszych miesiącach życia możemy ocenić, czy rozwój Twojego maluszka przebiega prawidłowo? Diagnostyka metodą Prechtla to delikatne i precyzyjne narzędzie, które pomaga nam w tym zadaniu."
         img="/baby-hero.jpg"
         alt="Diagnostyka metodą Prechtla w Katowicach"
-        bannerBody="Nie czekaj - zadbaj o rozwój swojego maluszka już dziś. Umów się na badanie metodą Prechtla i zyskaj pewność, że rozwój Twojego dziecka jest pod najlepszą opieką."
+        bannerBody="Nie czekaj - zadbaj o rozwój swojego maluszka już dziś. Umów się na badanie metodą Prechtla w Katowicach i zyskaj pewność, że rozwój Twojego dziecka jest pod najlepszą opieką."
       >
         {
           <>
@@ -202,10 +203,11 @@ export default function DiagnostykaMetodaPrechtla() {
                 Diagnostyka Prechtla w Katowicach: profesjonalne wsparcie
               </h2>
               <div className="text-md lg:text-lg mb-6">
-                W Dobrym Miejscu badanie przeprowadzają certyfikowani
-                specjaliści z wieloletnim doświadczeniem w pracy z najmłodszymi
-                pacjentami. Rozumiemy, jak ważna jest wczesna diagnostyka,
-                dlatego dbamy o spokojną, przyjazną atmosferę podczas badania.
+                W Dobrym Miejscu w Katowicach badanie przeprowadzają
+                certyfikowani specjaliści z wieloletnim doświadczeniem w pracy z
+                najmłodszymi pacjentami. Rozumiemy, jak ważna jest wczesna
+                diagnostyka, dlatego dbamy o spokojną, przyjazną atmosferę
+                podczas badania.
               </div>
             </div>
           </>

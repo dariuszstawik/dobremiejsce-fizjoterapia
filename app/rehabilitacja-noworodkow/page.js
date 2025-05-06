@@ -5,7 +5,7 @@ export const metadata = {
   title:
     "Rehabilitacja noworodków i niemowląt z zaburzeniami napięcia mięśniowego | Dobre Miejsce",
   description:
-    "Rehabilitacja noworodków i niemowląt z zaburzeniami napięcia mięśniowego w Katowicach",
+    "Profesjonalna fizjoterapia noworodków i niemowląt z zaburzeniami napięcia mięśniowego w Katowicach. Terapia NDT-Bobath prowadzona przez doświadczone specjalistki.",
   robots: {
     index: true,
     follow: true,

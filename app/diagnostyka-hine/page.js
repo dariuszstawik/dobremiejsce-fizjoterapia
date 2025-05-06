@@ -2,8 +2,9 @@ import Navbar from "../components/navbar";
 import PageTemplate from "../components/page-template";
 
 export const metadata = {
-  title: "Diagnostyka Hine | Dobre Miejsce",
-  description: "Diagnostyka rozwoju dziecka metodą Hine w Katowicach",
+  title: "Diagnostyka Hine Katowice | Dobre Miejsce",
+  description:
+    "Precyzyjna diagnoza rozwoju psychomotorycznego niemowląt metodą HINE. Katowice – fizjoterapia dziecięca.",
   robots: {
     index: true,
     follow: true,
@@ -22,7 +23,7 @@ export default function DiagnostykaHINE() {
         // img="/dobremiejsce008.jpg"
         img="/dm4-1.jpg"
         alt="Diagnostyka HINE w Katowicach"
-        bannerBody="Nie czekaj - wczesna diagnostyka to klucz do skutecznej terapii. Umów się na badanie HINE i zyskaj pewność, że rozwój Twojego dziecka jest pod najlepszą kontrolą. W Dobrym Miejscu każde badanie przeprowadzamy z najwyższą starannością, w przyjaznej atmosferze i z pełnym wsparciem dla rodziców."
+        bannerBody="Nie czekaj - wczesna diagnostyka to klucz do skutecznej terapii. Umów się na badanie HINE w Katowicach i zyskaj pewność, że rozwój Twojego dziecka jest pod najlepszą kontrolą. W Dobrym Miejscu każde badanie przeprowadzamy z najwyższą starannością, w przyjaznej atmosferze i z pełnym wsparciem dla rodziców."
       >
         {
           <>
@@ -247,11 +248,11 @@ export default function DiagnostykaHINE() {
                 Doświadczony zespół
               </h2>
               <div className="text-md lg:text-lg mb-6">
-                W Dobrym Miejscu diagnostykę HINE przeprowadzają certyfikowane
-                fizjoterapeutki z wieloletnim doświadczeniem w pracy z
-                najmłodszymi pacjentami. Nasze doświadczenie kliniczne pozwala
-                na precyzyjną interpretację wyników i zaplanowanie skutecznej
-                terapii.
+                W Dobrym Miejscu w Katowicach diagnostykę HINE przeprowadzają
+                certyfikowane fizjoterapeutki z wieloletnim doświadczeniem w
+                pracy z najmłodszymi pacjentami. Nasze doświadczenie kliniczne
+                pozwala na precyzyjną interpretację wyników i zaplanowanie
+                skutecznej terapii.
               </div>
             </div>
           </>

@@ -3,9 +3,9 @@ import Navbar from "../components/navbar";
 import PageTemplate from "../components/page-template";
 
 export const metadata = {
-  title: "Terapia wad postawy u dzieci | Dobre Miejsce",
+  title: "Terapia wad postawy u dzieci Katowice | Dobre Miejsce",
   description:
-    "Terapia wad postawy u dzieci w Katowicach - korekcja wad postawy u dzieci",
+    "Profesjonalna terapia wad postawy u dzieci w Katowicach – ćwiczenia korekcyjne, wkładki ortopedyczne",
   robots: {
     index: true,
     follow: true,
@@ -16,7 +16,11 @@ export default function TerapiaWadPostawyUDzieci() {
     <>
       <Navbar />
       <PageTemplate
-        title={<>Terapia wad postawy u dzieci</>}
+        title={
+          <>
+            Terapia wad postawy u dzieci <br /> w Katowicach
+          </>
+        }
         lead="Czy zauważyłeś/aś, że Twoje dziecko często się garbi, ma asymetryczne ramiona lub skarży się na bóle pleców? Te sygnały mogą wskazywać na wady postawy, które - wcześnie wykryte i leczone - można skutecznie skorygować."
         img="/dm7.jpg"
         alt="Terapia wad postawy w Katowicach"
