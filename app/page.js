@@ -74,7 +74,6 @@ export default function Home() {
             title="Terapia integracji sensorycznej"
             subtitle="oferta"
             img="/terapiasiblob.png"
-            // img="/terapiasiblob2.png"
             alt="Dobre Miejsce w Katowicach zaprasza!"
             buttonLink="/terapia-si-w-katowicach"
             buttonTitle="dowiedz się więcej"
@@ -95,38 +94,12 @@ export default function Home() {
             Profilaktyka i terapia problemów z postawą ciała
           </ParagraphWithImageOnTheRight>
         </div>
-        {/* <div className="flex flex-wrap gap-16 justify-center items-center mb-28">
-          <ServiceCard
-            title="Rehabilitacja najmłodszych"
-            description="Wspieramy prawidłowy rozwój wcześniaków i niemowląt z zaburzeniami
-        napięcia mięśniowego"
-            img="/dobremiejsce001.jpg"
-          />
-
-          <ServiceCard
-            title="Diagnostyka rozwoju"
-            description="Wczesne wykrywanie trudności rozwojowych metodami Prechtla i HINE"
-            img="/dobremiejsce004.jpg"
-          />
-
-          <ServiceCard
-            title="Terapia integracji sensorycznej"
-            description="Pomoc w lepszym rozumieniu i przetwarzaniu bodźców"
-            img="/terapiasi.jpeg"
-          />
-
-          <ServiceCard
-            title="Korekcja wad postawy"
-            description="Profilaktyka i terapia problemów z postawą ciała"
-            img="/wadypostawy.jpeg"
-          />
-        </div> */}
       </div>
       <TeamSectionHomepage />
       <SectionTitle title="Dlaczego my?" />
       <FeaturesHomepage />
       <SectionTitle title="Opinie klientów" />
-      {/* <!-- Elfsight Google Reviews | Untitled Google Reviews --> */}
+
       <script
         src="https://static.elfsight.com/platform/platform.js"
         async
@@ -135,7 +108,6 @@ export default function Home() {
         className="elfsight-app-09f8947f-4893-4371-af58-0d0a25bb0561"
         data-elfsight-app-lazy
       ></div>
-      {/* <SectionTitle title="Dlaczego my?" /> */}
       <div className="container my-32 mb-32 px-4 mx-auto max-w-[90%] ">
         <SectionTitle title="Blog: pytania rodziców" />
         <div className="w-full flex flex-wrap gap-16 justify-center items-center ">

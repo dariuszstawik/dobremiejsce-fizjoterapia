@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Arrow from "../arrow";
 import { Fade } from "react-awesome-reveal";
+import Image from "next/image";
 
 export default function BlogCard({ title, content, slug, img, href, alt }) {
   return (
@@ -14,13 +15,20 @@ export default function BlogCard({ title, content, slug, img, href, alt }) {
           height={img?.fields?.file?.details?.image?.height}
           alt={img?.fields?.description ? img.fields.description : ""}
         /> */}
-          <img
-            // src="dobremiejsce008.jpg"
+          {/* <img
             src={img}
             alt={alt || title}
-            className="object-cover h-48 rounded-br-[100px] lg:h-48 xl:h-56 w-full"
+            className="object-cover h-full rounded-br-[100px] lg:h-48 xl:h-56 w-full"
+          /> */}
+
+          <Image
+            className="object-cover h-full rounded-br-[100px] lg:h-48 xl:h-56 w-full"
+            src={img}
+            width={280}
+            height={280}
+            // layout="responsive"
+            alt={alt || title}
           />
-          {/* <div className=" h-6 bg-orange" /> */}
         </div>
         <div className="w-1/2 flex flex-col justify-between items-start px-6 py-8  rounded-b sm:px-8">
           <div className="flex flex-col justify-start items-start">
