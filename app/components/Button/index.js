@@ -3,7 +3,7 @@ import Arrow from "../arrow";
 
 export default function Button({ title, href, hasSecondBg }) {
   return (
-    <Link href={href || ""} target="_blank" rel="noreferrer noopener nofollow">
+    <Link href={href || ""}>
       <button
         className={`whitespace-nowrap rounded-full ${
           hasSecondBg
