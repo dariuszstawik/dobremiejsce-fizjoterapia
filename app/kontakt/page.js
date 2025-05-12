@@ -10,6 +10,24 @@ export const metadata = {
     index: true,
     follow: true,
   },
+
+  openGraph: {
+    title: "Kontakt | Dobre Miejsce",
+    description:
+      "Skontaktuj się z gabinetem fizjoterapii dziecięcej Dobre Miejsce w Katowicach. Umów wizytę - ul. Ceglana 66, tel. 539 937 132 lub 577 611 464.",
+    url: "https://dobremiejsce-fizjoterapia.pl/kontakt",
+    siteName: "Dobre Miejsce - fizjoterapia dzieci",
+    locale: "pl_PL",
+    type: "website",
+    images: [
+      {
+        url: "https://dobremiejsce-fizjoterapia.pl/dobremiejsce009.jpg",
+        width: 1200,
+        height: 800,
+        alt: "Fizjoterapia dzieci",
+      },
+    ],
+  },
 };
 
 export default function Kontakt() {

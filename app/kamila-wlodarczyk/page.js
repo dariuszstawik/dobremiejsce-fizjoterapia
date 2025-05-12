@@ -10,6 +10,24 @@ export const metadata = {
     index: true,
     follow: true,
   },
+
+  openGraph: {
+    title: "Kamila Włodarczyk - fizjoterapeuta dzieci",
+    description:
+      "Kamila Włodarczyk - fizjoterapeuta dzieci w Katowicach - profil zawodowy, kwalifikacje, dane kontaktowe",
+    url: "https://dobremiejsce-fizjoterapia.pl/kamila-wlodarczyk",
+    siteName: "Dobre Miejsce - fizjoterapia dzieci",
+    locale: "pl_PL",
+    type: "website",
+    images: [
+      {
+        url: "https://dobremiejsce-fizjoterapia.pl/kamila-wlodarczyk.png",
+        width: 1200,
+        height: 800,
+        alt: "Fizjoterapia dzieci",
+      },
+    ],
+  },
 };
 
 export default function KamilaWlodarczyk() {

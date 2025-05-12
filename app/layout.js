@@ -27,6 +27,23 @@ export const metadata = {
   verification: {
     google: "xfPCt4cpOku2YCInC_8lRcsPqy-MhPfZ0ctpzI5IvRY",
   },
+  openGraph: {
+    title: "Dobre Miejsce - fizjoterapia dzieci Katowice",
+    description:
+      "Przyjazna przestrzeń w Katowicach, która powstała, by wspierać prawidłowy rozwój noworodków, niemowląt i większych dzieci",
+    url: "https://dobremiejsce-fizjoterapia.pl",
+    siteName: "Dobre Miejsce - fizjoterapia dzieci",
+    locale: "pl_PL",
+    type: "website",
+    images: [
+      {
+        url: "https://dobremiejsce-fizjoterapia.pl/dobremiejsce009.jpg",
+        width: 1200,
+        height: 800,
+        alt: "Fizjoterapia dzieci",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {

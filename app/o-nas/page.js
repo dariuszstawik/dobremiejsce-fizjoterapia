@@ -16,6 +16,23 @@ export const metadata = {
     index: true,
     follow: true,
   },
+  openGraph: {
+    title: "O nas | Dobre Miejsce",
+    description:
+      "Dobre Miejsce to wyjątkowa przestrzeń stworzona z myślą o najmłodszych pacjentach i ich rodzinach. Powstaliśmy z przekonania, że każde dziecko zasługuje na najlepszą możliwą opiekę terapeutyczną, prowadzoną w przyjaznej, pełnej ciepła atmosferze.",
+    url: "https://dobremiejsce-fizjoterapia.pl/o-nas",
+    siteName: "Dobre Miejsce - fizjoterapia dzieci",
+    locale: "pl_PL",
+    type: "website",
+    images: [
+      {
+        url: "https://dobremiejsce-fizjoterapia.pl/dobremiejsce009.jpg",
+        width: 1200,
+        height: 800,
+        alt: "Fizjoterapia dzieci",
+      },
+    ],
+  },
 };
 
 export default function ONas() {

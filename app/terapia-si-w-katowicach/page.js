@@ -10,6 +10,23 @@ export const metadata = {
     index: true,
     follow: true,
   },
+  openGraph: {
+    title: "Terapia SI w Katowicach | Dobre Miejsce",
+    description:
+      "Pomagamy dzieciom z zaburzeniami integracji sensorycznej. Diagnoza SI i terapia w Katowicach – w przyjaznej atmosferze.",
+    url: "https://dobremiejsce-fizjoterapia.pl/terapia-si-w-katowicach",
+    siteName: "Dobre Miejsce - fizjoterapia dzieci",
+    locale: "pl_PL",
+    type: "website",
+    images: [
+      {
+        url: "https://dobremiejsce-fizjoterapia.pl/dm2.jpg",
+        width: 2000,
+        height: 2667,
+        alt: "Fizjoterapia dzieci",
+      },
+    ],
+  },
 };
 export default function TerapiaSIWKatowicach() {
   return (

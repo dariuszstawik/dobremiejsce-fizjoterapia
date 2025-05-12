@@ -9,6 +9,24 @@ export const metadata = {
     index: true,
     follow: true,
   },
+
+  openGraph: {
+    title: "Diagnostyka Hine Katowice | Dobre Miejsce",
+    description:
+      "Precyzyjna diagnoza rozwoju psychomotorycznego niemowląt metodą HINE. Katowice – fizjoterapia dziecięca.",
+    url: "https://dobremiejsce-fizjoterapia.pl/diagnostyka-hine",
+    siteName: "Dobre Miejsce - fizjoterapia dzieci",
+    locale: "pl_PL",
+    type: "website",
+    images: [
+      {
+        url: "https://dobremiejsce-fizjoterapia.pl/dm4-1.jpg",
+        width: 1200,
+        height: 800,
+        alt: "Fizjoterapia dzieci",
+      },
+    ],
+  },
 };
 
 export default function DiagnostykaHINE() {

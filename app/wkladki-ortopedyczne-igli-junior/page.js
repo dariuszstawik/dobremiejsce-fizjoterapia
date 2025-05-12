@@ -9,6 +9,24 @@ export const metadata = {
     index: true,
     follow: true,
   },
+
+  openGraph: {
+    title: "Wkładki ortopedyczne IGLI Junior | Dobre Miejsce",
+    description:
+      "Wkładki ortopedyczne IGLI Junior to innowacyjne rozwiązanie, które wspiera naturalne kształtowanie się stóp i pomaga korygować ich wady.",
+    url: "https://dobremiejsce-fizjoterapia.pl/wkladki-ortopedyczne-igli-junior",
+    siteName: "Dobre Miejsce - fizjoterapia dzieci",
+    locale: "pl_PL",
+    type: "website",
+    images: [
+      {
+        url: "https://dobremiejsce-fizjoterapia.pl/igli-junior-2.webp",
+        width: 1024,
+        height: 1538,
+        alt: "Fizjoterapia dzieci",
+      },
+    ],
+  },
 };
 export default function WkladkiIgliJunior() {
   return (

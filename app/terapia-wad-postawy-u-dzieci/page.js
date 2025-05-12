@@ -10,6 +10,24 @@ export const metadata = {
     index: true,
     follow: true,
   },
+
+  openGraph: {
+    title: "Terapia wad postawy u dzieci Katowice",
+    description:
+      "Profesjonalna terapia wad postawy u dzieci w Katowicach – ćwiczenia korekcyjne, wkładki ortopedyczne",
+    url: "https://dobremiejsce-fizjoterapia.pl/terapia-wad-postawy-u-dzieci",
+    siteName: "Dobre Miejsce - fizjoterapia dzieci",
+    locale: "pl_PL",
+    type: "website",
+    images: [
+      {
+        url: "https://dobremiejsce-fizjoterapia.pl/dm7.jpg",
+        width: 2000,
+        height: 2667,
+        alt: "Fizjoterapia dzieci",
+      },
+    ],
+  },
 };
 export default function TerapiaWadPostawyUDzieci() {
   return (

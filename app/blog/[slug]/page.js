@@ -19,6 +19,22 @@ export async function generateMetadata({ params }) {
   return {
     title: `${blogPost.fields.title || "Blog"} | Dobre Miejsce`,
     description: blogPost.fields.lead,
+    openGraph: {
+      title: `${blogPost.fields.title || "Blog"} | Dobre Miejsce`,
+      description: blogPost.fields.lead,
+      url: `https://dobremiejsce-fizjoterapia.pl/blog/${slug}`,
+      siteName: "Dobre Miejsce - fizjoterapia dzieci",
+      locale: "pl_PL",
+      type: "website",
+      images: [
+        {
+          url: `https://dobremiejsce-fizjoterapia.pl/dobremiejsce009.jpg`,
+          width: 1200,
+          height: 800,
+          alt: "Fizjoterapia dzieci",
+        },
+      ],
+    },
   };
 }
 

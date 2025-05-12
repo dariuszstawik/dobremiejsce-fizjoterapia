@@ -9,6 +9,24 @@ export const metadata = {
     index: true,
     follow: true,
   },
+
+  openGraph: {
+    title: "Diagnostyka metodą Prechtla Katowice| Dobre Miejsce",
+    description:
+      "Specjalistyczna diagnostyka rozwoju niemowląt metodą Prechtla w Katowicach. Wczesne wykrywanie zaburzeń rozwojowych u wcześniaków i noworodków.",
+    url: "https://dobremiejsce-fizjoterapia.pl/diagnostyka-metoda-prechtla",
+    siteName: "Dobre Miejsce - fizjoterapia dzieci",
+    locale: "pl_PL",
+    type: "website",
+    images: [
+      {
+        url: "https://dobremiejsce-fizjoterapia.pl/baby-hero.jpg",
+        width: 1920,
+        height: 1272,
+        alt: "Fizjoterapia dzieci",
+      },
+    ],
+  },
 };
 
 export default function DiagnostykaMetodaPrechtla() {

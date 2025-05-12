@@ -5,7 +5,24 @@ import SectionTitle from "../components/section-title";
 export const metadata = {
   title: "Blog Dobre Miejsce – pytania rodziców, porady specjalistów",
   description:
-    "Fizjoterapeuci dzieci z Katowic odpowiadają na pytania rodziców: wcześniaki, napięcie mięśniowe, SI, wady postawy. Porady i wiedza.",
+    "Fizjoterapeuci z Katowic odpowiadają na pytania rodziców: wcześniaki, napięcie mięśniowe, SI, wady postawy. Porady i wiedza.",
+  openGraph: {
+    title: "Blog Dobre Miejsce – pytania rodziców, porady specjalistów",
+    description:
+      "Fizjoterapeuci z Katowic odpowiadają na pytania rodziców: wcześniaki, napięcie mięśniowe, SI, wady postawy. Porady i wiedza.",
+    url: "https://dobremiejsce-fizjoterapia.pl/blog",
+    siteName: "Dobre Miejsce - fizjoterapia dzieci",
+    locale: "pl_PL",
+    type: "website",
+    images: [
+      {
+        url: "https://dobremiejsce-fizjoterapia.pl/dobremiejsce009.jpg",
+        width: 1200,
+        height: 800,
+        alt: "Fizjoterapia dzieci",
+      },
+    ],
+  },
 };
 
 export default function Blog() {

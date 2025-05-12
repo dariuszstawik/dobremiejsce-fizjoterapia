@@ -9,6 +9,23 @@ export const metadata = {
     index: true,
     follow: true,
   },
+
+  openGraph: {
+    title: "Cennik | Dobre Miejsce",
+    description: "Cennik usług fizjoterapii dzieci w Katowicach",
+    url: "https://dobremiejsce-fizjoterapia.pl/cennik",
+    siteName: "Dobre Miejsce - fizjoterapia dzieci",
+    locale: "pl_PL",
+    type: "website",
+    images: [
+      {
+        url: "https://dobremiejsce-fizjoterapia.pl/dobremiejsce009.jpg",
+        width: 1200,
+        height: 800,
+        alt: "Fizjoterapia dzieci",
+      },
+    ],
+  },
 };
 
 export default function Cennik() {

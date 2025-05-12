@@ -11,6 +11,24 @@ export const metadata = {
     index: true,
     follow: true,
   },
+
+  openGraph: {
+    title: "Rehabilitacja wczesniaków Katowice | Dobre Miejsce",
+    description:
+      "Specjalistyczna rehabilitacja wcześniaków w Katowicach. Indywidualna terapia wspierająca rozwój dziecka od pierwszych dni życia.",
+    url: "https://dobremiejsce-fizjoterapia.pl/rehabilitacja-wczesniakow",
+    siteName: "Dobre Miejsce - fizjoterapia dzieci",
+    locale: "pl_PL",
+    type: "website",
+    images: [
+      {
+        url: "https://dobremiejsce-fizjoterapia.pl/baby-hero.jpg",
+        width: 1920,
+        height: 1272,
+        alt: "Fizjoterapia dzieci",
+      },
+    ],
+  },
 };
 
 export default function RehabilitacjaWczesniakow() {
@@ -28,7 +46,7 @@ export default function RehabilitacjaWczesniakow() {
           stają przed wieloma wyzwaniami i pytaniami. W Dobrym Miejscu
           rozumiemy, jak ważne jest profesjonalne wsparcie w tym szczególnym
           czasie."
-        img="/dobremiejsce008.jpg"
+        img="/baby-hero.jpg"
         alt="Rehabilitacja wczesniaków w Katowicach"
         bannerBody="W Dobrym Miejscu każdy wcześniak i jego rodzina znajdą ciepłą, przyjazną atmosferę oraz profesjonalną opiekę opartą na najnowszej wiedzy i wieloletnim doświadczeniu. Razem zadbamy o to, by Twój maluszek mógł rozwijać się w najlepszy możliwy sposób."
       >
