@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Arrow from "../arrow";
 
-export default function Button({ title, href, hasSecondBg }) {
+export default function Button({ title, href, hasSecondBg, onClick }) {
   return (
     <Link href={href || ""}>
       <button
+        onClick={onClick}
         className={`whitespace-nowrap rounded-full ${
           hasSecondBg
             ? "bg-secondaryOrange text-gray-800"

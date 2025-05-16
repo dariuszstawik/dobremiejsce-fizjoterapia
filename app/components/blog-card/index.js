@@ -8,27 +8,29 @@ export default function BlogCard({ title, content, slug, img, href, alt }) {
     <Fade direction="bottom" delay="30" triggerOnce>
       <div className="max-w-xl mx-auto transition duration-300 transform bg-peach border rounded shadow-sm hover:-translate-y-1 hover:shadow md:text-center flex">
         <div className=" relative w-1/2">
-          {/* <Image
-          className="object-cover h-48 rounded-t lg:h-48 xl:h-56"
-          src={img ? `https:${img.fields.file.url}` : ""}
-          width={img?.fields?.file?.details?.image?.width}
-          height={img?.fields?.file?.details?.image?.height}
-          alt={img?.fields?.description ? img.fields.description : ""}
-        /> */}
+          <Image
+            className="object-cover h-full rounded-br-[100px] lg:min-h-48 xl:min-h-64 w-full"
+            src={img ? `https:${img.fields.file.url}` : ""}
+            // width={img?.fields?.file?.details?.image?.width}
+            // height={img?.fields?.file?.details?.image?.height}
+            width={280}
+            height={300}
+            alt={img?.fields?.description ? img.fields.description : title}
+          />
           {/* <img
             src={img}
             alt={alt || title}
             className="object-cover h-full rounded-br-[100px] lg:h-48 xl:h-56 w-full"
           /> */}
 
-          <Image
+          {/* <Image
             className="object-cover h-full rounded-br-[100px] lg:h-48 xl:h-56 w-full"
             src={img}
             width={280}
             height={280}
             // layout="responsive"
             alt={alt || title}
-          />
+          /> */}
         </div>
         <div className="w-1/2 flex flex-col justify-between items-start px-6 py-8  rounded-b sm:px-8">
           <div className="flex flex-col justify-start items-start">

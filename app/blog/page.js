@@ -1,4 +1,6 @@
+import { client } from "@/lib/contentful/client";
 import BlogCard from "../components/blog-card";
+import BlogList from "../components/blog-list";
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/section-title";
 
@@ -25,7 +27,17 @@ export const metadata = {
   },
 };
 
-export default function Blog() {
+async function getContentfulContent() {
+  const res = await client.getEntries({
+    content_type: "blogPost",
+  });
+
+  return res.items;
+}
+
+export default async function Blog() {
+  const blogPosts = await getContentfulContent();
+
   return (
     <>
       <Navbar />
@@ -36,6 +48,16 @@ export default function Blog() {
         />
         <SectionTitle title="Blog: pytania rodziców" />
         <div className="w-full flex flex-wrap gap-16 justify-center items-center ">
+          {blogPosts && <BlogList blogPosts={blogPosts} />}
+          {/* {blogPosts?.map((post) => (
+    <BlogCard
+      key={post.sys.id}
+      title={post.fields.title}
+      href={`/blog/${post.fields.slug}`}
+      img={post.fields.image ? post.fields.image.fields.file.url : ""}
+      alt={post.fields.image ? post.fields.image.fields.description : ""}
+    />
+  ))}
           <BlogCard
             title="Zaburzenia napięcia mięśniowego u niemowlaków - jak je rozpoznać i co robić?"
             href="/blog/zaburzenia-napiecia-miesniowego-u-niemowlakow"
@@ -46,7 +68,7 @@ export default function Blog() {
             img="/dobremiejsce008.jpg"
             href="/blog/witamy-na-blogu"
             alt="witamy"
-          />
+          /> */}
         </div>
       </section>
     </>

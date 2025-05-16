@@ -8,8 +8,20 @@ import ParagraphWithImageOnTheRight from "./components/paragraph-with-image-on-t
 import Button from "./components/Button";
 import BlogCard from "./components/blog-card";
 import Link from "next/link";
+import { client } from "@/lib/contentful/client";
+import BlogList from "./components/blog-list";
 
-export default function Home() {
+async function getContentfulContent() {
+  const res = await client.getEntries({
+    content_type: "blogPost",
+  });
+
+  return res.items;
+}
+
+export default async function Home() {
+  const blogPosts = await getContentfulContent();
+
   return (
     <>
       <Navbar />
@@ -111,7 +123,7 @@ export default function Home() {
       <div className="container my-32 mb-32 px-4 mx-auto max-w-[90%] ">
         <SectionTitle title="Blog: pytania rodziców" />
         <div className="w-full flex flex-wrap gap-16 justify-center items-center ">
-          <BlogCard
+          {/* <BlogCard
             title="Zaburzenia napięcia mięśniowego u niemowlaków - jak je rozpoznać i co robić?"
             href="/blog/zaburzenia-napiecia-miesniowego-u-niemowlakow"
             img="/dobremiejsce002.jpg"
@@ -122,7 +134,9 @@ export default function Home() {
             img="/dobremiejsce008.jpg"
             href="/blog/witamy-na-blogu"
             alt="witamy"
-          />
+          /> */}
+
+          {blogPosts && <BlogList blogPosts={blogPosts} isOnHomepage />}
         </div>
       </div>
     </>
