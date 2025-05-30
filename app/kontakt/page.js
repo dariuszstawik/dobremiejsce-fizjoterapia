@@ -79,7 +79,7 @@ export default function Kontakt() {
             </div>
             <div className="flex gap-2">
               <Phone className="text-orange w-4" />
-              <a href="+48 577 611 464">577 611 464</a>
+              <a href="tel:+48 577 611 464">577 611 464</a>
             </div>
           </div>
           <h3 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
