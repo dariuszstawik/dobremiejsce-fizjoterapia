@@ -84,6 +84,14 @@ export default function Cennik() {
                       <p>480 zł — 60 minut</p>
                     </div>
                   </li>
+                  <li className="mb-0 pl-4">
+                    <div className="relative -top-3">
+                      <h3 className="font-bold">
+                        Diagnostyka i Terapia ZOGA Wady Postawy
+                      </h3>
+                      <p>300 zł — 1h&nbsp;30 minut</p>
+                    </div>
+                  </li>
                 </ul>
               </div>
             </div>
