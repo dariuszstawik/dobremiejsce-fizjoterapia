@@ -83,7 +83,7 @@ export default async function Home() {
 
         <div className="max-w-6xl mx-auto">
           <ParagraphWithImageOnTheRight
-            title="Terapia integracji sensorycznej"
+            title="Terapia integracji sensorycznej SI"
             subtitle="oferta"
             img="/terapiasiblob.png"
             alt="Dobre Miejsce w Katowicach zaprasza!"
