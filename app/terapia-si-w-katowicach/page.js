@@ -3,19 +3,17 @@ import Navbar from "../components/navbar";
 import PageTemplate from "../components/page-template";
 
 export const metadata = {
-  title:
-    "Integracja sensoryczna: diagnoza i terapia SI Katowice | Dobre Miejsce",
+  title: "Integracja sensoryczna: diagnoza i terapia SI Katowice",
   description:
-    "Pomagamy dzieciom z zaburzeniami integracji sensorycznej. Diagnoza SI i terapia w Katowicach – w przyjaznej atmosferze.",
+    "Dobre Miejsce - Fizjoterapia dzieci: pomagamy dzieciom z zaburzeniami integracji sensorycznej. Diagnoza SI i terapia SI w Katowicach – w przyjaznej atmosferze.",
   robots: {
     index: true,
     follow: true,
   },
   openGraph: {
-    title:
-      "Integracja sensoryczna: diagnoza i terapia SI Katowice | Dobre Miejsce",
+    title: "Integracja sensoryczna: diagnoza i terapia SI Katowice",
     description:
-      "Pomagamy dzieciom z zaburzeniami integracji sensorycznej. Diagnoza SI i terapia w Katowicach – w przyjaznej atmosferze.",
+      "Dobre Miejsce - Fizjoterapia dzieci: pomagamy dzieciom z zaburzeniami integracji sensorycznej. Diagnoza SI i terapia SI w Katowicach – w przyjaznej atmosferze.",
     url: "https://dobremiejsce-fizjoterapia.pl/terapia-si-w-katowicach",
     siteName: "Dobre Miejsce - fizjoterapia dzieci",
     locale: "pl_PL",

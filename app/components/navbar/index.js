@@ -196,7 +196,7 @@ export default function Navbar() {
 
                       <Link href="terapia-si-w-katowicach">
                         <li className="flex gap-4 items-center hover:text-orange">
-                          terapia SI w Katowicach
+                          diagnoza i terapia SI w Katowicach
                         </li>
                       </Link>
 
