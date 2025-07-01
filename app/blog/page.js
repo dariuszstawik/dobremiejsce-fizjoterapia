@@ -48,27 +48,7 @@ export default async function Blog() {
         />
         <SectionTitle title="Blog: pytania rodziców" />
         <div className="w-full flex flex-wrap gap-16 justify-center items-center ">
-          {blogPosts && <BlogList blogPosts={blogPosts} />}
-          {/* {blogPosts?.map((post) => (
-    <BlogCard
-      key={post.sys.id}
-      title={post.fields.title}
-      href={`/blog/${post.fields.slug}`}
-      img={post.fields.image ? post.fields.image.fields.file.url : ""}
-      alt={post.fields.image ? post.fields.image.fields.description : ""}
-    />
-  ))}
-          <BlogCard
-            title="Zaburzenia napięcia mięśniowego u niemowlaków - jak je rozpoznać i co robić?"
-            href="/blog/zaburzenia-napiecia-miesniowego-u-niemowlakow"
-            img="/dobremiejsce002.jpg"
-          />
-          <BlogCard
-            title="Witamy na blogu!"
-            img="/dobremiejsce008.jpg"
-            href="/blog/witamy-na-blogu"
-            alt="witamy"
-          /> */}
+          {blogPosts && <BlogList blogPosts={blogPosts} amount={6} />}
         </div>
       </section>
     </>

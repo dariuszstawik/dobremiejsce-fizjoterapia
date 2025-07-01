@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "../components/navbar";
 import ParagraphWithImageOnTheRight from "../components/paragraph-with-image-on-the-right";
 import Pricing from "../components/pricing-section";
@@ -72,15 +73,19 @@ export default function Cennik() {
                   </li>
                   <li className="mb-0 pl-4">
                     <div className="relative -top-3">
-                      <h3 className="font-bold">
-                        Terapia integracji sensorycznej
-                      </h3>
+                      <Link href="/terapia-si-w-katowicach">
+                        <h3 className="font-bold">
+                          Terapia integracji sensorycznej
+                        </h3>
+                      </Link>
                       <p>160 zł — 45 minut</p>
                     </div>
                   </li>
                   <li className="mb-0 pl-4">
                     <div className="relative -top-3">
-                      <h3 className="font-bold">Wykonanie wkładek IGLI</h3>
+                      <Link href="/wkladki-ortopedyczne-igli-junior">
+                        <h3 className="font-bold">Wykonanie wkładek IGLI</h3>
+                      </Link>
                       <p>480 zł — 60 minut</p>
                     </div>
                   </li>

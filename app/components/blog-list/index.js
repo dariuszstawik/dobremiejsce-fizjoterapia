@@ -3,10 +3,10 @@ import { useState } from "react";
 import Button from "../Button";
 import BlogCard from "../blog-card";
 
-export default function BlogList({ blogPosts, isOnHomepage }) {
+export default function BlogList({ blogPosts, isOnHomepage, amount = 6 }) {
   //   const newsAmount = 2;
 
-  const [maxAmount, setMaxAmount] = useState(2);
+  const [maxAmount, setMaxAmount] = useState(amount);
 
   const increaseMaxAmount = () => {
     setMaxAmount(maxAmount + 2);
