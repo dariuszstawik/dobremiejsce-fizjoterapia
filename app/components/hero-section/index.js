@@ -19,7 +19,7 @@ export default function HeroSection() {
                 <p className="text-gray-700 text-base leading-paragraph md:text-lg">
                   Dobre Miejsce dla Twojego dziecka to przyjazna przestrzeń,
                   która powstała, by wspierać prawidłowy rozwój noworodków,
-                  niemowląt i większych dzieci. Fizjoterapia najmłodszych
+                  niemowląt i większych dzieci. Fizjoterapia dzieci w Katowicach
                   płynąca z pasji i zaangażowania dwóch fizjoterapeutek
                   pediatrycznych — Kamili Włodarczyk i Martyny Cesarczyk.
                 </p>
