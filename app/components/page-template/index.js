@@ -3,6 +3,7 @@ import Image from "next/image";
 
 export default function PageTemplate({
   title,
+  bannerTitle,
   lead,
   img,
   alt,
@@ -76,7 +77,7 @@ mb-6 text-xl"
         </div>
         <article className="max-w-4xl mx-auto">
           {children}
-          {!isBlog && <Banner>{bannerBody}</Banner>}
+          {!isBlog && <Banner bannerTitle={bannerTitle}>{bannerBody}</Banner>}
         </article>
       </div>
     </section>

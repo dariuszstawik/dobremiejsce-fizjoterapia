@@ -4,7 +4,7 @@ import PageTemplate from "../components/page-template";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Rehabilitacja wczesniaków Katowice | Dobre Miejsce",
+  title: "Rehabilitacja wcześniaków Katowice | Dobre Miejsce",
   description:
     "Specjalistyczna rehabilitacja wcześniaków w Katowicach. Indywidualna terapia wspierająca rozwój dziecka od pierwszych dni życia.",
   robots: {
@@ -13,7 +13,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Rehabilitacja wczesniaków Katowice | Dobre Miejsce",
+    title: "Rehabilitacja wcześniaków Katowice | Dobre Miejsce",
     description:
       "Specjalistyczna rehabilitacja wcześniaków w Katowicach. Indywidualna terapia wspierająca rozwój dziecka od pierwszych dni życia.",
     url: "https://dobremiejsce-fizjoterapia.pl/rehabilitacja-wczesniakow",
@@ -38,8 +38,9 @@ export default function RehabilitacjaWczesniakow() {
       <PageTemplate
         title={
           <>
-            Rehabilitacja wczesniaków
-            <br />w Katowicach
+            Rehabilitacja wcześniaków
+            <br />
+            Katowice
           </>
         }
         lead="Kiedy maluszek przychodzi na świat wcześniej niż planowano, rodzice
@@ -48,6 +49,7 @@ export default function RehabilitacjaWczesniakow() {
           czasie."
         img="/baby-hero.jpg"
         alt="Rehabilitacja wczesniaków w Katowicach"
+        bannerTitle="Rehabilitacja wcześniaków w Katowicach"
         bannerBody="W Dobrym Miejscu każdy wcześniak i jego rodzina znajdą ciepłą, przyjazną atmosferę oraz profesjonalną opiekę opartą na najnowszej wiedzy i wieloletnim doświadczeniu. Razem zadbamy o to, by Twój maluszek mógł rozwijać się w najlepszy możliwy sposób."
       >
         {

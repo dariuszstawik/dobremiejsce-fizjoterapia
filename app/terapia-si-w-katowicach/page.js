@@ -37,13 +37,14 @@ export default function TerapiaSIWKatowicach() {
         lead="Czy Twoje dziecko wydaje się nadmiernie wrażliwe na dźwięki, nie lubi określonych faktur ubrań lub ma trudności z utrzymaniem równowagi? Może to być związane z zaburzeniami integracji sensorycznej. W Dobrym Miejscu w Katowicach pomagamy dzieciom lepiej rozumieć i przetwarzać bodźce z otaczającego świata."
         img="/dm2.jpg"
         alt="Terapia SI w Katowicach"
+        bannerTitle="Integracja sensoryczna Katowice"
         bannerBody="Zapraszamy do kontaktu i umówienia diagnozy SI w naszym gabinecie w Katowicach. Wspólnie zadbamy o harmonijny rozwój Twojego dziecka."
       >
         {
           <>
             <div className="max-w-4xl mx-auto">
               <h2 className="mb-3 mt-2 text-3xl font-bold text-gray">
-                Czym jest integracja sensoryczna?
+                Czym jest integracja sensoryczna (SI)?
               </h2>
 
               <p className="text-md lg:text-lg mb-6">
@@ -132,8 +133,7 @@ export default function TerapiaSIWKatowicach() {
               </div>
 
               <h2 className="mb-3 mt-6 text-3xl font-bold text-gray">
-                Terapia integracji sensorycznej (SI) w Katowicach - jak
-                pomagamy?
+                Terapia SI w Katowicach - jak pomagamy?
               </h2>
               <div className="text-md lg:text-lg mb-6">
                 Nasze zajęcia terapeutyczne są prowadzone w formie
