@@ -19,7 +19,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Dobre Miejsce - fizjoterapia dzieci Katowice",
   description:
-    "Przyjazna przestrzeń w Katowicach, która powstała, by wspierać prawidłowy rozwój noworodków, niemowląt i większych dzieci",
+    "Fizjoterapia dzieci w Katowicach płynąca z pasji i zaangażowania dwóch fizjoterapeutek pediatrycznych - Kamili Włodarczyk i Martyny Cesarczyk",
   robots: {
     index: true,
     follow: true,
@@ -30,7 +30,7 @@ export const metadata = {
   openGraph: {
     title: "Dobre Miejsce - fizjoterapia dzieci Katowice",
     description:
-      "Przyjazna przestrzeń w Katowicach, która powstała, by wspierać prawidłowy rozwój noworodków, niemowląt i większych dzieci",
+      "Fizjoterapia dzieci w Katowicach płynąca z pasji i zaangażowania dwóch fizjoterapeutek pediatrycznych - Kamili Włodarczyk i Martyny Cesarczyk",
     url: "https://dobremiejsce-fizjoterapia.pl",
     siteName: "Dobre Miejsce - fizjoterapia dzieci",
     locale: "pl_PL",
