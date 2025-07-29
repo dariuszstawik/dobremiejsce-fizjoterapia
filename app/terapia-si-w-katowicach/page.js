@@ -33,7 +33,7 @@ export default function TerapiaSIWKatowicach() {
     <>
       <Navbar />
       <PageTemplate
-        title={<>Diagnoza i terapia SI w Katowicach</>}
+        title={<>Diagnoza i terapia SI Katowice</>}
         lead="Czy Twoje dziecko wydaje się nadmiernie wrażliwe na dźwięki, nie lubi określonych faktur ubrań lub ma trudności z utrzymaniem równowagi? Może to być związane z zaburzeniami integracji sensorycznej. W Dobrym Miejscu w Katowicach pomagamy dzieciom lepiej rozumieć i przetwarzać bodźce z otaczającego świata."
         img="/dm2.jpg"
         alt="Terapia SI w Katowicach"

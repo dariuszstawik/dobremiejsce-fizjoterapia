@@ -36,7 +36,7 @@ export default function TerapiaWadPostawyUDzieci() {
       <PageTemplate
         title={
           <>
-            Terapia wad postawy u dzieci <br /> w Katowicach
+            Terapia wad postawy u dzieci <br /> Katowice
           </>
         }
         lead="Czy zauważyłeś/aś, że Twoje dziecko często się garbi, ma asymetryczne ramiona lub skarży się na bóle pleców? Te sygnały mogą wskazywać na wady postawy, które - wcześnie wykryte i leczone - można skutecznie skorygować."
@@ -88,8 +88,9 @@ export default function TerapiaWadPostawyUDzieci() {
                 Kompleksowa diagnostyka wad postawy
               </h2>
               <div className="text-md lg:text-lg mb-6">
-                W Dobrym Miejscu przeprowadzamy szczegółową ocenę postawy ciała
-                dziecka, która obejmuje:
+                <Link href="/">W Dobrym Miejscu w Katowicach </Link>
+                przeprowadzamy szczegółową ocenę postawy ciała dziecka, która
+                obejmuje:
                 <ul
                   className="mt-4 list-outside gap-32 p-0 pl-12"
                   style={{ listStyleImage: 'url("/checkmark-sm.png")' }}

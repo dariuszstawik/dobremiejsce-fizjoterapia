@@ -1,8 +1,9 @@
+import Link from "next/link";
 import Navbar from "../components/navbar";
 import PageTemplate from "../components/page-template";
 
 export const metadata = {
-  title: "Wkładki ortopedyczne IGLI Junior | Dobre Miejsce",
+  title: "Wkładki ortopedyczne IGLI Junior Katowice | Dobre Miejsce",
   description:
     "Wkładki ortopedyczne IGLI Junior to innowacyjne rozwiązanie, które wspiera naturalne kształtowanie się stóp i pomaga korygować ich wady.",
   robots: {
@@ -11,7 +12,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Wkładki ortopedyczne IGLI Junior | Dobre Miejsce",
+    title: "Wkładki ortopedyczne IGLI Junior Katowice | Dobre Miejsce",
     description:
       "Wkładki ortopedyczne IGLI Junior to innowacyjne rozwiązanie, które wspiera naturalne kształtowanie się stóp i pomaga korygować ich wady.",
     url: "https://dobremiejsce-fizjoterapia.pl/wkladki-ortopedyczne-igli-junior",
@@ -33,7 +34,13 @@ export default function WkladkiIgliJunior() {
     <>
       <Navbar />
       <PageTemplate
-        title={<>Wkładki ortopedyczne IGLI Junior</>}
+        title={
+          <>
+            Wkładki ortopedyczne IGLI Junior
+            <br />
+            Katowice
+          </>
+        }
         lead="Zdrowe stopy to podstawa prawidłowego rozwoju postawy Twojego dziecka. Wkładki ortopedyczne IGLI Junior to innowacyjne rozwiązanie, które wspiera naturalne kształtowanie się stóp i pomaga korygować ich wady."
         img="/igli-junior-2.webp"
         alt="Wkładki ortopedyczne IGLI Junior"
@@ -113,8 +120,8 @@ export default function WkladkiIgliJunior() {
                 Proces doboru wkładek
               </h2>
               <div className="text-md lg:text-lg mb-6">
-                W Dobrym Miejscu przeprowadzamy dokładną diagnostykę, która
-                obejmuje:
+                <Link href="/">W Dobrym Miejscu w Katowicach</Link>{" "}
+                przeprowadzamy dokładną diagnostykę, która obejmuje:
                 <ul
                   className="mt-4 list-outside gap-32 p-0 pl-12"
                   style={{ listStyleImage: 'url("/checkmark-sm.png")' }}
