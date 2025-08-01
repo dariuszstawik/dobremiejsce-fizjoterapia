@@ -54,6 +54,7 @@ export default function RootLayout({ children }) {
           id="cookieyes"
           type="text/javascript"
           src="https://cdn-cookieyes.com/client_data/8f62ee2d82cf94953a61d281/script.js"
+          defer
         ></script>
       </head>
       <body
