@@ -38,6 +38,18 @@ export default function HeroSection() {
           </div>
         </div>
         <div className="relative lg:col-start-2 lg:row-start-1">
+          <img
+            className="ml-auto -translate-y-12 transform object-cover md:hidden md:w-auto"
+            src="/hero-img-mobile.png"
+            alt="Hero Mobile Image"
+          />
+          <img
+            className="ml-auto hidden w-80 -translate-y-12 object-cover md:block md:w-auto"
+            src="/hero-img.png"
+            alt="Hero Desktop Image"
+          />
+        </div>
+        {/* <div className="relative lg:col-start-2 lg:row-start-1">
           <Image
             className="ml-auto -translate-y-12 transform object-cover md:hidden"
             src="/hero-img-mobile.png"
@@ -54,7 +66,7 @@ export default function HeroSection() {
             priority
             alt="Niemowlę podczas fizjoterapii"
           />
-        </div>
+        </div> */}
       </section>
     </>
   );
