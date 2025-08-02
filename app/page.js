@@ -85,7 +85,7 @@ export default async function Home() {
           <ParagraphWithImageOnTheRight
             title="Terapia integracji sensorycznej SI"
             subtitle="oferta"
-            img="/terapiasiblob.png"
+            img="/terapiasiblob.webp"
             alt="Dobre Miejsce w Katowicach zaprasza!"
             buttonLink="/terapia-si-w-katowicach"
             buttonTitle="dowiedz się więcej"
@@ -98,7 +98,7 @@ export default async function Home() {
           <ParagraphWithImageOnTheRight
             title="Korekcja wad postawy"
             subtitle="oferta"
-            img="/wadypostawyblob1.png"
+            img="/wadypostawyblob1.webp"
             alt="Dobre Miejsce w Katowicach zaprasza!"
             buttonLink="/terapia-wad-postawy-u-dzieci"
             buttonTitle="dowiedz się więcej"
