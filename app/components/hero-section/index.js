@@ -40,12 +40,12 @@ export default function HeroSection() {
         <div className="relative lg:col-start-2 lg:row-start-1">
           <img
             className="ml-auto -translate-y-12 transform object-cover md:hidden md:w-auto"
-            src="/hero-img-mobile.png"
+            src="/hero-img-mobile.webp"
             alt="Hero Mobile Image"
           />
           <img
             className="ml-auto hidden w-80 -translate-y-12 object-cover md:block md:w-auto"
-            src="/hero-img.png"
+            src="/hero-img.webp"
             alt="Hero Desktop Image"
           />
         </div>
