@@ -34,23 +34,31 @@ export default function ParagraphWithImageOnTheRight({
       >
         <div>
           {img && (
-            <Image
+            // <Image
+            //   src={img}
+            //   alt={alt ? alt : ""}
+            //   // width={imgFill ? imgFill : 1000}
+            //   // height={imgFill ? imgFill : 800}
+            //   // priority
+            //   // fill={imgFill}
+            //   {...(!imgFill ? { width: 1000, height: 800 } : { fill: true })}
+            //   sizes="(max-width: 1000px) 100vw, 50vw"
+            //   style={{
+            //     // maxHeight: hasSmallerImg ? "300px" : "none",
+            //     transform: isLeft ? "scaleX(-1)" : "none",
+            //     // width: "100%",
+            //     // height: "auto",
+            //     objectFit: "contain",
+            //   }}
+            //   className="rounded"
+            // />
+
+            <img
               src={img}
               alt={alt ? alt : ""}
-              // width={imgFill ? imgFill : 1000}
-              // height={imgFill ? imgFill : 800}
-              // priority
-              // fill={imgFill}
-              {...(!imgFill ? { width: 1000, height: 800 } : { fill: true })}
-              sizes="(max-width: 1000px) 100vw, 50vw"
-              style={{
-                // maxHeight: hasSmallerImg ? "300px" : "none",
-                transform: isLeft ? "scaleX(-1)" : "none",
-                // width: "100%",
-                // height: "auto",
-                objectFit: "contain",
-              }}
-              className="rounded"
+              className={`rounded ${hasSmallerImg && "max-h-[300px]"} ${
+                isLeft && "scale-x-[-1]"
+              }`}
             />
           )}
         </div>

@@ -33,7 +33,7 @@ export default async function Home() {
           <ParagraphWithImageOnTheRight
             title="Rehabilitacja najmłodszych"
             subtitle="oferta"
-            img="/004blob.png"
+            img="/004blob.webp"
             alt="Dobre Miejsce w Katowicach zaprasza!"
             isLeft
           >
@@ -61,7 +61,7 @@ export default async function Home() {
           <ParagraphWithImageOnTheRight
             title="Diagnostyka rozwoju"
             subtitle="oferta"
-            img="/003blob.png"
+            img="/003blob.webp"
             alt="Dobre Miejsce w Katowicach zaprasza!"
           >
             Wczesne wykrywanie trudności rozwojowych metodami Prechtla i HINE
