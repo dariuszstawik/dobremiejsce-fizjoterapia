@@ -8,7 +8,7 @@ export default function BlogCard({ title, content, slug, img, href, alt }) {
     <Fade direction="bottom" delay="30" triggerOnce>
       <div className="max-w-xl mx-auto transition duration-300 transform bg-peach border rounded shadow-sm hover:-translate-y-1 hover:shadow md:text-center flex">
         <div className=" relative w-1/2">
-          <Image
+          {/* <Image
             className="object-cover h-full rounded-br-[100px] lg:min-h-48 xl:min-h-64 w-full"
             src={img ? `https:${img.fields.file.url}` : ""}
             // width={img?.fields?.file?.details?.image?.width}
@@ -16,12 +16,12 @@ export default function BlogCard({ title, content, slug, img, href, alt }) {
             width={280}
             height={300}
             alt={img?.fields?.description ? img.fields.description : title}
-          />
-          {/* <img
-            src={img}
+          /> */}
+          <img
+            src={img ? `https:${img.fields.file.url}` : ""}
             alt={alt || title}
             className="object-cover h-full rounded-br-[100px] lg:h-48 xl:h-56 w-full"
-          /> */}
+          />
 
           {/* <Image
             className="object-cover h-full rounded-br-[100px] lg:h-48 xl:h-56 w-full"
