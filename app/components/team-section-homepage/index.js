@@ -6,7 +6,10 @@ export default function TeamSectionHomepage() {
   return (
     <section className="relative w-screen py-8  after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full  after:opacity-60">
       <div className="container w-[80%] px-4 mx-auto relative z-20">
-        <SectionTitle title="Kim jesteśmy?" />
+        <SectionTitle
+          title="Kim jesteśmy?"
+          subtitle="Fizjoterapeuta dziecięcy Katowice"
+        />
         <Fade direction="bottom" delay="30" triggerOnce>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 -mx-4">
             <div className="w-full md:max-w-1/2 px-4 py-10 mb-10 bg-peach rounded-xl">
