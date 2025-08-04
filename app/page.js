@@ -108,7 +108,10 @@ export default async function Home() {
         </div>
       </div>
       <TeamSectionHomepage />
-      <SectionTitle title="Dlaczego my?" />
+      <SectionTitle
+        title="Dlaczego my?"
+        subtitle="Fizjoterapeuta dziecięcy Katowice"
+      />
       <FeaturesHomepage />
       <SectionTitle title="Opinie klientów" />
 

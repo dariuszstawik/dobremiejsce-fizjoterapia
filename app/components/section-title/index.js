@@ -11,7 +11,12 @@
 //   );
 // }
 
-export default function SectionTitle({ title, isWhite, isAlignedLeft }) {
+export default function SectionTitle({
+  title,
+  subtitle,
+  isWhite,
+  isAlignedLeft,
+}) {
   return (
     <div
       className={`mt-24 mb-16 flex flex-col ${
@@ -40,7 +45,7 @@ export default function SectionTitle({ title, isWhite, isAlignedLeft }) {
             isWhite ? "text-white" : "text-orange"
           } text-lg my-0 block font-normal`}
         >
-          Dobre Miejsce w Katowicach
+          {subtitle || "Dobre Miejsce w Katowicach"}
         </span>{" "}
         {title}
       </h2>
