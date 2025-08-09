@@ -12,15 +12,22 @@ import { client } from "@/lib/contentful/client";
 import BlogList from "./components/blog-list";
 
 async function getContentfulContent() {
-  const res = await client.getEntries({
+  const resBlog = await client.getEntries({
     content_type: "blogPost",
   });
 
-  return res.items;
+  const resNews = await client.getEntries({
+    content_type: "news",
+  });
+
+  return { blogPosts: resBlog.items, newsPosts: resNews.items };
 }
 
 export default async function Home() {
-  const blogPosts = await getContentfulContent();
+  const contentfulContent = await getContentfulContent();
+  const blogPosts = contentfulContent.blogPosts;
+  const newsPosts = contentfulContent.newsPosts;
+  // const blogPosts = await getContentfulContent();
 
   return (
     <>
@@ -120,14 +127,40 @@ export default async function Home() {
         className="elfsight-app-09f8947f-4893-4371-af58-0d0a25bb0561"
         data-elfsight-app-lazy
       ></div>
-      <div className="container my-32 mb-32 px-4 mx-auto max-w-[90%] ">
-        <SectionTitle title="Blog: pytania rodziców" />
-        <div className="w-full flex flex-wrap gap-16 justify-center items-center ">
-          {blogPosts && (
-            <BlogList blogPosts={blogPosts} isOnHomepage amount={2} />
-          )}
+      <div className="container mt-24 mb-32 px-4 mx-auto max-w-[90%] flex flex-col lg:flex-row gap-16">
+        <div className="max-w-[50%] mx-auto flex flex-col gap-10">
+          <div>
+            <SectionTitle title="Aktualności" isAlignedLeft />
+            <div className="w-full flex flex-wrap gap-16 justify-center items-center ">
+              {blogPosts && (
+                <BlogList
+                  blogPosts={newsPosts}
+                  isOnHomepage
+                  isNews
+                  amount={1}
+                />
+              )}
+            </div>
+          </div>
+          <Button title="przejdź do aktualności" href="/aktualnosci"></Button>
+        </div>
+        <div className="max-w-[50%] mx-auto flex flex-col gap-10">
+          <div>
+            <SectionTitle
+              title="Blog: pytania rodziców"
+              isAlignedLeft
+              subtitle="Fizjoterapia dzieci"
+            />
+            <div className="w-full flex flex-wrap gap-16 justify-center items-center ">
+              {blogPosts && (
+                <BlogList blogPosts={blogPosts} isOnHomepage amount={1} />
+              )}
+            </div>
+          </div>
+          <Button title="przejdź do bloga" href="/blog"></Button>
         </div>
       </div>
+      {/* </div> */}
     </>
   );
 }

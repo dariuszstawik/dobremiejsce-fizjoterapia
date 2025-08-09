@@ -94,7 +94,7 @@ export default function Navbar() {
               className={
                 isMobileMenuActive
                   ? " list-none absolute z-40 w-screen top-full left-0 bg-white py-4 flex flex-col justify-center items-center gap-10 lg:static lg:flex-row lg:h-full"
-                  : " list-none flex-col justify-center align-center items-center gap-16 lg:flex-row hidden lg:flex lg:justify-end lg:h-full lg:gap-10"
+                  : " list-none flex-col justify-center align-center items-center gap-16 lg:flex-row hidden xl:flex lg:justify-end lg:h-full lg:gap-10"
               }
             >
               <li
@@ -200,6 +200,12 @@ export default function Navbar() {
                         </li>
                       </Link>
 
+                      <Link href="/terapia-oddechowa">
+                        <li className="flex gap-4 items-center hover:text-orange">
+                          terapia oddechowa niemowląt i małych dzieci
+                        </li>
+                      </Link>
+
                       <Link href="/terapia-wad-postawy-u-dzieci">
                         <li className="flex gap-4 items-center hover:text-orange">
                           terapia wad postawy u dzieci
@@ -262,6 +268,18 @@ export default function Navbar() {
                   onClick={handleRefresh}
                 >
                   Cennik
+                </Link>
+              </li>
+              <li
+                onClick={closeMobileMenu}
+                className="hover:text-orange cursor-pointer"
+              >
+                <Link
+                  href="/aktualnosci"
+                  // className={`${isActive && "text-primaryBlue"}`}
+                  onClick={handleRefresh}
+                >
+                  Aktualności
                 </Link>
               </li>
               <li

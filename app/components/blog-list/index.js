@@ -3,7 +3,12 @@ import { useState } from "react";
 import Button from "../Button";
 import BlogCard from "../blog-card";
 
-export default function BlogList({ blogPosts, isOnHomepage, amount = 6 }) {
+export default function BlogList({
+  isNews,
+  blogPosts,
+  isOnHomepage,
+  amount = 6,
+}) {
   //   const newsAmount = 2;
 
   const [maxAmount, setMaxAmount] = useState(amount);
@@ -13,7 +18,11 @@ export default function BlogList({ blogPosts, isOnHomepage, amount = 6 }) {
   };
   return (
     <>
-      <ul className="grid grid-cols-1 gap-8 xl:gap-16 xl:grid-cols-2 mx-auto list-none">
+      <ul
+        className={`grid grid-cols-1 gap-8 xl:gap-16 ${
+          isOnHomepage ? "xl:grid-cols-1" : "xl:grid-cols-2"
+        } mx-auto list-none`}
+      >
         {blogPosts &&
           blogPosts.slice(0, maxAmount).map((item, i) => {
             return (
@@ -22,7 +31,11 @@ export default function BlogList({ blogPosts, isOnHomepage, amount = 6 }) {
                   title={item.fields.title}
                   slug={item.fields.slug}
                   img={item.fields.image ? item.fields.image : ""}
-                  href={`/blog/${item.fields.slug}`}
+                  href={
+                    isNews
+                      ? `/aktualnosci/${item.fields.slug}`
+                      : `/blog/${item.fields.slug}`
+                  }
                 />{" "}
               </li>
             );

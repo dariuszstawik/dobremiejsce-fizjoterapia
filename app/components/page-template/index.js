@@ -6,16 +6,18 @@ export default function PageTemplate({
   bannerTitle,
   lead,
   img,
+  imgHeight,
   alt,
   bannerBody,
   children,
   isBlog,
+  isNews,
   imgBottom,
 }) {
   return (
     <section className=" py-32 mt-12 md:py-40 container mx-auto px-8 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
       <div className="bgy1-blur absolute right-0 top-0 z-0 h-full w-full opacity-20 sm:hidden"></div>
-      {isBlog && (
+      {(isBlog || isNews) && (
         <Image
           src="/blob3.svg"
           width={1024}
@@ -26,13 +28,13 @@ export default function PageTemplate({
         />
       )}
       <div className="relative container mx-auto px-4 z-10">
-        {isBlog && (
+        {isNews && (
           <p
             className="
 mb-6 text-xl"
           >
             {" "}
-            Blog: pytania rodziców
+            Aktualności
           </p>
         )}
 
@@ -44,7 +46,7 @@ mb-6 text-xl"
 
         <p className="mb-6 text-2xl max-w-5xl ">{lead}</p>
 
-        {isBlog ? (
+        {isBlog || isNews ? (
           <span className="block h-8" />
         ) : (
           <a
@@ -59,7 +61,7 @@ mb-6 text-xl"
 
         <div
           className="mb-16 relative overflow-hidden rounded-3xl"
-          style={{ height: "512px" }}
+          style={{ height: imgHeight ? `${imgHeight}px` : "512px" }}
         >
           <Image
             className="object-cover transform hover:scale-105 rounded-3xl transition duration-200"
@@ -77,7 +79,9 @@ mb-6 text-xl"
         </div>
         <article className="max-w-4xl mx-auto">
           {children}
-          {!isBlog && <Banner bannerTitle={bannerTitle}>{bannerBody}</Banner>}
+          {!(isBlog || isNews) && (
+            <Banner bannerTitle={bannerTitle}>{bannerBody}</Banner>
+          )}
         </article>
       </div>
     </section>
