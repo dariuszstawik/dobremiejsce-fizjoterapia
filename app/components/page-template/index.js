@@ -37,6 +37,14 @@ mb-6 text-xl"
             Aktualności
           </p>
         )}
+        {isBlog && (
+          <p
+            className="
+mb-6 text-xl"
+          >
+            Blog: pytania rodziców
+          </p>
+        )}
 
         <div className="w-full flex justify-between items-start">
           <h1 className="mb-6 font-heading text-4xl md:text-5xl font-bold leading-tight max-w-5xl">

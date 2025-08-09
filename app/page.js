@@ -127,8 +127,8 @@ export default async function Home() {
         className="elfsight-app-09f8947f-4893-4371-af58-0d0a25bb0561"
         data-elfsight-app-lazy
       ></div>
-      <div className="container mt-24 mb-32 px-4 mx-auto max-w-[90%] flex flex-col lg:flex-row gap-16">
-        <div className="max-w-[50%] mx-auto flex flex-col gap-10">
+      <div className="container mt-24 mb-48 px-4 mx-auto max-w-[90%] flex flex-col lg:flex-row gap-16">
+        <div className="max-w-[100%] lg:max-w-[50%] mx-auto flex flex-col gap-10">
           <div>
             <SectionTitle title="Aktualności" isAlignedLeft />
             <div className="w-full flex flex-wrap gap-16 justify-center items-center ">
@@ -144,7 +144,7 @@ export default async function Home() {
           </div>
           <Button title="przejdź do aktualności" href="/aktualnosci"></Button>
         </div>
-        <div className="max-w-[50%] mx-auto flex flex-col gap-10">
+        <div className="max-w-[100%] lg:max-w-[50%] mx-auto flex flex-col gap-10">
           <div>
             <SectionTitle
               title="Blog: pytania rodziców"
