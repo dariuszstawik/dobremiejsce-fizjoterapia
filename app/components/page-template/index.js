@@ -69,9 +69,9 @@ mb-6 text-xl"
 
         <div
           className="mb-16 relative overflow-hidden rounded-3xl"
-          style={{ height: imgHeight ? `${imgHeight}px` : "512px" }}
+          // style={{ height: imgHeight ? `${imgHeight}px` : "512px" }}
         >
-          <Image
+          {/* <Image
             className="object-cover transform hover:scale-105 rounded-3xl transition duration-200"
             src={img}
             alt={alt || title}
@@ -79,10 +79,15 @@ mb-6 text-xl"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1100px"
             priority
             style={{
-              objectFit: "cover",
-              // objectPosition: "bottom",
-              objectPosition: imgBottom ? "bottom" : "center",
+              objectFit: "contain",
+              objectPosition: "bottom",
+              // objectPosition: imgBottom ? "bottom" : "center",
             }}
+          /> */}
+          <img
+            src={img}
+            alt={alt || title}
+            className="w-full transform hover:scale-105 rounded-3xl transition duration-200"
           />
         </div>
         <article className="max-w-4xl mx-auto">
