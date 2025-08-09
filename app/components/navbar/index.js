@@ -93,7 +93,7 @@ export default function Navbar() {
             <ul
               className={
                 isMobileMenuActive
-                  ? " list-none absolute z-40 w-screen top-full left-0 bg-white py-4 flex flex-col justify-center items-center gap-10 lg:static lg:flex-row lg:h-full"
+                  ? " list-none absolute z-40 w-screen top-full left-0 bg-white py-4 flex flex-col justify-center items-center gap-10 lg:static lg:flex-row lg:min-h-full"
                   : " list-none flex-col justify-center align-center items-center gap-16 lg:flex-row hidden xl:flex lg:justify-end lg:h-full lg:gap-10"
               }
             >
