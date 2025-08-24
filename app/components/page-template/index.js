@@ -67,11 +67,29 @@ mb-6 text-xl"
           </a>
         )}
 
-        <div
+        {/* <div
           className="mb-16 relative overflow-hidden rounded-3xl"
-          // style={{ height: imgHeight ? `${imgHeight}px` : "512px" }}
+          style={{ height: imgHeight ? `${imgHeight}px` : "512px" }}
+        > */}
+
+        <div
+          className="mb-16 group relative w-full overflow-hidden rounded-3xl"
+          style={{ height: imgHeight ? `${imgHeight}px` : "512px" }}
         >
-          {/* <Image
+          <img
+            src={img}
+            alt={alt ?? title ?? ""}
+            className={[
+              "absolute inset-0 w-full h-full",
+              "object-cover",
+              imgBottom ? "object-bottom" : "object-center",
+              "transition-transform duration-200 group-hover:scale-105",
+              "block",
+            ].join(" ")}
+            loading="lazy"
+          />
+        </div>
+        {/* <Image
             className="object-cover transform hover:scale-105 rounded-3xl transition duration-200"
             src={img}
             alt={alt || title}
@@ -79,17 +97,24 @@ mb-6 text-xl"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1100px"
             priority
             style={{
-              objectFit: "contain",
-              objectPosition: "bottom",
+              objectFit: "cover",
+              objectPosition: "center",
               // objectPosition: imgBottom ? "bottom" : "center",
             }}
           /> */}
-          <img
+
+        {/* <img
             src={img}
             alt={alt || title}
             className="w-full transform hover:scale-105 rounded-3xl transition duration-200"
-          />
-        </div>
+            style={{
+              objectFit: "cover",
+              // objectPosition: "center",
+              objectPosition: imgBottom ? "bottom" : "center",
+            }}
+          /> */}
+
+        {/* </div> */}
         <article className="max-w-4xl mx-auto">
           {children}
           {!(isBlog || isNews) && (
