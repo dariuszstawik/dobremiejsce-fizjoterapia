@@ -218,6 +218,12 @@ export default function Navbar() {
                         </li>
                       </Link>
 
+                      <Link href="/terapia-ortopedyczna">
+                        <li className="flex gap-4 items-center hover:text-orange">
+                          terapia ortopedyczna dla dzieci i młodzieży
+                        </li>
+                      </Link>
+
                       <Link href="/diagnostyka-metoda-prechtla">
                         <li className="flex gap-4 items-center hover:text-orange">
                           diagnostyka metodą Prechtla
