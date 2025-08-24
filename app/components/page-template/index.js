@@ -73,8 +73,15 @@ mb-6 text-xl"
         > */}
 
         <div
-          className="mb-16 group relative w-full overflow-hidden rounded-3xl"
-          style={{ height: imgHeight ? `${imgHeight}px` : "512px" }}
+          className="
+    mb-16 group relative w-full overflow-hidden rounded-3xl
+    h-[var(--h)] md:h-[var(--h-md)] lg:h-[var(--h-lg)]
+  "
+          style={{
+            "--h": `${imgHeight ? imgHeight / 2 : 300}px`,
+            "--h-md": `${imgHeight ?? 400}px`,
+            "--h-lg": `${imgHeight ?? 512}px`,
+          }}
         >
           <img
             src={img}
