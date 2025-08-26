@@ -13,11 +13,12 @@ export default function PageTemplate({
   isBlog,
   isNews,
   imgBottom,
+  isTeamPage,
 }) {
   return (
     <section className=" py-32 mt-12 md:py-40 container mx-auto px-8 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
       <div className="bgy1-blur absolute right-0 top-0 z-0 h-full w-full opacity-20 sm:hidden"></div>
-      {(isBlog || isNews) && (
+      {(isBlog || isNews || isTeamPage) && (
         <Image
           src="/blob3.svg"
           width={1024}
@@ -46,6 +47,15 @@ mb-6 text-xl"
           </p>
         )}
 
+        {isTeamPage && (
+          <p
+            className="
+mb-6 text-xl"
+          >
+            Dobre Miejsce - fizjoterapia dzieci
+          </p>
+        )}
+
         <div className="w-full flex justify-between items-start">
           <h1 className="mb-6 font-heading text-4xl md:text-5xl font-bold leading-tight max-w-5xl">
             {title}
@@ -54,7 +64,7 @@ mb-6 text-xl"
 
         <p className="mb-6 text-2xl max-w-5xl ">{lead}</p>
 
-        {isBlog || isNews ? (
+        {isBlog || isNews || isTeamPage ? (
           <span className="block h-8" />
         ) : (
           <a
@@ -72,30 +82,32 @@ mb-6 text-xl"
           style={{ height: imgHeight ? `${imgHeight}px` : "512px" }}
         > */}
 
-        <div
-          className="
+        {img && (
+          <div
+            className="
     mb-16 group relative w-full overflow-hidden rounded-3xl
     h-[var(--h)] md:h-[var(--h-md)] lg:h-[var(--h-lg)]
   "
-          style={{
-            "--h": `${imgHeight ? imgHeight / 2 : 300}px`,
-            "--h-md": `${imgHeight ?? 400}px`,
-            "--h-lg": `${imgHeight ?? 512}px`,
-          }}
-        >
-          <img
-            src={img}
-            alt={alt ?? title ?? ""}
-            className={[
-              "absolute inset-0 w-full h-full",
-              "object-cover",
-              imgBottom ? "object-bottom" : "object-center",
-              "transition-transform duration-200 group-hover:scale-105",
-              "block",
-            ].join(" ")}
-            loading="lazy"
-          />
-        </div>
+            style={{
+              "--h": `${imgHeight ? imgHeight / 2 : 300}px`,
+              "--h-md": `${imgHeight ?? 400}px`,
+              "--h-lg": `${imgHeight ?? 512}px`,
+            }}
+          >
+            <img
+              src={img}
+              alt={alt ?? title ?? ""}
+              className={[
+                "absolute inset-0 w-full h-full",
+                "object-cover",
+                imgBottom ? "object-bottom" : "object-center",
+                "transition-transform duration-200 group-hover:scale-105",
+                "block",
+              ].join(" ")}
+              loading="lazy"
+            />
+          </div>
+        )}
         {/* <Image
             className="object-cover transform hover:scale-105 rounded-3xl transition duration-200"
             src={img}
@@ -122,12 +134,18 @@ mb-6 text-xl"
           /> */}
 
         {/* </div> */}
-        <article className="max-w-4xl mx-auto">
-          {children}
-          {!(isBlog || isNews) && (
-            <Banner bannerTitle={bannerTitle}>{bannerBody}</Banner>
-          )}
-        </article>
+        {isTeamPage ? (
+          <div>{children}</div>
+        ) : (
+          <article
+            className={`${isTeamPage ? "w-full" : "max-w-4xl"}  mx-auto`}
+          >
+            {children}
+            {!(isBlog || isNews || isTeamPage) && (
+              <Banner bannerTitle={bannerTitle}>{bannerBody}</Banner>
+            )}
+          </article>
+        )}
       </div>
     </section>
   );
