@@ -5,19 +5,18 @@ import SectionTitle from "../components/section-title";
 import PageTemplate from "../components/page-template";
 
 export const metadata = {
-  title:
-    "Kamila Włodarczyk - fizjoterapeuta dzieci w Katowicach | Dobre Miejsce",
+  title: "Nasz zespół- fizjoterapeuci dziecięcy w Katowicach | Dobre Miejsce",
   description:
-    "Kamila Włodarczyk - fizjoterapeuta dzieci w Katowicach - profil zawodowy, kwalifikacje, dane kontaktowe",
+    "Nasz zespół - fizjoterapeuci dziecięcy w Katowicach - profil zawodowy, kwalifikacje, dane kontaktowe",
   robots: {
     index: true,
     follow: true,
   },
 
   openGraph: {
-    title: "Kamila Włodarczyk - fizjoterapeuta dzieci",
+    title: "Nasz zespół - fizjoterapeuci dziecięcy",
     description:
-      "Kamila Włodarczyk - fizjoterapeuta dzieci w Katowicach - profil zawodowy, kwalifikacje, dane kontaktowe",
+      "Nasz zespół- fizjoterapeuta dzieci w Katowicach - profil zawodowy, kwalifikacje, dane kontaktowe",
     url: "https://dobremiejsce-fizjoterapia.pl/kamila-wlodarczyk",
     siteName: "Dobre Miejsce - fizjoterapia dzieci",
     locale: "pl_PL",

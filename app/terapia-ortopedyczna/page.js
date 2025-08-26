@@ -37,6 +37,35 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 //   };
 // }
 
+export const metadata = {
+  title: "Terapia ortopedyczna dla dzieci i młodzieży Katowice | Dobre Miejsce",
+  description:
+    "Czy Twoje dziecko skarży się na ból kolan, stóp lub pleców? A może przeszło uraz lub zabieg chirurgiczny i potrzebuje wsparcia w powrocie do sprawności? W Dobrym Miejscu w Katowicach oferujemy kompleksową terapię ortopedyczną, dostosowaną do potrzeb dzieci i nastolatków – z empatią, wiedzą i ogromnym zaangażowaniem.",
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  openGraph: {
+    title:
+      "Terapia ortopedyczna dla dzieci i młodzieży Katowice | Dobre Miejsce",
+    description:
+      "Czy Twoje dziecko skarży się na ból kolan, stóp lub pleców? A może przeszło uraz lub zabieg chirurgiczny i potrzebuje wsparcia w powrocie do sprawności? W Dobrym Miejscu w Katowicach oferujemy kompleksową terapię ortopedyczną, dostosowaną do potrzeb dzieci i nastolatków – z empatią, wiedzą i ogromnym zaangażowaniem.",
+    url: "https://dobremiejsce-fizjoterapia.pl/rehabilitacja-wczesniakow",
+    siteName: "Dobre Miejsce - fizjoterapia dzieci",
+    locale: "pl_PL",
+    type: "website",
+    images: [
+      {
+        url: "https://dobremiejsce-fizjoterapia.pl/baby-hero.jpg",
+        width: 1920,
+        height: 1272,
+        alt: "Fizjoterapia dzieci",
+      },
+    ],
+  },
+};
+
 async function getContentfulContent() {
   const res = await client.getEntries({
     content_type: "terapiaOrtopedyczna",
