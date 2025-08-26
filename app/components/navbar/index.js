@@ -123,7 +123,7 @@ export default function Navbar() {
                 </Link>
               </li>
 
-              <li
+              {/* <li
                 onClick={closeMobileMenu}
                 className="hover:text-orange cursor-pointer"
               >
@@ -134,9 +134,9 @@ export default function Navbar() {
                 >
                   Kamila
                 </Link>
-              </li>
+              </li> */}
 
-              <li
+              {/* <li
                 onClick={closeMobileMenu}
                 className="hover:text-orange cursor-pointer"
               >
@@ -146,6 +146,19 @@ export default function Navbar() {
                   onClick={handleRefresh}
                 >
                   Martyna
+                </Link>
+              </li> */}
+
+              <li
+                onClick={closeMobileMenu}
+                className="hover:text-orange cursor-pointer"
+              >
+                <Link
+                  href="/zespol"
+                  // className={`${isActive && "text-primaryBlue"}`}
+                  onClick={handleRefresh}
+                >
+                  Nasz zespół
                 </Link>
               </li>
 
