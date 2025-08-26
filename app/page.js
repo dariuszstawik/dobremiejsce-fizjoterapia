@@ -161,7 +161,7 @@ export default async function Home() {
           </div>
           <Button title="przejdź do bloga" href="/blog"></Button>
         </div>
-        {/* <SimplePopup /> */}
+        <SimplePopup />
       </div>
       {/* </div> */}
     </>
