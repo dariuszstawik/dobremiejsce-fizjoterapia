@@ -2,6 +2,11 @@ import Link from "next/link";
 import Navbar from "../components/navbar";
 import ParagraphWithImageOnTheRight from "../components/paragraph-with-image-on-the-right";
 import Pricing from "../components/pricing-section";
+import PricingNew from "../components/pricing";
+import pricelistData from "../pricelistData";
+import PricingLi from "../components/pricing-li";
+import SectionTitle from "../components/section-title";
+import Button from "../components/Button";
 
 export const metadata = {
   title: "Cennik | Dobre Miejsce",
@@ -33,9 +38,10 @@ export default function Cennik() {
   return (
     <>
       <Navbar />
-      <section className=" py-32 mt-12 md:pt-32 container mx-auto px-8 sm:max-w-xl md:max-w-full md:px-24 lg:px-8 lg:w-screen">
-        <div className="w-[80%] mx-auto">
-          <ParagraphWithImageOnTheRight
+      {/* <section className=" py-32 mt-12 md:pt-32 container mx-auto px-8 sm:max-w-xl md:max-w-full md:px-24 lg:px-8 lg:w-screen"> */}
+      <div className="max-w-4xl mx-auto pt-24">
+        <SectionTitle title="Cennik usług" />
+        {/* <ParagraphWithImageOnTheRight
             title="Cennik"
             subtitle="Dobre Miejsce w Katowicach"
             img="/i004blob-horizontal.png"
@@ -44,65 +50,31 @@ export default function Cennik() {
             buttonTitle="Umów wizytę w serwisie Booksy"
             isLeft
             imgFill
-          >
-            <div className="flex flex-col gap-2 mb-4">
-              <div className="rounded-2xl p-8 pr-0 pb-2">
-                <ul
-                  className="flex flex-col gap-4"
-                  style={{ listStyleImage: 'url("/checkmark-sm.png")' }}
-                >
-                  <li className="mb-0 pl-4">
-                    <div className="relative -top-3">
-                      <h3 className="font-bold">
-                        Wizyta diagnostyczna / Pierwsza wizyta
-                      </h3>
-                      <p>210 zł — 60 minut</p>
-                    </div>
-                  </li>
-                  <li className="mb-0 pl-4">
-                    <div className="relative -top-3">
-                      <h3 className="font-bold">Terapia</h3>
-                      <p>160 zł — 45 minut</p>
-                    </div>
-                  </li>
-                  <li className="mb-0 pl-4">
-                    <div className="relative -top-3">
-                      <h3 className="font-bold">Diagnoza SI</h3>
-                      <p> 480 zł — 2 spotkania x 45 minut</p>
-                    </div>
-                  </li>
-                  <li className="mb-0 pl-4">
-                    <div className="relative -top-3">
-                      <Link href="/terapia-si-w-katowicach">
-                        <h3 className="font-bold">
-                          Terapia integracji sensorycznej
-                        </h3>
-                      </Link>
-                      <p>160 zł — 45 minut</p>
-                    </div>
-                  </li>
-                  <li className="mb-0 pl-4">
-                    <div className="relative -top-3">
-                      <Link href="/wkladki-ortopedyczne-igli-junior">
-                        <h3 className="font-bold">Wykonanie wkładek IGLI</h3>
-                      </Link>
-                      <p>480 zł — 60 minut</p>
-                    </div>
-                  </li>
-                  <li className="mb-0 pl-4">
-                    <div className="relative -top-3">
-                      <h3 className="font-bold">
-                        Diagnostyka i Terapia ZOGA Wady Postawy
-                      </h3>
-                      <p>300 zł — 1h&nbsp;30 minut</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </ParagraphWithImageOnTheRight>
+          > */}
+        <div className="flex flex-col gap-4 -mt-6 mb-4">
+          <div className="rounded-2xl p-8 pl-0 pr-0 pb-2">
+            <ul className="list-none flex flex-col gap-0 p-0 m-0">
+              {pricelistData?.map((item, i) => (
+                <PricingLi
+                  key={item.id ?? i}
+                  title={item.title}
+                  description={item.description}
+                  price={item.price}
+                />
+              ))}
+            </ul>
+          </div>
         </div>
-      </section>
+        {/* </ParagraphWithImageOnTheRight> */}
+
+        <div className="flex justify-center items-center">
+          <Button
+            title="Umów wizytę w serwisie Booksy"
+            href="https://dobremiejscefizjoterapiadzieci.booksy.com/"
+          />
+        </div>
+      </div>
+      {/* </section> */}
     </>
   );
 }

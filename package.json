@@ -16,7 +16,8 @@
     "next": "^15.3.1",
     "react": "^19.0.0",
     "react-awesome-reveal": "^4.3.1",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "reactjs-popup": "^2.0.6"
   },
   "devDependencies": {
     "postcss": "^8",

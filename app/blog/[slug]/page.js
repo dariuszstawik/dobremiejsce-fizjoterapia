@@ -74,6 +74,7 @@ export default async function Page({ params }) {
         //   blogPost.fields.image ? blogPost.fields.image.fields.description : ""
         // }
         alt=""
+        imgHeight={blogPost.fields.imgHeight}
       >
         {documentToReactComponents(blogPost.fields.body)}
       </PageTemplate>

@@ -10,6 +10,7 @@ import BlogCard from "./components/blog-card";
 import Link from "next/link";
 import { client } from "@/lib/contentful/client";
 import BlogList from "./components/blog-list";
+import SimplePopup from "./components/simple-popup";
 
 async function getContentfulContent() {
   const resBlog = await client.getEntries({
@@ -32,6 +33,7 @@ export default async function Home() {
   return (
     <>
       <Navbar />
+
       <HeroSection />
 
       <div className="container px-4 mx-auto max-w-[90%]">
@@ -159,6 +161,7 @@ export default async function Home() {
           </div>
           <Button title="przejdź do bloga" href="/blog"></Button>
         </div>
+        <SimplePopup />
       </div>
       {/* </div> */}
     </>

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+html, body {
   word-wrap: break-word;
   color: #333;
   font-family: var(--font-inter);

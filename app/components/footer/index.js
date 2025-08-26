@@ -100,7 +100,7 @@ export default function Footer() {
           </div>
         </div>
       </section>
-      <div className="w-screen flex-col justify-center items-center bg-secondaryOrange h-4">
+      <div className="w-full flex-col justify-center items-center bg-secondaryOrange h-4">
         {/* <p className="text-sm mx-auto text-center mb-2">
           © 2023. Dobre Miejsce FIzjoterapia dzieci. All rights reserved.
         </p> */}
