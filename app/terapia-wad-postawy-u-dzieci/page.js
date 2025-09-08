@@ -21,7 +21,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://dobremiejsce-fizjoterapia.pl/dm7.jpg",
+        url: "https://dobremiejsce-fizjoterapia.pl/dm7.webp",
         width: 2000,
         height: 2667,
         alt: "Fizjoterapia dzieci",
@@ -36,11 +36,11 @@ export default function TerapiaWadPostawyUDzieci() {
       <PageTemplate
         title={
           <>
-            Terapia wad postawy u dzieci <br /> Katowice
+            Terapia wad postawy <br /> Katowice
           </>
         }
         lead="Czy zauważyłeś/aś, że Twoje dziecko często się garbi, ma asymetryczne ramiona lub skarży się na bóle pleców? Te sygnały mogą wskazywać na wady postawy, które - wcześnie wykryte i leczone - można skutecznie skorygować."
-        img="/dm7.jpg"
+        img="/dm7.webp"
         alt="Terapia wad postawy w Katowicach"
         bannerBody="Nie czekaj, aż wady postawy się pogłębią. Umów się na wizytę diagnostyczną, podczas której ocenimy postawę Twojego dziecka i zaproponujemy odpowiedni plan terapii. W Dobrym Miejscu łączymy profesjonalizm z przyjazną atmosferą, dzięki czemu dzieci chętnie uczestniczą w zajęciach."
         imgBottom
@@ -124,7 +124,7 @@ export default function TerapiaWadPostawyUDzieci() {
               </div>
 
               <h2 className="mb-3 mt-6 text-3xl font-bold text-gray">
-                Terapia wad postawy w Katowicach - jak pomagamy?
+                Terapia wad postawy Katowice - jak pomagamy?
               </h2>
               <div className="text-md lg:text-lg mb-6">
                 Nasz program terapeutyczny jest zawsze dostosowany do

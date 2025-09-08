@@ -20,7 +20,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://dobremiejsce-fizjoterapia.pl/dm2.jpg",
+        url: "https://dobremiejsce-fizjoterapia.pl/dm2.webp",
         width: 2000,
         height: 2667,
         alt: "Fizjoterapia dzieci",
@@ -33,9 +33,14 @@ export default function TerapiaSIWKatowicach() {
     <>
       <Navbar />
       <PageTemplate
-        title={<>Diagnoza i terapia SI Katowice</>}
+        title={
+          <>
+            Integracja sensoryczna:
+            <br /> diagnoza i terapia SI Katowice
+          </>
+        }
         lead="Czy Twoje dziecko wydaje się nadmiernie wrażliwe na dźwięki, nie lubi określonych faktur ubrań lub ma trudności z utrzymaniem równowagi? Może to być związane z zaburzeniami integracji sensorycznej. W Dobrym Miejscu w Katowicach pomagamy dzieciom lepiej rozumieć i przetwarzać bodźce z otaczającego świata."
-        img="/dm2.jpg"
+        img="/dm2.webp"
         alt="Terapia SI w Katowicach"
         bannerTitle="Integracja sensoryczna Katowice"
         bannerBody="Zapraszamy do kontaktu i umówienia diagnozy SI w naszym gabinecie w Katowicach. Wspólnie zadbamy o harmonijny rozwój Twojego dziecka."
@@ -102,7 +107,7 @@ export default function TerapiaSIWKatowicach() {
               </div>
 
               <h2 className="mb-3 mt-6 text-3xl font-bold text-gray">
-                Profesjonalna diagnoza SI w Katowicach
+                Profesjonalna diagnoza SI Katowice
               </h2>
               <div className="text-md lg:text-lg mb-6">
                 W Dobrym Miejscu przeprowadzamy szczegółową diagnozę integracji

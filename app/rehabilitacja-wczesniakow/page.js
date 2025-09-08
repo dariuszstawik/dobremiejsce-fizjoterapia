@@ -22,7 +22,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://dobremiejsce-fizjoterapia.pl/baby-hero.jpg",
+        url: "https://dobremiejsce-fizjoterapia.pl/baby-hero.webp",
         width: 1920,
         height: 1272,
         alt: "Fizjoterapia dzieci",
@@ -47,7 +47,7 @@ export default function RehabilitacjaWczesniakow() {
           stają przed wieloma wyzwaniami i pytaniami. W Dobrym Miejscu
           rozumiemy, jak ważne jest profesjonalne wsparcie w tym szczególnym
           czasie."
-        img="/baby-hero.jpg"
+        img="/baby-hero.webp"
         alt="Rehabilitacja wczesniaków w Katowicach"
         bannerTitle="Rehabilitacja wcześniaków w Katowicach"
         bannerBody="W Dobrym Miejscu każdy wcześniak i jego rodzina znajdą ciepłą, przyjazną atmosferę oraz profesjonalną opiekę opartą na najnowszej wiedzy i wieloletnim doświadczeniu. Razem zadbamy o to, by Twój maluszek mógł rozwijać się w najlepszy możliwy sposób."

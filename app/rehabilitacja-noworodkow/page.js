@@ -21,7 +21,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://dobremiejsce-fizjoterapia.pl/dm8.jpg",
+        url: "https://dobremiejsce-fizjoterapia.pl/dm8.webp",
         width: 1080,
         height: 810,
         alt: "Fizjoterapia dzieci",
@@ -42,7 +42,7 @@ export default function RehabilitacjaNoworodkow() {
           </>
         }
         lead="Czy zauważyłeś/aś, że Twoje dziecko preferuje jedną stronę ciała, ma trudności z utrzymaniem główki lub jego ruchy wydają się zbyt wiotkie lub sztywne? Zaburzenia napięcia mięśniowego u najmłodszych to problem, który wymaga profesjonalnej uwagi - im wcześniej rozpoczniemy terapię, tym lepsze efekty możemy osiągnąć."
-        img="/dm8.jpg"
+        img="/dm8.webp"
         alt="Rehabilitacja noworodków i niemowląt w Katowicach"
         bannerBody="Nie czekaj, aż problemy się pogłębią. Umów się na konsultację, podczas której ocenimy stan Twojego maluszka i zaproponujemy najlepszy plan terapii. W Dobrym Miejscu każde dziecko otrzymuje szansę na harmonijny rozwój w przyjaznej, pełnej ciepła atmosferze."
       >
