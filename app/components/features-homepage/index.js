@@ -32,11 +32,13 @@ export default function FeaturesHomepage() {
                 src="/doswiadczenie-z-najmlodszymi-mobile.svg"
                 className="lg:hidden lg:w-auto"
                 alt="Doświadczenie z najmłodszymi"
+                loading="lazy"
               />
               <img
                 src="/doswiadczenie-z-najmlodszymi.svg"
                 className="hidden lg:block lg:w-auto"
                 alt="Doświadczenie z najmłodszymi"
+                loading="lazy"
               />
               <h3 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
                 Doświadczenie z najmłodszymi
@@ -52,11 +54,13 @@ export default function FeaturesHomepage() {
                 src="/wczesna-diagnostyka-mobile.svg"
                 className="lg:hidden lg:w-auto"
                 alt="Wczesna diagnostyka"
+                loading="lazy"
               />
               <img
                 src="/wczesna-diagnostyka.svg"
                 className="hidden lg:block lg:w-auto"
                 alt="Wczesna diagnostyka"
+                loading="lazy"
               />
               <h3 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
                 Wczesna diagnostyka
@@ -72,11 +76,13 @@ export default function FeaturesHomepage() {
                 src="/terapia-z-sercem-mobile.svg"
                 className="lg:hidden lg:w-auto"
                 alt="Terapia z sercem"
+                loading="lazy"
               />
               <img
                 src="/terapia-z-sercem.svg"
                 className="hidden lg:block lg:w-auto"
                 alt="Terapia z sercem"
+                loading="lazy"
               />
               <h3 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
                 Terapia z sercem
@@ -92,11 +98,13 @@ export default function FeaturesHomepage() {
                 src="/bezpieczna-przestrzen-mobile.svg"
                 className="lg:hidden lg:w-auto"
                 alt="Bezpieczna przestrzeń"
+                loading="lazy"
               />
               <img
                 src="/bezpieczna-przestrzen.svg"
                 className="hidden lg:block lg:w-auto"
                 alt="Bezpieczna przestrzeń"
+                loading="lazy"
               />
               <h3 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
                 Bezpieczna przestrzeń

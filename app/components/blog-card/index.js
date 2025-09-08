@@ -23,6 +23,7 @@ export default function BlogCard({ title, content, slug, img, href, alt }) {
           <img
             src={imgSrc}
             alt={alt || title}
+            loading="lazy"
             className="object-cover w-full h-64 md:h-full lg:min-h-48 xl:min-h-56 md:rounded-br-[100px]"
           />
         </div>

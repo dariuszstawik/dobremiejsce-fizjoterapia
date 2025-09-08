@@ -56,6 +56,7 @@ export default function ParagraphWithImageOnTheRight({
             <img
               src={img}
               alt={alt ? alt : ""}
+              loading="lazy"
               className={`rounded ${hasSmallerImg && "max-h-[300px]"} ${
                 isLeft && "scale-x-[-1]"
               }`}

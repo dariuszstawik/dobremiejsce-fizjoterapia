@@ -13,7 +13,7 @@ export default function SimplePopup() {
     const seen =
       typeof window !== "undefined" && sessionStorage.getItem("homePopupSeen");
     if (!seen) {
-      setTimeout(() => setOpen(true), 500);
+      setTimeout(() => setOpen(true), 3000);
       sessionStorage.setItem("homePopupSeen", "1");
     }
   }, []);

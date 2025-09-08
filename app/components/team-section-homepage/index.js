@@ -18,6 +18,7 @@ export default function TeamSectionHomepage() {
                   className="mx-auto mb-6 rounded-full w-64"
                   src="/kamila-wlodarczyk.png"
                   alt="Kamila Włodarczyk"
+                  loading="lazy"
                 />
                 <h3 className="mb-2 text-2xl md:text-3xl leading-tight font-semibold">
                   Kamila Włodarczyk
@@ -46,6 +47,7 @@ export default function TeamSectionHomepage() {
                   className="mx-auto mb-6 rounded-full w-64"
                   src="/martyna-cesarczyk.png"
                   alt="Msrtyna Cesarczyk"
+                  loading="lazy"
                 />
                 <h3 className="mb-2 text-2xl md:text-3xl leading-tight font-semibold">
                   Martyna Cesarczyk
