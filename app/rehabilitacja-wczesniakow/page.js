@@ -48,7 +48,7 @@ export default function RehabilitacjaWczesniakow() {
           rozumiemy, jak ważne jest profesjonalne wsparcie w tym szczególnym
           czasie."
         img="/baby-hero.webp"
-        alt="Rehabilitacja wczesniaków w Katowicach"
+        alt="Rehabilitacja wczesniaków Katowice"
         bannerTitle="Rehabilitacja wcześniaków w Katowicach"
         bannerBody="W Dobrym Miejscu każdy wcześniak i jego rodzina znajdą ciepłą, przyjazną atmosferę oraz profesjonalną opiekę opartą na najnowszej wiedzy i wieloletnim doświadczeniu. Razem zadbamy o to, by Twój maluszek mógł rozwijać się w najlepszy możliwy sposób."
       >
