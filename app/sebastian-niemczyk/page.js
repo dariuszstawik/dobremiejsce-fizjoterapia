@@ -29,7 +29,7 @@ export const metadata = {
   },
 };
 
-export default function SzymonNiemczyk() {
+export default function SebastianNiemczyk() {
   return (
     <>
       <Navbar />
