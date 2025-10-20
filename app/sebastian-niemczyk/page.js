@@ -2,18 +2,19 @@ import { Mail, PhoneCall } from "lucide-react";
 import Navbar from "../components/navbar";
 
 export const metadata = {
-  title: "Szymon Niemczyk - fizjoterapeuta dzieci w Katowicach | Dobre Miejsce",
+  title:
+    "Sebastian Niemczyk - fizjoterapeuta dzieci w Katowicach | Dobre Miejsce",
   description:
-    "Szymon Niemczyk- fizjoterapeuta dzieci w Katowicach - profil zawodowy, kwalifikacje, dane kontaktowe",
+    "Sebastian Niemczyk- fizjoterapeuta dzieci w Katowicach - profil zawodowy, kwalifikacje, dane kontaktowe",
   robots: {
     index: true,
     follow: true,
   },
 
   openGraph: {
-    title: "Szymon Niemczyk - fizjoterapeuta dzieci",
+    title: "Sebastian Niemczyk- fizjoterapeuta dzieci",
     description:
-      "Szymon Niemczyk - fizjoterapeuta dzieci w Katowicach - profil zawodowy, kwalifikacje, dane kontaktowe",
+      "Sebastian Niemczyk - fizjoterapeuta dzieci w Katowicach - profil zawodowy, kwalifikacje, dane kontaktowe",
     url: "https://dobremiejsce-fizjoterapia.pl/kamila-wlodarczyk",
     siteName: "Dobre Miejsce - fizjoterapia dzieci",
     locale: "pl_PL",
