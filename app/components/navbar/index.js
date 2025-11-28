@@ -248,6 +248,11 @@ export default function Navbar() {
                           diagnostyka Hine
                         </li>
                       </Link>
+                      <Link href="/osteopatia-dziecieca">
+                        <li className="flex gap-4 items-center hover:text-orange">
+                          osteopatia dziecięca
+                        </li>
+                      </Link>
                     </ul>
                   </div>
                 )}
