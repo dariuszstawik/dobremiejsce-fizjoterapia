@@ -4,7 +4,7 @@ import { client } from "@/lib/contentful/client";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
 export const metadata = {
-  title: "Osteopatia dziecięca Katowice | Dobre Miejsce",
+  title: "Osteopata dziecięcy Katowice | Dobre Miejsce",
   description:
     "Osteopatia to delikatne, holistyczne podejście do zdrowia Twojego dziecka. W Dobrym Miejscu łączymy osteopatię z fizjoterapią, aby zapewnić Waszym maluchom kompleksową opiekę od pierwszych dni życia.",
   robots: {
@@ -13,7 +13,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Osteopatia dziecięca Katowice | Dobre Miejsce",
+    title: "Osteopata dziecięcy Katowice | Dobre Miejsce",
     description:
       "Osteopatia to delikatne, holistyczne podejście do zdrowia Twojego dziecka. W Dobrym Miejscu łączymy osteopatię z fizjoterapią, aby zapewnić Waszym maluchom kompleksową opiekę od pierwszych dni życia.",
     url: "https://dobremiejsce-fizjoterapia.pl/osteopatia-dziecieca",
@@ -39,7 +39,7 @@ async function getContentfulContent() {
   return res.items[0];
 }
 
-export default async function OsteopatiaDziecieca() {
+export default async function OsteopataDzieciecy() {
   const content = await getContentfulContent();
 
   return (
