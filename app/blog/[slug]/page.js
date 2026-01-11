@@ -13,7 +13,7 @@ export async function generateStaticParams() {
 
 // Dynamiczne generowanie metadanych
 export async function generateMetadata({ params }) {
-  const { slug } = params;
+  const { slug } = await params;
   const blogPost = await getContentfulBlogPosts(slug);
 
   const imageUrl = blogPost.fields.image
@@ -55,7 +55,7 @@ async function getContentfulBlogPosts(slug) {
 }
 
 export default async function Page({ params }) {
-  const { slug } = params;
+  const { slug } = await params;
   const blogPost = await getContentfulBlogPosts(slug);
 
   console.log(blogPost);
