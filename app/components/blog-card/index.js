@@ -32,7 +32,7 @@ export default function BlogCard({ title, content, slug, img, href, alt }) {
         <div className="w-full md:w-1/2 flex flex-col justify-between items-start px-6 py-6 md:py-8">
           <div>
             <h3 className="mb-2 text-lg font-semibold leading-snug md:text-xl">
-              {title}
+              <Link href={href || ""}>{title}</Link>
             </h3>
             {content ? (
               <p className="text-sm opacity-80 line-clamp-3 md:line-clamp-4">
