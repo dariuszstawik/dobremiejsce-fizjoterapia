@@ -174,13 +174,13 @@ export default function Zespol() {
             />
 
             <div className="text-gray">
-              <h1 className="mb-4 font-heading text-4xl md:text-5xl font-bold max-w-5xl">
+              <h2 className={`text-4xl font-bold text-gray`}>
                 Martyna Cesarczyk
                 <span className="block  mt-2 mb-2 text-2xl max-w-5xl font-normal">
                   {" "}
                   Fizjoterapeuta dziecięcy Katowice
                 </span>{" "}
-              </h1>
+              </h2>
 
               <div className="mb-6 text:lg md:text-xl lg:text-2xl max-w-5xl ">
                 <div className="flex items-center gap-4 mb-2">
@@ -268,7 +268,7 @@ export default function Zespol() {
           {/* <div className="container mx-auto mt-20 px-4 pb-12 pt-40 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:pb-20"> */}
           <div
             className="mb-8 flex flex-col gap-4 lg:flex-row lg:gap-16"
-            id="sebastian"
+            id="sebastian-niemczyk"
           >
             <img
               src="/sebastian-niemczyk.webp"
@@ -277,13 +277,13 @@ export default function Zespol() {
             />
 
             <div className="text-gray">
-              <h1 className="mb-4 font-heading text-4xl md:text-5xl font-bold max-w-5xl">
+              <h2 className={`text-4xl font-bold text-gray`}>
                 Sebastian Niemczyk
                 <span className="block  mt-2 mb-2 text-2xl max-w-5xl font-normal">
                   {" "}
                   Fizjoterapeuta dziecięcy Katowice
                 </span>{" "}
-              </h1>
+              </h2>
 
               <a
                 className="inline-block whitespace-nowrap rounded-full bg-orange px-5 py-4 mb-8  text-white no-underline shadow-lg hover:bg-heavy hover:text-white"
@@ -368,13 +368,13 @@ export default function Zespol() {
             />
 
             <div className="text-gray">
-              <h1 className="mb-4 font-heading text-4xl md:text-5xl font-bold max-w-5xl">
+              <h2 className={`text-4xl font-bold text-gray`}>
                 Michał Matuszak
                 <span className="block  mt-2 mb-2 text-2xl max-w-5xl font-normal">
                   {" "}
                   Osteopata i fizjoterapeuta dziecięcy Katowice
                 </span>{" "}
-              </h1>
+              </h2>
 
               {/* <div className="mb-6 text:lg md:text-xl lg:text-2xl max-w-5xl ">
                 <div className="flex items-center gap-4 mb-2">
@@ -395,8 +395,12 @@ export default function Zespol() {
               </a>
 
               <p className="text-md lg:text-lg mb-6 font-bold">
-                Jestem pogodnym, uśmiechniętym osteopatą i fizjoterapeutą z
-                wieloletnim stażem którego praca jest jednocześnie pasją.
+                Jestem pogodnym, uśmiechniętym{" "}
+                <Link href="/osteopata-dzieciecy" className="text-orange">
+                  osteopatą
+                </Link>{" "}
+                i fizjoterapeutą z wieloletnim stażem którego praca jest
+                jednocześnie pasją.
               </p>
 
               <p className="text-md lg:text-lg mb-6">
@@ -439,13 +443,13 @@ export default function Zespol() {
             />
 
             <div className="text-gray">
-              <h1 className="mb-4 font-heading text-4xl md:text-5xl font-bold max-w-5xl">
+              <h2 className={`text-4xl font-bold text-gray`}>
                 Michał Handzlik D.O.
                 <span className="block  mt-2 mb-2 text-2xl max-w-5xl font-normal">
                   {" "}
                   Dyplomowany osteopata, fizjoterapeuta
                 </span>{" "}
-              </h1>
+              </h2>
 
               {/* <div className="mb-6 text:lg md:text-xl lg:text-2xl max-w-5xl ">
                 <div className="flex items-center gap-4 mb-2">
@@ -467,10 +471,13 @@ export default function Zespol() {
 
               <p className="text-md lg:text-lg mb-6 font-bold">
                 W swojej pracy stawiam na uważność, bezpieczeństwo i
-                indywidualne podejście do każdego pacjenta. Jako dyplomowany
-                osteopata i fizjoterapeuta pomagam osobom dorosłym, dzieciom
-                oraz niemowlętom w łagodzeniu bólu, poprawie funkcjonowania
-                ciała i odzyskaniu komfortu w codziennym życiu.
+                indywidualne podejście do każdego pacjenta. Jako dyplomowany{" "}
+                <Link href="/osteopata-dzieciecy" className="text-orange">
+                  osteopata
+                </Link>{" "}
+                i fizjoterapeuta pomagam osobom dorosłym, dzieciom oraz
+                niemowlętom w łagodzeniu bólu, poprawie funkcjonowania ciała i
+                odzyskaniu komfortu w codziennym życiu.
               </p>
 
               <p className="text-md lg:text-lg mb-6">
@@ -531,14 +538,14 @@ export default function Zespol() {
             />
 
             <div className="text-gray">
-              <h1 className="mb-4 font-heading text-4xl md:text-5xl font-bold max-w-5xl">
+              <h2 className={`text-4xl font-bold text-gray`}>
                 Jakub Śmistek
                 <span className="block  mt-2 mb-2 text-2xl max-w-5xl font-normal">
                   {" "}
                   Fizjoterapeuta, certyfikowany terapeuta integracji
                   sensorycznej
                 </span>{" "}
-              </h1>
+              </h2>
 
               {/* <div className="mb-6 text:lg md:text-xl lg:text-2xl max-w-5xl ">
                 <div className="flex items-center gap-4 mb-2">
@@ -561,10 +568,14 @@ export default function Zespol() {
               <p className="text-md lg:text-lg mb-6 font-bold">
                 Na co dzień pracuje z dziećmi z wadami postawy, wadami stóp,
                 MPD, autyzmem, aspergerem, zespółem Downa oraz zaburzeniami
-                procesów integracji sensorycznej. W swojej pracy łączę różne
-                metody fizjoterapeutyczne aby uzyskać jak najlepsze efekty
-                terapeutyczne. Każdy plan terapii przygotowuje indywidualnie,
-                tak aby był nie tylko skuteczny, ale też ciekawy i motywujący.
+                procesów{" "}
+                <Link href="/terapia-si-w-katowicach" className="text-orange">
+                  integracji sensorycznej.
+                </Link>{" "}
+                W swojej pracy łączę różne metody fizjoterapeutyczne aby uzyskać
+                jak najlepsze efekty terapeutyczne. Każdy plan terapii
+                przygotowuje indywidualnie, tak aby był nie tylko skuteczny, ale
+                też ciekawy i motywujący.
               </p>
 
               <p className="text-md lg:text-lg mb-6">
