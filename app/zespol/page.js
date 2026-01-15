@@ -277,7 +277,7 @@ export default function Zespol() {
             />
 
             <div className="text-gray">
-              <h2 className={`text-4xl font-bold text-gray`}>
+              <h2 className={`text-4xl font-bold text-gray mb-6`}>
                 Sebastian Niemczyk
                 <span className="block  mt-2 mb-2 text-2xl max-w-5xl font-normal">
                   {" "}
@@ -368,7 +368,7 @@ export default function Zespol() {
             />
 
             <div className="text-gray">
-              <h2 className={`text-4xl font-bold text-gray`}>
+              <h2 className={`text-4xl font-bold text-gray mb-6`}>
                 Michał Matuszak
                 <span className="block  mt-2 mb-2 text-2xl max-w-5xl font-normal">
                   {" "}
@@ -443,7 +443,7 @@ export default function Zespol() {
             />
 
             <div className="text-gray">
-              <h2 className={`text-4xl font-bold text-gray`}>
+              <h2 className={`text-4xl font-bold text-gray mb-6`}>
                 Michał Handzlik D.O.
                 <span className="block  mt-2 mb-2 text-2xl max-w-5xl font-normal">
                   {" "}
@@ -538,7 +538,7 @@ export default function Zespol() {
             />
 
             <div className="text-gray">
-              <h2 className={`text-4xl font-bold text-gray`}>
+              <h2 className={`text-4xl font-bold text-gray mb-6`}>
                 Jakub Śmistek
                 <span className="block  mt-2 mb-2 text-2xl max-w-5xl font-normal">
                   {" "}
