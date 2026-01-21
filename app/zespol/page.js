@@ -395,36 +395,74 @@ export default function Zespol() {
               </a>
 
               <p className="text-md lg:text-lg mb-6 font-bold">
-                Jestem pogodnym, uśmiechniętym{" "}
-                <Link href="/osteopata-dzieciecy" className="text-orange">
-                  osteopatą
-                </Link>{" "}
-                i fizjoterapeutą z wieloletnim stażem którego praca jest
-                jednocześnie pasją.
+                Absolwent Flanders International College of Osteophaty,
+                specjalista z wieloletnim doświadczeniem.
               </p>
 
               <p className="text-md lg:text-lg mb-6">
-                Moim celem jest leczenie i pomaganie na najwyższym poziomie, z
-                tego powodu systematycznie biorę udział w szkoleniach z zakresu
-                Osteopatii i Fizjoterapii prowadzonych przez najlepszych
-                specjalistów z tej dziedziny na świecie. Poza pracą pasjonuje
-                mnie jazda na rowerze, gotowanie oraz podróże.
+                Pracuję w oparciu o trzy filary{" "}
+                <Link href="/osteopata-dzieciecy" className="text-orange">
+                  osteopatii
+                </Link>
+                : struktura wpływa na funkcję – funkcja wpływa na strukturę –
+                ciało dąży do homeostazy.
               </p>
 
-              <p className="font-semibold mb-6">Wykształcenie:</p>
+              <p className="text-md lg:text-lg mb-6">
+                Diagnozuję i leczę manualnie zaburzenia ruchomości w układzie
+                kostno-stawowym, mięśniowo-powięziowym, wisceralnym (narządy
+                wewnętrzne) oraz czaszkowo-krzyżowym.
+              </p>
+
+              <p className="text-md lg:text-lg mb-6">
+                Pracuję z niemowlakami, dziećmi, nastolatkami oraz dorosłymi.
+                Najczęściej zgłaszane problemy to:
+              </p>
+
+              <p className="font-semibold mb-6">U dzieci:</p>
               <ul
                 className="text-md flex flex-col gap-2 font-medium lg:gap-4 lg:text-lg"
                 style={{ listStyleImage: 'url("/checkmark.png")' }}
               >
                 {[
-                  "Absolwent Śląskiego Uniwersytetu Medycznego w Katowicach na Wydziale Nauk o Zdrowiu, kierunek – Fizjoterapia",
-                  "Absolwent międzynarodowej Szkoły Osteopatii (5-letniej): Flanders International College of Osteopathy",
+                  "zaburzenia ssania, karmienia piersią/butelką",
+                  "refluks żołądkowo-przełykowy i ulewania",
+                  "kolki, wzdęcia, zaparcia",
+                  "asymetria posturalna, tortikolis, plagiocefalia",
+                  "opóźnienia w osiąganiu kamieni milowych rozwoju ruchowego",
+                  "wzmożone / obniżone napięcie mięśniowe",
+                  "dolegliwości bólowe kręgosłupa i kończyn u dzieci w wieku szkolnym",
+                  "stany po urazach okołoporodowych i operacjach",
                 ].map((item, index) => (
                   <li key={index} className="ml-10 pl-4">
                     <p className="relative -top-2">{item}</p>
                   </li>
                 ))}
               </ul>
+
+              <p className="font-semibold my-6">U dorosłych:</p>
+              <ul
+                className="text-md flex flex-col gap-2 font-medium lg:gap-4 lg:text-lg mb-6"
+                style={{ listStyleImage: 'url("/checkmark.png")' }}
+              >
+                {[
+                  "zespoły bólowe kręgosłupa (rwa kulszowa, dyskopatia, blokady)",
+                  "bóle i zawroty głowy o podłożu napięciowym / szyjnym",
+                  "zaburzenia stawów skroniowo-żuchwowych (TMJ)",
+                  "problemy z zatokami, szumy uszne, uczucie zatkanych uszu",
+                  "dolegliwości trawienne i napięcia brzucha",
+                  "ograniczenia ruchomości po urazach i zabiegach operacyjnych",
+                ].map((item, index) => (
+                  <li key={index} className="ml-10 pl-4">
+                    <p className="relative -top-2">{item}</p>
+                  </li>
+                ))}
+              </ul>
+
+              <p className="text-md lg:text-lg mb-6">
+                Zapraszam na kompleksową diagnostykę osteopatyczną i terapię
+                indywidualnie dopasowaną do Twoich potrzeb.
+              </p>
             </div>
           </div>
           {/* </div> */}
@@ -605,6 +643,69 @@ export default function Zespol() {
             </div>
           </div>
           {/* </div> */}
+        </section>
+
+        <section className="mt-20">
+          {/* <div className="container mx-auto mt-20 px-4 pb-12 pt-40 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:pb-20"> */}
+          <div
+            className="mb-8 flex flex-col gap-4 lg:flex-row lg:gap-16"
+            id="katarzyna-loranc"
+          >
+            <img
+              src="/katarzyna-loranc-sm.webp"
+              alt="Katarzyna Loranc"
+              className="m-0 w-40 rounded-full p-0 lg:w-auto lg:mb-auto"
+            />
+
+            <div className="text-gray">
+              <h2 className={`text-4xl font-bold text-gray mb-6`}>
+                Katarzyna Loranc
+                <span className="block  mt-2 mb-2 text-2xl max-w-5xl font-normal">
+                  {" "}
+                  Trenerka personalna
+                </span>{" "}
+              </h2>
+
+              {/* <div className="mb-6 text:lg md:text-xl lg:text-2xl max-w-5xl ">
+                <div className="flex items-center gap-4 mb-2">
+                  <Mail className="text-orange" />{" "}
+                  martyna.cesarczyk@dobremiejsce-fizjoterapia.pl
+                </div>
+                <div className="flex items-center gap-4 mb-2">
+                  <PhoneCall className="text-orange" /> 577 611 464
+                </div>
+              </div> */}
+              <a
+                className="inline-block whitespace-nowrap rounded-full bg-orange px-5 py-4 mb-8  text-white no-underline shadow-lg hover:bg-heavy hover:text-white"
+                href="https://dobremiejscefizjoterapiadzieci.booksy.com/"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+              >
+                Umów wizytę
+              </a>
+
+              <p className="text-md lg:text-lg mb-6 font-bold">
+                Na co dzień prowadzę treningi indywidualne oraz zajęcia grupowe,
+                w których skupiam się na bezpiecznym wprowadzaniu ruchu,
+                rozwijaniu siły, sprawności oraz świadomości ciała.
+              </p>
+
+              <p className="text-md lg:text-lg mb-6">
+                Pracowałam z dziećmi i młodzieżą, prowadząc zajęcia
+                ogólnorozwojowe, które łączyły elementy piłki ręcznej z
+                ćwiczeniami poprawiającymi koordynację, równowagę, stabilizację
+                i siłę. Uważam, że aktywność fizyczną warto wprowadzać i uczyć
+                od najmłodszych lat, bo to podstawa prawidłowego rozwoju i
+                zdrowych nawyków.
+              </p>
+
+              <p className="text-md lg:text-lg mb-6">
+                Podczas zajęć stawiam na bezpieczeństwo, indywidualne podejście
+                i dobrą atmosferę, tak aby dzieci chętnie uczestniczyły w
+                ćwiczeniach i czerpały z nich radość.
+              </p>
+            </div>
+          </div>
         </section>
       </PageTemplate>
     </>
