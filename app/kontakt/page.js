@@ -51,7 +51,15 @@ export default function Kontakt() {
               <MapPin className="text-orange w-5" /> 40-514 Katowice ul. Ceglana
               66
             </div>
+
+            {/* <div className="flex flex-col gap-2 mb-4"> */}
+            <h3 className="mb-3 mt-6 text-2xl font-bold text-gray">Telefon</h3>
+            <div className="flex gap-2">
+              <Phone className="text-orange w-4" />
+              <a href="tel:+48 577 611 464">577 611 464</a>
+            </div>
           </div>
+          {/* </div> */}
           <div className="flex flex-col gap-2 mb-4">
             <h3 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
               Kamila Włodarczyk
@@ -62,10 +70,10 @@ export default function Kontakt() {
                 kamila.wlodarczyk@dobremiejsce-fizjoterapia.pl
               </a>
             </div>
-            <div className="flex gap-2">
+            {/* <div className="flex gap-2">
               <Phone className="text-orange w-4" />
               <a href="tel:+48 539 937 132">539 937 132</a>
-            </div>
+            </div> */}
             <h3 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
               Martyna Cesarczyk
             </h3>
@@ -77,10 +85,10 @@ export default function Kontakt() {
                 martyna.cesarczyk@dobremiejsce-fizjoterapia.pl
               </a>
             </div>
-            <div className="flex gap-2">
+            {/* <div className="flex gap-2">
               <Phone className="text-orange w-4" />
               <a href="tel:+48 577 611 464">577 611 464</a>
-            </div>
+            </div> */}
           </div>
           <h3 className="mb-3 mt-6 basis-2/5 text-2xl font-bold text-gray">
             Media społecznościowe{" "}

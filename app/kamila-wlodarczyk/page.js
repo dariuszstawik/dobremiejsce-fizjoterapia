@@ -64,9 +64,9 @@ export default function KamilaWlodarczyk() {
                   <Mail className="text-orange" />{" "}
                   kamila.wlodarczyk@dobremiejsce-fizjoterapia.pl
                 </div>
-                <div className="flex items-center gap-4 mb-2">
+                {/* <div className="flex items-center gap-4 mb-2">
                   <PhoneCall className="text-orange" /> 539 937 132
-                </div>
+                </div> */}
               </div>
               <a
                 className="inline-block whitespace-nowrap rounded-full bg-orange px-5 py-4 mb-8  text-white no-underline shadow-lg hover:bg-heavy hover:text-white"
