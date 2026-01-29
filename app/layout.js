@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
         className={inter.className}
       >
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
       <GoogleAnalytics gaId="G-8GJF8CBHXG" />
     </html>

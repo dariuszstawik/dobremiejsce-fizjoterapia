@@ -369,7 +369,7 @@ export default function Zespol() {
 
             <div className="text-gray">
               <h2 className={`text-4xl font-bold text-gray mb-6`}>
-                Michał Matuszak
+                Michał Matuszak D.O.
                 <span className="block  mt-2 mb-2 text-2xl max-w-5xl font-normal">
                   {" "}
                   Osteopata i fizjoterapeuta dziecięcy Katowice
