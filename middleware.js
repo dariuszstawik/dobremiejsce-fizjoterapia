@@ -5,25 +5,21 @@ export function middleware(request) {
   const { pathname } = request.nextUrl;
 
   if (isMaintenanceMode) {
-    // Pomijamy pliki statyczne, API i samą stronę komunikatu
     const isPublicFile =
       pathname.includes(".") || pathname.startsWith("/_next");
     const isApiRoute = pathname.startsWith("/api");
     const isMaintenancePage = pathname === "/maintenance";
 
     if (!isPublicFile && !isApiRoute && !isMaintenancePage) {
-      // Wykonujemy "rewrite" na stronę /maintenance
-      const response = NextResponse.rewrite(
-        new URL("/maintenance", request.url),
-      );
+      // Tworzymy URL do strony /maintenance
+      const url = request.nextUrl.clone();
+      url.pathname = "/maintenance";
 
-      // Ustawiamy status 503 (Service Unavailable)
-      // Uwaga: Next.js pozwala na modyfikację statusu w ten sposób:
-      return new NextResponse(response.body, {
+      // Zwracamy rewrite, ale w nowej odpowiedzi wymuszamy status 503
+      return new NextResponse(null, {
         status: 503,
         headers: {
-          ...Object.fromEntries(response.headers),
-          "Retry-After": "14400", // Spróbuj ponownie za godzinę (w sekundach)
+          "x-middleware-rewrite": url.toString(),
         },
       });
     }
