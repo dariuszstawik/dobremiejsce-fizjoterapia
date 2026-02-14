@@ -19,8 +19,14 @@ export default function Footer() {
                 {/* <LogoDark className="mt-4 w-64" /> */}
                 <div className="flex flex-col gap-3 mt-6 text-secondaryOrange">
                   Fizjoterapia dzieci w Katowicach, diagnostyka rozwoju, terapia
-                  integracji sensorycznej, korekcja wad postawy.
-                  <Link href="/polityka-prywatnosci">Polityka prywatności</Link>
+                  integracji sensorycznej, osteopata dziecięcy, korekcja wad
+                  postawy.
+                  <Link className="underline" href="/polityka-prywatnosci">
+                    Regulamin podmiotu leczniczego
+                  </Link>
+                  <Link className="underline" href="/polityka-prywatnosci">
+                    Polityka prywatności
+                  </Link>
                 </div>
               </div>
               <div className="mb-5 w-full xl:w-1/5">
@@ -58,8 +64,10 @@ export default function Footer() {
                   <p className="leading-loose my-0">
                     Dobre Miejsce Fizjoterapia dzieci
                   </p>
-                  <p className="leading-loose my-0">ul. Ceglana 66</p>
-                  <p className="leading-loose my-0">40-514 Katowice</p>
+                  <p className="leading-loose my-0">
+                    ul. Gen. Zygmunta Waltera Jankego 48/1
+                  </p>
+                  <p className="leading-loose my-0">40-612 Katowice</p>
                   <div className="leading-loose my-0">
                     <Pin className="inline-block mr-2 text-secondaryOrange" />
                     <a

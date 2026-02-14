@@ -48,8 +48,8 @@ export default function Kontakt() {
           <div className="flex flex-col gap-2 mb-4">
             <h3 className="mb-3 mt-6 text-2xl font-bold text-gray">Adres</h3>
             <div className="flex gap-2">
-              <MapPin className="text-orange w-5" /> 40-514 Katowice ul. Ceglana
-              66
+              <MapPin className="text-orange w-5" /> 40-612 Katowice ul. Gen.
+              Zygmunta Waltera Jankego 48/1
             </div>
 
             {/* <div className="flex flex-col gap-2 mb-4"> */}
@@ -120,8 +120,9 @@ export default function Kontakt() {
           <h3 className="mb-6 mt-6 text-2xl font-bold text-gray">
             Jak nas znaleźć
           </h3>
+
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2551.6038595672126!2d19.011766376424642!3d50.24330517155342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716cf8e2b49bc2b%3A0x4c8eb5961bebe760!2sDobre%20Miejsce%20-%20Fizjoterapia%20dzieci!5e0!3m2!1spl!2spl!4v1741305660611!5m2!1spl!2spl"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2553.0315665212015!2d18.98675797657391!3d50.21663057154844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716cec345b1ab97%3A0xb705708247ff707!2sGenera%C5%82a%20Zygmunta%20Waltera-Jankego%2048%2C%2040-612%20Katowice!5e0!3m2!1spl!2spl!4v1771076227782!5m2!1spl!2spl"
             width="100%"
             height="450"
             style={{ border: 0 }}
