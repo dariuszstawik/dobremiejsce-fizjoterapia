@@ -28,11 +28,11 @@ export default function PolitykaPrywatnosci() {
           <p className="mb-6">
             Administratorem danych osobowych jest:
             <br />
-            <strong>Dobre Miejsce – fizjoterapia dzieci</strong>
+            <strong>Dobre Miejsce Fizjoterapia Dzieci sp. z o.o.</strong>
             <br />
-            ul. Ceglana 66
+            ul. Gen. Zygmunta Waltera Jankego 48/1
             <br />
-            40-514 Katowice
+            40-612 Katowice{" "}
           </p>
 
           <h2 className="text-2xl font-semibold mt-12 mb-4">
