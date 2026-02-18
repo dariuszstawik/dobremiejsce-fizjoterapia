@@ -75,13 +75,37 @@ const pricelistData = [
     id: 13,
     title: "Diagnoza SI (dwa spotkania)",
     description: "45 min",
-    price: "480\u00A0zł",
+    price: "490\u00A0zł",
   },
   {
     id: 14,
-    title: "Wykonanie wkłądek korekcyjnych IGLI",
+    title: "Wykonanie wkładek korekcyjnych IGLI",
     description: "1h",
-    price: "480\u00A0zł",
+    price: "490\u00A0zł",
+  },
+  {
+    id: 15,
+    title: "Terapia osteopatyczna Michał Matuszak",
+    description: "40 min",
+    price: "220\u00A0zł",
+  },
+  {
+    id: 16,
+    title: "Diagnoza i terapia psycholog dziecięcy",
+    description: "1h",
+    price: "220\u00A0zł",
+  },
+  {
+    id: 17,
+    title: "Trening personalny dla dzieci",
+    description: "1h",
+    price: "150\u00A0zł",
+  },
+  {
+    id: 18,
+    title: "Terapia osteopatyczna Michał Handzlik",
+    description: "1h",
+    price: "250\u00A0zł",
   },
 ];
 
