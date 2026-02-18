@@ -21,9 +21,9 @@ export default function Footer() {
                   Fizjoterapia dzieci w Katowicach, diagnostyka rozwoju, terapia
                   integracji sensorycznej, osteopata dziecięcy, korekcja wad
                   postawy.
-                  {/* <Link className="underline" href="/polityka-prywatnosci">
-                    Regulamin podmiotu leczniczego
-                  </Link> */}
+                  <Link className="underline" href="/informacje-dla-pacjenta">
+                    Informacje dla pacjenta
+                  </Link>
                   <Link className="underline" href="/polityka-prywatnosci">
                     Polityka prywatności
                   </Link>
