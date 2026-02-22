@@ -3,16 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
+import Script from "next/script"; // 1. Importujemy komponent Script
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -49,20 +40,27 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pl">
-      <head>
-        <script
+      <head>{/* Usunęliśmy stąd zwykły <script> */}</head>
+      <body className={inter.className}>
+        {/* 1. CookieYes - ładowany priorytetowo */}
+        <Script
           id="cookieyes"
-          type="text/javascript"
           src="https://cdn-cookieyes.com/client_data/8f62ee2d82cf94953a61d281/script.js"
-          defer
-        ></script>
-      </head>
-      <body
-        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        className={inter.className}
-      >
+          strategy="beforeInteractive"
+        />
+
         {children}
         <Footer />
+
+        {/* 2. Elfsight - ładowany po tym, jak strona będzie gotowa */}
+        <div
+          className="elfsight-app-22643b69-9881-4d46-bc4a-570ffb677c03"
+          data-elfsight-app-lazy
+        ></div>
+        <Script
+          src="https://elfsightcdn.com/platform.js"
+          strategy="afterInteractive"
+        />
       </body>
       <GoogleAnalytics gaId="G-8GJF8CBHXG" />
     </html>
