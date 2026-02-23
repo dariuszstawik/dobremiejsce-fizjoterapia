@@ -42,6 +42,10 @@ export default function RootLayout({ children }) {
     <html lang="pl">
       <head>{/* Usunęliśmy stąd zwykły <script> */}</head>
       <body className={inter.className}>
+        <div
+          className="elfsight-app-22643b69-9881-4d46-bc4a-570ffb677c03"
+          data-elfsight-app-lazy
+        ></div>
         {/* 1. CookieYes - ładowany priorytetowo */}
         <Script
           id="cookieyes"
@@ -53,16 +57,13 @@ export default function RootLayout({ children }) {
         <Footer />
 
         {/* 2. Elfsight - ładowany po tym, jak strona będzie gotowa */}
-        <div
-          className="elfsight-app-22643b69-9881-4d46-bc4a-570ffb677c03"
-          data-elfsight-app-lazy
-        ></div>
+
         <Script
           src="https://elfsightcdn.com/platform.js"
           strategy="afterInteractive"
         />
+        <GoogleAnalytics gaId="G-8GJF8CBHXG" />
       </body>
-      <GoogleAnalytics gaId="G-8GJF8CBHXG" />
     </html>
   );
 }
