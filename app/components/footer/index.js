@@ -30,7 +30,7 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div className="w-full xl:w-1/2 flex flex-wrap gap-6   justify-end">
+              <div className="w-full xl:w-1/2 flex flex-wrap xl:gap-6 justify-end">
                 <div className="mb-6 w-full md:w-1/2 xl:w-1/3 xl:mr-6">
                   <h3 className="mb-4 mt-12 text-xl font-bold text-gray">
                     Adres
