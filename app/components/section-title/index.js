@@ -36,7 +36,7 @@ export default function SectionTitle({
       </h2> */}
 
       <h2
-        className={`text-4xl font-bold text-gray ${
+        className={`text-3xl md:text-4xl font-bold text-gray ${
           isAlignedLeft ? "text-left" : "text-center"
         } ${isWhite && "text-white"} `}
       >

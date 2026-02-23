@@ -7,7 +7,7 @@ export default function Footer() {
       <section className="relative bg-orange text-secondaryOrange mt-20 px-[5%] mb-0">
         <div className="pb-12 pt-6">
           <div className="container mx-auto px-10">
-            <div className="flex flex-wrap">
+            <div className="flex justify-between flex-wrap">
               <div className="mb-auto mt-6 mr-4 w-full xl:w-1/4">
                 <Link href="/">
                   <img
@@ -29,40 +29,15 @@ export default function Footer() {
                   </Link>
                 </div>
               </div>
-              <div className="mb-5 w-full xl:w-1/5">
-                {/* <h3 className="mb-4 mt-10 text-xl font-bold text-gray">
-                  Fizjoterapia dzieci
-                </h3>
-                <p>
-                  Fizjoterapia dzieci w Katowicach, diagnostyka rozwoju, terapia
-                  integracji sensorycznej, korekcja wad postawy. Zapraszamy przy
-                  ul. Ceglanej w Katowicach.
-                </p> */}
-                <div className="flex gap-8 mt-6">
-                  {/* <a href="https://www.facebook.com/kopalnia" target="_blank">
-                    <img src="/facebook.png" className="w-8" />
-                  </a>
-                  <a
-                    href="https://www.youtube.com/@fundacjakopalniainicjatyw5380"
-                    target="_blank"
-                  >
-                    <img src="/youtube.png" className="w-8" />
-                  </a>
-                  <a
-                    href="https://www.flickr.com/photos/153333342@N06/"
-                    target="_blank"
-                  >
-                    <img src="/flickr.png" className="w-8" />
-                  </a> */}
-                </div>
-              </div>
-              <div className="w-full xl:w-1/2 flex flex-wrap mx-4 justify-end">
-                <div className="mb-6 w-full md:w-1/2 xl:w-1/3 xl:mr-6 px-3">
+
+              <div className="w-full xl:w-1/2 flex flex-wrap gap-6   justify-end">
+                <div className="mb-6 w-full md:w-1/2 xl:w-1/3 xl:mr-6">
                   <h3 className="mb-4 mt-12 text-xl font-bold text-gray">
                     Adres
                   </h3>
                   <p className="leading-loose my-0">
-                    Dobre Miejsce Fizjoterapia dzieci
+                    Dobre Miejsce <br />
+                    Fizjoterapia dzieci
                   </p>
                   <p className="leading-loose my-0">
                     ul. Gen. Zygmunta Waltera Jankego 48/1
@@ -78,7 +53,7 @@ export default function Footer() {
                     </a>
                   </div>
                 </div>
-                <div className="mb-6 w-full md:w-1/2 xl:w-1/3 px-3">
+                <div className="mb-6 w-full md:w-1/2 xl:w-1/3">
                   <h3 className="mb-4 mt-12 text-xl font-bold text-gray">
                     Kontakt
                   </h3>
