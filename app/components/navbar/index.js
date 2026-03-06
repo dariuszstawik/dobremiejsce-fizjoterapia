@@ -213,6 +213,15 @@ export default function Navbar() {
                       </li>
                       <li className="hover:text-orange group">
                         <Link
+                          href="/fizjoterapia-sportowa"
+                          onClick={closeMobileMenu}
+                          className="block w-full py-3 lg:py-3.5 transition-colors"
+                        >
+                          fizjoterapia sportowa
+                        </Link>
+                      </li>
+                      <li className="hover:text-orange group">
+                        <Link
                           href="/diagnostyka-metoda-prechtla"
                           onClick={closeMobileMenu}
                           className="block w-full py-3 lg:py-3.5 transition-colors"
@@ -245,6 +254,15 @@ export default function Navbar() {
                           className="block w-full py-3 lg:py-3.5 transition-colors"
                         >
                           psycholog dziecięcy
+                        </Link>
+                      </li>
+                      <li className="hover:text-orange group">
+                        <Link
+                          href="/trener-personalny-dla-dzieci"
+                          onClick={closeMobileMenu}
+                          className="block w-full py-3 lg:py-3.5 transition-colors"
+                        >
+                          trener personalny
                         </Link>
                       </li>
                     </ul>
