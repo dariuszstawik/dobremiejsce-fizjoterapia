@@ -16,7 +16,7 @@ export const metadata = {
     title: "Trener personalny dla dzieci i młodzieży Katowice | Dobre Miejsce",
     description:
       "Zajęcia z trenerem personalnym to znacznie więcej niż ćwiczenia. To kompleksowe wsparcie rozwoju fizycznego, które przekłada się na codzienne funkcjonowanie dziecka – w szkole, na boisku i w domu.",
-    url: "https://dobremiejsce-fizjoterapia.pl/osteopatia-dziecieca",
+    url: "https://dobremiejsce-fizjoterapia.pl/trener-personalny-dla-dzieci",
     siteName: "Dobre Miejsce - fizjoterapia dzieci",
     locale: "pl_PL",
     type: "website",
@@ -32,11 +32,25 @@ export const metadata = {
 };
 
 async function getContentfulContent() {
-  const res = await client.getEntries({
-    content_type: "trenerPersonalny",
-  });
+  // const res = await client.getEntries({
+  //   content_type: "trenerPersonalny",
+  // });
 
-  return res.items[0];
+  // return res.items[0];
+  try {
+    const res = await client.getEntries({
+      content_type: "trenerPersonalny",
+    });
+
+    if (!res.items || res.items.length === 0) {
+      return null;
+    }
+
+    return res.items[0];
+  } catch (error) {
+    console.error("Contentful error:", error);
+    return null;
+  }
 }
 
 export default async function TrenerPersonalny() {
