@@ -56,6 +56,11 @@ async function getContentfulContent() {
 export default async function TrenerPersonalny() {
   const content = await getContentfulContent();
 
+  // Jeśli nie ma treści, zwróć 404 zamiast wywalać błąd 500
+  if (!content) {
+    notFound();
+  }
+
   return (
     <>
       <Navbar />
