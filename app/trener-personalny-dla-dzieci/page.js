@@ -2,6 +2,7 @@ import Navbar from "@/app/components/navbar";
 import PageTemplate from "@/app/components/page-template";
 import { client } from "@/lib/contentful/client";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { notFound } from "next/navigation";
 
 export const metadata = {
   title: "Trener personalny dla dzieci i młodzieży Katowice | Dobre Miejsce",
@@ -11,7 +12,6 @@ export const metadata = {
     index: true,
     follow: true,
   },
-
   openGraph: {
     title: "Trener personalny dla dzieci i młodzieży Katowice | Dobre Miejsce",
     description:
@@ -32,11 +32,6 @@ export const metadata = {
 };
 
 async function getContentfulContent() {
-  // const res = await client.getEntries({
-  //   content_type: "trenerPersonalny",
-  // });
-
-  // return res.items[0];
   try {
     const res = await client.getEntries({
       content_type: "trenerPersonalny",
@@ -56,7 +51,6 @@ async function getContentfulContent() {
 export default async function TrenerPersonalny() {
   const content = await getContentfulContent();
 
-  // Jeśli nie ma treści, zwróć 404 zamiast wywalać błąd 500
   if (!content) {
     notFound();
   }
@@ -65,27 +59,24 @@ export default async function TrenerPersonalny() {
     <>
       <Navbar />
       <PageTemplate
-        // isBlog
-        title={content.fields.title}
-        lead={content.fields.lead}
-        // img={`https:${
-        //   content.fields.image ? content.fields.image.fields.file.url : ""
-        // }`}
-
+        title={content.fields.title || ""}
+        lead={content.fields.lead || ""}
         img={
           content.fields.image?.fields?.file?.url
             ? `https:${content.fields.image.fields.file.url}`
             : ""
         }
-        //content.fields.image ? content.fields.image.fields.file.url : ""}
-        // alt={
-        //   content.fields.image ? content.fields.image.fields.description : ""
-        // }
-        alt=""
+        alt={content.fields.image?.fields?.description || ""}
         bannerTitle={content.fields.bannerTitle || ""}
-        bannerBody={documentToReactComponents(content.fields.bannerBody) || ""}
+        bannerBody={
+          content.fields.bannerBody
+            ? documentToReactComponents(content.fields.bannerBody)
+            : null
+        }
       >
-        {documentToReactComponents(content.fields.body)}
+        {content.fields.body
+          ? documentToReactComponents(content.fields.body)
+          : null}
       </PageTemplate>
     </>
   );
