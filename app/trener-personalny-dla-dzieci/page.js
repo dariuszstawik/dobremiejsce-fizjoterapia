@@ -72,11 +72,12 @@ export default async function TrenerPersonalny() {
         //   content.fields.image ? content.fields.image.fields.file.url : ""
         // }`}
 
-        img={
-          content.fields.image?.fields?.file?.url
-            ? `https:${content.fields.image.fields.file.url}`
-            : ""
-        }
+        // img={
+        //   content.fields.image?.fields?.file?.url
+        //     ? `https:${content.fields.image.fields.file.url}`
+        //     : ""
+        // }
+        img=""
         //content.fields.image ? content.fields.image.fields.file.url : ""}
         // alt={
         //   content.fields.image ? content.fields.image.fields.description : ""
