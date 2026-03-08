@@ -68,9 +68,16 @@ export default async function TrenerPersonalny() {
         // isBlog
         title={content.fields.title}
         lead={content.fields.lead}
-        img={`https:${
-          content.fields.image ? content.fields.image.fields.file.url : ""
-        }`} //content.fields.image ? content.fields.image.fields.file.url : ""}
+        // img={`https:${
+        //   content.fields.image ? content.fields.image.fields.file.url : ""
+        // }`}
+
+        img={
+          content.fields.image?.fields?.file?.url
+            ? `https:${content.fields.image.fields.file.url}`
+            : ""
+        }
+        //content.fields.image ? content.fields.image.fields.file.url : ""}
         // alt={
         //   content.fields.image ? content.fields.image.fields.description : ""
         // }
