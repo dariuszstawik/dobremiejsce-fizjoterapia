@@ -5,7 +5,7 @@ import ParagraphWithImageOnTheRight from "../components/paragraph-with-image-on-
 export const metadata = {
   title: "Kontakt | Dobre Miejsce",
   description:
-    "Skontaktuj się z gabinetem fizjoterapii dziecięcej Dobre Miejsce w Katowicach. Umów wizytę - ul. Ceglana 66, tel. 539 937 132 lub 577 611 464.",
+    "Skontaktuj się z gabinetem fizjoterapii dziecięcej Dobre Miejsce w Katowicach. Umów wizytę - ul. Ceglana 66, tel. 577 611 464.",
   robots: {
     index: true,
     follow: true,
@@ -14,7 +14,7 @@ export const metadata = {
   openGraph: {
     title: "Kontakt | Dobre Miejsce",
     description:
-      "Skontaktuj się z gabinetem fizjoterapii dziecięcej Dobre Miejsce w Katowicach. Umów wizytę - ul. Ceglana 66, tel. 539 937 132 lub 577 611 464.",
+      "Skontaktuj się z gabinetem fizjoterapii dziecięcej Dobre Miejsce w Katowicach. Umów wizytę - ul. Ceglana 66, tel. lub 577 611 464.",
     url: "https://dobremiejsce-fizjoterapia.pl/kontakt",
     siteName: "Dobre Miejsce - fizjoterapia dzieci",
     locale: "pl_PL",
