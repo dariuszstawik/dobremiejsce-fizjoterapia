@@ -58,8 +58,7 @@ export default function MartynaCesarczyk() {
 
               <div className="mb-6 text:lg md:text-xl lg:text-2xl max-w-5xl ">
                 <div className="flex items-center gap-4 mb-2">
-                  <Mail className="text-orange" />{" "}
-                  martyna.cesarczyk@dobremiejsce-fizjoterapia.pl
+                  <Mail className="text-orange" /> cesarczykmartyna@gmail.com
                 </div>
                 {/* <div className="flex items-center gap-4 mb-2">
                   <PhoneCall className="text-orange" /> 577 611 464

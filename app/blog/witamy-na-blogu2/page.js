@@ -99,7 +99,7 @@ export default function WitamyNaBlogu() {
                   to przestrzeń do wymiany myśli. Zachęcamy Was do zadawania
                   pytań{" "}
                   <a
-                    href="mailto:kamila.wlodarczyk@dobremiejsce-fizjoterapia.pl"
+                    href="mailto:kamilawlodarczyk.med@gmail.com"
                     className="text-orange"
                   >
                     mailowo

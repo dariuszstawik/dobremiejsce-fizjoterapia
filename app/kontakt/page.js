@@ -66,8 +66,8 @@ export default function Kontakt() {
             </h3>
             <div className="flex gap-2">
               <Mail className="text-orange w-5" />
-              <a href="mailto:kamila.wlodarczyk@dobremiejsce-fizjoterapia.pl">
-                kamila.wlodarczyk@dobremiejsce-fizjoterapia.pl
+              <a href="mailto:kamilawlodarczyk.med@gmail.com">
+                kamilawlodarczyk.med@gmail.com
               </a>
             </div>
             {/* <div className="flex gap-2">
@@ -80,9 +80,9 @@ export default function Kontakt() {
 
             <div className="flex gap-2">
               <Mail className="text-orange w-5" />
-              <a href="mailto:martyna-cesarczyk@dobremiejsce-fizjoterapia.pl">
+              <a href="mailto:cesarczykmartyna@gmail.com">
                 {" "}
-                martyna.cesarczyk@dobremiejsce-fizjoterapia.pl
+                cesarczykmartyna@gmail.com
               </a>
             </div>
             {/* <div className="flex gap-2">
