@@ -209,19 +209,46 @@ export default function TerapiaSIWKatowicach() {
               </div>
 
               <h2 className="mb-3 mt-2 text-3xl font-bold text-gray">
-                Doświadczona terapeutka SI
+                Doświadczeni terapeuci SI
               </h2>
 
               <div className="text-md lg:text-lg mb-6">
-                Terapią integracji sensorycznej w Dobrym Miejscu zajmuje się{" "}
-                <Link href="/martyna-cesarczyk" className="text-orange">
-                  Martyna Cesarczyk
-                </Link>{" "}
-                - fizjoterapeutka z bogatym doświadczeniem w pracy z dziećmi.
-                Jako absolwentka studiów podyplomowych z zakresu terapii
-                neurorozwojowej oraz licznych szkoleń specjalistycznych,
-                nieustannie poszerza swoją wiedzę, by zapewnić małym pacjentom
-                najwyższą jakość terapii SI.{" "}
+                Terapią integracji sensorycznej w Dobrym Miejscu zajmuje się
+                dwoje doświadczonych specjalistów, którym możesz zaufać.
+                <div className="mt-4">
+                  <Link href="/martyna-cesarczyk" className="text-orange">
+                    Martyna Cesarczyk
+                  </Link>{" "}
+                  - fizjoterapeutka dziecięca z bogatym doświadczeniem
+                  zdobywanym m.in. w Górnośląskim Centrum Zdrowia Dziecka w
+                  Katowicach oraz Centrum Intensywnej Terapii Olinek w
+                  Warszawie. Absolwentka fizjoterapii Śląskiego Uniwersytetu
+                  Medycznego, studiów podyplomowych z zakresu neurorozwojowej
+                  terapii dzieci oraz studiów pedagogicznych. Posiada certyfikat
+                  diagnozy i terapii integracji sensorycznej I i II stopnia –
+                  dzięki czemu każde dziecko jest u niej w najlepszych
+                  rękach.{" "}
+                </div>
+                <div className="my-4">
+                  <Link href="/zespol" className="text-orange">
+                    Jakub Śmistek
+                  </Link>{" "}
+                  – fizjoterapeuta i certyfikowany terapeuta integracji
+                  sensorycznej, absolwent Uniwersytetu Jana Kochanowskiego w
+                  Kielcach. Na co dzień pracuje z dziećmi z autyzmem, zespołem
+                  Aspergera, MPD, zespołem Downa oraz zaburzeniami procesów SI.
+                  Każdy plan terapii przygotowuje indywidualnie, łącząc różne
+                  metody fizjoterapeutyczne, by terapia była nie tylko
+                  skuteczna, ale też ciekawa i motywująca dla małego pacjenta.
+                </div>
+                Wierzymy, że za każdym dzieckiem stoi ogromny potencjał – a
+                naszym zadaniem jest pomóc mu go odkryć.{" "}
+                <Link
+                  href="https://dobremiejscefizjoterapiadzieci.booksy.com"
+                  className="text-orange"
+                >
+                  Umów wizytę u Martyny lub Jakuba już dziś!
+                </Link>
               </div>
 
               {/* <h2 className="mb-8 mt-6 text-3xl font-bold text-gray">
