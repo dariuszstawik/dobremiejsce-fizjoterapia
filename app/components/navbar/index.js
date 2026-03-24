@@ -220,24 +220,7 @@ export default function Navbar() {
                           fizjoterapia sportowa
                         </Link>
                       </li>
-                      <li className="hover:text-orange group">
-                        <Link
-                          href="/diagnostyka-metoda-prechtla"
-                          onClick={closeMobileMenu}
-                          className="block w-full py-3 lg:py-3.5 transition-colors"
-                        >
-                          diagnostyka metodą Prechtla
-                        </Link>
-                      </li>
-                      <li className="hover:text-orange group">
-                        <Link
-                          href="/diagnostyka-hine"
-                          onClick={closeMobileMenu}
-                          className="block w-full py-3 lg:py-3.5 transition-colors"
-                        >
-                          diagnostyka Hine
-                        </Link>
-                      </li>
+
                       <li className="hover:text-orange group">
                         <Link
                           href="/osteopata-dzieciecy"
@@ -263,6 +246,33 @@ export default function Navbar() {
                           className="block w-full py-3 lg:py-3.5 transition-colors"
                         >
                           trener personalny
+                        </Link>
+                      </li>
+                      <li className="hover:text-orange group">
+                        <Link
+                          href="/neurologopeda-katowice"
+                          onClick={closeMobileMenu}
+                          className="block w-full py-3 lg:py-3.5 transition-colors"
+                        >
+                          neurologopeda
+                        </Link>
+                      </li>
+                      <li className="hover:text-orange group">
+                        <Link
+                          href="/diagnostyka-metoda-prechtla"
+                          onClick={closeMobileMenu}
+                          className="block w-full py-3 lg:py-3.5 transition-colors"
+                        >
+                          diagnostyka metodą Prechtla
+                        </Link>
+                      </li>
+                      <li className="hover:text-orange group">
+                        <Link
+                          href="/diagnostyka-hine"
+                          onClick={closeMobileMenu}
+                          className="block w-full py-3 lg:py-3.5 transition-colors"
+                        >
+                          diagnostyka Hine
                         </Link>
                       </li>
                     </ul>
