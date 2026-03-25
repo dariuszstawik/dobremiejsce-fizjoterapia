@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
         <Script
           id="cookieyes"
           src="https://cdn-cookieyes.com/client_data/8f62ee2d82cf94953a61d281/script.js"
-          strategy="beforeInteractive"
+          strategy="afterInteractive"
         />
 
         {children}

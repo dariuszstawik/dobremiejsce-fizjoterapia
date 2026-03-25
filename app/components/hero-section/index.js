@@ -8,7 +8,7 @@ export default function HeroSection() {
           <div className="flex flex-col items-center justify-end lg:flex-row">
             <div className="lg:mb-0 lg:max-w-xl lg:pr-5">
               <div className="mb-5 max-w-xl">
-                <h1 className="robot mb-4 max-w-lg font-sans text-4xl font-bold leading-hero text-gray-other sm:text-5xl lg:text-6xl lg:leading-hero">
+                <h1 className="mb-4 max-w-lg font-sans text-4xl font-bold leading-hero text-gray-other sm:text-5xl lg:text-6xl lg:leading-hero">
                   Fizjoterapia dzieci płynąca z pasji i&nbsp;zaangażowania
                 </h1>
                 <img
@@ -42,11 +42,13 @@ export default function HeroSection() {
             className="ml-auto -translate-y-12 transform object-cover md:hidden md:w-auto"
             src="/hero-img-mobile.webp"
             alt="Hero Mobile Image"
+            fetchpriority="high"
           />
           <img
             className="ml-auto hidden w-80 -translate-y-12 object-cover md:block md:w-auto"
             src="/hero-img.webp"
             alt="Hero Desktop Image"
+            fetchpriority="high"
           />
         </div>
         {/* <div className="relative lg:col-start-2 lg:row-start-1">
