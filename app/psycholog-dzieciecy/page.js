@@ -6,7 +6,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 export const metadata = {
   title: "Psycholog dziecięcy Katowice | Dobre Miejsce",
   description:
-    "Osteopatia to delikatne, holistyczne podejście do zdrowia Twojego dziecka. W Dobrym Miejscu łączymy osteopatię z fizjoterapią, aby zapewnić Waszym maluchom kompleksową opiekę od pierwszych dni życia.",
+    "Szukasz wsparcia dla dziecka? Psycholog Kamila Tomaszkiewicz oferuje profesjonalną terapię i diagnozę. Ponad 7 lat doświadczenia. Umów wizytę i pomóż swojemu dziecku!",
   robots: {
     index: true,
     follow: true,
@@ -15,8 +15,8 @@ export const metadata = {
   openGraph: {
     title: "Psycholog dziecięcy Katowice | Dobre Miejsce",
     description:
-      "Osteopatia to delikatne, holistyczne podejście do zdrowia Twojego dziecka. W Dobrym Miejscu łączymy osteopatię z fizjoterapią, aby zapewnić Waszym maluchom kompleksową opiekę od pierwszych dni życia.",
-    url: "https://dobremiejsce-fizjoterapia.pl/osteopatia-dziecieca",
+      "Szukasz wsparcia dla dziecka? Psycholog Kamila Tomaszkiewicz oferuje profesjonalną terapię i diagnozę. Ponad 7 lat doświadczenia. Umów wizytę i pomóż swojemu dziecku!",
+    url: "https://dobremiejsce-fizjoterapia.pl/psycholog-dzieciecy",
     siteName: "Dobre Miejsce - fizjoterapia dzieci",
     locale: "pl_PL",
     type: "website",

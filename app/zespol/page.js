@@ -3,18 +3,21 @@ import Navbar from "../components/navbar";
 import Link from "next/link";
 import SectionTitle from "../components/section-title";
 import PageTemplate from "../components/page-template";
+import TeamMember from "../components/team-member";
+import TeamSpecialistCard from "../components/team-specialist";
+import TeamSectionClaude from "../components/team-section-claude";
 
 export const metadata = {
   title: "Nasz zespół- fizjoterapeuci dziecięcy w Katowicach | Dobre Miejsce",
   description:
-    "Nasz zespół - fizjoterapeuci dziecięcy w Katowicach - profil zawodowy, kwalifikacje, dane kontaktowe",
+    "Nasz zespół - terapeuci dziecięcy w Katowicach - profil zawodowy, kwalifikacje, dane kontaktowe",
   robots: {
     index: true,
     follow: true,
   },
 
   openGraph: {
-    title: "Nasz zespół - fizjoterapeuci dziecięcy",
+    title: "Nasz zespół - terapeuci dziecięcy",
     description:
       "Nasz zespół- fizjoterapeuta dzieci w Katowicach - profil zawodowy, kwalifikacje, dane kontaktowe",
     url: "https://dobremiejsce-fizjoterapia.pl/kamila-wlodarczyk",
@@ -37,14 +40,28 @@ export default function Zespol() {
     <>
       <Navbar />
 
+      {/* <TeamSectionClaude /> */}
+
       <PageTemplate
         // isBlog
         isTeamPage
         title="Nasz zespół"
-        lead="W Dobrym Miejscu najważniejsze są dzieci i ich potrzeby – dlatego tworzymy zespół fizjoterapeutów, którzy łączą wiedzę, doświadczenie i ogromne serce do pracy z najmłodszymi. Każdy z nas ma swoją specjalizację, ale wspólnie dążymy do jednego celu: wspierać rozwój dziecka w bezpiecznej, pełnej ciepła atmosferze, w której ruch staje się źródłem zdrowia i radości."
+        lead="W Dobrym Miejscu najważniejsze są dzieci i ich potrzeby – dlatego tworzymy zespół specjalistów, którzy łączą wiedzę, doświadczenie i ogromne serce do pracy z najmłodszymi. Każdy z nas ma swoją specjalizację, ale wspólnie dążymy do jednego celu: wspierać rozwój dziecka w bezpiecznej, pełnej ciepła atmosferze, w której ruch staje się źródłem zdrowia i radości."
         // img="/kamila-wlodarczyk.png"
         // alt="Fizjoterapia dzieci"
       >
+        {/* <TeamSpecialistCard
+          name="Kamila Włodarczyk"
+          role="Fizjoterapeuta dziecięcy"
+          image="/kamila-wlodarczyk.png"
+          alt="Kamila Włodarczyk"
+        />
+
+        <TeamMember
+          name="Kamila Włodarczyk"
+          role="Fizjoterapeuta dziecięcy"
+          imageSrc="/kamila-wlodarczyk.png"
+        /> */}
         <section className="mt-8">
           {/* <div className="container mx-auto mt-20 px-4 pb-12 pt-40 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:pb-20"> */}
           {/* <SectionTitle title="Nasz zespół" /> */}
