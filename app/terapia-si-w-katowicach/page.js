@@ -5,7 +5,7 @@ import PageTemplate from "../components/page-template";
 export const metadata = {
   title: "Integracja sensoryczna: diagnoza i terapia SI Katowice",
   description:
-    "Dobre Miejsce - Fizjoterapia dzieci: pomagamy dzieciom z zaburzeniami integracji sensorycznej. Diagnoza SI i terapia SI w Katowicach – w przyjaznej atmosferze.",
+    "Dziecko unika dotyku, jest nadruchliwe lub niezgrabne? Certyfikowani terapeuci SI Martyna Cesarczyk i Jakub Śmistek pomogą Twojemu dziecku. Umów wizytę!",
   robots: {
     index: true,
     follow: true,
@@ -13,7 +13,7 @@ export const metadata = {
   openGraph: {
     title: "Integracja sensoryczna: diagnoza i terapia SI Katowice",
     description:
-      "Dobre Miejsce - Fizjoterapia dzieci: pomagamy dzieciom z zaburzeniami integracji sensorycznej. Diagnoza SI i terapia SI w Katowicach – w przyjaznej atmosferze.",
+      "Dziecko unika dotyku, jest nadruchliwe lub niezgrabne? Certyfikowani terapeuci SI Martyna Cesarczyk i Jakub Śmistek pomogą Twojemu dziecku. Umów wizytę!",
     url: "https://dobremiejsce-fizjoterapia.pl/terapia-si-w-katowicach",
     siteName: "Dobre Miejsce - fizjoterapia dzieci",
     locale: "pl_PL",
