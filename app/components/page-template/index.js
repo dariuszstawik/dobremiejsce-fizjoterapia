@@ -16,7 +16,7 @@ export default function PageTemplate({
   isTeamPage,
 }) {
   return (
-    <section className=" py-32 mt-12 md:py-40 container mx-auto px-8 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
+    <section className=" py-32 mt-12 md:pt-40 container mx-auto px-8 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
       <div className="bgy1-blur absolute right-0 top-0 z-0 h-full w-full opacity-20 sm:hidden"></div>
       {(isBlog || isNews || isTeamPage) && (
         <Image

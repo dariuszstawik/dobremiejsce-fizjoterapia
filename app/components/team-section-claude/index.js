@@ -316,7 +316,7 @@ export default function TeamSectionClaude() {
 
       {/* CTA */}
       <div className="relative z-10 text-center mt-16">
-        <a
+        {/* <a
           href="https://dobremiejscefizjoterapiadzieci.booksy.com/"
           target="_blank"
           rel="noopener noreferrer"
@@ -344,7 +344,7 @@ export default function TeamSectionClaude() {
           }}
         >
           Umów wizytę
-        </a>
+        </a> */}
       </div>
 
       <style>{`

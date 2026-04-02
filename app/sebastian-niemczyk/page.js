@@ -15,7 +15,7 @@ export const metadata = {
     title: "Sebastian Niemczyk- fizjoterapeuta dzieci",
     description:
       "Sebastian Niemczyk - fizjoterapeuta dzieci w Katowicach - profil zawodowy, kwalifikacje, dane kontaktowe",
-    url: "https://dobremiejsce-fizjoterapia.pl/kamila-wlodarczyk",
+    url: "https://dobremiejsce-fizjoterapia.pl/sebastioan-niemczyk",
     siteName: "Dobre Miejsce - fizjoterapia dzieci",
     locale: "pl_PL",
     type: "website",

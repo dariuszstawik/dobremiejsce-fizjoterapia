@@ -8,7 +8,6 @@ export default {
   theme: {
     extend: {
       colors: {
-        // orange: "rgb(255, 65, 10)",
         orange: "#ff6e41",
         peach: "#fff6f2",
         secondaryOrange: "#ffcea0ff",
