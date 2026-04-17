@@ -124,6 +124,62 @@
     <priority>0.8</priority>
   </url>
 
+    <url>
+    <loc>https://dobremiejsce-fizjoterapia.pl/sebastian-niemczyk</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+      <url>
+    <loc>https://dobremiejsce-fizjoterapia.pl/michal-matuszak</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+      <url>
+    <loc>https://dobremiejsce-fizjoterapia.pl/michal-handzlik</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+        <url>
+    <loc>https://dobremiejsce-fizjoterapia.pl/jakub-smistek</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+          <url>
+    <loc>https://dobremiejsce-fizjoterapia.pl/katarzyna-loranc</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+            <url>
+    <loc>https://dobremiejsce-fizjoterapia.pl/kamila-tomaszkiewicz</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+            <url>
+    <loc>https://dobremiejsce-fizjoterapia.pl/sabina-szober</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+            <url>
+    <loc>https://dobremiejsce-fizjoterapia.pl/aleksandra-fraczek</loc>
+    <lastmod>2025-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Podstrona Cennik -->
   <url>
     <loc>https://dobremiejsce-fizjoterapia.pl/cennik</loc>

@@ -14,6 +14,7 @@ export default function PageTemplate({
   isNews,
   imgBottom,
   isTeamPage,
+  hasNoBanner,
 }) {
   return (
     <section className=" py-32 mt-12 md:pt-40 container mx-auto px-8 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
@@ -64,7 +65,7 @@ mb-6 text-xl"
 
         <p className="mb-6 text-2xl max-w-5xl ">{lead}</p>
 
-        {isBlog || isNews || isTeamPage ? (
+        {isBlog || isNews || isTeamPage || hasNoBanner ? (
           <span className="block h-8" />
         ) : (
           <a
@@ -141,7 +142,7 @@ mb-6 text-xl"
             className={`${isTeamPage ? "w-full" : "max-w-4xl"}  mx-auto`}
           >
             {children}
-            {!(isBlog || isNews || isTeamPage) && (
+            {!(isBlog || isNews || isTeamPage || hasNoBanner) && (
               <Banner bannerTitle={bannerTitle}>{bannerBody}</Banner>
             )}
           </article>
