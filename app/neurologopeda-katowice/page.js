@@ -129,7 +129,11 @@ export default async function NeurologopedaKatowice() {
         <div className="mb-12 mt-8 max-w-2xl rounded-2xl bg-white p-6 shadow-lg border border-gray-100">
           <div className="mb-4 flex items-center gap-4">
             <h3 className="text-xl font-bold text-gray">Umów wizytę</h3>
-            <a href="https://logmedporadnie.pl/kontakt/" target="_blank">
+            <a
+              href="https://logmedporadnie.pl/kontakt/"
+              target="_blank"
+              className="ml-auto h-8 w-auto object-contain lg:h-10"
+            >
               <img
                 src="https://logmedporadnie.pl/wp-content/themes/logmed/img/logo.png"
                 alt="Logo Logmed"
@@ -161,11 +165,17 @@ export default async function NeurologopedaKatowice() {
         <div className="mb-12 mt-8 max-w-2xl rounded-2xl bg-white p-6 shadow-lg border border-gray-100">
           <div className="mb-4 flex items-center gap-4">
             <h3 className="text-xl font-bold text-gray">Umów wizytę</h3>
-            <img
-              src="https://logmedporadnie.pl/wp-content/themes/logmed/img/logo.png"
-              alt="Logo Logmed"
+            <a
+              href="https://logmedporadnie.pl/kontakt/"
+              target="_blank"
               className="ml-auto h-8 w-auto object-contain lg:h-10"
-            />
+            >
+              <img
+                src="https://logmedporadnie.pl/wp-content/themes/logmed/img/logo.png"
+                alt="Logo Logmed"
+                className="ml-auto h-8 w-auto object-contain lg:h-10"
+              />
+            </a>
           </div>
           <p className="mb-6 text-md text-gray-600 lg:text-lg">
             Rejestracja na konsultacje i terapię u neurologopedy odbywa się{" "}
