@@ -61,7 +61,7 @@ export default function Footer() {
                     Kamila: <a href="tel:+48 539 937 132">539 937 132</a>
                   </p> */}
                   <p className="leading-loose my-0">
-                    tel. <a href="tel:+48 577 611 464">577 611 464</a>
+                    tel. <a href="tel:+48577611464">577 611 464</a>
                   </p>
                   <div className="flex  gap-3 mt-6 text-secondaryOrange">
                     <a

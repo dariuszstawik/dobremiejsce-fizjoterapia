@@ -56,7 +56,7 @@ export default function Kontakt() {
             <h3 className="mb-3 mt-6 text-2xl font-bold text-gray">Telefon</h3>
             <div className="flex gap-2">
               <Phone className="text-orange w-4" />
-              <a href="tel:+48 577 611 464">577 611 464</a>
+              <a href="tel:+48577611464">577 611 464</a>
             </div>
           </div>
           {/* </div> */}
