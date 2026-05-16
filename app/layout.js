@@ -9,8 +9,31 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Dobre Miejsce - fizjoterapia dzieci Katowice",
   description:
-    "Fizjoterapia dzieci w Katowicach płynąca z pasji i zaangażowania...",
-  // ... reszta Twoich metadanych bez zmian
+    "Fizjoterapia dzieci w Katowicach płynąca z pasji i zaangażowania dwóch fizjoterapeutek pediatrycznych - Kamili Włodarczyk i Martyny Cesarczyk",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  verification: {
+    google: "xfPCt4cpOku2YCInC_8lRcsPqy-MhPfZ0ctpzI5IvRY",
+  },
+  openGraph: {
+    title: "Dobre Miejsce - fizjoterapia dzieci Katowice",
+    description:
+      "Fizjoterapia dzieci w Katowicach płynąca z pasji i zaangażowania dwóch fizjoterapeutek pediatrycznych - Kamili Włodarczyk i Martyny Cesarczyk",
+    url: "https://dobremiejsce-fizjoterapia.pl",
+    siteName: "Dobre Miejsce - fizjoterapia dzieci",
+    locale: "pl_PL",
+    type: "website",
+    images: [
+      {
+        url: "https://dobremiejsce-fizjoterapia.pl/dobremiejsce009.jpg",
+        width: 1200,
+        height: 800,
+        alt: "Fizjoterapia dzieci",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
