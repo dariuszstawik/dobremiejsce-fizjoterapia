@@ -89,6 +89,14 @@ const specialists = [
     href: "/aleksandra-fraczek",
     // accent: ACCENTS[2],
   },
+  {
+    id: 11,
+    name: "Kaja Smoleńska-Ożóg",
+    role: "Neurologopeda",
+    photo: "/kaja-smolenska-ozog.webp",
+    href: "/kaja-smolenska-ozog",
+    // accent: ACCENTS[2],
+  },
 ];
 
 function SpecialistCard({ specialist }) {
@@ -220,8 +228,9 @@ export default function TeamSection() {
           <div
             className="relative z-10"
             style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
               gap: "40px 28px",
               maxWidth: "1080px",
               //   margin: "0 auto",
@@ -234,6 +243,8 @@ export default function TeamSection() {
                 style={{
                   animation: "fadeInUp 0.5s ease both",
                   animationDelay: `${i * 0.07}s`,
+                  flex: "1 1 220px",
+                  maxWidth: "249px",
                 }}
               >
                 <SpecialistCard specialist={s} />
