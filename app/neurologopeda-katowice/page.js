@@ -1,3 +1,5 @@
+// import { PhoneCall, Calendar } from "lucide-react";
+
 // import Navbar from "@/app/components/navbar";
 // import PageTemplate from "@/app/components/page-template";
 // import { client } from "@/lib/contentful/client";
@@ -121,12 +123,12 @@ export default async function NeurologopedaKatowice() {
           content.fields.image ? content.fields.image.fields.file.url : ""
         }`}
         alt=""
-        hasNoBanner
-        // bannerTitle={content.fields.bannerTitle || ""}
-        // bannerBody={documentToReactComponents(content.fields.bannerBody) || ""}
+        // hasNoBanner
+        bannerTitle={content.fields.bannerTitle || ""}
+        bannerBody={documentToReactComponents(content.fields.bannerBody) || ""}
       >
         {/* Nowa sekcja rejestracji telefonicznej umieszczona przed główną treścią CMS */}
-        <div className="mb-12 mt-8 max-w-2xl rounded-2xl bg-white p-6 shadow-lg border border-gray-100">
+        {/* <div className="mb-12 mt-8 max-w-2xl rounded-2xl bg-white p-6 shadow-lg border border-gray-100">
           <div className="mb-4 flex items-center gap-4">
             <h3 className="text-xl font-bold text-gray">Umów wizytę</h3>
             <a
@@ -155,14 +157,14 @@ export default async function NeurologopedaKatowice() {
               577 611 464
             </span>
           </a>
-        </div>
+        </div> */}
 
         {/* Główna treść z Contentful */}
 
         {documentToReactComponents(content.fields.body)}
 
         {/* Nowa sekcja rejestracji telefonicznej umieszczona przed główną treścią CMS */}
-        <div className="mb-12 mt-8 max-w-2xl rounded-2xl bg-white p-6 shadow-lg border border-gray-100">
+        {/* <div className="mb-12 mt-8 max-w-2xl rounded-2xl bg-white p-6 shadow-lg border border-gray-100">
           <div className="mb-4 flex items-center gap-4">
             <h3 className="text-xl font-bold text-gray">Umów wizytę</h3>
             <a
@@ -191,7 +193,7 @@ export default async function NeurologopedaKatowice() {
               577 611 464
             </span>
           </a>
-        </div>
+        </div> */}
       </PageTemplate>
     </>
   );

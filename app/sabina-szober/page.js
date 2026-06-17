@@ -185,7 +185,7 @@ export default function SabinaSzober() {
               </h2>
 
               {/* Nowa sekcja umawiania wizyt */}
-              <div className="mb-10 max-w-xl rounded-2xl bg-white p-6 shadow-lg border border-gray-100">
+              {/* <div className="mb-10 max-w-xl rounded-2xl bg-white p-6 shadow-lg border border-gray-100">
                 <div className="mb-4 flex items-center gap-4">
                   <h3 className="text-xl font-bold text-gray">Umów wizytę</h3>
                   <a
@@ -214,8 +214,58 @@ export default function SabinaSzober() {
                     577 611 464
                   </span>
                 </a>
-              </div>
+              </div> */}
               {/* Koniec nowej sekcji */}
+
+              <div className="mb-12 mt-8 max-w-2xl rounded-2xl bg-white p-6 shadow-lg border border-gray-100">
+                <div className="mb-4 flex items-center gap-4">
+                  <h3 className="text-xl font-bold text-gray-800">
+                    Umów wizytę
+                  </h3>
+                  <a
+                    href="https://logmedporadnie.pl/kontakt/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ml-auto h-8 w-auto object-contain lg:h-10"
+                  >
+                    <img
+                      src="https://logmedporadnie.pl/wp-content/themes/logmed/img/logo.png"
+                      alt="Logo Logmed"
+                      className="ml-auto h-8 w-auto object-contain lg:h-10"
+                    />
+                  </a>
+                </div>
+
+                <p className="mb-6 text-gray-600">
+                  Rejestracja na konsultacje i terapię u Sabiny Szober odbywa
+                  się <strong>telefonicznie</strong> lub{" "}
+                  <strong>online przez platformę Booksy</strong>. Wybierz
+                  dogodną dla siebie formę zapisu:
+                </p>
+
+                <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+                  {/* Rejestracja Telefoniczna */}
+                  <a
+                    href="tel:+48607230876"
+                    className="inline-flex w-full justify-center sm:w-fit items-center gap-3 whitespace-nowrap rounded-full bg-orange px-6 py-4 text-white no-underline shadow-md transition-all hover:scale-105 hover:bg-heavy hover:text-white"
+                  >
+                    <PhoneCall size={24} />
+                    <span className="font-bold tracking-wide">607 230 876</span>
+                  </a>
+
+                  {/* Rejestracja Online Booksy */}
+                  <a
+                    href="https://dobremiejscefizjoterapiadzieci.booksy.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex w-full justify-center sm:w-fit items-center gap-3 whitespace-nowrap rounded-full bg-orange px-6 py-4 text-white no-underline shadow-md transition-all hover:scale-105 hover:bg-black hover:text-white"
+                  >
+                    <span className="font-bold tracking-wide">
+                      Zarezerwuj przez Booksy
+                    </span>
+                  </a>
+                </div>
+              </div>
 
               <p className="text-md lg:text-lg mb-6 font-bold">
                 Neurologopeda z wieloletnim doświadczeniem w zakresie
