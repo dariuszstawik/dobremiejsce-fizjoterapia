@@ -227,7 +227,7 @@ export default function Navbar() {
                           onClick={closeMobileMenu}
                           className="block w-full py-3 lg:py-3.5 transition-colors"
                         >
-                          osteopata dziecięcy
+                          osteopata dla dzieci i dorosłych
                         </Link>
                       </li>
                       <li className="hover:text-orange group">
