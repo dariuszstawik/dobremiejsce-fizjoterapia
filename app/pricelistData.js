@@ -107,6 +107,12 @@ const pricelistData = [
     description: "1h",
     price: "250\u00A0zł",
   },
+  {
+    id: 19,
+    title: "Trening personalny dla kobiet w ciąży i po porodzie",
+    description: "1h",
+    price: "180\u00A0zł",
+  },
 ];
 
 export default pricelistData;
