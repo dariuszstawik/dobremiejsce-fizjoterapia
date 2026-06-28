@@ -60,7 +60,7 @@ const pricelistData = [
     category: "Terapia specjalistyczna (np. wad postawy, pooperacyjna, SI)",
     items: [
       {
-        title: "Diagnoza pooperacyjna/ortopedyczna",
+        title: "Diagnoza pooperacyjna / ortopedyczna",
         description: "1h",
         price: "170 zł",
       },
