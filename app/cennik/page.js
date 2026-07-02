@@ -166,9 +166,26 @@ const pricelistData = [
     category: "Neurologopeda Kaja Smoleńska-Ożóg",
     items: [
       {
-        title: "Diagnoza neurologopedyczna dzieci od 1 tyg. ż.",
+        title: "Diagnoza neurologopedyczna (dzieci od 0-1r.ż.)",
+        description: "1h 30 min",
+        price: "230 zł",
+      },
+
+      {
+        title: "Diagnoza neurologopedyczna (dzieci/dorośli)",
         description: "1h",
         price: "200 zł",
+      },
+      {
+        title:
+          "Kolejna wizyta/konsultacja neurologopedyczna (kontrolna wizyta po odbytej diagnozie neurologopedycznej)",
+        description: "1h",
+        price: "170 zł",
+      },
+      {
+        title: "Terapia neurologopedyczna",
+        description: "30 min",
+        price: "130 zł",
       },
       {
         title: "Terapia neurologopedyczna",
