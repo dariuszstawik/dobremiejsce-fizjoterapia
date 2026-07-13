@@ -97,6 +97,14 @@ const specialists = [
     href: "/kaja-smolenska-ozog",
     // accent: ACCENTS[2],
   },
+  {
+    id: 11,
+    name: "Katarzyna Gawęda",
+    role: "Fizjoterapeuta dziecięcy",
+    photo: "/katarzyna-gaweda-sm.webp",
+    href: "/katarzyna-gaweda",
+    // accent: ACCENTS[2],
+  },
 ];
 
 function SpecialistCard({ specialist }) {
