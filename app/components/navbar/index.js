@@ -245,7 +245,16 @@ export default function Navbar() {
                           onClick={closeMobileMenu}
                           className="block w-full py-3 lg:py-3.5 transition-colors"
                         >
-                          trener personalny
+                          trener personalny dla dzieci
+                        </Link>
+                      </li>
+                      <li className="hover:text-orange group">
+                        <Link
+                          href="/trening-personalny-dla-kobiet-w-ciazy-i-po-porodzie"
+                          onClick={closeMobileMenu}
+                          className="block w-full py-3 lg:py-3.5 transition-colors"
+                        >
+                          trening personalny dla kobiet w ciąży i po porodzie
                         </Link>
                       </li>
                       <li className="hover:text-orange group">

@@ -41,7 +41,7 @@ async function getContentfulContent() {
   return res.items[0];
 }
 
-export default async function NeurologopedaKatowice() {
+export default async function TreningPersonalnyDlaKobietWCiazy() {
   const content = await getContentfulContent();
 
   return (
