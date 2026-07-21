@@ -85,6 +85,11 @@ const pricelistData = [
         price: "300 zł",
       },
       {
+        title: "Diagnoza i terapia skolioz metodą FITS",
+        description: "1h",
+        price: "220 zł",
+      },
+      {
         title: "Diagnoza SI (2 spotkania)",
         description: "55 min",
         price: "490 zł",
