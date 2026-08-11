@@ -3,18 +3,18 @@ import Navbar from "../components/navbar";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Katarzyna Loranc - trenerka personalna Katowice | Dobre Miejsce",
+  title: "Katarzyna Gruszecki - trenerka personalna Katowice | Dobre Miejsce",
   description:
-    "Katarzyna Loranc - trenerka personalna Katowice - profil zawodowy, kwalifikacje, dane kontaktowe",
+    "Katarzyna Gruszecki - trenerka personalna Katowice - profil zawodowy, kwalifikacje, dane kontaktowe",
   robots: {
     index: true,
     follow: true,
   },
 
   openGraph: {
-    title: "Katarzyna Loranc - trenerka personalna Katowice | Dobre Miejsce",
+    title: "Katarzyna Gruszecki - trenerka personalna Katowice | Dobre Miejsce",
     description:
-      "Katarzyna Loranc - trenerka personalna Katowice - profil zawodowy, kwalifikacje, dane kontaktowe",
+      "Katarzyna Gruszecki - trenerka personalna Katowice - profil zawodowy, kwalifikacje, dane kontaktowe",
     url: "https://dobremiejsce-fizjoterapia.pl/kamila-wlodarczyk",
     siteName: "Dobre Miejsce - fizjoterapia dzieci",
     locale: "pl_PL",
@@ -42,13 +42,13 @@ export default function KatarzynaLorenc() {
           >
             <img
               src="/katarzyna-loranc-sm.webp"
-              alt="Katarzyna Loranc"
+              alt="Katarzyna Gruszecki"
               className="m-0 w-40 rounded-full p-0 lg:w-auto lg:mb-auto"
             />
 
             <div className="text-gray">
               <h2 className={`text-4xl font-bold text-gray mb-6`}>
-                Katarzyna Loranc
+                Katarzyna Gruszecki
                 <span className="block  mt-2 mb-2 text-2xl max-w-5xl font-normal">
                   {" "}
                   Trenerka personalna

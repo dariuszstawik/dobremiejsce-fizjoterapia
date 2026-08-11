@@ -55,7 +55,7 @@ const specialists = [
   },
   {
     id: 7,
-    name: "Katarzyna Loranc",
+    name: "Katarzyna Gruszecki",
     role: "Trenerka personalna",
     photo: "https://dobremiejsce-fizjoterapia.pl/katarzyna-loranc-sm.webp",
     accent: "#a8c5a0",

@@ -7,7 +7,7 @@ import { PhoneCall } from "lucide-react"; // Dodany import ikony
 export const metadata = {
   title: "Trening personalny dla kobiet w ciąży i po porodzie | Dobre Miejsce",
   description:
-    "Trening z Katarzyną Loranc to przestrzeń, w której poczujesz się w 100% bezpieczna, zaopiekowana i zrozumiana jako kobieta i mama.",
+    "Trening z Katarzyną Gruszecki to przestrzeń, w której poczujesz się w 100% bezpieczna, zaopiekowana i zrozumiana jako kobieta i mama.",
   robots: {
     index: true,
     follow: true,
@@ -17,7 +17,7 @@ export const metadata = {
     title:
       "Trening personalny dla kobiet w ciąży i po porodzie | Dobre Miejsce",
     description:
-      "Trening z Katarzyną Loranc to przestrzeń, w której poczujesz się w 100% bezpieczna, zaopiekowana i zrozumiana jako kobieta i mama.",
+      "Trening z Katarzyną Gruszecki to przestrzeń, w której poczujesz się w 100% bezpieczna, zaopiekowana i zrozumiana jako kobieta i mama.",
     url: "https://dobremiejsce-fizjoterapia.pl/trening-personalny-dla-kobiet-w-ciazy-i-po-porodzie",
     siteName: "Dobre Miejsce - fizjoterapia dzieci",
     locale: "pl_PL",

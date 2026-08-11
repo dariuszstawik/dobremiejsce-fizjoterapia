@@ -66,7 +66,7 @@ const specialists = [
   },
   {
     id: 9,
-    name: "Katarzyna Loranc",
+    name: "Katarzyna Gruszecki",
     role: "Trenerka personalna",
     photo: "/katarzyna-loranc-sm.webp",
     href: "/katarzyna-loranc",

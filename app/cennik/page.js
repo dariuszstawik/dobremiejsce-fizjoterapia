@@ -263,7 +263,7 @@ export default function Cennik() {
               Poniższe ceny obowiązują do 31 sierpnia 2026 r.
             </span>
             <span className="text-orange-900/80">
-              Od września wprowadzamy nieznaczne zmiany —{" "}
+              Od września wprowadzamy nieznaczne zmiany -{" "}
               <Link
                 href="/aktualnosci/zmiana-cennika-od-wrzesnia-2026"
                 className="font-semibold text-orange-700 underline decoration-orange/40 underline-offset-4 transition-colors hover:decoration-orange-700"
