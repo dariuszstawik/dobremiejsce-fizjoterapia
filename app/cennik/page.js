@@ -253,6 +253,27 @@ export default function Cennik() {
       <Navbar />
       <div className="max-w-4xl mx-auto pt-24 px-4 sm:px-0">
         <SectionTitle title="Cennik usług*" />
+        <div className="flex justify-center px-2 mb-8">
+          <p className="inline-flex flex-wrap items-center justify-center gap-x-2 gap-y-1 rounded-full border border-orange/20 bg-peach/60 px-4 py-2 text-center text-xs sm:text-sm text-orange-900">
+            <span className="inline-flex items-center gap-1.5 font-semibold">
+              <span
+                className="inline-block h-1.5 w-1.5 rounded-full bg-orange-600"
+                aria-hidden="true"
+              />
+              Poniższe ceny obowiązują do 31 sierpnia 2026 r.
+            </span>
+            <span className="text-orange-900/80">
+              Od września wprowadzamy nieznaczne zmiany —{" "}
+              <Link
+                href="/aktualnosci/zmiana-cennika-od-wrzesnia-2026"
+                className="font-semibold text-orange-700 underline decoration-orange/40 underline-offset-4 transition-colors hover:decoration-orange-700"
+              >
+                zobacz szczegóły
+              </Link>
+              .
+            </span>
+          </p>
+        </div>
 
         <div className="flex flex-col gap-3 mb-12 mt-4">
           {pricelistData.map((section, idx) => (
