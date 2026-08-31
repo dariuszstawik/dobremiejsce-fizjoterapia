@@ -39,10 +39,32 @@ const pricelistData = [
     items: [
       {
         title: "Wizyta diagnostyczna / Pierwsza wizyta / Kontrola",
-        description: "1h",
-        price: "220 zł",
+        description: "Kamila, Martyna, 1h",
+        price: "240 zł",
       },
-      { title: "Terapia", description: "45 min", price: "170 zł" },
+      {
+        title: "Terapia",
+        description: "Kamila, Martyna, 45 min",
+        price: "190 zł",
+      },
+
+      {
+        title: "Wizyta diagnostyczna / Pierwsza wizyta / Kontrola",
+        description:
+          "Terapeuci neurorozwojowi: Katarzyna, Ola, Julia i Anna, 1h",
+        price: "230 zł",
+      },
+      {
+        title: "Terapia",
+        description:
+          "Terapeuci neurorozwojowi: Katarzyna, Ola, Julia i Anna, 45 min",
+        price: "180 zł",
+      },
+      {
+        title: "Terapia oddechowa noworodków / niemowląt",
+        description: "45 min",
+        price: "190 zł",
+      },
     ],
   },
   {
@@ -50,10 +72,26 @@ const pricelistData = [
     items: [
       {
         title: "Wizyta diagnostyczna / Pierwsza wizyta / Kontrola",
-        description: "1h",
-        price: "220 zł",
+        description: "Kamila, Martyna, 1h",
+        price: "240 zł",
       },
-      { title: "Terapia", description: "45 min", price: "170 zł" },
+      {
+        title: "Terapia",
+        description: "Kamila, Martyna, 45 min",
+        price: "190 zł",
+      },
+      {
+        title: "Wizyta diagnostyczna / Pierwsza wizyta / Kontrola",
+        description:
+          "Terapeuci neurorozwojowi: Katarzyna, Ola, Julia, Anna, Jakub, Sebastian, 1h",
+        price: "230 zł",
+      },
+      {
+        title: "Terapia",
+        description:
+          "Terapeuci neurorozwojowi: Katarzyna, Ola, Julia, Anna, Jakub, Sebastian, 45 min",
+        price: "180 zł",
+      },
     ],
   },
   {
@@ -62,39 +100,35 @@ const pricelistData = [
       {
         title: "Diagnoza pooperacyjna / ortopedyczna",
         description: "1h",
-        price: "170 zł",
+        price: "180 zł",
       },
       {
         title: "Terapia pooperacyjna/ortopedyczna",
         description: "45 min",
-        price: "170 zł",
+        price: "180 zł",
       },
-      {
-        title: "Terapia oddechowa noworodków / niemowląt",
-        description: "45 min",
-        price: "170 zł",
-      },
+
       {
         title: "Terapia wad postawy (od 3 lat)",
         description: "45 min",
-        price: "170 zł",
+        price: "180 zł",
       },
       {
         title: "Diagnostyka i Terapia Zoga Wady Postawy",
         description: "1h 30 min",
-        price: "300 zł",
+        price: "350 zł",
       },
       {
         title: "Diagnoza i terapia skolioz metodą FITS",
         description: "1h",
-        price: "220 zł",
+        price: "230 zł",
       },
       {
         title: "Diagnoza SI (2 spotkania)",
         description: "55 min",
-        price: "490 zł",
+        price: "510 zł",
       },
-      { title: "Terapia SI", description: "45 min", price: "170 zł" },
+      { title: "Terapia SI", description: "45 min", price: "180 zł" },
     ],
   },
   {
@@ -116,7 +150,7 @@ const pricelistData = [
     category: "Neurologopedia Sabina Szober",
     items: [
       {
-        title: "I wizyta ( porażenie nerwu twarzowego ) - diagnoza",
+        title: "I wizyta (porażenie nerwu twarzowego) - diagnoza",
         description: "1h 45 min",
         price: "350 zł",
       },
@@ -126,7 +160,7 @@ const pricelistData = [
         price: "350 zł",
       },
       {
-        title: "I wizyta ( inne ) - diagnoza",
+        title: "I wizyta (inne) - diagnoza",
         description: "1h 45 min, tel. 607230876",
         price: "350 zł",
       },
@@ -145,7 +179,7 @@ const pricelistData = [
         description: "1h 30 min",
         price: "350 zł",
       },
-      { title: "Terapia nerwu twarzowego", description: "1h", price: "200 zł" },
+      // { title: "Terapia nerwu twarzowego", description: "1h", price: "200 zł" },
       {
         title: "Terapia nerwu twarzowego",
         description: "1h 15 min",
@@ -203,7 +237,7 @@ const pricelistData = [
     category: "Psycholog dziecięcy",
     items: [
       {
-        title: "DIagnoza psycholog dziecięcy",
+        title: "Diagnoza psycholog dziecięcy",
         description: "50 min",
         price: "220 zł",
       },
@@ -241,7 +275,7 @@ const pricelistData = [
       {
         title: "Wykonanie wkładek korekcyjnych IGLI",
         description: "",
-        price: "490 zł",
+        price: "510 zł",
       },
     ],
   },
@@ -254,7 +288,7 @@ export default function Cennik() {
       <div className="max-w-4xl mx-auto pt-24 px-4 sm:px-0">
         <SectionTitle title="Cennik usług*" />
         <div className="flex justify-center px-2 mb-8">
-          <p className="inline-flex flex-wrap items-center justify-center gap-x-2 gap-y-1 rounded-full border border-orange/20 bg-peach/60 px-4 py-2 text-center text-xs sm:text-sm text-orange-900">
+          {/* <p className="inline-flex flex-wrap items-center justify-center gap-x-2 gap-y-1 rounded-full border border-orange/20 bg-peach/60 px-4 py-2 text-center text-xs sm:text-sm text-orange-900">
             <span className="inline-flex items-center gap-1.5 font-semibold">
               <span
                 className="inline-block h-1.5 w-1.5 rounded-full bg-orange-600"
@@ -272,7 +306,7 @@ export default function Cennik() {
               </Link>
               .
             </span>
-          </p>
+          </p> */}
         </div>
 
         <div className="flex flex-col gap-3 mb-12 mt-4">
