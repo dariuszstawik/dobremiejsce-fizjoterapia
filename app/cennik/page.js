@@ -175,20 +175,7 @@ const pricelistData = [
       },
     ],
   },
-  {
-    category: "Logopedia Aleksandra Frączek",
-    items: [
-      {
-        title:
-          "Diagnoza logopedyczna/ pierwsza wizyta (Dzieci od 3 r.ż., młodzież, dorośli)",
-        description: "1h 15 min",
-        price: "200 zł",
-      },
-      { title: "Terapia logopedyczna", description: "30 min", price: "130 zł" },
-      { title: "Terapia logopedyczna", description: "45 min", price: "150 zł" },
-      { title: "Terapia logopedyczna", description: "1h", price: "160 zł" },
-    ],
-  },
+
   {
     category: "Neurologopeda Kaja Smoleńska-Ożóg",
     items: [
@@ -224,6 +211,20 @@ const pricelistData = [
         description: "1h 30 min",
         price: "230 zł",
       },
+    ],
+  },
+  {
+    category: "Logopedia Aleksandra Frączek",
+    items: [
+      {
+        title:
+          "Diagnoza logopedyczna/ pierwsza wizyta (Dzieci od 3 r.ż., młodzież, dorośli)",
+        description: "1h 15 min",
+        price: "200 zł",
+      },
+      { title: "Terapia logopedyczna", description: "30 min", price: "130 zł" },
+      { title: "Terapia logopedyczna", description: "45 min", price: "150 zł" },
+      { title: "Terapia logopedyczna", description: "1h", price: "160 zł" },
     ],
   },
   {
