@@ -88,7 +88,7 @@ export default function PricelistWithSearch({ sections }) {
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Szukaj usługi, np. skolioza, SI, logopedia..."
+            placeholder="Szukaj usługi, np. SI, oddechowa, wkładki..."
             className="w-full rounded-2xl border border-orange/20 bg-white py-3 pl-12 pr-11 text-sm text-orange-900 shadow-sm outline-none transition-colors placeholder:text-orange-900/40 focus:border-orange focus:ring-2 focus:ring-orange/20"
           />
 
