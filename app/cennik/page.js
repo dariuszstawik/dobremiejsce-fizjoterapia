@@ -130,7 +130,7 @@ const pricelistData = [
     ],
   },
   {
-    category: "Neurologopedia Sabina Szober",
+    category: "Neurologopeda Sabina Szober",
     items: [
       {
         title: "I wizyta pilna( 0 - 3 m.ż.) - diagnoza / terapia",
