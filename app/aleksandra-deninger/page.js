@@ -15,13 +15,13 @@ export const metadata = {
     title: "Aleksandra Deninger - fizjoterapeuta dzieci",
     description:
       "Aleksandra Deninger - fizjoterapeuta dzieci w Katowicach - profil zawodowy, kwalifikacje, dane kontaktowe",
-    url: "https://dobremiejsce-fizjoterapia.pl/katarzyna-gaweda",
+    url: "https://dobremiejsce-fizjoterapia.pl/aleksandra-deninger",
     siteName: "Dobre Miejsce - fizjoterapia dzieci",
     locale: "pl_PL",
     type: "website",
     images: [
       {
-        url: "https://dobremiejsce-fizjoterapia.pl/katarzyna-gaweda-sm.webp",
+        url: "https://dobremiejsce-fizjoterapia.pl/aleksandra-deninger.webp",
         width: 1200,
         height: 800,
         alt: "Fizjoterapia dzieci",
