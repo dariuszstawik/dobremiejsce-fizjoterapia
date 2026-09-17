@@ -40,15 +40,15 @@ export default async function Home() {
         <SectionTitle title="W czym możemy pomóc?" />
         <div className="max-w-6xl mx-auto">
           <ParagraphWithImageOnTheRight
-            title="Rehabilitacja najmłodszych"
+            title="Fizjoterapia niemowląt i&nbsp;wcześniaków"
             subtitle="oferta"
             img="/004blob.webp"
-            alt="Dobre Miejsce w Katowicach zaprasza!"
+            alt="Fizjoterapeutka dziecięca ćwiczy z niemowlęciem"
             isLeft
           >
             <>
-              Wspieramy prawidłowy rozwój wcześniaków i niemowląt z zaburzeniami
-              napięcia mięśniowego
+              Fizjoterapia niemowląt w Katowicach: wspieramy prawidłowy rozwój
+              wcześniaków i niemowląt z zaburzeniami napięcia mięśniowego
               <div className="flex flex-col gap-6 mr-auto mt-6">
                 <Button
                   className="mr-auto mt-6"
@@ -108,7 +108,7 @@ export default async function Home() {
             title="Korekcja wad postawy"
             subtitle="oferta"
             img="/wadypostawyblob1.webp"
-            alt="Dobre Miejsce w Katowicach zaprasza!"
+            alt="Korekcja wad postawy u dzieci – ćwiczenia na macie"
             buttonLink="/terapia-wad-postawy-u-dzieci"
             buttonTitle="dowiedz się więcej"
           >

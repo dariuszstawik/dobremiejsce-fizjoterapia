@@ -21,7 +21,7 @@ export default function HeroSection() {
                   która powstała, by wspierać prawidłowy rozwój noworodków,
                   niemowląt i większych dzieci. Fizjoterapia dzieci w Katowicach
                   płynąca z pasji i zaangażowania dwóch fizjoterapeutek
-                  pediatrycznych — Kamili Włodarczyk i Martyny Cesarczyk.
+                  pediatrycznych - Kamili Włodarczyk i Martyny Cesarczyk.
                 </p>
               </div>
               <div className="flex flex-row items-center">

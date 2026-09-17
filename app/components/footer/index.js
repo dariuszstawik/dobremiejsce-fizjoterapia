@@ -18,9 +18,10 @@ export default function Footer() {
                 </Link>
                 {/* <LogoDark className="mt-4 w-64" /> */}
                 <div className="flex flex-col gap-3 mt-6 text-secondaryOrange">
-                  Fizjoterapia dzieci w Katowicach, diagnostyka rozwoju, terapia
+                  Fizjoterapeuta dzieci Katowice, diagnostyka rozwoju, terapia
                   integracji sensorycznej, osteopata dziecięcy, korekcja wad
-                  postawy.
+                  postawy, neurologopeda, psycholog dziecięcy, trener
+                  personalny.
                   <Link className="underline" href="/informacje-dla-pacjenta">
                     Informacje dla pacjenta
                   </Link>
