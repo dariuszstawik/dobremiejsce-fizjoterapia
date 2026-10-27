@@ -262,6 +262,17 @@ const pricelistData = [
       },
     ],
   },
+
+  {
+    category: "Dokumentacja",
+    items: [
+      {
+        title: "Wystawienie specjalistycznej opinii",
+        // description: "1h",
+        price: "50 zł",
+      },
+    ],
+  },
 ];
 
 export default function Cennik() {
