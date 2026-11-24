@@ -31,6 +31,7 @@ Komunikuj się ze mną po polsku. Teksty na stronie są po polsku.
 - `design-ref/assets/` – zdjęcia i logotypy użyte w makietach
 - `design-ref/README.md` – jak czytać makiety (składnia, sekcje, interakcje, breakpointy)
 - `design-ref/ZMIANY-TRESCI.md` – ustalenia dotyczące treści i lista rzeczy do poprawienia w Contentful
+- `design-ref/PLAN.md` – plan redesignu krok po kroku i postęp prac
 
 Makiety to **wzór, nie kod do skopiowania**. Odtwórz je jako komponenty React + klasy Tailwind, zgodnie ze strukturą projektu.
 Folder `design-ref/` nie trafia na produkcję (nie importuj z niego niczego w kodzie aplikacji). Potrzebne obrazy skopiuj do `public/` (lub tam, gdzie projekt trzyma obrazy) i używaj `next/image`.
@@ -87,11 +88,5 @@ Fizjoterapeutów obowiązuje Kodeks Etyki Zawodowej Fizjoterapeuty (KIF), który
 
 ## Kolejność pracy
 
-1. Przegląd repozytorium → krótki raport: wersja Next.js (App/Pages Router), Tailwind, struktura komponentów, jak działa Contentful, lista podstron i adresów. Plan zmian. **Czekaj na moją akceptację.**
-2. Tokeny w konfiguracji Tailwinda + font + style globalne.
-3. Elementy wspólne: nagłówek (zmniejsza się po przewinięciu, mega menu „Oferta”), menu mobilne, stopka, mobilny pasek „Zadzwoń / Umów wizytę”.
-4. Strona główna wg `strona-glowna-v6.dc.html`.
-5. Strona O nas wg `o-nas-v2.dc.html`.
-6. Szablony z Contentful (Oferta, Aktualności, Blog) – dostosowanie wyglądu do nowego systemu.
-7. Pozostałe podstrony (Cennik, Kontakt, Zespół itd.) – dostosowanie wyglądu.
-8. Kontrola: build, lint, dostępność, widok mobilny, Lighthouse.
+Aktualny, szczegółowy plan (jeden punkt = jeden commit), postęp, decyzje i otwarte kwestie: **[`design-ref/PLAN.md`](design-ref/PLAN.md)**.
+Po zakończeniu punktu odhacz go w PLAN.md w tym samym commicie (opis commita zaczyna się od numeru punktu, np. „8. …”, żeby łatwo go znaleźć w `git log`). Nowe ustalenia i otwarte kwestie dopisuj tam.
