@@ -1,98 +1,100 @@
-import { Facebook, Instagram, Pin } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
+import { IconBrandFacebook, IconBrandInstagram, IconPin } from "@tabler/icons-react";
+import { CONTACT } from "@/app/data/site";
 
+const LEGAL_LINKS = [
+  { label: "Informacje dla pacjenta", href: "/informacje-dla-pacjenta" },
+  { label: "Polityka prywatności", href: "/polityka-prywatnosci" },
+];
+
+const SOCIALS = [
+  { label: "Facebook", href: CONTACT.facebookUrl, Icon: IconBrandFacebook },
+  { label: "Instagram", href: CONTACT.instagramUrl, Icon: IconBrandInstagram },
+];
+
+// Stopka wg makiety strona-glowna-v6: tło #FF6E41, tekst #3A1D10 (kontrast 5.5:1).
 export default function Footer() {
   return (
-    <div>
-      <section className="relative bg-orange text-secondaryOrange mt-20 px-[5%] mb-0">
-        <div className="pb-12 pt-6">
-          <div className="container mx-auto px-10">
-            <div className="flex justify-between flex-wrap">
-              <div className="mb-auto mt-6 mr-4 w-full xl:w-1/4">
-                <Link href="/">
-                  <img
-                    src="/logo-kolor.svg"
-                    className=""
-                    alt="Dobre Miejsce Logo"
-                  />
+    <footer className="bg-brand text-ink-footer">
+      <div className="mx-auto flex max-w-content flex-wrap justify-between gap-x-16 gap-y-10 px-gutter pb-14 pt-[60px]">
+        <div className="flex max-w-[400px] flex-[1_1_300px] flex-col gap-[18px]">
+          <Image
+            src="/logo-dobre-miejsce.svg"
+            alt="Dobre Miejsce Fizjoterapia Dzieci"
+            width={158}
+            height={64}
+            className="block h-16 w-auto self-start"
+          />
+          <p className="text-[15px] leading-[1.65]">
+            Fizjoterapeuta dzieci Katowice, diagnostyka rozwoju, terapia integracji sensorycznej,
+            osteopata dziecięcy, korekcja wad postawy, neurologopeda, trener personalny.
+          </p>
+          <ul className="flex flex-col items-start gap-1">
+            {LEGAL_LINKS.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="inline-block whitespace-nowrap py-1 text-[15px] leading-normal text-ink-footer underline underline-offset-[3px] hover:text-black"
+                >
+                  {link.label}
                 </Link>
-                {/* <LogoDark className="mt-4 w-64" /> */}
-                <div className="flex flex-col gap-3 mt-6 text-secondaryOrange">
-                  Fizjoterapeuta dzieci Katowice, diagnostyka rozwoju, terapia
-                  integracji sensorycznej, osteopata dziecięcy, korekcja wad
-                  postawy, neurologopeda, psycholog dziecięcy, trener
-                  personalny.
-                  <Link className="underline" href="/informacje-dla-pacjenta">
-                    Informacje dla pacjenta
-                  </Link>
-                  <Link className="underline" href="/polityka-prywatnosci">
-                    Polityka prywatności
-                  </Link>
-                </div>
-              </div>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-              <div className="w-full xl:w-1/2 flex flex-wrap xl:gap-6 justify-end">
-                <div className="mb-6 w-full md:w-1/2 xl:w-1/3 xl:mr-6">
-                  <h3 className="mb-4 mt-12 text-xl font-bold text-gray">
-                    Adres
-                  </h3>
-                  <p className="leading-loose my-0">
-                    Dobre Miejsce <br />
-                    Fizjoterapia dzieci
-                  </p>
-                  <p className="leading-loose my-0">
-                    ul. Gen. Zygmunta Waltera Jankego 48/1
-                  </p>
-                  <p className="leading-loose my-0">40-612 Katowice</p>
-                  <div className="leading-loose my-0">
-                    <Pin className="inline-block mr-2 text-secondaryOrange" />
-                    <a
-                      href="https://www.google.pl/maps/place/Dobre+Miejsce+-+Fizjoterapia+dzieci/@50.2433052,19.0117664,17z/data=!3m1!4b1!4m6!3m5!1s0x4716cf8e2b49bc2b:0x4c8eb5961bebe760!8m2!3d50.2433052!4d19.0143413!16s%2Fg%2F11st_59285?entry=ttu&g_ep=EgoyMDI1MDMwOC4wIKXMDSoASAFQAw%3D%3D"
-                      className="underline"
-                    >
-                      zobacz na mapie
-                    </a>
-                  </div>
-                </div>
-                <div className="mb-6 w-full md:w-1/2 xl:w-1/3">
-                  <h3 className="mb-4 mt-12 text-xl font-bold text-gray">
-                    Kontakt
-                  </h3>
-                  {/* <p className="leading-loose my-0">
-                    Kamila: <a href="tel:+48 539 937 132">539 937 132</a>
-                  </p> */}
-                  <p className="leading-loose my-0">
-                    tel. <a href="tel:+48577611464">577 611 464</a>
-                  </p>
-                  <div className="flex  gap-3 mt-6 text-secondaryOrange">
-                    <a
-                      href="https://www.facebook.com/fizjoterapiadzieci.dobremiejsce/"
-                      target="_blank"
-                    >
-                      <Facebook className="text-orange w-9 h-9 bg-secondaryOrange rounded-lg p-2 shrink-0" />{" "}
-                    </a>
-                    <a
-                      href="https://www.instagram.com/dobre_miejsce_fizjoterapia/"
-                      target="_blank"
-                    >
-                      <Instagram className="text-orange w-9 h-9 bg-secondaryOrange rounded-lg p-2 shrink-0" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div className="flex flex-wrap gap-x-16 gap-y-10">
+          <div className="flex min-w-[200px] flex-col gap-2 text-[15px]">
+            <h2 className="mb-2.5 text-xl font-bold">Adres</h2>
+            <address className="not-italic leading-[1.75]">
+              Dobre Miejsce
+              <br />
+              Fizjoterapia dzieci
+              <br />
+              ul. Gen. Zygmunta Waltera
+              <br />
+              Jankego 48/1
+              <br />
+              40-612 Katowice
+            </address>
+            <a
+              href={CONTACT.mapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-8 items-center gap-2 text-ink-footer underline underline-offset-[3px] hover:text-black"
+            >
+              <IconPin size={20} stroke={1.75} aria-hidden="true" />
+              zobacz na mapie
+            </a>
+          </div>
+
+          <div className="flex flex-col gap-2 text-[15px]">
+            <h2 className="mb-2.5 text-xl font-bold">Kontakt</h2>
+            <a
+              href={CONTACT.phoneHref}
+              className="text-ink-footer hover:text-black hover:underline"
+            >
+              tel. {CONTACT.phone}
+            </a>
+            <ul className="mt-5 flex gap-3">
+              {SOCIALS.map(({ label, href, Icon }) => (
+                <li key={label}>
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={label}
+                    className="flex h-11 w-11 items-center justify-center rounded-lg bg-[#FFDDBD] text-accent transition-colors hover:bg-white"
+                  >
+                    <Icon size={22} stroke={1.75} aria-hidden="true" />
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
-      </section>
-      <div className="w-full flex-col justify-center items-center bg-secondaryOrange h-4">
-        {/* <p className="text-sm mx-auto text-center mb-2">
-          © 2023. Dobre Miejsce FIzjoterapia dzieci. All rights reserved.
-        </p> */}
-
-        {/* <p className="text-sm mx-auto text-center mb-2">
-          <Link href="/">polityka prywatności</Link>
-        </p> */}
       </div>
-    </div>
+    </footer>
   );
 }

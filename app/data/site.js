@@ -7,6 +7,10 @@ export const CONTACT = {
   bookingUrl: "https://dobremiejscefizjoterapiadzieci.booksy.com/",
   addressShort: "ul. Jankego 48/1, 40-612 Katowice",
   address: "ul. Waltera-Jankego 48/1, 40-612 Katowice",
+  mapsUrl:
+    "https://www.google.pl/maps/place/Dobre+Miejsce+-+Fizjoterapia+dzieci/@50.2433052,19.0117664,17z/data=!3m1!4b1!4m6!3m5!1s0x4716cf8e2b49bc2b:0x4c8eb5961bebe760!8m2!3d50.2433052!4d19.0143413!16s%2Fg%2F11st_59285",
+  facebookUrl: "https://www.facebook.com/fizjoterapiadzieci.dobremiejsce/",
+  instagramUrl: "https://www.instagram.com/dobre_miejsce_fizjoterapia/",
 };
 
 // Pasek ogłoszeń nad nagłówkiem. Żeby go pokazać, ustaw enabled: true.

@@ -31,6 +31,7 @@ Zasady pracy (Contentful, adresy URL, zależności, treści zgodne z KIF, dostę
 - [ ] Ostrzeżenia Next 16: `images.domains` → `images.remotePatterns`, `middleware.js` → `proxy.js` – osobny commit, za zgodą.
 - [ ] `npm audit`: 15 podatności w zależnościach (m.in. `next`, `postcss`) – osobny krok z aktualizacją, najlepiej przed publikacją.
 - [ ] CookieYes zgłasza błąd na `localhost` (baner przypisany do domeny produkcyjnej) – sprawdzić na podglądzie Vercel.
+- [ ] Strona `/regulamin-podmiotu-leczniczego` nie ma linku nigdzie na stronie (ani w starej stopce, ani w makiecie) – dodać do stopki obok „Informacji dla pacjenta”?
 - [ ] Placeholdery do uzupełnienia przed publikacją – lista w [`ZMIANY-TRESCI.md`](ZMIANY-TRESCI.md).
 
 ## Punkty planu
@@ -48,7 +49,7 @@ Zasady pracy (Contentful, adresy URL, zależności, treści zgodne z KIF, dostę
 - [x] 6. Nagłówek desktop (sticky, zmniejszanie, mega menu „Oferta”) w layoucie + usunięcie `Navbar` z podstron – `7e143bb`
 - [x] 7. Menu mobilne (dialog, rozwijana Oferta, pułapka fokusu, Escape) – `fc57e62`
 - [x] 8. Mobilny pasek „Zadzwoń / Umów wizytę” (< 1100px) + pasek ogłoszeń (domyślnie wyłączony; włączanie: `ANNOUNCEMENT` w `app/data/site.js`)
-- [ ] 9. Stopka
+- [x] 9. Stopka
 
 ### C. Strona główna (`/`) wg `strona-glowna-v6`
 
