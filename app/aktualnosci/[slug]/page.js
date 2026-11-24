@@ -58,8 +58,6 @@ export default async function Page({ params }) {
   const { slug } = await params;
   const blogPost = await getContentfulBlogPosts(slug);
 
-  console.log(blogPost);
-
   return (
     <>
       <Navbar />
