@@ -4,9 +4,10 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { IconChevronDown } from "@tabler/icons-react";
+import { IconChevronDown, IconMenu2 } from "@tabler/icons-react";
 import { MAIN_NAV, OFFER_GROUPS } from "@/app/data/site";
 import cx from "@/app/components/ui/cx";
+import MobileMenu from "./MobileMenu";
 
 const MEGA_MAX_W = 760;
 const VIEWPORT_MARGIN = 24;
@@ -21,10 +22,22 @@ const OFFER_PATHS = new Set(
 );
 
 // Przyklejony nagłówek: zmniejsza się po przewinięciu > 64px.
-// Od 1100px menu poziome z mega menu „Oferta”; poniżej – przycisk menu mobilnego (krok 7).
+// Od 1100px menu poziome z mega menu „Oferta”; poniżej – przycisk menu mobilnego.
 export default function SiteHeader() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuButtonRef = useRef(null);
+
+  const closeMenu = useCallback((returnFocus) => {
+    setMenuOpen(false);
+    if (returnFocus) requestAnimationFrame(() => menuButtonRef.current?.focus());
+  }, []);
+
+  // zmiana strony zamyka menu mobilne
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
 
   useEffect(() => {
     const onScroll = () => {
@@ -99,7 +112,26 @@ export default function SiteHeader() {
             ),
           )}
         </nav>
+
+        <button
+          ref={menuButtonRef}
+          type="button"
+          onClick={() => setMenuOpen(true)}
+          aria-label="Otwórz menu"
+          aria-expanded={menuOpen}
+          aria-controls="menu-mobile"
+          className="ml-auto flex h-11 w-11 items-center justify-center text-ink nav:hidden"
+        >
+          <IconMenu2 size={24} stroke={1.75} aria-hidden="true" />
+        </button>
       </div>
+
+      <MobileMenu
+        open={menuOpen}
+        onClose={closeMenu}
+        isActive={(href) => isActive(pathname, href)}
+        offerActive={OFFER_PATHS.has(pathname)}
+      />
     </header>
   );
 }
