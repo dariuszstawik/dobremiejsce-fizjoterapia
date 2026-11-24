@@ -95,7 +95,7 @@ const pricelistData = [
       {
         title: "Wykonanie wkładek korekcyjnych IGLI",
         description: "1h",
-        price: "510 zł",
+        price: "550 zł",
       },
       {
         title: "Terapia dzieci po 2 r.ż.",
