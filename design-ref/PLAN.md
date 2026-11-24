@@ -47,7 +47,7 @@ Zasady pracy (Contentful, adresy URL, zależności, treści zgodne z KIF, dostę
 
 - [x] 6. Nagłówek desktop (sticky, zmniejszanie, mega menu „Oferta”) w layoucie + usunięcie `Navbar` z podstron – `7e143bb`
 - [x] 7. Menu mobilne (dialog, rozwijana Oferta, pułapka fokusu, Escape) – `fc57e62`
-- [ ] 8. Mobilny pasek „Zadzwoń / Umów wizytę” (< 1100px) + pasek ogłoszeń (domyślnie wyłączony)
+- [x] 8. Mobilny pasek „Zadzwoń / Umów wizytę” (< 1100px) + pasek ogłoszeń (domyślnie wyłączony; włączanie: `ANNOUNCEMENT` w `app/data/site.js`)
 - [ ] 9. Stopka
 
 ### C. Strona główna (`/`) wg `strona-glowna-v6`

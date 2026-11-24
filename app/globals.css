@@ -16,7 +16,8 @@
   }
 
   body {
-    @apply bg-white font-sans text-ink antialiased;
+    /* < 1100px: miejsce na przyklejony pasek „Zadzwoń / Umów wizytę” */
+    @apply bg-white pb-[70px] font-sans text-ink antialiased nav:pb-0;
     font-size: 16px;
     line-height: 1.6;
     word-wrap: break-word;
@@ -73,6 +74,15 @@
   .skip-link:focus {
     @apply text-white;
     top: 12px;
+  }
+}
+
+/* Pływający widżet opinii Elfsight: poniżej 1100px podnosimy go nad pasek
+   „Zadzwoń / Umów wizytę”. Selektor zależy od nazw klas skryptu Elfsight –
+   po ich zmianie widżet wróci na dół ekranu (nic się nie zepsuje, tylko nachodzi na pasek). */
+@media (max-width: 1099.98px) {
+  [class*="slide-in__PositionContainer"] {
+    padding-bottom: calc(90px + env(safe-area-inset-bottom)) !important;
   }
 }
 

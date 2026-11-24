@@ -9,6 +9,14 @@ export const CONTACT = {
   address: "ul. Waltera-Jankego 48/1, 40-612 Katowice",
 };
 
+// Pasek ogłoszeń nad nagłówkiem. Żeby go pokazać, ustaw enabled: true.
+// Odwiedzający może go zamknąć; zmiana treści (text) pokaże go ponownie.
+export const ANNOUNCEMENT = {
+  enabled: false,
+  text: "Nowość: osteopatia także dla dorosłych.",
+  link: { label: "Zobacz", href: "/osteopata-dzieciecy" },
+};
+
 // Główne pozycje menu. Pozycja z `offer: true` to przycisk mega menu „Oferta”.
 export const MAIN_NAV = [
   { label: "Start", href: "/" },

@@ -2,6 +2,8 @@ import { Figtree } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/footer";
 import SiteHeader from "./components/site-header";
+import AnnouncementBar from "./components/announcement-bar";
+import MobileCtaBar from "./components/mobile-cta-bar";
 // Import GoogleAnalytics nie będzie już potrzebny, możesz go usunąć z paczek npm później
 import Script from "next/script";
 
@@ -88,11 +90,13 @@ export default function RootLayout({ children }) {
           strategy="afterInteractive"
         />
 
+        <AnnouncementBar />
         <SiteHeader />
         <main id="tresc" tabIndex={-1} className="focus:outline-none">
           {children}
         </main>
         <Footer />
+        <MobileCtaBar />
 
         {/* 4. Elfsight */}
         <Script
