@@ -1,6 +1,6 @@
 export default function RegulaminPage() {
   return (
-    <main className="mx-auto max-w-5xl px-6 py-12 text-gray-900">
+    <div className="mx-auto max-w-5xl px-6 py-12 text-gray-900">
       {/* ================= HEADER ================= */}
       <header className="mb-12 text-center">
         <h1 className="text-2xl font-bold uppercase">
@@ -197,7 +197,7 @@ export default function RegulaminPage() {
           </tbody>
         </table>
       </Section>
-    </main>
+    </div>
   );
 }
 

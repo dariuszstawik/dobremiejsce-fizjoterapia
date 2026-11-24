@@ -2,16 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-  word-wrap: break-word;
-  color: #333;
-  font-family: var(--font-inter);
-  font-weight: 400;
-  margin: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 96px;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+    font-size: 16px;
+    line-height: 1.6;
+    word-wrap: break-word;
+  }
+
+  :focus-visible {
+    outline: 3px solid theme("colors.ink.DEFAULT");
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  /* Treści z Contentful i podstron opartych o PageTemplate */
+  article p {
+    @apply mb-2 text-base text-ink-body lg:text-lg;
+  }
+
+  article > h2 {
+    @apply mb-3 mt-10 text-3xl font-bold text-ink-heading;
+  }
+
+  article h3 {
+    @apply mb-2 mt-4 text-xl font-bold text-ink-heading;
+  }
+
+  article ul {
+    @apply mt-4 list-outside p-0 pl-12;
+    list-style-image: url("/checkmark-sm.png");
+  }
+
+  article ol {
+    @apply mt-4 list-outside list-decimal p-0 pl-12;
+  }
+
+  article li {
+    @apply my-2 pl-4 text-ink-body lg:my-2;
+  }
+
+  article ul li p {
+    @apply relative -top-1;
+  }
+
+  article a {
+    @apply text-link underline underline-offset-2 hover:text-link-hover;
+  }
 }
 
+@layer components {
+  /* Link „Przejdź do treści” – widoczny dopiero po fokusie klawiaturą */
+  .skip-link {
+    @apply absolute left-3 z-[100] rounded-full bg-ink px-[18px] py-2.5 font-semibold text-white;
+    top: -80px;
+  }
+
+  .skip-link:focus {
+    @apply text-white;
+    top: 12px;
+  }
+}
+
+/* Dekoracyjne rozmycia starego wyglądu – do usunięcia po przebudowie podstron */
 .bgx-blur {
   background: radial-gradient(circle at left bottom, #ff6e41 0, transparent 80%);
   pointer-events: none;
@@ -32,113 +95,17 @@ html, body {
   pointer-events: none;
 }
 
-@layer base {
-  article p {
-    @apply text-base lg:text-lg mb-2;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 
-  article > h2 {
-    @apply mb-3 mt-10 text-3xl font-bold text-gray-800;
-  }
-
-  article h3 {
-    @apply mb-2 mt-4 text-xl font-bold text-gray-800;
-  }
-
-  article ul {
-    @apply mt-4 list-outside p-0 pl-12;
-    list-style-image: url("/checkmark-sm.png");
-  }
-
-  article ol {
-    @apply mt-4 list-outside p-0 pl-12 list-decimal;
-  }
-
-  article li {
-    @apply my-2 pl-4 lg:my-2;
-  }
-
-  article ul li p {
-    @apply relative -top-1;
-  }
-
-  article a {
-    @apply text-orange;
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
-
-
-/* 
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-body {
-  word-wrap: break-word;
-  color: #333;
-  font-family: var(--font-inter);
-  font-weight: 400;
-  margin: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-.bgx-blur {
-  background: radial-gradient(
-    circle at left bottom,
-    #ff6e41 0,
-    transparent 80%
-  );
-  pointer-events: none;
-}
-
-.bgy1-blur {
-  background: radial-gradient(circle at right top, #ff6e41 0, transparent 40%);
-  pointer-events: none;
-}
-
-.bgy2-blur {
-  background: radial-gradient(
-    circle at right center,
-    #ff6e41 0,
-    transparent 40%
-  );
-  pointer-events: none;
-}
-
-.bgy3-blur {
-  background: radial-gradient(
-    circle at left bottom,
-    #ff6e41 0,
-    transparent 40%
-  );
-  pointer-events: none;
-}
-
-@layer base {
-article p {
-@apply text-md lg:text-lg mb-6 mb-2
-}
-
-article h2 {
-  @apply mb-3 mt-10 text-3xl font-bold text-gray
-}
-
-article ul {
-  @apply mt-4 list-outside gap-32 p-0 pl-12
-}
-
-article ul {
-  list-style-image: 'url("/checkmark-sm.png")'
-}
-
-article li {
-  @apply my-2 pl-4 lg:my-2
-}
-
-article a {
-  @apply text-orange
-}
-}
- */

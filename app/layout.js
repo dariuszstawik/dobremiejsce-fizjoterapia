@@ -1,10 +1,15 @@
-import { Inter } from "next/font/google";
+import { Figtree } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/footer";
 // Import GoogleAnalytics nie będzie już potrzebny, możesz go usunąć z paczek npm później
 import Script from "next/script";
 
-const inter = Inter({ subsets: ["latin"] });
+const figtree = Figtree({
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-figtree",
+});
 
 export const metadata = {
   title: "Dobre Miejsce - fizjoterapia dzieci Katowice",
@@ -38,7 +43,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pl">
+    <html lang="pl" className={figtree.variable}>
       <head>
         {/* 1. Google Tag Manager - GŁÓWNY SKRYPT */}
         <Script
@@ -55,7 +60,11 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body className={inter.className}>
+      <body>
+        <a href="#tresc" className="skip-link">
+          Przejdź do treści
+        </a>
+
         {/* 2. GTM Noscript */}
         <noscript>
           <iframe
@@ -78,7 +87,9 @@ export default function RootLayout({ children }) {
           strategy="afterInteractive"
         />
 
-        {children}
+        <main id="tresc" tabIndex={-1} className="focus:outline-none">
+          {children}
+        </main>
         <Footer />
 
         {/* 4. Elfsight */}
