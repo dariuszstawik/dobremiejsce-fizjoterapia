@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>O nas | Dobre Miejsce – fizjoterapia dzieci · Katowice</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.33.0/dist/tabler-icons.min.css">
+<style>
+@font-face{font-family:"tabler-icons-200";font-display:block;src:url("https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.33.0/dist/fonts/tabler-icons-200.woff2") format("woff2"),url("https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.33.0/dist/fonts/tabler-icons-200.woff") format("woff")}
+@font-face{font-family:"tabler-icons-300";font-display:block;src:url("https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.33.0/dist/fonts/tabler-icons-300.woff2") format("woff2"),url("https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.33.0/dist/fonts/tabler-icons-300.woff") format("woff")}
+i.ti.ti-300{font-family:"tabler-icons-300"!important}
+i.ti.ti-200{font-family:"tabler-icons-200"!important}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+@media (prefers-reduced-motion:reduce){i.ti.ti-300{font-family:"tabler-icons-300"!important}
+i.ti.ti-200{font-family:"tabler-icons-200"!important}
+html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+:focus-visible{outline:3px solid #1F1B18;outline-offset:3px;border-radius:6px}
+body{margin:0;background:#fff;color:#1F1B18;font-family:'Figtree',system-ui,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#B23A12;text-decoration:none}
+a:hover{color:#93300E}
+h1,h2,h3,p{margin:0}
+img{display:block}
+</style>
+</helmet>
+
+<div style="min-height:100vh;background:#fff;padding-bottom:{{ bottomPad }};overflow-x:clip;">
+<a href="#tresc" style="position:absolute;left:12px;top:-80px;z-index:100;padding:10px 18px;border-radius:99px;background:#1F1B18;color:#fff;font-weight:600;" style-focus="top:12px;color:#fff">Przejdź do treści</a>
+
+<sc-if value="{{ showBar }}" hint-placeholder-val="{{ true }}">
+<div style="background:#FFEFE0;color:#1F1B18;font-size:14px;">
+<div style="max-width:1160px;margin:0 auto;padding:8px 56px;display:flex;align-items:center;justify-content:center;gap:10px;position:relative;">
+<span style="white-space:nowrap;">Nowość: osteopatia także dla dorosłych.</span>
+<a href="#" style="font-weight:600;white-space:nowrap;">Zobacz&nbsp;<span aria-hidden="true">→</span></a>
+<button onClick="{{ closeBar }}" aria-label="Zamknij komunikat" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);width:36px;height:36px;border:0;background:transparent;color:#625A54;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;"><i aria-hidden="true" class="ti ti-x"></i></button>
+</div>
+</div>
+</sc-if>
+
+<header style="position:sticky;top:0;z-index:40;background:#fff;box-shadow:{{ headerShadow }};transition:box-shadow .2s;">
+<div style="max-width:1160px;margin:0 auto;padding:{{ headerPad }};display:flex;align-items:center;gap:28px;transition:padding .25s ease;">
+<a href="#" style="display:flex;align-items:center;gap:{{ logoGap }};color:#1F1B18;flex:none;">
+<img src="assets/logo-dm-znak.svg" alt="" width="88" height="101" style="display:block;height:{{ iconH }};width:auto;margin-bottom:{{ iconMb }};transition:height .25s ease,margin .25s ease;">
+<img src="assets/logo-dm-napis.svg" alt="Dobre Miejsce Fizjoterapia Dzieci, strona główna" width="143" height="21" style="display:block;height:{{ textH }};width:auto;transition:height .25s ease;">
+</a>
+<sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+<nav aria-label="Menu główne" style="display: flex; align-items: center; gap: clamp(20px,2.2vw,40px); margin-left: auto; font-size: 16px; font-weight: 500">
+<a href="#" style="color:#1F1B18;white-space:nowrap;" style-hover="color:#C9431A">Start</a>
+<a href="#" aria-current="page" style="color:#C9431A;white-space:nowrap;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:7px;" style-hover="color:#A63610">O nas</a>
+<a href="#" style="color:#1F1B18;white-space:nowrap;" style-hover="color:#C9431A">Nasz zespół</a>
+<div ref="{{ megaRef }}" onMouseEnter="{{ openMega }}" onMouseLeave="{{ closeMega }}" style="position:relative;">
+<button onClick="{{ toggleMega }}" aria-expanded="{{ megaOpen }}" aria-controls="menu-oferta" style="display:flex;align-items:center;gap:3px;height:44px;padding:0;border:0;background:transparent;font:inherit;color:#1F1B18;cursor:pointer;" style-hover="color:#C9431A">Oferta<i aria-hidden="true" class="ti ti-chevron-down" style="font-size:15px;"></i></button>
+<sc-if value="{{ megaOpen }}" hint-placeholder-val="{{ false }}">
+<div id="menu-oferta" style="position:absolute;top:100%;left:{{ megaLeft }};padding-top:8px;">
+<div style="width:{{ megaW }};background:#fff;border-radius:14px;box-shadow:0 18px 50px rgba(80,40,20,.12);padding:28px 32px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px 32px;">
+<sc-for list="{{ specs }}" as="ar" hint-placeholder-count="8">
+<div style="display:flex;flex-direction:column;gap:3px;">
+<a href="#" style="font-weight:600;color:#1F1B18;font-size:15px;" style-hover="color:#C9431A">{{ ar.name }}</a>
+<sc-for list="{{ ar.links }}" as="l" hint-placeholder-count="2"><a href="#" style="font-size:14px;color:#625A54;" style-hover="color:#C9431A">{{ l }}</a></sc-for>
+</div>
+</sc-for>
+</div>
+</div>
+</sc-if>
+</div>
+<a href="#" style="color:#1F1B18;white-space:nowrap;" style-hover="color:#C9431A">Cennik</a>
+<a href="#" style="color:#1F1B18;white-space:nowrap;" style-hover="color:#C9431A">Aktualności</a>
+<a href="#" style="color:#1F1B18;white-space:nowrap;" style-hover="color:#C9431A">Blog</a>
+<a href="#" style="color:#1F1B18;white-space:nowrap;" style-hover="color:#C9431A">Kontakt</a>
+</nav>
+</sc-if>
+<sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+<button onClick="{{ openMenu }}" aria-label="Otwórz menu" aria-expanded="{{ menuOpen }}" aria-controls="menu-mobile" style="margin-left:auto;width:44px;height:44px;border:0;background:transparent;color:#1F1B18;font-size:24px;display:flex;align-items:center;justify-content:center;"><i aria-hidden="true" class="ti ti-menu-2"></i></button>
+</sc-if>
+</div>
+</header>
+
+<sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+<div id="menu-mobile" role="dialog" aria-modal="true" aria-label="Menu" style="position:fixed;inset:0;z-index:80;background:#fff;display:flex;flex-direction:column;overflow-y:auto;overscroll-behavior:contain;">
+<div style="display:flex;align-items:center;justify-content:space-between;padding:14px 24px;border-bottom:1px solid #F0E2D3;">
+<a href="#" onClick="{{ closeMenuNav }}" style="display:flex;align-items:center;gap:10px;color:#1F1B18;">
+<img src="assets/logo-dobre-miejsce.svg" alt="Dobre Miejsce Fizjoterapia Dzieci, strona główna" width="138" height="56" style="display:block;height:56px;width:auto;">
+</a>
+<button onClick="{{ closeMenu }}" aria-label="Zamknij menu" style="width:44px;height:44px;border:0;background:transparent;color:#1F1B18;font-size:24px;display:flex;align-items:center;justify-content:center;cursor:pointer;"><i aria-hidden="true" class="ti ti-x"></i></button>
+</div>
+<nav aria-label="Menu główne" style="flex:1;padding:8px 24px 24px;display:flex;flex-direction:column;">
+<a href="#" onClick="{{ closeMenuNav }}" style="min-height:56px;display:flex;align-items:center;border-bottom:1px solid #F0E2D3;font-weight:600;font-size:18px;color:#1F1B18;">Start</a>
+<a href="#" aria-current="page" onClick="{{ closeMenuNav }}" style="min-height:56px;display:flex;align-items:center;border-bottom:1px solid #F0E2D3;font-weight:600;font-size:18px;color:#C9431A;">O nas</a>
+<a href="#" onClick="{{ closeMenuNav }}" style="min-height:56px;display:flex;align-items:center;border-bottom:1px solid #F0E2D3;font-weight:600;font-size:18px;color:#1F1B18;">Nasz zespół</a>
+<div style="border-bottom:1px solid #F0E2D3;">
+<button onClick="{{ toggleMenuOferta }}" aria-expanded="{{ menuOferta }}" aria-controls="menu-mobile-oferta" style="width:100%;min-height:56px;border:0;background:transparent;padding:0;display:flex;align-items:center;justify-content:space-between;font:600 18px 'Figtree',sans-serif;color:#1F1B18;cursor:pointer;">Oferta<i aria-hidden="true" class="ti ti-chevron-down" style="font-size:20px;color:#FF6E41;transform:rotate({{ menuOfertaRot }});transition:transform .2s;"></i></button>
+<sc-if value="{{ menuOferta }}" hint-placeholder-val="{{ false }}">
+<div id="menu-mobile-oferta" style="display:flex;flex-direction:column;padding:0 0 12px 12px;">
+<sc-for list="{{ specs }}" as="sp" hint-placeholder-count="8"><a href="#" onClick="{{ closeMenuNav }}" style="min-height:44px;display:flex;align-items:center;font-size:16px;color:#524A44;">{{ sp.name }}</a></sc-for>
+</div>
+</sc-if>
+</div>
+<a href="#" onClick="{{ closeMenuNav }}" style="min-height:56px;display:flex;align-items:center;border-bottom:1px solid #F0E2D3;font-weight:600;font-size:18px;color:#1F1B18;">Cennik</a>
+<a href="#" onClick="{{ closeMenuNav }}" style="min-height:56px;display:flex;align-items:center;border-bottom:1px solid #F0E2D3;font-weight:600;font-size:18px;color:#1F1B18;">Aktualności</a>
+<a href="#" onClick="{{ closeMenuNav }}" style="min-height:56px;display:flex;align-items:center;border-bottom:1px solid #F0E2D3;font-weight:600;font-size:18px;color:#1F1B18;">Blog</a>
+<a href="#" onClick="{{ closeMenuNav }}" style="min-height:56px;display:flex;align-items:center;border-bottom:1px solid #F0E2D3;font-weight:600;font-size:18px;color:#1F1B18;">Kontakt</a>
+<div style="display:flex;flex-direction:column;gap:10px;margin-top:28px;">
+<a href="#" onClick="{{ closeMenuNav }}" style="height:52px;border-radius:99px;background:#C9431A;color:#fff;font-weight:600;display:flex;align-items:center;justify-content:center;">Umów wizytę</a>
+<a href="#" style="height:52px;border-radius:99px;border:1.5px solid #C9431A;color:#B23A12;font-weight:600;display:flex;align-items:center;justify-content:center;gap:8px;"><i aria-hidden="true" class="ti ti-phone"></i>Zadzwoń: 577 611 464</a>
+</div>
+<p style="margin-top:24px;font-size:14px;color:#625A54;">ul. Jankego 48/1, 40-612 Katowice</p>
+</nav>
+</div>
+</sc-if>
+
+<main id="tresc" tabindex="-1" style="outline:none;">
+<section style="max-width:1160px;margin:0 auto;padding:clamp(40px,5vw,64px) 24px clamp(56px,7vw,96px);display:flex;flex-direction:column;align-items:flex-start;">
+<h1 ref="{{ h1Ref }}" style="font-size:clamp(36px,3.6vw,52px);line-height:1.1;font-weight:700;letter-spacing:-.01em;color:#2E2925;">Poznaj Dobre Miejsce</h1>
+<p style="font-size:clamp(17px,1.1vw,19px);line-height:1.6;color:#3E3732;text-wrap:pretty;max-width:68ch;margin-top:18px;">Dobre Miejsce założyły dwie fizjoterapeutki dziecięce, Kamila Włodarczyk i Martyna Cesarczyk. Dziś to zespół 16 specjalistów, którzy wspierają rozwój dzieci od pierwszych dni życia po wiek nastoletni. Poznaj naszą historię, sposób pracy i ludzi, którzy tworzą to miejsce.</p>
+<a href="#" style="margin-top:24px;height:48px;padding:0 24px;border-radius:99px;background:#C9431A;color:#fff;font-weight:600;display:inline-flex;align-items:center;white-space:nowrap;box-shadow:0 10px 22px rgba(201,67,26,.22);" style-hover="background:#A63610;color:#fff">Umów wizytę</a>
+<img src="assets/team-child.jpg" alt="Założycielki Dobrego Miejsca podczas zajęć z małym dzieckiem" style="margin-top:clamp(32px,3.5vw,44px);width:100%;aspect-ratio:2.3;object-fit:cover;object-position:50% 40%;border-radius:20px;">
+</section>
+
+<section style="background:#FFF7EE;">
+<div style="max-width:1160px;margin:0 auto;padding:clamp(64px,7vw,96px) 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));align-items:center;gap:clamp(40px,6vw,88px);">
+<div style="display:flex;flex-direction:column;gap:24px;max-width:560px;">
+<div style="display:flex;flex-direction:column;gap:8px;">
+<p style="font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#B23A12;">Dobre Miejsce</p>
+<h2 style="font-size:clamp(28px,3.2vw,40px);line-height:1.15;font-weight:700;letter-spacing:-.015em;">Jak zmieniło się Dobre Miejsce</h2>
+</div>
+<p style="font-size:16px;color:#524A44;text-wrap:pretty;">Zaczynałyśmy we dwie, jako fizjoterapeutki dziecięce pracujące z najmłodszymi pacjentami: wcześniakami i niemowlętami. Z czasem rodzice zaczęli przychodzić do nas z kolejnymi pytaniami, a my zaczęłyśmy zapraszać do współpracy specjalistów, którzy mogli na nie odpowiedzieć.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px;">
+<div style="background:#fff;border-radius:20px;padding:22px 24px;display:flex;flex-direction:column;gap:8px;">
+<p style="font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#B23A12;">Na początku</p>
+<p style="font-size:28px;font-weight:700;line-height:1.1;">2 fizjoterapeutki</p>
+<p style="font-size:15px;color:#524A44;text-wrap:pretty;">Rehabilitacja wcześniaków i niemowląt, diagnostyka rozwoju.</p>
+</div>
+<div style="background:#fff;border-radius:20px;padding:22px 24px;display:flex;flex-direction:column;gap:8px;box-shadow:inset 0 0 0 1.5px #FF6E41;">
+<p style="font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#B23A12;">Dziś</p>
+<p style="font-size:28px;font-weight:700;line-height:1.1;">16 specjalistów</p>
+<p style="font-size:15px;color:#524A44;text-wrap:pretty;">Fizjoterapia, neurologopedia i logopedia, integracja sensoryczna, osteopatia, psycholog i trening. Dla dzieci od pierwszych dni życia po nastolatków, a także dla dorosłych.</p>
+</div>
+</div>
+</div>
+<div style="justify-self:center;width:267px;max-width:100%;aspect-ratio:267 / 476;border-radius:20px;overflow:hidden;background:#1F1B18;box-shadow:0 18px 40px rgba(80,40,20,.14);">
+<iframe title="Film o Dobrym Miejscu" src="https://www.facebook.com/plugins/video.php?height=476&amp;href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1081272764346283%2F&amp;show_text=false&amp;width=267&amp;t=0" width="267" height="476" scrolling="no" frameBorder="0" allowFullScreen="{{ true }}" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" style="display:block;width:100%;height:100%;border:none;overflow:hidden;"></iframe>
+</div>
+</div>
+</section>
+
+<section style="max-width:1160px;margin:0 auto;padding:clamp(72px,8vw,104px) 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));align-items:center;gap:clamp(40px,6vw,88px);">
+<img src="assets/dm8.jpg" alt="Niemowlę bawiące się na macie w gabinecie" style="width:100%;max-width:500px;justify-self:center;aspect-ratio:1.2;object-fit:cover;object-position:40% 50%;border-radius:44% 56% 40% 60% / 58% 42% 58% 42%;">
+<div style="display:flex;flex-direction:column;gap:16px;max-width:560px;">
+<div style="display:flex;flex-direction:column;gap:8px;">
+<p style="font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#B23A12;">Dobre Miejsce</p>
+<h2 style="font-size:clamp(28px,3.2vw,40px);line-height:1.15;font-weight:700;letter-spacing:-.015em;">Kompleksowe podejście</h2>
+</div>
+<p style="font-size:16px;color:#524A44;text-wrap:pretty;">W Dobrym Miejscu oferujemy kompleksową opiekę terapeutyczną dla dzieci od pierwszych dni życia aż po wiek nastoletni. W pracy zajmujemy się głównie <a href="#" style="color:#B23A12;font-weight:600;text-decoration:underline;text-decoration-color:#FFC08C;text-decoration-thickness:2px;text-underline-offset:3px;" style-hover="color:#93300E">rehabilitacją wcześniaków</a> i <a href="#" style="color:#B23A12;font-weight:600;text-decoration:underline;text-decoration-color:#FFC08C;text-decoration-thickness:2px;text-underline-offset:3px;" style-hover="color:#93300E">niemowląt z zaburzeniami napięcia mięśniowego</a>. W zespole pracują fizjoterapeutki z doświadczeniem pracy na oddziale intensywnej terapii noworodka. Prowadzimy diagnostykę rozwoju niemowląt metodą <a href="#" style="color:#B23A12;font-weight:600;text-decoration:underline;text-decoration-color:#FFC08C;text-decoration-thickness:2px;text-underline-offset:3px;" style-hover="color:#93300E">HINE</a> i ocenę ruchów ogólnych metodą <a href="#" style="color:#B23A12;font-weight:600;text-decoration:underline;text-decoration-color:#FFC08C;text-decoration-thickness:2px;text-underline-offset:3px;" style-hover="color:#93300E">Prechtla</a>.</p>
+<p style="font-size:16px;color:#524A44;text-wrap:pretty;">Prowadzimy diagnozę i terapię <a href="#" style="color:#B23A12;font-weight:600;text-decoration:underline;text-decoration-color:#FFC08C;text-decoration-thickness:2px;text-underline-offset:3px;" style-hover="color:#93300E">integracji sensorycznej</a>. Wspieramy prawidłowy rozwój postawy ciała poprzez <a href="#" style="color:#B23A12;font-weight:600;text-decoration:underline;text-decoration-color:#FFC08C;text-decoration-thickness:2px;text-underline-offset:3px;" style-hover="color:#93300E">terapię wad postawy</a>, <a href="#" style="color:#B23A12;font-weight:600;text-decoration:underline;text-decoration-color:#FFC08C;text-decoration-thickness:2px;text-underline-offset:3px;" style-hover="color:#93300E">terapię skolioz FITS</a> i <a href="#" style="color:#B23A12;font-weight:600;text-decoration:underline;text-decoration-color:#FFC08C;text-decoration-thickness:2px;text-underline-offset:3px;" style-hover="color:#93300E">dobór wkładek ortopedycznych</a>, a starszym dzieciom i nastolatkom pomagamy w <a href="#" style="color:#B23A12;font-weight:600;text-decoration:underline;text-decoration-color:#FFC08C;text-decoration-thickness:2px;text-underline-offset:3px;" style-hover="color:#93300E">fizjoterapii ortopedycznej i sportowej</a>.</p>
+<p style="font-size:16px;color:#524A44;text-wrap:pretty;">W zespole są też <a href="#" style="color:#B23A12;font-weight:600;text-decoration:underline;text-decoration-color:#FFC08C;text-decoration-thickness:2px;text-underline-offset:3px;" style-hover="color:#93300E">neurologopedki</a> i <a href="#" style="color:#B23A12;font-weight:600;text-decoration:underline;text-decoration-color:#FFC08C;text-decoration-thickness:2px;text-underline-offset:3px;" style-hover="color:#93300E">logopedka</a>, <a href="#" style="color:#B23A12;font-weight:600;text-decoration:underline;text-decoration-color:#FFC08C;text-decoration-thickness:2px;text-underline-offset:3px;" style-hover="color:#93300E">osteopaci</a>, <a href="#" style="color:#B23A12;font-weight:600;text-decoration:underline;text-decoration-color:#FFC08C;text-decoration-thickness:2px;text-underline-offset:3px;" style-hover="color:#93300E">psycholog dziecięcy</a> oraz <a href="#" style="color:#B23A12;font-weight:600;text-decoration:underline;text-decoration-color:#FFC08C;text-decoration-thickness:2px;text-underline-offset:3px;" style-hover="color:#93300E">trenerka</a>. Specjaliści konsultują się ze sobą, a terapia zawsze uwzględnia indywidualne potrzeby małego pacjenta i jest prowadzona w przyjaznej, pełnej ciepła atmosferze.</p>
+</div>
+</section>
+
+<section style="background:#FFF7EE;">
+<div style="max-width:1160px;margin:0 auto;padding:clamp(72px,8vw,104px) 24px;">
+<div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;margin-bottom:clamp(40px,5vw,56px);">
+<p style="font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#B23A12;">Dobre Miejsce w Katowicach</p>
+<h2 style="font-size:clamp(28px,3.2vw,40px);line-height:1.15;font-weight:700;letter-spacing:-.015em;">Opieka od pierwszych dni życia</h2>
+<p style="font-size:16px;color:#524A44;max-width:600px;text-wrap:pretty;margin-top:6px;">Przyjmujemy dzieci od pierwszych dni życia. Terapia prowadzona jest w formie zabawy.</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:24px;align-items:center;">
+<img src="assets/interior.jpg" alt="Wnętrze gabinetu" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:52% 48% 62% 38% / 40% 54% 46% 60%;">
+<img src="assets/dobremiejsce011.jpg" alt="Dziewczynka bawiąca się zabawką manipulacyjną" style="width:100%;aspect-ratio:1;object-fit:cover;object-position:35% 50%;border-radius:40% 60% 46% 54% / 56% 40% 60% 44%;">
+<img src="assets/si.jpg" alt="Dziecko podczas zabawy sensorycznej" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:58% 42% 54% 46% / 48% 56% 44% 52%;">
+</div>
+</div>
+</section>
+
+<section style="max-width:1160px;margin:0 auto;padding:clamp(72px,8vw,104px) 24px;">
+<div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;margin-bottom:48px;">
+<p style="font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#B23A12;">Dobre Miejsce w Katowicach</p>
+<h2 style="font-size:clamp(28px,3.2vw,40px);line-height:1.15;font-weight:700;letter-spacing:-.015em;">Jak pracujemy</h2>
+<p style="font-size:16px;color:#524A44;max-width:600px;text-wrap:pretty;margin-top:6px;">Terapia prowadzona w formie zabawy, w tempie dostosowanym do dziecka. Diagnozujemy i ustalamy plan terapii, ale to mały pacjent ma ostatnie zdanie.</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:36px 28px;">
+<sc-for list="{{ values }}" as="w" hint-placeholder-count="3">
+<div style="display:flex;flex-direction:column;gap:12px;">
+<div style="aspect-ratio:1.4;border-radius:24px;background:#FFCEA0;display:flex;align-items:center;justify-content:center;margin-bottom:8px;">
+<span style="width:38%;aspect-ratio:1;border-radius:22px;background:#fff;display:flex;align-items:center;justify-content:center;font-size:clamp(48px,4.4vw,64px);color:#4A4540;box-shadow:0 6px 16px rgba(120,60,20,.14);"><i aria-hidden="true" class="{{ w.icon }}"></i></span>
+</div>
+<h3 style="font-size:18px;font-weight:700;line-height:1.3;">{{ w.title }}</h3>
+<p style="font-size:15px;color:#524A44;text-wrap:pretty;">{{ w.text }}</p>
+</div>
+</sc-for>
+</div>
+<div style="display:flex;justify-content:center;margin-top:48px;"><a href="#" style="height:52px;padding:0 28px;border-radius:99px;background:#C9431A;color:#fff;font-weight:600;font-size:17px;display:inline-flex;align-items:center;white-space:nowrap;box-shadow:0 10px 22px rgba(201,67,26,.22);" style-hover="background:#A63610;color:#fff">Umów wizytę</a></div>
+</section>
+
+<section style="max-width:1160px;margin:0 auto;padding:clamp(24px,4vw,48px) 24px clamp(72px,8vw,104px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));align-items:center;gap:clamp(40px,6vw,88px);">
+<div style="display:flex;flex-direction:column;gap:24px;">
+<div style="display:flex;flex-direction:column;gap:8px;">
+<p style="font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#B23A12;">Dobre Miejsce w Katowicach</p>
+<h2 style="font-size:clamp(28px,3.2vw,40px);line-height:1.15;font-weight:700;letter-spacing:-.015em;">Obejmujemy opieką dzieci:</h2>
+</div>
+<ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:12px 28px;">
+<sc-for list="{{ careList }}" as="c" hint-placeholder-count="12">
+<li style="display:flex;gap:10px;align-items:flex-start;font-size:16px;line-height:1.45;"><i aria-hidden="true" class="ti ti-check" style="flex:none;font-size:20px;color:#FF6E41;margin-top:1px;"></i>{{ c }}</li>
+</sc-for>
+</ul>
+<p style="font-size:15px;color:#524A44;text-wrap:pretty;background:#FFF7EE;border-radius:20px;padding:16px 22px;"><b>Przyjmujemy też dorosłych</b>: osteopatia, neurologopedia (m.in. porażenie nerwu twarzowego), trening dla kobiet w ciąży i po porodzie.</p>
+</div>
+<img src="assets/therapy-older.jpg" alt="Fizjoterapeutka podczas ćwiczeń z dzieckiem" style="width:100%;max-width:480px;justify-self:center;aspect-ratio:.9;object-fit:cover;object-position:50% 40%;border-radius:44% 56% 40% 60% / 58% 42% 58% 42%;">
+</section>
+
+<section id="zespol" style="background:#FFF7EE;">
+<div style="max-width:1160px;margin:0 auto;padding:clamp(72px,8vw,104px) 24px;">
+<div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;margin-bottom:44px;">
+<p style="font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#B23A12;">Dobre Miejsce</p>
+<h2 style="font-size:clamp(28px,3.2vw,40px);line-height:1.15;font-weight:700;letter-spacing:-.015em;">Nasz zespół</h2>
+<p style="font-size:16px;color:#524A44;max-width:640px;text-wrap:pretty;margin-top:6px;">Dobre Miejsce założyły fizjoterapeutki dziecięce Kamila Włodarczyk i Martyna Cesarczyk. Dziś tworzy je 16 specjalistów, którzy wspólnie dbają o rozwój Twojego dziecka.</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:28px;max-width:940px;margin:0 auto;">
+<sc-for list="{{ founders }}" as="f" hint-placeholder-count="2">
+<div style="background:#fff;border-radius:20px;padding:40px 36px 36px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;">
+<img src="{{ f.img }}" alt="" style="width:150px;height:150px;border-radius:50%;object-fit:cover;object-position:50% 15%;margin-bottom:10px;box-shadow:0 0 0 6px #FFF4E8;">
+<h3 style="font-size:21px;font-weight:600;">{{ f.name }}</h3>
+<p style="font-size:15px;color:#B23A12;">{{ f.role }}</p>
+<p style="font-size:14px;color:#524A44;text-wrap:pretty;margin-top:4px;margin-bottom:12px;">{{ f.bio }}</p>
+<a href="#" style="margin-top:auto;min-height:38px;display:inline-flex;align-items:center;gap:8px;padding:0 16px;border-radius:99px;background:#C9431A;color:#fff;font-size:14px;" style-hover="background:#A63610;color:#fff">{{ f.cta }}&nbsp;<span aria-hidden="true">→</span></a>
+</div>
+</sc-for>
+</div>
+<div style="max-width:940px;margin:28px auto 0;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:20px 28px;padding:22px 28px;border-radius:20px;background:#fff;">
+<div aria-hidden="true" style="display:flex;align-items:center;">
+<sc-for list="{{ teamDots }}" as="d" hint-placeholder-count="5">
+<span style="width:44px;height:44px;border-radius:50%;background:#FFEFE0;color:#FFB27A;font-size:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 3px #fff;margin-left:-10px;"><i aria-hidden="true" class="ti ti-user"></i></span>
+</sc-for>
+<span style="width:44px;height:44px;border-radius:50%;background:#C9431A;color:#fff;font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 3px #fff;margin-left:-10px;">+14</span>
+</div>
+<p style="font-size:15px;color:#524A44;max-width:380px;text-wrap:pretty;"><strong style="color:#1F1B18;font-weight:600;">14 kolejnych specjalistów:</strong> fizjoterapeutki, neurologopedki, logopedka, osteopaci, terapeuta SI, psycholog i trenerka.</p>
+<a href="#" style="height:48px;padding:0 26px;border-radius:99px;border:1.5px solid #C9431A;color:#C9431A;font-weight:600;display:flex;align-items:center;white-space:nowrap;" style-hover="background:#C9431A;color:#fff">Poznaj cały zespół&nbsp;<span aria-hidden="true">→</span></a>
+</div>
+</div>
+</section>
+
+<section style="max-width:1160px;margin:0 auto;padding:clamp(72px,8vw,104px) 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));align-items:center;gap:clamp(40px,6vw,88px);">
+<img src="assets/dobremiejsce001.jpg" alt="Uśmiechnięta dziewczynka bawiąca się w gabinecie" style="width:100%;max-width:460px;justify-self:center;aspect-ratio:1;object-fit:cover;object-position:30% 35%;border-radius:52% 48% 62% 38% / 40% 54% 46% 60%;">
+<div style="display:flex;flex-direction:column;gap:16px;max-width:540px;">
+<div style="display:flex;flex-direction:column;gap:8px;">
+<p style="font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#B23A12;">Dobre Miejsce w Katowicach</p>
+<h2 style="font-size:clamp(28px,3.2vw,40px);line-height:1.15;font-weight:700;letter-spacing:-.015em;">Rejestracja</h2>
+</div>
+<p style="font-size:16px;color:#524A44;text-wrap:pretty;">Wizyty umawiamy telefonicznie: 577 611 464 lub przez system rezerwacji online.</p>
+<div style="margin-top:12px;display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;">
+<a href="#" style="height:52px;padding:0 28px;border-radius:99px;background:#C9431A;color:#fff;font-weight:600;font-size:17px;display:inline-flex;align-items:center;align-self:flex-start;white-space:nowrap;box-shadow:0 10px 22px rgba(201,67,26,.22);" style-hover="background:#A63610;color:#fff">Umów wizytę</a>
+<a href="#" style="font-weight:600;color:#1F1B18;display:flex;align-items:center;gap:6px;white-space:nowrap;min-height:44px;" style-hover="color:#C9431A"><i aria-hidden="true" class="ti ti-phone" style="color:#FF6E41;"></i>577 611 464</a>
+</div>
+</div>
+</section>
+
+<section id="kontakt" style="background:#FFF7EE;">
+<div style="max-width:1160px;margin:0 auto;padding:clamp(64px,7vw,96px) 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));align-items:stretch;gap:clamp(32px,5vw,64px);">
+<div style="display:flex;flex-direction:column;gap:24px;">
+<div style="display:flex;flex-direction:column;gap:8px;">
+<p style="font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#B23A12;">Kontakt</p>
+<h2 style="font-size:clamp(28px,3.2vw,40px);line-height:1.15;font-weight:700;letter-spacing:-.015em;">Jak do nas trafić</h2>
+</div>
+<div style="display:flex;align-items:flex-start;gap:12px;background:#fff;border-radius:16px;padding:16px 20px;box-shadow:inset 0 0 0 1.5px #FF6E41;">
+<i aria-hidden="true" class="ti ti-info-circle" style="flex:none;font-size:22px;color:#C9431A;margin-top:1px;"></i>
+<p style="font-size:15px;line-height:1.5;color:#3E3732;text-wrap:pretty;"><strong style="color:#1F1B18;font-weight:600;">Zmieniliśmy adres.</strong> Gabinet działa teraz pod nowym adresem w Katowicach.</p>
+</div>
+<dl style="margin:0;display:flex;flex-direction:column;gap:20px;">
+<div style="display:flex;gap:14px;align-items:flex-start;">
+<i aria-hidden="true" class="ti ti-map-pin" style="flex:none;font-size:24px;color:#FF6E41;margin-top:2px;"></i>
+<div><dt style="font-size:14px;color:#625A54;">Adres</dt><dd style="margin:2px 0 0;font-size:17px;font-weight:600;line-height:1.45;color:#1F1B18;">ul. Gen. Zygmunta Waltera-Jankego 48/1<br>40-612 Katowice</dd></div>
+</div>
+<div style="display:flex;gap:14px;align-items:flex-start;">
+<i aria-hidden="true" class="ti ti-phone" style="flex:none;font-size:24px;color:#FF6E41;margin-top:2px;"></i>
+<div><dt style="font-size:14px;color:#625A54;">Telefon</dt><dd style="margin:2px 0 0;"><a href="#" style="font-size:17px;font-weight:600;color:#1F1B18;" style-hover="color:#C9431A;text-decoration:underline">577 611 464</a></dd></div>
+</div>
+<div style="display:flex;gap:14px;align-items:flex-start;">
+<i aria-hidden="true" class="ti ti-clock" style="flex:none;font-size:24px;color:#FF6E41;margin-top:2px;"></i>
+<div><dt style="font-size:14px;color:#625A54;">Godziny otwarcia</dt><dd style="margin:2px 0 0;font-size:17px;font-weight:600;color:#1F1B18;">[Godziny otwarcia]</dd></div>
+</div>
+</dl>
+<div style="display:flex;flex-wrap:wrap;gap:12px 16px;margin-top:4px;">
+<a href="#" style="height:52px;padding:0 28px;border-radius:99px;background:#C9431A;color:#fff;font-weight:600;font-size:17px;display:inline-flex;align-items:center;white-space:nowrap;box-shadow:0 10px 22px rgba(201,67,26,.22);" style-hover="background:#A63610;color:#fff">Umów wizytę</a>
+<a href="#" style="height:52px;padding:0 24px;border-radius:99px;border:1.5px solid #C9431A;color:#B23A12;font-weight:600;display:inline-flex;align-items:center;gap:8px;white-space:nowrap;" style-hover="background:#C9431A;color:#fff"><i aria-hidden="true" class="ti ti-route"></i>Wyznacz trasę</a>
+</div>
+</div>
+<div style="min-height:360px;border-radius:24px;overflow:hidden;background:#FFE0C2;">
+<iframe title="Mapa dojazdu do Dobrego Miejsca" src="https://maps.google.com/maps?q=Waltera-Jankego%2048%2C%2040-612%20Katowice&amp;z=16&amp;output=embed" loading="lazy" style="display:block;width:100%;height:100%;min-height:360px;border:0;"></iframe>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer style="background:#FF6E41;color:#3A1D10;">
+<div style="max-width:1160px;margin:0 auto;padding:60px 24px 56px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:40px 64px;">
+<div style="display:flex;flex-direction:column;gap:18px;flex:1 1 300px;max-width:400px;">
+<img src="assets/logo-dobre-miejsce.svg" alt="Dobre Miejsce Fizjoterapia Dzieci" width="158" height="64" style="display:block;height:64px;width:auto;align-self:flex-start;">
+<p style="font-size:15px;line-height:1.65;color:#3A1D10;">Fizjoterapeuta dzieci Katowice, diagnostyka rozwoju, terapia integracji sensorycznej, osteopata dziecięcy, korekcja wad postawy, neurologopeda, psycholog dziecięcy, trener personalny.</p>
+<div style="display:flex;flex-direction:column;align-items:flex-start;gap:4px;">
+<a href="#" style="color:#3A1D10;font-size:15px;line-height:1.5;padding:4px 0;white-space:nowrap;text-decoration:underline;text-underline-offset:3px;" style-hover="color:#000">Informacje dla pacjenta</a>
+<a href="#" style="color:#3A1D10;font-size:15px;line-height:1.5;padding:4px 0;white-space:nowrap;text-decoration:underline;text-underline-offset:3px;" style-hover="color:#000">Polityka prywatności</a>
+</div>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:40px 64px;">
+<div style="display:flex;flex-direction:column;gap:8px;font-size:15px;color:#3A1D10;min-width:200px;">
+<p style="font-weight:700;font-size:20px;margin-bottom:10px;">Adres</p>
+<p style="line-height:1.75;">Dobre Miejsce<br>Fizjoterapia dzieci<br>ul. Gen. Zygmunta Waltera<br>Jankego 48/1<br>40-612 Katowice</p>
+<a href="#" target="_blank" rel="noopener" style="color:#3A1D10;display:inline-flex;align-items:center;gap:8px;min-height:32px;text-decoration:underline;text-underline-offset:3px;" style-hover="color:#000"><i aria-hidden="true" class="ti ti-pin" style="font-size:20px;"></i>zobacz na mapie</a>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;font-size:15px;color:#3A1D10;">
+<p style="font-weight:700;font-size:20px;margin-bottom:10px;">Kontakt</p>
+<a href="#" style="color:#3A1D10;" style-hover="color:#000;text-decoration:underline">tel. 577 611 464</a>
+<div style="display:flex;gap:12px;margin-top:20px;">
+<a href="#" aria-label="Facebook" style="width:44px;height:44px;border-radius:8px;background:#FFDDBD;color:#C9431A;display:flex;align-items:center;justify-content:center;font-size:22px;" style-hover="background:#fff"><i aria-hidden="true" class="ti ti-brand-facebook"></i></a>
+<a href="#" aria-label="Instagram" style="width:44px;height:44px;border-radius:8px;background:#FFDDBD;color:#C9431A;display:flex;align-items:center;justify-content:center;font-size:22px;" style-hover="background:#fff"><i aria-hidden="true" class="ti ti-brand-instagram"></i></a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+<sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+<div style="position:fixed;left:0;right:0;bottom:0;z-index:50;background:#fff;border-top:1px solid #F0E2D3;padding:10px 12px calc(10px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1.4fr;gap:10px;">
+<a href="#" style="height:48px;border-radius:99px;border:1.5px solid #C9431A;color:#C9431A;font-weight:600;display:flex;align-items:center;justify-content:center;gap:6px;"><i aria-hidden="true" class="ti ti-phone"></i>Zadzwoń</a>
+<a href="#" style="height:48px;border-radius:99px;background:#C9431A;color:#fff;font-weight:600;display:flex;align-items:center;justify-content:center;">Umów wizytę</a>
+</div>
+</sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showAnnouncement&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { w: typeof window !== 'undefined' ? window.innerWidth : 1280, scrolled: false, mega: false, menu: false, menuOferta: false, barClosed: false, filter: 'all', faqOpen: 0, map: false };
+  megaRef = React.createRef();
+  openMega() {
+    const el = this.megaRef.current, vw = document.documentElement.clientWidth;
+    let left = -40;
+    if (el) { const r = el.getBoundingClientRect(), pw = Math.min(760, vw - 48); left = Math.max(24 - r.left, Math.min(-40, vw - 24 - pw - r.left)); }
+    this.setState({ mega: true, megaLeft: Math.round(left) });
+  }
+  h1Ref = React.createRef();
+  measureH1 = () => setTimeout(() => {
+    const el = this.h1Ref.current || document.querySelector('main h1'); if (!el) return;
+    const r = document.createRange(); r.selectNodeContents(el);
+    const w = Math.ceil(Math.max(0, ...[...r.getClientRects()].map(x => x.width)));
+    if (el !== this.h1Obs && typeof ResizeObserver !== 'undefined') { this.ro && this.ro.disconnect(); this.h1Obs = el; this.ro = new ResizeObserver(() => this.measureH1()); this.ro.observe(el); }
+    if (w && w !== this.state.ulW) this.setState({ ulW: w });
+  }, 0);
+  componentDidUpdate(pp) {
+    if (pp.headline !== this.props.headline) this.measureH1();
+    const el = this.h1Ref.current || document.querySelector('main h1');
+    if (el && el !== this.h1Obs) { this.ro && this.ro.disconnect(); this.h1Obs = el; this.ro = new ResizeObserver(() => this.measureH1()); this.ro.observe(el); }
+  }
+  componentWillUnmount() { this.ro && this.ro.disconnect(); }
+  componentDidMount() {
+    this.onNoLink = e => { const a = e.target.closest && e.target.closest('a[href="#"]'); if (a) e.preventDefault(); };
+    document.addEventListener('click', this.onNoLink);
+    this.measureH1(); document.fonts && document.fonts.ready.then(this.measureH1);
+    let tries = 0; this.h1Poll = setInterval(() => { this.measureH1(); if ((this.h1Obs && this.state.ulW) || ++tries > 40) clearInterval(this.h1Poll); }, 250);
+    document.documentElement.lang = 'pl';
+    this.onK = e => {
+      if (this.state.menu) {
+        if (e.key === 'Escape') { e.preventDefault(); this.closeMenu(true); return; }
+        const panel = document.getElementById('menu-mobile');
+        if (e.key === 'Tab' && panel) {
+          const els = [...panel.querySelectorAll('a[href],button:not([disabled]),[tabindex]:not([tabindex="-1"])')];
+          if (!els.length) return;
+          const first = els[0], last = els[els.length - 1], a = document.activeElement;
+          if (e.shiftKey && (a === first || !panel.contains(a))) { e.preventDefault(); last.focus(); }
+          else if (!e.shiftKey && (a === last || !panel.contains(a))) { e.preventDefault(); first.focus(); }
+        }
+        return;
+      }
+      if (e.key === 'Escape' && this.state.mega) this.setState({ mega: false });
+    };
+    window.addEventListener('keydown', this.onK);
+    this.onR = () => { const w = window.innerWidth; if (this.state.menu && w >= 1100) this.closeMenu(false); this.setState({ w }); this.measureH1(); };
+    this.onS = () => { const y = window.scrollY, v = this.state.scrolled ? y > 4 : y > 64; if (v !== this.state.scrolled) this.setState({ scrolled: v }); };
+    window.addEventListener('resize', this.onR); window.addEventListener('scroll', this.onS, { passive: true });
+  }
+  openMenu() {
+    document.body.style.overflow = 'hidden';
+    this.setState({ menu: true });
+    let n = 0; const tryFocus = () => { const el = document.querySelector('#menu-mobile button[aria-label="Zamknij menu"]'); if (el) el.focus(); else if (n++ < 20) requestAnimationFrame(tryFocus); };
+    requestAnimationFrame(tryFocus);
+  }
+  closeMenu(returnFocus) {
+    document.body.style.overflow = '';
+    this.setState({ menu: false, menuOferta: false });
+    if (returnFocus) { let n = 0; const tryFocus = () => { const b = document.querySelector('button[aria-controls="menu-mobile"]'); if (b && !document.getElementById('menu-mobile')) b.focus(); else if (n++ < 20) requestAnimationFrame(tryFocus); }; requestAnimationFrame(tryFocus); }
+  }
+  componentWillUnmount() { document.body.style.overflow = ''; window.removeEventListener('resize', this.onR); window.removeEventListener('scroll', this.onS); window.removeEventListener('keydown', this.onK); }
+  renderVals() {
+    const s = this.state, p = this.props;
+    const isMobile = s.w < 1100, narrow = s.w < 760;
+    const h1s = {
+      'Dobre Miejsce dla rozwoju': 'Dobre Miejsce dla rozwoju Twojego dziecka',
+      'Specjaliści w jednym miejscu': 'Specjaliści od rozwoju dziecka — w jednym miejscu',
+      'Od pierwszych dni życia': 'Wspieramy rozwój dzieci od pierwszych dni życia'
+    };
+    const radii = ['58% 42% 54% 46% / 48% 56% 44% 52%', '44% 56% 40% 60% / 58% 42% 58% 42%', '52% 48% 62% 38% / 40% 54% 46% 60%', '40% 60% 46% 54% / 56% 40% 60% 44%'];
+    const ages = [
+      { title: 'Niemowlę', age: '0–12 miesięcy', img: 'assets/baby.jpg', pos: '30% 45%', alt: 'Noworodek podczas fizjoterapii', text: 'Asymetria i przekrzywiona główka, wzmożone lub obniżone napięcie mięśni, wcześniactwo, kłopoty ze ssaniem i karmieniem, kolki i ulewanie.', links: ['Fizjoterapia niemowląt', 'Rehabilitacja wcześniaków', 'Diagnostyka HINE i Prechtla', 'Neurologopedia', 'Osteopatia', 'Terapia oddechowa'] },
+      { title: 'Maluch', age: '1–3 lata', img: 'assets/toddler.jpg', pos: '40% 40%', alt: 'Maluch bawiący się zabawką sensoryczną', text: 'Opóźniony rozwój ruchowy, dziecko mało mówi, nadwrażliwość na dźwięki, dotyk lub ubrania.', links: ['Fizjoterapia', 'Wady postawy', 'Neurologopedia', 'Integracja sensoryczna', 'Osteopatia'] },
+      { title: 'Przedszkolak i uczeń', age: '3–12 lat', img: 'assets/posture.jpg', pos: '50% 55%', alt: 'Dziecko podczas ćwiczeń korekcyjnych', text: 'Wady postawy i stóp, wady wymowy, trudności z koordynacją i koncentracją, trudne emocje i zachowania.', links: ['Wady postawy', 'Wkładki ortopedyczne', 'Logopedia', 'Integracja sensoryczna', 'Psycholog', 'Trening personalny'] },
+      { title: 'Nastolatek', age: '12+ lat', img: 'assets/ortho.jpg', pos: '50% 50%', alt: 'Terapia ortopedyczna nogi', text: 'Skolioza, kontuzje sportowe, powrót do sprawności po operacji, stres i napięcie.', links: ['Terapia skolioz FITS', 'Fizjoterapia sportowa i ortopedyczna', 'Osteopatia', 'Psycholog'] }
+    ].map((a, i) => ({ ...a, radius: radii[i], dir: narrow ? 'column' : (i % 2 ? 'row-reverse' : 'row') }));
+    const specs = [
+      { icon: 'ti ti-baby-carriage', name: 'Fizjoterapia niemowląt i wcześniaków', text: 'Wspieramy rozwój ruchowy od pierwszych dni życia, także po pobycie na OIOM.', links: ['Rehabilitacja wcześniaków', 'Rehabilitacja niemowląt', 'Terapia oddechowa'] },
+      { icon: 'ti ti-activity-heartbeat', name: 'Diagnostyka rozwoju', text: 'Wcześnie wykrywamy trudności rozwojowe metodami HINE i Prechtla.', links: ['Diagnostyka HINE', 'Metoda Prechtla'] },
+      { icon: 'ti ti-run', name: 'Fizjoterapia dzieci starszych', text: 'Postawa, stopy, skolioza, kontuzje i powrót do sportu.', links: ['Fizjoterapia ortopedyczna', 'Wady postawy', 'Skolioza (FITS)', 'Wkładki ortopedyczne'] },
+      { icon: 'ti ti-puzzle', name: 'Integracja sensoryczna', text: 'Pomagamy dzieciom lepiej odbierać i porządkować bodźce.', links: ['Diagnoza i terapia SI'] },
+      { icon: 'ti ti-message-circle', name: 'Mowa i karmienie', text: 'Neurologopedia od pierwszych dni życia i logopedia dla dzieci od 3 lat.', links: ['Neurologopeda', 'Logopeda'] },
+      { icon: 'ti ti-hand-finger', name: 'Osteopatia', text: 'Delikatna terapia manualna dla niemowląt, dzieci i dorosłych.', links: ['Osteopata dziecięcy i dla dorosłych'] },
+      { icon: 'ti ti-mood-smile', name: 'Psycholog dziecięcy', text: 'Wsparcie przy trudnych emocjach, adaptacji i relacjach — dla dzieci i rodziców.', links: ['Psycholog dziecięcy'] },
+      { icon: 'ti ti-yoga', name: 'Ruch i trening', text: 'Trening dla dzieci oraz dla kobiet w ciąży i po porodzie.', links: ['Fizjoterapia sportowa', 'Trener personalny'] }
+    ];
+    const ph = '[Imię Nazwisko]';
+    const team = [
+      ...Array.from({ length: 6 }, () => ({ name: ph, role: 'Fizjoterapeutka dziecięca', cat: 'fizjo' })),
+      { name: ph, role: 'Terapeuta integracji sensorycznej', cat: 'fizjo' },
+      { name: ph, role: 'Osteopata dzieci i dorosłych', cat: 'osteo' },
+      { name: ph, role: 'Osteopata dziecięcy', cat: 'osteo' },
+      { name: 'Sabina Szober', role: 'Neurologopedka', cat: 'mowa' },
+      { name: ph, role: 'Neurologopedka', cat: 'mowa' },
+      { name: ph, role: 'Logopedka, dzieci od 3 lat', cat: 'mowa' },
+      { name: ph, role: 'Psycholog dziecięcy', cat: 'psy' },
+      { name: 'Katarzyna Loranc', role: 'Trenerka, ciąża i po porodzie', cat: 'trening' }
+    ];
+    const fdefs = [['all', 'Wszyscy'], ['fizjo', 'Fizjoterapia i SI'], ['osteo', 'Osteopatia'], ['mowa', 'Mowa'], ['psy', 'Psycholog'], ['trening', 'Trening']];
+    const filters = fdefs.map(([k, l]) => { const on = s.filter === k; return { label: l, select: () => this.setState({ filter: k }), fg: on ? '#C9431A' : '#524A44', line: on ? '#C9431A' : 'transparent' }; });
+    const faq = [
+      ['Do kogo iść najpierw?', 'Najczęściej zaczynamy od wizyty diagnostycznej u fizjoterapeuty lub neurologopedy. W razie wątpliwości zadzwoń - doradzimy.'],
+      ['Od jakiego wieku przyjmujecie dzieci?', 'Od pierwszych dni życia, także wcześniaki po wypisie ze szpitala.'],
+      ['Czy oferujecie wizyty na NFZ?', 'Nie, wszystkie usługi są prywatne, zgodnie z cennikiem na stronie.'],
+      ['Czy przyjmujecie dorosłych?', 'Tak - osteopatia, neurologopedia, logopedia i trening w ciąży i po porodzie.']
+    ].map(([q, a], i) => { const o = s.faqOpen === i; return { q, a, id: 'faq-' + i, open: o, rot: o ? '180deg' : '0deg', toggle: () => this.setState({ faqOpen: o ? -1 : i }) }; });
+    return {
+      isMobile, isDesktop: !isMobile, bottomPad: isMobile ? '70px' : '0',
+      headerShadow: s.scrolled ? '0 8px 24px rgba(80,40,20,.06)' : 'none',
+      showBar: (p.showAnnouncement ?? false) && !s.barClosed, heroH: s.w >= 1024 ? `clamp(580px, calc(100svh - ${((p.showAnnouncement ?? false) && !s.barClosed) ? 139 : 100}px), 960px)` : 'auto', heroCols: s.w >= 1024 ? 'minmax(0,1fr) min(39vw,760px)' : '1fr', heroTextW: s.w >= 1024 ? 'calc(640px + max(24px, (100vw - 1160px) / 2 + 24px))' : '720px', heroGap: s.w >= 1024 ? 'clamp(64px,8vw,180px)' : '0', headerPad: s.w >= 1100 ? (s.scrolled ? '10px 24px' : '21px 24px') : (s.scrolled ? '8px 24px' : '12px 24px'), iconH: s.w >= 1100 ? (s.scrolled ? '52px' : '68px') : (s.scrolled ? '48px' : '56px'), iconMb: s.w >= 1100 ? (s.scrolled ? '-7.2px' : '-9.4px') : (s.scrolled ? '-6.7px' : '-7.8px'), textH: s.w >= 1100 ? (s.scrolled ? '16px' : '19.1px') : (s.scrolled ? '10px' : '11.6px'), logoGap: s.w >= 1100 ? '14px' : '10px', ulW: s.ulW ? s.ulW + 'px' : '88%', h1Ref: this.h1Ref, heroPad: s.w >= 1024 ? '0 0 2vh max(24px, calc((100vw - 1160px) / 2 + 24px))' : '40px 24px 32px', heroImgH: s.w >= 1024 ? 'auto' : 'auto', heroImgAR: s.w >= 1024 ? 'auto' : '624 / 636', heroImgMaxW: s.w < 1024 ? '560px' : 'none', heroImgTop: s.w >= 1024 ? '0' : '0', closeBar: () => this.setState({ barClosed: true }),
+      menuOpen: s.menu, openMenu: () => this.openMenu(), closeMenu: () => this.closeMenu(true), closeMenuNav: () => this.closeMenu(false), menuOferta: s.menuOferta, menuOfertaRot: s.menuOferta ? '180deg' : '0deg', toggleMenuOferta: () => this.setState({ menuOferta: !s.menuOferta }),
+      megaOpen: s.mega, megaRef: this.megaRef, megaLeft: (s.megaLeft ?? -40) + 'px', megaW: 'min(760px, calc(100vw - 48px))', openMega: () => this.openMega(), closeMega: () => this.setState({ mega: false }), toggleMega: () => s.mega ? this.setState({ mega: false }) : this.openMega(),
+      h1: h1s[p.headline] || h1s['Dobre Miejsce dla rozwoju'],
+      ages, specs: specs.map(x => ({ ...x, iconThin: x.icon + ' ti-300' })),
+      why: [
+        { icon: 'ti ti-users-group', title: 'Cały zespół pod jednym dachem', text: 'Fizjoterapeuci, neurologopedki, osteopaci, terapeuta SI i psycholog konsultują się ze sobą. Nie musisz sam(a) koordynować terapii w kilku miejscach.' },
+        { icon: 'ti ti-heart-handshake', title: 'Doświadczenie ze szpitala', text: 'Nasze założycielki zdobywały doświadczenie w Górnośląskim Centrum Zdrowia Dziecka, m.in. na oddziale intensywnej terapii noworodka. Pomagamy także w najtrudniejszych przypadkach.' },
+        { icon: 'ti ti-activity', title: 'Wczesna diagnostyka', text: 'Metody HINE i Prechtla pozwalają wychwycić trudności już w pierwszych miesiącach życia, gdy terapia daje najwięcej.' },
+        { icon: 'ti ti-mood-kid', title: 'Terapia przez zabawę, w tempie dziecka', text: 'Nasz gabinet to miejsce, gdzie dzieci czują się swobodnie, a rodzice znajdują wsparcie i zrozumienie. Po wizycie dostajesz wskazówki do pracy w domu.' }
+      ].map(x => ({ ...x, iconThin: x.icon + ' ti-300' })),
+      founders: [
+        { name: 'Kamila Włodarczyk', role: 'Fizjoterapeutka dziecięca. W pracy zajmuje się głównie terapią wcześniaków', bio: 'Certyfikowana terapeutka NDT-Bobath. W pracy zajmuje się głównie rehabilitacją wcześniaków i noworodków. Ma doświadczenie pracy na oddziale intensywnej terapii noworodka.', img: 'assets/kamila.jpg', cta: 'więcej o Kamili' },
+        { name: 'Martyna Cesarczyk', role: 'Fizjoterapeutka dziecięca. W pracy zajmuje się głównie terapią dzieci z mózgowym porażeniem dziecięcym', bio: 'Fizjoterapeutka pediatryczna, prowadzi terapię neurorozwojową. W pracy zajmuje się głównie dziećmi z mózgowym porażeniem dziecięcym i innymi schorzeniami neurologicznymi oraz korekcją wad postawy.', img: 'assets/martyna.jpg', cta: 'więcej o Martynie' }
+      ],
+      teamDots: [1,2,3,4,5],
+      values: [
+        { icon: 'ti ti-user-heart ti-300', title: 'Indywidualne podejście', text: 'Szanujemy indywidualność każdego dziecka i dajemy jej wybrzmieć — w naszym podejściu to terapeuta dopasowuje się do potrzeb pacjenta i podąża za nimi.' },
+        { icon: 'ti ti-stairs-up ti-300', title: 'Plan terapii', text: 'Pracę z dzieckiem zaczynamy od diagnozy. Na jej podstawie ustalamy plan terapii, a jego przebieg na bieżąco konsultujemy z rodzicami.' },
+        { icon: 'ti ti-home-heart ti-300', title: 'Rodzina jest dla nas ważna', text: 'Każdy Rodzic, który jest zaniepokojony rozwojem swojego malucha, bądź potrzebuje profilaktycznej wizyty lub wsparcia w kwestiach czynności pielęgnacyjnych jest u nas miło widziany.' }
+      ],
+      careList: ['Urodzone przedwcześnie', 'Po długotrwałej hospitalizacji', 'Z zaburzeniami napięcia mięśniowego', 'Z zaburzeniami w rozwoju psycho-ruchowym', 'Z trudnościami z organizacją i integracją sensoryczną', 'Z zaburzeniami neurologicznymi', 'Z wadami genetycznymi', 'Z wadami postawy ciała i skoliozą', 'Z trudnościami w mowie, ssaniu i karmieniu', 'Z trudnymi emocjami i zachowaniami', 'Po urazach i kontuzjach sportowych', 'Po zabiegach ortopedycznych'],
+      reviews: [
+        { author: 'Małgorzata Grobelny', initial: 'M', color: '#AB47BC', time: '4 dni temu', text: 'Serdecznie polecamy fizjoterapię u p. Kuby. Po kilku miesiącach widzimy efekty pracy, zmiany zauważyły nawet panie z przedszkola. Pan Kuba prowadzi zajęcia w miłej atmosferze, dobiera skuteczne metody pracy i wszystko tłumaczy. Ma empatyczne podejście do innych i spokojny głos, co bardzo pomaga dziecku w skupieniu się na ćwiczeniach. Cała organizacja również była bardzo sprawna. Polecamy to miejsce:)' },
+        { author: 'Paulina', initial: 'P', color: '#7B1FA2', time: '1 miesiąc temu', text: 'Pani Kamila ma bardzo dobre podejście do niemowląt – jest cierpliwa i spokojna. Dzięki indywidualnie dobranym ćwiczeniom nasza córka zrobiła wyraźne postępy. Jesteśmy bardzo zadowoleni z efektów terapii. Bardzo ciepłe wrażenie zrobiła też druga fizjoterapeutka – Ania świetnie ćwiczyła z naszą małą, z dużym wyczuciem i zaangażowaniem.' },
+        { author: 'Marzena', initial: 'M', color: '#26A69A', time: '2 miesiące temu', text: 'Bardzo polecam!' }
+      ],
+      steps: [
+        { n: '1', title: 'Wybierz specjalistę lub zadzwoń', text: 'Jeśli nie wiesz, do kogo się zgłosić, zadzwoń pomożemy dobrać specjalistę.' },
+        { n: '2', title: 'Przyjdź na wizytę diagnostyczną', text: 'Wizyta trwa godzinę: wywiad, badanie i omówienie wyników. Zabierz dokumentację medyczną dziecka.' },
+        { n: '3', title: 'Otrzymaj plan terapii', text: 'Ustalamy częstotliwość spotkań i ćwiczenia do domu.' }
+      ],
+      prices: [
+        { name: 'Fizjoterapia dzieci', time: '45 min', price: '180 zł' },
+        { name: 'Wizyta diagnostyczna fizjoterapeutyczna', time: '1 h', price: '230 zł' },
+        { name: 'Terapia integracji sensorycznej', time: '45 min', price: '180 zł' },
+        { name: 'Logopedia / neurologopedia', time: '30 min', price: '130 zł' },
+        { name: 'Osteopatia', time: '', price: '230 zł' },
+        { name: 'Psycholog dziecięcy', time: '50 min', price: '180 zł' },
+        { name: 'Trening personalny dziecka', time: '45 min', price: '150 zł' }
+      ],
+      faq,
+      blog: [
+        { img: 'assets/logopeda-czy-neurologopeda.webp', title: 'Kiedy zgłosić się z dzieckiem do logopedy, a kiedy do neurologopedy?' },
+        { img: 'assets/dwulatek.webp', title: 'Kiedy warto zgłosić się z dwulatkiem do psychologa dziecięcego?' },
+        { img: 'assets/dziecko-obraca-sie.webp', title: 'Dlaczego moje dziecko obraca się tylko przez jeden bok?' }
+      ],
+      showMap: s.map, showPhoto: !s.map, showMapFn: () => this.setState({ map: true }), showPhotoFn: () => this.setState({ map: false }),
+      footerCols: [
+        { title: 'Oferta', links: ['Rehabilitacja wcześniaków', 'Rehabilitacja niemowląt', 'Diagnostyka HINE i Prechtla', 'Wady postawy i skolioza', 'Integracja sensoryczna', 'Neurologopeda i logopeda', 'Osteopatia', 'Psycholog dziecięcy'] },
+        { title: 'Dla rodziców', links: ['Blog', 'Informacje dla pacjenta', 'Aktualności', 'O nas', 'Zespół', 'Cennik'] }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
