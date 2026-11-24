@@ -1,4 +1,3 @@
-import Navbar from "../components/navbar";
 import BlockWith3Blobs from "../components/block-with-3-blobs";
 import Features from "../components/features";
 import ListSection from "../components/list-section";
@@ -38,7 +37,6 @@ export const metadata = {
 export default function ONas() {
   return (
     <>
-      <Navbar />
 
       <section className="py-32 mt-12 md:py-40 container mx-auto px-8 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
         <div className="bgy1-blur absolute right-0 top-0 z-0 h-full w-full opacity-20 sm:hidden"></div>

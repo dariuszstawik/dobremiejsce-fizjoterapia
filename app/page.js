@@ -1,6 +1,5 @@
 import Image from "next/image";
 import HeroSection from "./components/hero-section";
-import Navbar from "./components/navbar";
 import TeamSectionHomepage from "./components/team-section-homepage";
 import SectionTitle from "./components/section-title";
 import FeaturesHomepage from "./components/features-homepage";
@@ -32,7 +31,6 @@ export default async function Home() {
 
   return (
     <>
-      <Navbar />
 
       <HeroSection />
 

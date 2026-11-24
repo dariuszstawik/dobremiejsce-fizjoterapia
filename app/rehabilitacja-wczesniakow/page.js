@@ -1,5 +1,4 @@
 import { HandHeart } from "lucide-react";
-import Navbar from "../components/navbar";
 import PageTemplate from "../components/page-template";
 import Link from "next/link";
 
@@ -34,7 +33,6 @@ export const metadata = {
 export default function RehabilitacjaWczesniakow() {
   return (
     <>
-      <Navbar />
       <PageTemplate
         title={
           <>

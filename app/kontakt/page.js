@@ -1,5 +1,4 @@
 import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
-import Navbar from "../components/navbar";
 import ParagraphWithImageOnTheRight from "../components/paragraph-with-image-on-the-right";
 
 export const metadata = {
@@ -33,7 +32,6 @@ export const metadata = {
 export default function Kontakt() {
   return (
     <>
-      <Navbar />
 
       <section className="relative py-24 mt-12 md:pt-40 md:pb-24 container mx-auto px-8 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
         <ParagraphWithImageOnTheRight

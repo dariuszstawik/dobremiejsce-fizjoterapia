@@ -1,10 +1,8 @@
-import Navbar from "@/app/components/navbar";
 import PageTemplate from "@/app/components/page-template";
 
 export default function WitamyNaBlogu() {
   return (
     <>
-      <Navbar />
       <PageTemplate
         isBlog
         title={<>Witamy na blogu!</>}

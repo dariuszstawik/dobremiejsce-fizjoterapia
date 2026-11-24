@@ -1,7 +1,6 @@
 import { client } from "@/lib/contentful/client";
 import BlogCard from "../components/blog-card";
 import BlogList from "../components/blog-list";
-import Navbar from "../components/navbar";
 import SectionTitle from "../components/section-title";
 
 export const metadata = {
@@ -40,7 +39,6 @@ export default async function Blog() {
 
   return (
     <>
-      <Navbar />
       <section className="container pt-32 mb-44 px-4 mt-12 md:pt-24 mx-auto max-w-[90%] ">
         <img
           src="/blob3.svg"

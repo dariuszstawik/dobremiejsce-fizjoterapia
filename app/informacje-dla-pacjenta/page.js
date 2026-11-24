@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Navbar from "../components/navbar";
 import ParagraphWithImageOnTheRight from "../components/paragraph-with-image-on-the-right";
 import Pricing from "../components/pricing-section";
 import PricingNew from "../components/pricing";
@@ -37,7 +36,6 @@ export const metadata = {
 export default function Cennik() {
   return (
     <>
-      <Navbar />
       {/* <section className=" py-32 mt-12 md:pt-32 container mx-auto px-8 sm:max-w-xl md:max-w-full md:px-24 lg:px-8 lg:w-screen"> */}
       <div className="max-w-4xl mx-auto pt-24">
         <SectionTitle title="Informacje dla pacjenta" />

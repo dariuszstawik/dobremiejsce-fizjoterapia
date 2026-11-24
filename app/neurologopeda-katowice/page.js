@@ -67,7 +67,6 @@
 //   );
 // }
 
-import Navbar from "@/app/components/navbar";
 import PageTemplate from "@/app/components/page-template";
 import { client } from "@/lib/contentful/client";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
@@ -114,7 +113,6 @@ export default async function NeurologopedaKatowice() {
 
   return (
     <>
-      <Navbar />
       <PageTemplate
         // isBlog
         title={content.fields.title}

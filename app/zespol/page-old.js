@@ -1,5 +1,4 @@
 import { Mail, PhoneCall } from "lucide-react";
-import Navbar from "../components/navbar";
 import Link from "next/link";
 import SectionTitle from "../components/section-title";
 import PageTemplate from "../components/page-template";
@@ -38,7 +37,6 @@ export const metadata = {
 export default function Zespol() {
   return (
     <>
-      <Navbar />
 
       {/* <TeamSectionClaude /> */}
 

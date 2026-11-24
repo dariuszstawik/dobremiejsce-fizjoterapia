@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Navbar from "../components/navbar";
 import PageTemplate from "../components/page-template";
 import Button from "../components/Button";
 
@@ -256,7 +255,6 @@ export default function TeamSection() {
 
   return (
     <>
-      <Navbar />
       <PageTemplate
         isTeamPage
         title="Nasz zespół"

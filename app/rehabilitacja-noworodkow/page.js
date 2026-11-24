@@ -1,4 +1,3 @@
-import Navbar from "../components/navbar";
 import PageTemplate from "../components/page-template";
 
 export const metadata = {
@@ -33,7 +32,6 @@ export const metadata = {
 export default function RehabilitacjaNoworodkow() {
   return (
     <>
-      <Navbar />
       <PageTemplate
         title={
           <>

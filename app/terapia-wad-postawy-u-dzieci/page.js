@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Navbar from "../components/navbar";
 import PageTemplate from "../components/page-template";
 
 export const metadata = {
@@ -32,7 +31,6 @@ export const metadata = {
 export default function TerapiaWadPostawyUDzieci() {
   return (
     <>
-      <Navbar />
       <PageTemplate
         title={
           <>

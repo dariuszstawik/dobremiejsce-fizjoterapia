@@ -1,4 +1,3 @@
-import Navbar from "../components/navbar";
 import SectionTitle from "../components/section-title";
 import Button from "../components/Button";
 import PricelistWithSearch from "../components/pricelist-with-search";
@@ -278,7 +277,6 @@ const pricelistData = [
 export default function Cennik() {
   return (
     <>
-      <Navbar />
       <div className="max-w-4xl mx-auto pt-24 px-4 sm:px-0">
         <SectionTitle title="Cennik usług*" />
 

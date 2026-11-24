@@ -1,6 +1,7 @@
 import { Figtree } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/footer";
+import SiteHeader from "./components/site-header";
 // Import GoogleAnalytics nie będzie już potrzebny, możesz go usunąć z paczek npm później
 import Script from "next/script";
 
@@ -87,6 +88,7 @@ export default function RootLayout({ children }) {
           strategy="afterInteractive"
         />
 
+        <SiteHeader />
         <main id="tresc" tabIndex={-1} className="focus:outline-none">
           {children}
         </main>

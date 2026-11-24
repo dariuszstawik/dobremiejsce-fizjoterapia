@@ -1,4 +1,3 @@
-import Navbar from "../components/navbar";
 
 export const metadata = {
   title: "Polityka prywatności | Dobre Miejsce",
@@ -9,7 +8,6 @@ export const metadata = {
 export default function PolitykaPrywatnosci() {
   return (
     <>
-      <Navbar />
       <section className="py-32 mt-12 md:py-40 container mx-auto px-8 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
         <div className="max-w-4xl mx-auto text-gray-800">
           <h1 className="text-3xl font-bold mb-8">Polityka prywatności</h1>

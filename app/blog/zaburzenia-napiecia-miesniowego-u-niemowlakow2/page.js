@@ -162,13 +162,11 @@
 //   );
 // }
 
-import Navbar from "@/app/components/navbar";
 import PageTemplate from "@/app/components/page-template";
 
 export default function ZaburzeniaNapieciaMiesniowegoUNiemowlakow() {
   return (
     <>
-      <Navbar />
       <PageTemplate
         isBlog
         title={

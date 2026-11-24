@@ -1,5 +1,4 @@
 import { Mail, PhoneCall } from "lucide-react";
-import Navbar from "../components/navbar";
 import Link from "next/link";
 
 export const metadata = {
@@ -34,7 +33,6 @@ export const metadata = {
 export default function KamilaTomaszkiewicz() {
   return (
     <>
-      <Navbar />
       <section className="mt-20">
         <div className="container mx-auto mt-20 px-4 pb-12 pt-40 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:pb-20">
           <div
