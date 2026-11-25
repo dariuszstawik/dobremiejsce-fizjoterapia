@@ -43,13 +43,13 @@ const specialists = [
     photo: "/anna-plaszczyk.webp",
     href: "/anna-plaszczyk",
   },
-  {
-    id: 6,
-    name: "Aleksandra Deninger",
-    role: "Fizjoterapeuta dziecięcy",
-    photo: "/aleksandra-deninger.webp",
-    href: "/aleksandra-deninger",
-  },
+  // {
+  //   id: 6,
+  //   name: "Aleksandra Deninger",
+  //   role: "Fizjoterapeuta dziecięcy",
+  //   photo: "/aleksandra-deninger.webp",
+  //   href: "/aleksandra-deninger",
+  // },
   {
     id: 7,
     name: "Julianna Gwóźdź",
